@@ -1,0 +1,351 @@
+{% extends "core/base1.html" %}{% load static %}
+
+{% block content %}
+    
+{% block own_css %}
+   
+   <link rel="stylesheet" href="{% static 'css/return-screen.css' %}" type="text/css">
+
+{% endblock own_css%}
+
+<body>
+   <!-- navbar start -->
+
+   <!-- navbar end -->
+   <!-- category start -->
+   <div class="container-fluid pt-2">
+      <div class="row">
+
+         <div class="col-sm-12 page-body-padding">
+            <!-- start Return Item -->
+            <div class="row return-item border-bottom">
+               <div class="col-md-12">
+                  <span class="icon-mobile"><i class="fa fa-angle-left" aria-hidden="true"></i>
+                  </span> Return Item
+               </div>
+            </div>
+            <!-- end Return Item -->
+            <!-- start foldable wooden table and order section -->
+            <div class="row foldable-wooden-table-and-order-padding">
+               <!-- start foldable wooden section -->
+               <div class="col-md-10">
+                  <!-- start foldable wooden table card 1 -->
+                  <div class="row cards-padding card1-left-rigth-pad">
+                     <div class="col-md-12">
+                        <!-- start foldable-wooden-table-card1 -->
+                        <div class="card foldable-wooden-table-card1 ">
+                           <!-- start foldable-wooden-table-card1-body -->
+                           <div class="card-body">
+                              <div class="row padding-mobile">
+                                 <!-- start foldable-wooden-table-image -->
+                                 <div class="col-3 col-sm-1 col-md-1 foldable-wooden-table-image">
+                                    <img src="{{AddToCartobj.ProductSizeColorId.ProductImage.url}}" alt="" class="img-fluid rounded">
+                                 </div>
+                                 <!-- end foldable-wooden-table-image -->
+                                 <!-- start foldable-wooden-table-text -->
+                                 <div class="col-9 col-sm-11 col-md-11">
+                                    <!-- start foldable-wooden-table-text-row1 -->
+                                    <div class="row foldable-table-text">
+                                       <div class="col-md-12">
+                                          {{AddToCartobj.ProductSizeColorId.Product.ProductName}}
+                                       </div>
+                                    </div>
+                                    <!-- end foldable-wooden-table-text-row1 -->
+                                    <!-- start size-text-row2 -->
+                                    <div class="row size-text">
+                                       <div class="col-md-12">
+                                          Size : {{AddToCartobj.ProductSizeColorId.ProductSize.size}}
+                                       </div>
+                                    </div>
+                                    <div class="row size-text">
+                                       <div class="col-md-12">
+                                          Qunatity : {{AddToCartobj.Qunatity}}
+                                       </div>
+                                    </div>
+                                    <!-- end size-text-row2 -->
+                                    <!-- start ruppees-text-row3 -->
+                                    <div class="row">
+                                       <div class="col-md-12">
+                                          <span class="rupee-symbol"><i class="fa fa-inr" aria-hidden="true"></i></span>
+                                          <span class="rupee">{{AddToCartobj.TotalPrice}}</span> 
+                                             
+                                       </div>
+                                    </div>
+                                    <!-- end ruppees-text-row3 -->
+                                 </div>
+                                 <!-- end foldable-wooden-table-text -->
+                              </div>
+
+                           </div>
+                           <!-- end foldable-wooden-table-card1-body -->
+                        </div>
+                        <!-- end foldable-wooden-table-card1 -->
+                        
+                     </div>
+                  </div>
+                  <div class="border-bottom border-for-mobile"></div>
+                  <!-- end foldable wooden table card 1 -->
+
+                  <!-- start why are you returning card 2 -->
+                  <div class="row cards-padding card1-left-rigth-pad">
+                     <div class="col-md-12">
+                        <!-- start foldable-wooden-table-card2 -->
+                        <div class="card foldable-wooden-table-card2 ">
+                           <!-- start foldable-wooden-table-card2-body -->
+                           <div class="card-body">
+                              <!-- start Why are you returning? -->
+                              <div class="row why-are-you-returning">
+                                 <div class="col-md-12">
+                                    Why are you returning?
+                                 </div>
+                              </div>
+                              <!-- end Why are you returning? -->
+                              <!-- start Please choose the correct reason -->
+                              <div class="row">
+                                 <div class="col-md-12 please-choose-the-correct-reason">
+                                    Please choose the correct reason for return. This information is only used to
+                                    improve our service.
+                                 </div>
+                              </div>
+                              <!-- end Please choose the correct reason -->
+                           </div>
+                           <!-- end foldable-wooden-table-card2 body -->
+                        </div>
+                        <!-- end foldable-wooden-table-card2 -->
+                     </div>
+                  </div>
+                  <!-- end why are you returning card 2 -->
+
+                  <div class="border-bottom border-for-mobile"></div>
+
+                  <!-- start select reason section -->
+                  <form action="{% url 'ReturnOrder' AddToCartobj.id %}" method="POST" >
+                     {% csrf_token %}
+                     <div class="row select-reason-paddind card1-left-rigth-pad">
+                        <!-- start select reason heading -->
+                        <div class="col-md-12 select-reason-heading">
+                           Select Reason
+                        </div>
+                        <!-- end select reason heading -->
+                     </div>
+                     <div class="row select-reason-paddind card1-left-rigth-pad">
+                        <div class="col-md-12">
+                           <!-- start Received damage product. -->
+                           <div class="row select-reason-paddind">
+                              <div class="col-md-12 select-reason-text">
+                                 <!-- start radio button with text -->
+                                 <div class="form-check">
+                                    <input class="form-check-input tanuja-radio" checked type="radio" name="flexRadioDefault"
+                                       id="flexRadioDefault1" value="Received damage product.">
+                                    <label class="form-check-label ps-sm-3" for="flexRadioDefault1">
+                                       Received damage product.
+                                    </label>
+                                 </div>
+                                 <!-- end radio button with text -->
+                              </div>
+                           </div>
+                           <!-- end Received damage product. -->
+
+                           <!-- start Image shown did not match the actual product. -->
+                           <div class="row select-reason-paddind">
+                              <div class="col-md-12 select-reason-text">
+                                 <!-- start radio button with text -->
+                                 <div class="form-check">
+                                    <input class="form-check-input tanuja-radio" type="radio" name="flexRadioDefault"
+                                       id="flexRadioDefault1" value="Image shown did not match the actual product">
+                                    <label class="form-check-label ps-sm-3" for="flexRadioDefault1">
+                                       Image shown did not match the actual product
+                                    </label>
+                                 </div>
+                                 <!-- end radio button with text -->
+                              </div>
+                           </div>
+                           <!-- end Image shown did not match the actual product. -->
+
+                           <!-- start Quality problem -->
+                           <div class="row select-reason-paddind">
+                              <div class="col-md-12 select-reason-text">
+                                 <!-- start radio button with text -->
+                                 <div class="form-check">
+                                    <input class="form-check-input tanuja-radio" type="radio" name="flexRadioDefault"
+                                       id="flexRadioDefault1" value="Quality problem">
+                                    <label class="form-check-label ps-sm-3" for="flexRadioDefault1">
+                                       Quality problem
+                                    </label>
+                                 </div>
+                                 <!-- end radio button with text -->
+                              </div>
+                           </div>
+                           <!-- end Quality problem -->
+
+                           <!-- start I changed my mind -->
+                           <div class="row select-reason-paddind">
+                              <div class="col-md-12 select-reason-text">
+                                 <!-- start radio button with text -->
+                                 <div class="form-check">
+                                    <input class="form-check-input tanuja-radio" type="radio" name="flexRadioDefault"
+                                       id="flexRadioDefault1" value="I changed my mind">
+                                    <label class="form-check-label ps-sm-3" for="flexRadioDefault1">
+                                       I changed my mind
+                                    </label>
+                                 </div>
+                                 <!-- end radio button with text -->
+                              </div>
+                           </div>
+                           <!-- end I changed my mind. -->
+
+                           <!-- start Size or fit issues -->
+                           <div class="row select-reason-paddind">
+                              <div class="col-md-12 select-reason-text">
+                                 <!-- start radio button with text -->
+                                 <div class="form-check">
+                                    <input class="form-check-input tanuja-radio" type="radio" name="flexRadioDefault"
+                                       id="flexRadioDefault1" value="Size or fit issues">
+                                    <label class="form-check-label ps-sm-3" for="flexRadioDefault1">
+                                       Size or fit issues
+                                    </label>
+                                 </div>
+                                 <!-- end radio button with text -->
+                              </div>
+                           </div>
+                           <!-- end Size or fit issues -->
+                        </div>
+                     </div>
+                     <div class="border-bottom border-for-mobile"></div>
+
+
+                     <!-- end select reason section -->
+
+                     <!-- start Additional comments here -->
+                     <div class="row select-reason-paddind additional-comment-mobile card1-left-rigth-pad">
+                        <div class="col-12 col-sm-12 col-md-12">
+                           <div class="">
+                              <div class="">
+                                 <div class="row">
+                                    <div class="col-md-12 additional-comment-text">
+                                       <textarea name="message" class="form-control" placeholder="Additional Comment Here" rows="4"></textarea>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- end Additional comments here -->
+                     <!-- start check box section -->
+                     <div class="row select-reason-paddind check-box-pad-mobile card1-left-rigth-pad">
+                        <div class="col-md-12 ">
+                           <div class="form-check">
+                              <input class="form-check-input check-box" required type="checkbox" id="check1" name="option1"
+                                 value="something" checked>
+                              <label class="form-check-label check-box-text">I confirm that the product is unused with the
+                                 original tags intact</label>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- end check box section -->
+                     <!-- start Additional comments here -->
+                     <div class="border-top border-for-mobile"></div>
+                     <div class="row select-reason-paddind ">
+                        <div class="col-md-12">
+                           <div class="card refund-detail">
+                              <div class="card-body refund-detail-padding">
+                                 
+                                 <div class="row">
+                                    <div class="col-md-6">
+                                    <!-- start Refund Details row -->
+                                    <div class="row padding-between-text-rupee card1-left-rigth-pad">
+                                       <div class="col-md-12 refund-detail-text">
+                                          Refund Details
+                                       </div>
+                                    </div>
+                                    <!-- end Refund Details row -->
+
+                                    <!-- start Refund Details row -->
+                                    <div class="row padding-rupee card1-left-rigth-pad">
+                                       <div class="col-md-12 rupee-row card1-left-rigth-pad">
+                                          <i class="fa fa-inr" aria-hidden="true"></i> {{AddToCartobj.TotalPrice}}
+                                       </div>
+                                    </div>
+                                    <!-- end Refund Details row -->
+
+                                    <div class="border-bottom border-for-mobile"></div>
+                                 </div>
+                                 
+                                 <div class="col-md-2">
+
+                                 </div>
+                                 <div class="col-md-4 pt-3 card1-left-rigth-pad">
+                                    <div class="row">
+                                       <div class="input-group">
+                                          <button type="submit" class="form-control btn-circle btn-sm border border-0">
+                                             <span class="share-button">Pickup Details</span>
+                                          </button>
+                                          <span class="input-group-text share-btn border border-0"><button type="button"
+                                                   class="btn btn-circle btn-md"><i
+                                                      class="fa fa-long-arrow-right share-icon-main"
+                                                      aria-hidden="true"></i></button>
+                                          </span>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     
+                  </form>
+                  <!-- end Additional comments here -->
+               </div>
+               <!-- end foldable wooden table section -->
+               <!-- start order section -->
+               <div class="col-md-2 border-start  order-section">
+                  <a href="{% url 'Order' %}" class="text-decoration-none text-dark">
+                     <!-- start Orders -->
+                     <div class="row order border-top">
+                        <div class="col-md-12">
+                           Orders
+                        </div>
+                     </div>
+                     <!-- end Orders -->
+                     <!-- start Orders & Returns -->
+                     <div class="row order-return border-bottom">
+                        <div class="col-md-12">
+                           Orders & Returns
+                        </div>
+                     </div>
+                     <!-- end Orders & Returns -->
+                     </a>
+                     <!-- start Profile -->
+                  <div class="row profile border-bottom">
+                     <div class="col-md-12">
+                        <a href="{% url 'profile' %}" class="text-decoration-none text-dark">Profile</a>
+                     </div>
+                  </div>
+                  <!-- end Profile -->
+
+               </div>
+               <!-- end order section -->
+            </div>
+            <!-- end foldable wooden table and order section -->
+         </div>
+
+
+
+
+
+
+
+
+
+      </div>
+   </div>
+   <!-- ---------------------col-sm-10 end--------------------- -->
+   <!-- -----------------------------------col2 end--------------------------------- -->
+   </div>
+   </div>
+   {% block footer %}
+   {% endblock footer %}
+{% endblock %}

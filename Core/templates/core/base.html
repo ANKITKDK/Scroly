@@ -1,0 +1,408 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <title>Scroly</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+   
+      <!-- JavaScript Bundle with Popper -->
+      <link rel="stylesheet" href="{% static 'css/style-guid.css' %}" type="text/css">
+      <link rel="stylesheet" href="{% static 'css/base.css' %}" type="text/css">
+      {% block own_css %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" type="text/css">
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"> -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+
+{% endblock own_css%}
+   </head>
+   
+
+<body>
+   <!-- navbar start -->
+   <nav class="navbar navbar-expand-md navbar-light bg-faded">
+      <!-- start sidenav menu  -->
+      <div id="mySidenav" class="sidenav">
+         <!-- start close button -->
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <!--end close button  -->
+         <!-- start buy again section  -->
+         <div class="sidenav-border">
+            <a href="#">Buy Again</a>
+         </div>
+         <!-- end buy again section  -->
+         <!--start your account section  -->
+         <div class="sidenav-border mt-sm-2">
+            <a href="#">Your Account</a>
+         </div>
+         <!-- end your account section  -->
+         <!-- start order section  -->
+         <div class="sidenav-border mt-sm-2">
+            <a href="#">Orders</a>
+            <p>Your Orders</p>
+         </div>
+         <!-- end order section  -->
+         <!-- start help & setting section  -->
+         <div class="sidenav-border mt-sm-2">
+            <a href="#">Help & Settings</a>
+            <p>About Us</p>
+            <p>Notifications</p>
+            <p>FAQ</p>
+            <p>Switch Accounts</p>
+            <p>Sign out</p>
+         </div>
+         <!-- end help & setting section  -->
+         <!-- start data&privacy section  -->
+         <div class="sidenav-border mt-sm-2">
+            <a href="#">Data & Privacy</a>
+            <p>Request Your information</p>
+            <p>Close Your Account</p>
+            <p>Privacy Notice</p>
+         </div>
+         <!-- end data & privacy section  -->
+      </div>
+      <!-- end sidenav menu -->
+
+      <!-- start 3 lines button  -->
+      <button type="button" class="btn" onclick="openNav()">
+         <img src="{% static 'images/3linesnav.png' %}" alt="">
+      </button>
+      <!-- end 3 lines button -->
+      <!-- start scroly logo -->
+      <a class="navbar-brand" href="#"><img src="{% static 'images/logo.png' %}" alt=""></a>
+      <!-- end scroly logo  -->
+      <!-- start toggle button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- end toggle-button -->
+      <!-- start navbar-collapse -->
+      <div class="navbar-collapse collapse" id="collapsibleNavbar">
+         <!-- start before searchbar section -->
+         <ul class="navbar-nav navbar1">
+            <!-- start Select your address-->
+            <li class="nav-item">
+               <a class="nav-link" href="{% url 'SelectYourAddress' %}">Select your address</a>
+            </li>
+            <!-- end Select your address -->
+            <!-- start Earn with scroly button   -->
+            <li class="nav-item">
+               <button type="button" class="btn rounded-pill btn-block my-1  earnbutton">Earn with
+                  scroly</button>
+            </li>
+            <!-- end Earn with scroly button   -->
+         </ul>
+         <!-- end before searchbar section -->
+         <!-- start searchbar -->
+         <form class="px-2 my-auto d-inline searchbar">
+            <div class="input-group">
+               <input type="text" class="form-control border border-right-0" size="60%" placeholder="Search...">
+
+            </div>
+         </form>
+         <!-- end searchbar -->
+         <!-- end after searchbar section -->
+         <ul class="navbar-nav">
+            <!-- start download app -->
+            <li class="nav-item dropdown">
+               <a class="nav-link" href="#">Download App</a>
+            </li>
+            <!-- end download app -->
+            <!-- start Become a Supplier -->
+            <li class="nav-item dropdown">
+               <a class="nav-link" href="#">Become a Supplier</a>
+            </li>
+            <!-- end Become a Supplier -->
+            <!-- start Sign in or sign up-->
+
+            {% if user.is_authenticated %}
+            <li class="nav-item dropdown">
+               <a class="nav-link" href="{% url 'logout'%}">Logout</a>
+            </li>
+            
+            {% else %}
+            <li class="nav-item dropdown">
+               <a class="nav-link" href="{% url 'signin'%}">Sign in or sign up</a>
+            </li>
+            {% endif %}
+            <!-- end Sign in or sign up-->
+            <!-- start cart icon -->
+            <li class="nav-item dropdown">
+               <a class="nav-link" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            </li>
+            <!-- end cart icon -->
+            <!-- start bell icon -->
+            <li class="nav-item dropdown">
+               <a class="nav-link" href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+            </li>
+            <!-- end bell icon -->
+            <!-- start profile icon with dropdown -->
+            {% if user.is_authenticated %}
+            <li class="nav-item dropdown">
+               <div class="dropdown">
+                  <!-- start profile icon -->
+                  <button type="button" class="btn text-center profile-bt" data-bs-toggle="dropdown">
+                     <i class="fa fa-user"></i>
+                  </button>
+                  <!-- end profile icon -->
+
+                  <!-- start profile dropdown content -->
+                  <ul class="dropdown-menu dropdown-menu-end profileDropdown pt-sm-5 px-sm-4">
+                     <!-- profile dropdown heading start -->
+
+                     <li>
+                        <h3>Hello {{user.first_name}}!</h3>
+                        <h5>{{user.email}}</h5>
+                        <h5>{{user.mobile_number}}</h5>
+                     </li>
+                     <hr class="dropdown-divider">
+            </li>
+           
+
+            <li>
+               <!-- start dropdown-item order -->
+            <li>
+               <a class="dropdown-item sidenav-border mt-sm-2 py-sm-2" href="#">Orders</a>
+            </li>
+            <!-- end dropdown-item order -->
+
+            </li>
+
+            <li>
+               <!-- start dropdown-item profile -->
+            <li>
+               <a class="dropdown-item sidenav-border mt-sm-2 py-sm-2" href="{% url 'profile' %}">Profile</a>
+            </li>
+            <!-- end dropdown-item profile -->
+            </li>
+
+            <li>
+               <!-- start dropdown-item logout -->
+            <li>
+               <a class="dropdown-item sidenav-border mt-sm-2 py-sm-2" href="#">Logout</a>
+            </li>
+            <!-- end dropdown-item logout -->
+            </li>
+            {% endif %}
+         </ul>
+         <!-- end after searchbar section -->
+      </div>
+      
+      <!-- end navbar-collapse -->
+   </nav>
+   <!-- navbar end -->
+   <!-- category start -->
+   <div class="container-fluid pt-2">
+      <div class="row">
+
+         <!-- col-sm-2 start -->
+         <div class="col-sm-2 categorycol">
+            <!-- row start -->
+            <div class="row">
+               <div class="col-md-12  mt-3 sidebar-heading">
+                  Categories
+               </div>
+            </div>
+           
+            <!-- Ankush Dynamic Code for category -->
+            {% for c1 in cat1 %}
+            <div class="row my-4 r1">
+               <!-- category img start -->
+               <div class="col-md-6">
+                  <img src="{{c1.CategoryImage.url}}" alt="" class="img-fluid">
+               </div>
+               <!-- category img end -->
+
+               <!-- category dropdown start -->
+
+               <div class="col-md-6">
+                  <p class="my-2 text-center">
+                     <!-- dropdown start -->
+                  <div class="dropdown">
+                     <!-- category name start -->
+                     <div class="col-sm-3">
+                        <button class="dropbtn my-2">{{c1.CategoryName}}</button>
+                     </div>
+                     <!-- category name end -->
+                     <!-- row start -->
+                     
+                     <div class="row">
+                        <!-- col-sm-3 start -->
+                        <div class="col-sm-3">
+                           <!-- dropdwon content start -->
+                           <div class="dropdown-content men ps-sm-5 pt-sm-4 pb-sm-5 rounded">
+                              <!-- row start -->
+                              <div class="row">
+                                 <!-- div col 1 start -->
+                                 {% for c2 in cat2 %}
+                                 {% if c1.id is c2.CategoryLevel1Id.id %}
+                                 <div class="col-sm-3 pt-sm-3 border-end">
+                                    <!-- topwear section start -->
+                                    
+                                    
+                                    <h6 class="pb-sm-3 "><strong>{{c2.CategoryLevel2Name}}</strong></h6>
+                                    <ul class="bullet2">
+                                       
+                                       {% for c3 in cat3 %}
+                                          {% if c2.id is c3.CategoryLevel2Id.id %}
+                                          <a href="{% url 'SeeAllProducts' c3.CategorySlug %}" class="p-0"><li class="mb-sm-2">{{c3.CategoryLevel3Name}}</li></a>
+                                          {% endif %}
+                                       {% endfor %}
+                                       
+                                    </ul>
+                                   
+                                    <!-- topwear section end -->
+                                    
+                                 </div>
+                                 {% endif %}
+                                 {% endfor %}
+                                 <!-- div col1 end -->
+                                 
+                              </div>
+                              <!-- row end -->
+                           </div>
+                           <!-- dropdown content end -->
+                        </div>
+                        <!-- col-sm-3 end -->
+                     </div>
+                     <!-- row end -->
+                  </div>
+                  <!-- dropdown end -->
+                  </p>
+               </div>
+
+               <!-- category dropdown end -->
+            </div>
+            {% endfor %}
+           <!-- End Ankush Code -->
+         </div>
+
+
+
+         {% block content %}
+
+
+         <!-- body -->
+         
+
+         {% endblock %}
+
+
+
+
+
+
+      </div>
+   </div>
+   <!-- ---------------------col-sm-10 end--------------------- -->
+   <!-- -----------------------------------col2 end--------------------------------- -->
+   </div>
+   </div>
+   <p></p>
+   <!-- back-to-top button start -->
+   <div class="text-center">
+      <a href="#" class="button back-to-top rounded-top"><i class="fa fa-angle-up me-sm-3" aria-hidden="true"></i>Back
+         to Top</a>
+      <hr>
+   </div>
+   <!-- back-to-top button end -->
+   <!-- footer start -->
+   <div class="footer mx-sm-5 my-sm-5">
+      <!-- footer row start -->
+      <div class="row">
+         <!-- col-sm-2 start -->
+         <div class="col-sm-2">
+            <!-- about start -->
+            <h6 class="fw-bold">About</h6>
+            <ul class="bullet-footer">
+               <li class="mb-sm-2">About us</li>
+               <li class="mb-sm-2">Contanct us</li>
+               <li class="mb-sm-2">Become a supplier</li>
+               <li class="mb-sm-2">Earn with scroly</li>
+               <li class="mb-sm-2">Corporate infomation</li>
+            </ul>
+            <!-- about end -->
+         </div>
+         <!-- col-sm-2 end -->
+         <!-- col-sm-2 start -->
+         <div class="col-sm-2">
+            <!-- help start -->
+            <h6 class="fw-bold">Help</h6>
+            <ul class="bullet-footer">
+               <li class="mb-sm-2">Payments</li>
+               <li class="mb-sm-2">Shipping</li>
+               <li class="mb-sm-2">Cancellation & Returns</li>
+               <li class="mb-sm-2">FAQ</li>
+               <li class="mb-sm-2">Report Infringement</li>
+               <li class="mb-sm-2">Your Account</li>
+               <li class="mb-sm-2">100% Purchase Protection</li>
+               <li class="mb-sm-2">Scroly APP Download</li>
+            </ul>
+            <!-- help end -->
+         </div>
+         <!-- col-sm-2 end -->
+         <!-- col-sm-2-start -->
+         <div class="col-sm-2">
+            <!-- policy start -->
+            <h6 class="fw-bold">Policy</h6>
+            <ul class="bullet-footer">
+               <li class="mb-sm-2">Return Policy</li>
+               <li class="mb-sm-2">Terms of Use</li>
+               <li class="mb-sm-2">Security</li>
+               <li class="mb-sm-2">Privacy</li>
+               <li class="mb-sm-2">EPR Compliance </li>
+            </ul>
+            <!-- policy end -->
+         </div>
+         <!-- col-sm-2 end -->
+         <!-- col-sm-3 start -->
+         <div class="col-sm-3">
+            <!-- connect with us start -->
+               <h6 class="fw-bold">Connect with us</h6>
+
+            <a href=""><img src="{% static 'images/facebook.png' %}" alt="" class="me-sm-2 img-fluid"></a>
+            <a href=""><img src="{% static 'images/twitter.png' %}" alt="" class="me-sm-2 img-fluid"></a>
+            <a href=""><img src="{% static 'images/instagram.png' %}" alt="" class="me-sm-2 img-fluid"></a>
+            <a href=""><img src="{% static 'images/linkedin.png' %}" alt="" class="me-sm-2 img-fluid"></a>
+            <!-- connect with us end -->
+         </div>
+         <!-- col-sm-3 end -->
+         <!-- col-sm-3 start -->
+         <div class="col-sm-3">
+            <h6 class="fw-bold">Registered Office Address</h6>
+            <p class="mb-sm-2">Snable Anand Apartment 2nd Floor, Kotwal Nagar Ring Rd, Khamla, Nagpur-440022</p>
+         </div>
+         <!-- col-sm-3 end -->
+      </div>
+      <!-- footer row end -->
+   </div>
+   <!-- footer end -->
+
+
+   <!-- -------------------------bootstrap script link start------------------------------------ -->
+   <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+   <!-- -------------------------bootstrap script link end------------------------------------ -->
+
+   <!-- for 3lines dropdown script start -->
+   <script>
+      function openNav() {
+         document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+         document.getElementById("mySidenav").style.width = "0";
+      }
+   </script>
+
+   <!-- 3lines dropdown script end -->
+
+</body>
+
+</html>

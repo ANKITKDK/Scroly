@@ -1,0 +1,430 @@
+{% extends "core/base1.html" %}{% load static %}
+{% block content %}
+{% block own_css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/add-to-card.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/empty-add-to-card.css' %}" type="text/css">
+{% endblock own_css%}
+<!-- --------------------- col-sm-10 start--------------------- -->
+{% if AddToCartobj %}
+<div class="col-sm-12 left-right-padding ">
+   <!-- start mobile view text -->
+   <div class="row  mycart-mobile-view  ps-3 fw-bold">
+      <div class="col-sm-12">
+         <i class="fa fa-angle-left font-icon pe-1" aria-hidden="true"></i>
+         My Cart
+      </div>
+   </div>
+   <!-- start mobile view text -->
+   <div class="row addtocrt-addrs-bar-paddng">
+      <div class="col-md-12 mob-pad-endno">
+         <!--start address delivery card-->
+         <div class="card mob-left-right design-card-outline mt-4">
+            <div class="card-body ">
+               <!--start card body content row-->
+               <div class="row">
+                  <div class="col-md-8">
+                     {% if defaultaddress %}
+                     <!--start delivery address contents-->
+                     <div class="row ps-sm-2">
+                        <div class="col-md-12 delivery-card fw-bold  pb-sm-3">Delivery Address</div>
+                     </div>
+                     <!--stop delivery address contents-->
+                     <!--start name contents-->
+                     <div class="row design-delivery-user-name ps-sm-2">
+                        <!-- <div class="col-md-12 "><span class="fw-bold">Tanuja Nitin Sethi</span> <br>Sai Villa
+                           Forest Office Front of Ayurvedic Clinic Main RoadNagpur, Maharashtra 201002 India
+                           Phone Number : 1213141516</div> -->
+                        <div class="col-md-12 "><span class="fw-bold">{{defaultaddress.FullName}}</span> <br>{{defaultaddress.Address_line1}},
+                           {{defaultaddress.Address_line2}},<br> {{defaultaddress.Landmark}},
+                           {{defaultaddress.City}}, {{defaultaddress.state}},<br>Mobile Number:
+                           {{defaultaddress.MobileNo}}
+                        </div>
+                     </div>
+                     <!--stop name contents-->
+                     {% else %}
+                     <div class="row ps-sm-2">
+                        <div class="col-md-12 delivery-card fw-bold  pb-sm-3">Add New Address</div>
+                     </div>
+                     <div class="row design-delivery-user-name  ">
+                        <div class="col-md-12 ps-0"><span class="fw-bold "></span> Delivery Address Not Available
+                        </div>
+                     </div>
+                     {% endif %}
+                  </div>
+                  <!--start blank column-->
+                  <div class="col-md-1"></div>
+                  <!--stop blank column-->
+                  {% if defaultaddress %}
+                  <!--start change address button-->
+                  <div class="col-md-3 btn-outline-padding d-grid">
+                     <a href="{% url 'saveaddress' %}">
+                     <button type="button" class="btn btn-change-address btn-block">Change Address</button>
+                     </a>
+                  </div>
+                  <!--stop change address button-->
+                  {%else%}
+                  <div class="col-md-3 btn-outline-padding d-grid">
+                     <a href="{% url 'saveaddress' %}">
+                     <button type="button" class="btn btn-change-address btn-block">Add New Address</button>
+                     </a>
+                  </div>
+                  {% endif %}
+               </div>
+               <!--start card body content row-->
+            </div>
+         </div>
+         <!--stop address delivery card-->
+      </div>
+   </div>
+   <!-- ======================================================================================================== -->
+   <!-- start 1st row-->
+   <div class="row adjust-pddng ">
+      <!-- start three cards -->
+      <div class="col-sm-8 col-md-8">
+         {% if AddToCartobj %}
+         {% for i in AddToCartobj %}
+         {% if i.MoneyStatus %}
+         {% else %}
+         <div class="row ">
+            <div class="col-md-12 padd-bottom padd-btm-mid">
+               <!-- start card1 -->
+               <div class="card design-card-outline mob-leftright">
+                  <div class="card-body pt-4 addtocrd-imgleft-pddng">
+                     <!-- start body row -->
+                     <div class="row">
+                        <!-- start col for image & details -->
+                        <div class=" col-sm-6 col-md-6">
+                           <!-- start row for image & details -->
+                           <div class="row border-last">
+                              <!-- start col for footble-wooden-table image -->
+                              <div class="col-4 col-sm-3 col-md-3 ">
+                                    <a href="">
+                                       <img src="{{i.ProductSizeColorId.ProductImage.url}}" alt=""
+                                       class="img-fluid" width="100%">
+                                    </a>
+                              </div>
+                              <!-- stop col for footble-wooden-table image -->
+                              <!-- start col for details -->
+                              <div class="col-8 col-sm-9 col-md-9">
+                                 <div class="row design-foldable-wooden-table  fw-bolder">
+                                    <div class="col col-sm-12 col-md-12 fw-bold">
+                                       {{i.ProductSizeColorId.Product.ProductName}}
+                                    </div>
+                                 </div>
+                                 <div class="row price-3-items addtocrt-size ">
+                                    <div class="col col-sm-12 col-md-12 "> Size:
+                                       {{i.ProductSizeColorId.ProductSize.size}}
+                                    </div>
+                                 </div>
+                                 <div class="row pb-md-2 addtocrt-size">
+                                    <div class="col col-sm-12 col-md-12">
+
+                                       <span class='design-foldable-wooden-table-price fw-bold'>
+                                            <i class='fa fa-rupee rupees'></i> {{i.ProductSizeColorId.discount}}
+                                       </span>
+                                       &nbsp;
+
+                                       <span class=' text-decoration-line-through design-foldable-wooden-table-disable-price '>
+                                          <i class='fa fa-rupee rupees text-decoration-line-through rupees-disable'></i> {{i.ProductSizeColorId.Price}}
+                                       </span>
+                                       &nbsp;
+                                        <span class='discount1'>Saved</span> &nbsp;
+
+                                       <span  class='discount1'>
+                                          <i class="fa fa-inr discount-ruppes" aria-hidden="true"></i> {{i.ProductSizeColorId.saved}}
+                                       </span>
+                                    </div>
+                                 </div>
+                                 <div class="row  price-3-items  addtocrt-size">
+                                    <div class="col-sm-12 col-md-12 "> Color:
+                                       {{i.ProductSizeColorId.ProductColour.ProductColorName}}
+                                    </div>
+                                 </div>
+                                 <!-- start row for delivered mobile-view -->
+                                 <div class="row padding-deliver-mobile pb-md-2">
+                                    <div class="col-sm-8 col-md-8 price-3-items">Delivered To {{Delivery_date}}
+                                    </div>
+                                    <!-- <a href="{% url 'RemoveIItemFromCart' i.id %}"
+                                       class="text-decoration-none">
+                                       <div class="col-md-4 design-foldable-wooden-table-price fw-bold">
+                                          Remove
+                                       </div>
+                                    </a> -->
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- start row for remove -->
+                           <div class="row  deliverd-time-padding pb-md-2">
+                              <div class="col-sm-12 col-md-12">
+                                 <span class="price-3-items">Delivered To {{Delivery_date}}</span>
+                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                 <span class="design-foldable-wooden-table-price fw-bold">
+                                 <a href="{% url 'RemoveIItemFromCart' i.id %}"
+                                    class="text-decoration-none text-dark" onclick="return confirm('Are you sure you want to delete this item.')">
+                                 Remove
+                                 </a>
+                                 </span>
+                              </div>
+                              <!--<div class="col-sm-8 col-md-8 price-3-items">Delivered Tue, 8 Aug 2022</div>
+                                 <a href="{% url 'RemoveIItemFromCart' i.id %}" class="text-decoration-none">
+                                     <div class="col-md-4 design-foldable-wooden-table-price fw-bold">Remove
+                                     </div>
+                                 </a>-->
+                           </div>
+                           <!-- stop row for remove -->
+                        </div>
+                        <!-- stop col for image & details -->
+                        <!-- start quntity for mobile view -->
+                        <div class="row addtocrt-mobl-qty">
+                           <div class="col-3">
+                              Qty:
+                           </div>
+                           <div class="col-1 ">
+                              {{i.Qunatity}}
+                           </div>
+                           <div class="col-3">Qty:</div>
+                           <div class="col-5  ">
+                              <div class="dropdown ">
+                                 <select name="q" id="cars" class="btn dropdown-toggle addtocrt-drpdwn-mbl"
+                                    onchange="getComboA(this,'{{i.id}}')">
+                                    <option value="">-</option>
+                                    {% for num in '12345'|make_list %}
+                                    <option value="{{num}}" class="dropdown-item number-colorr">
+                                       {{num}}
+                                    </option>
+                                    {% endfor %}
+                                 </select>  
+                              </div>
+                           </div>
+                        </div>
+                        <!-- stop quntity for mobile view -->
+
+
+                        <!-- start col for quantity -->
+                        <div class="col-sm-3 col-md-3 pt-md-5">
+                           <div class="row quty">
+                              <div class="col-3 col-sm-3 col-md-6 ">Quantity:</div>  
+                              <div class="col-9 col-sm-9 col-md-6 ">{{i.Qunatity}}</div>
+                           </div>
+                           <div class="row quty">
+                              <div class="col-3 col-sm-3 col-md-6 ">Quantity:</div>
+                              <div class="col-9 col-sm-9 col-md-6 ">
+                                 <div class="dropdown ">
+                                    <select name="q" id="cars" class="btn dropdown-toggle quality-number"
+                                       onchange="getComboA(this,'{{i.id}}')">
+                                       <option value="">-</option>
+                                       {% for num in '12345'|make_list %}
+                                       <option value="{{num}}" class="dropdown-item number-colorr">
+                                          {{num}}
+                                       </option>
+                                       {% endfor %}
+                                    </select>  
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        
+                        <!-- end col for quantity -->
+                        <!-- start col for buy now button -->
+                        <div class="col-sm-3 col-md-3 pt-md-5 no-buy-mobileview">
+                           <div class="row">
+                              <div class="input-group">
+                                 <button type="button"
+                                    class="form-control btn-circle btn-sm border border-0 ">
+                                 <a href="{% url 'BuyNow' i.id %}" class="text-decoration-none"><span
+                                    class="share-button">Buy Now</span></a>
+                                 </button>
+                                 <span class="input-group-text share-btn border border-0"><button
+                                    type="button" class="btn btn-circle btn-md"><i
+                                    class="fa fa-shopping-cart share-icon-main" aria-hidden="true"></i></button>
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- stop col for buy now button -->
+                        <!-- start button for mobile view -->
+                        <div class="row no-desktop-button">
+                           
+                           <div class="col-6 col-sm-6 btn-outline-padding d-grid">
+                           <a href="{% url 'RemoveIItemFromCart' i.id %}">
+                              <button onclick="return confirm('Are you sure you want to delete this item.')" type="button" class="btn buy-now btn-block"><i class="fa fa-trash-o"
+                                 aria-hidden="true"></i>
+                              Remove
+                              </button>
+                              </a>
+                           </div>
+                           <div class="col-6 col-sm-6 btn-outline-padding d-grid">
+                              <a href="{% url 'BuyNow' i.id %}">
+                              <button type="button" class="btn buy-now btn-block"><i
+                                 class="fa fa-shopping-cart" aria-hidden="true"></i>
+                              Buy now
+                              </button>
+                           </a>
+                           </div>
+                        </div>
+                        <!--end button for mobile view  -->
+                     </div>
+                     <!-- start body row -->
+                  </div>
+               </div>
+               <!-- end card1 -->
+            </div>
+         </div>
+         {% endif %}
+         {% endfor %}
+         {% else %}
+         {% endif %}
+         <!-- ======================================================================================================== -->
+      </div>
+      <!-- stop three cards -->
+      <!-- ======================================================================================================== -->
+      <!-- start col-md-4 price detail section-->
+      <div class="col-sm-4 col-md-4 price-details-section">
+         <!-- start heading price details -->
+         <div class="row price-details">
+            <div class="col-sm-12 col-md-12">
+               <strong>Price Details</strong>
+            </div>
+         </div>
+         <!-- end heading price details -->
+         <!-- start price (3 items) row -->
+         <div class="row price-3items pt-sm-3">
+            <div class="col-8 col-sm-8 col-md-8">
+               Price ( {{CartProductCount}} Items )
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 ps-4">
+               <i class="fa fa-inr" aria-hidden="true"></i> {{TotalCartPrice}}
+            </div>
+         </div>
+         <!-- end price (3 items) row -->
+         <!-- start discount row -->
+         <div class="row discount pt-sm-3">
+            <div class="col-8 col-sm-8 col-md-8">
+               Discount
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 ps-4">
+               <i class="fa fa-inr" aria-hidden="true"></i><span class="price-color"> {{TotalCartDiscount}}</span>
+            </div>
+         </div>
+         <!-- end discount row -->
+         <!-- start delivery charges row -->
+         <div class="row border-bottom delivery-charges pt-sm-3 pb-sm-3">
+            <div class="col-8 col-sm-8 col-md-8">
+               Delivery Charges
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 ps-4">
+               <del><i class="fa fa-inr " aria-hidden="true"></i> 80</del>
+               <span>Free</span>
+            </div>
+         </div>
+         <!-- end delivery charges row -->
+         <!-- start total amount row -->
+         <div class="row border-bottom total-amount pt-sm-3 pb-sm-3">
+            <div class="col-8 col-sm-8 col-md-8">
+               Total Amount
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 ps-4">
+               <i class="fa fa-inr ttl-amt-rup-fs" aria-hidden="true"></i> <span class="price-color"> {{TotalAmount}}</span>
+            </div>
+         </div>
+         <!-- end total amount row -->
+         <!-- start your total savings row -->
+         <div class="row border-bottom your-total-savings pt-sm-3 pb-sm-3">
+            <div class="col-sm-12 col-md-12">
+               Your total savings on this order <i class="fa fa-inr " aria-hidden="true"></i> {{TotalCartDiscount}}
+            </div>
+         </div>
+         <!-- end your total savingsrow -->
+         <!-- start continue button row -->
+         <div class="row padding-mobile">
+            <div class="col-sm-12 col-md-12 d-grid">
+               <a href="{% url 'BuyNow' %}" class="text-decoration-none">
+                  <div class="row">
+                     <div class="input-group pb-3">
+                        <button type="button" class="form-control btn-circle btn-sm-hover border border-0">
+                        <span class="share-button-hover">Place Order</span>
+                        </button>
+                        <span class="input-group-text share-btn-hover border border-0"><button type="button"
+                           class="btn btn-circle btn-md-hover"><i
+                           class="fa fa-archive share-icon-hover" aria-hidden="true"></i></button>
+                        </span>
+                     </div>
+                  </div>
+               </a>
+            </div>
+         </div>
+         <!-- end continue button row -->
+      </div>
+      <!-- end col-md-4 for price detail section-->
+   </div>
+   <!-- end 1st row-->
+</div>
+{% else %}
+<!-- --------------------- col-sm-10 end--------------------- -->
+<div class="row empty-cart-padding mobile-view-top-padding pt-3">
+   <div class="col-md-3">
+   </div>
+   <center>
+      <div class="col-md-6">
+         <div class="row">
+            <div class="col-12 col-md-12 mobile-view-padding">
+               <img src="{% static 'images/empty-add-to-cart.png' %}" alt="" class="img-fluid">
+            </div>
+         </div>
+         <div class="row">
+            <div class=" col-12 col-md-12 your-cart-is-empty cart-mobile-view mobile-view-padding">
+               Your Cart Is Empty!
+            </div>
+         </div>
+         <div class="row">
+            <div class=" col-12 col-md-12 add-items mobile-view-padding">
+               Add items to it now.
+            </div>
+         </div>
+         <div class="row shop-now-button ps-0 ">
+            <div class=" col-12 col-md-12">
+               <div class="row">
+                  <div class="col-md-4"></div>
+                  <div class="col-12 col-md-4 btn-padding">
+                     <a href="{% url 'home' %}" class="text-decoration-none">
+                        <div class="input-group">
+                           <button type="button"
+                              class="form-control btn-circle btn-sm border border-0">
+                           <span class="share-button">Shop now</span>
+                           </button>
+                           <span class="input-group-text share-btn border border-0"><button
+                              type="button"
+                              class="btn btn-circle btn-md"><i
+                              class="fa fa-cart-arrow-down share-icon-main text-center"
+                              aria-hidden="true"></i></button>
+                           </span>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-md-4"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </center>
+   <div class="col-md-3">
+   </div>
+</div>
+{% endif %}
+<script>
+   // function UpdateQuantity(cartid,Quantity)
+   // //{
+    //   URL="/UpadateCartProductQuantity";
+    //   console.log(URL)
+       //location.href=URL+'/'+cartid+`?quantity=${Quantity}`
+    //}
+</script>
+<script>
+   function getComboA(selectObject,id) {
+      var value = selectObject.value;
+      URL="/UpadateCartProductQuantity";
+      location.href=URL+'/'+id+`?quantity=${value}`
+    }
+</script>
+{% endblock %}

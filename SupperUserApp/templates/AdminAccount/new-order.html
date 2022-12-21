@@ -1,0 +1,113 @@
+{% extends 'SupperUserApp/superuser-base.html' %}{% load static %}
+{% block content %}
+
+
+					<div class="breadcrumb-wrapper breadcrumb-wrapper-2">
+						<h1>New Orders</h1>
+						<p class="breadcrumbs"><span><a href="index.html">Home</a></span>
+							<span><i class="mdi mdi-chevron-right"></i></span>Orders
+						</p>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="card card-default">
+								<div class="card-body">
+									<div class="table-responsive">
+										<table id="responsive-data-table" class="table" style="width:100%">
+											<thead>
+												<tr>
+													<th>ID</th>
+													<th>Item</th>
+													<th>Name</th>
+													<th>Customer</th>
+													<th>Items</th>
+													<th>Price</th>
+													<th>Payment</th>
+													<th>Delivery Address & Contact Number</th>
+													<th>Status</th>
+													<th>Order Date</th>
+													
+												</tr>
+											</thead>
+
+											<tbody>
+												{% for neworder in neworderobj %}
+												<tr>
+													<td>{{neworder.orderid}}</td>
+													<td><img class="product-img tbl-img" src="{{neworder.ProductSizeColorId.ProductImage.url}}" alt="product"></td>
+													<td>{{neworder.ProductSizeColorId.Product.ProductName}}</td>
+													<td><strong>{{neworder.LoginId.first_name}}{{neworder.LoginId.last_name}}</strong><br>
+														{{neworder.LoginId.email}}
+													</td>
+													<td>{{neworder.Qunatity}}</td>
+													<td>{{neworder.TotalPrice}}</td>
+													<td>{{neworder.Payment_method}}</td>
+													<td>{{neworder.delivry_address.Address_line1}}, {{neworder.delivry_address.Address_line2}}, {{neworder.delivry_address.Landmark}}, {{neworder.delivry_address.City}}, {{neworder.delivry_address.state}}, {{neworder.delivry_address.PinCode}},<br> Phone Number :- {{neworder.delivry_address.MobileNo}}</td>
+													<td>
+														{% if neworder.CancelledStatus %}
+															<button class="btn btn-warning" disabled>Canceled</button>
+														{% else %}
+														{% if neworder.DeliveryStatus %}
+															<button class="btn btn-success" disabled>Delivered</button>
+														{% else %}
+														<form action="{% url 'NewOrder' neworder.id %}" method="post">
+															{% csrf_token %}
+															<button class="btn btn-danger">Not Delivered</button>
+														</form>
+														{% endif %}
+														{% endif %}
+
+														
+													</td>
+													<td>{{neworder.OrderDate}}</td>
+													
+												</tr>
+												{% endfor %}
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			
+<!-- start Edit Modal for Category1  -->
+<div class="modal fade modal-add-contact" id="Editbtn" tabindex="-1" role="dialog"
+aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+	<div class="modal-content">
+		<form action="" method="POST" id="" enctype="multipart/form-data">
+			{% csrf_token %}
+			<div class="modal-header px-4">
+				<h5 class="modal-title" id="exampleModalCenterTitle">Edit Status</h5>
+			</div>
+
+			<div class="modal-body px-4">
+				
+				<div class="form-check">
+					<input type="radio" class="form-check-input" id="radio1" name="optradio" value="1" checked>
+					<label class="form-check-label" for="radio1">Deliverd</label>
+				</div>
+
+				<div class="form-check">
+					<input type="radio" class="form-check-input" id="radio1" name="optradio" value="0" checked>
+					<label class="form-check-label" for="radio1">Not Deliverd</label>
+				</div>
+				
+			</div>
+
+			<div class="modal-footer px-4">
+				<button type="button" class="btn btn-secondary btn-pill"
+					data-bs-dismiss="modal">Cancel</button>
+				<button type="submit" class="btn btn-primary btn-pill">Save</button>
+			</div>
+		</form>
+	</div>
+</div>
+</div>
+<!--end Edit Modal  -->					
+
+
+
+
+			{% endblock %}

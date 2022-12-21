@@ -1,0 +1,49 @@
+{% extends "core/base1.html" %}
+{% load static %}
+{% block content %}
+{% block own_css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"> -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+<link rel="stylesheet" href="{% static 'css/notification.css' %}" type="text/css">
+{% endblock own_css%}
+
+<div class="container-fluid container-fluid-n">
+    <!-- All notification heading -->
+    <div class="row">
+        <div class="col-md-12 notification-heading">
+            All Notifications
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 notification ">
+            <div class="alert alert-warning">
+                <!-- notification heading -->
+                <div class="row">
+                    <div class="col-md-12 alert-heading">
+                        India’s biggest fashion dhamaka
+                    </div>
+                </div>
+
+                <!-- notification sub heading -->
+                <div class="row">
+                    <div class="col-md-12 alert-sub-heading">
+                        Big fashion festival start to <span class="date-heading"> 23rd sep to 30 sep </span> Add to cart your Item now
+                    </div>
+                </div>
+
+                <!-- notification date -->
+                <div class="row">
+                    <div class="col-md-12 notification-date">
+                        Wed 20 Sep 2022
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

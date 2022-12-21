@@ -1,0 +1,1152 @@
+/* start section 1 */
+
+/* start body */
+
+body {
+    background-image: url("../images/background.png");
+    max-width: 100%;
+    overflow-x: hidden;
+
+
+}
+/* start address popup */
+.placeorder-addnewpop
+{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.375rem;
+    line-height: 1.6875rem;
+    color: #304653;
+    padding-left: 3rem;
+    padding-top: 0.9375rem;
+}
+.place-order-default-address-popup
+{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #3F515C;
+
+}
+/* stop address popup */
+/*start row top padding  */
+.plceordr-top-padding
+{
+    padding-top: 1.875rem;
+    padding-left: 0.3125rem;
+    padding-right: 1rem;
+}
+/* end row top padding */
+
+
+/* start select-delivery-address */
+
+.delivery-address {
+    font-family: var(--font-1);
+    font-style: normal;                   
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.4375rem;
+    color: var(--color-17);
+    /* padding-top:1.875rem; */
+}
+
+/* end select-delivery-address */
+
+/* start default address */
+
+.place-order-default-address {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+    padding-top: 0.625rem;
+    padding-bottom: 1.875rem;
+}
+
+/* end default address */
+
+/* start add-new-address-button */
+
+.placeorder-add-new-address-button { 
+    box-sizing: border-box;
+     border: 0.0625rem solid #FC813D;      
+    border-radius: 0.375rem;
+}
+
+.placeorder-add-new-address-button-text {
+
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-5);
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    padding-top: 0.4375rem;
+    padding-bottom:0.4375rem;
+}
+
+/* end add-new-address-button */
+
+/* start tanuja address section */
+
+.tanuja {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 145%;
+    color: var(--color-17);
+    padding-bottom: 1.875rem;
+
+}
+
+.tanuja .tanuja-radio {
+    background: var(--color-1);
+    border: 0.0625rem solid var(--color-1);
+
+}
+.placeorder-other-address-card-padding
+{
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    padding-left: 1.875rem;
+}
+
+.placeorder-text
+{
+    padding-left: 1rem;
+}
+/* end tanuja address section */
+
+/* start edit button */
+
+/* .edit-button {
+    border: 0.0625rem solid #FC813D;
+    filter: drop-shadow(0.125rem 0.125rem 0.5rem rgba(62, 125, 99, 0.44));
+    border-radius: 1.625rem;
+} */
+
+.share-btn-border{
+    height: 3.125rem;
+    width: 3.125rem;
+    left: 1614px;
+    top: 22.1875rem;
+    border-radius:50%;
+    border:0.0625rem solid var(--color-1);
+    border-left: 0rem;
+    background-color: var(--color-9);
+    vertical-align:none;
+    }
+
+.btn-circle-border.btn-sm-border{
+    width: 1.875rem;
+    height: 3.125rem;
+    padding: 0.375rem 0rem;
+    border-radius:1.875rem;
+    font-size: 0.5rem;
+    text-align: center;
+    background-color:var(--color-9);
+    border: 0.0625rem solid var(--color-1);
+    border-right: 0rem;
+
+}
+
+.btn-circle-border.btn-md-border{
+    width:3.125rem;
+    height: 3.125rem;
+    padding: 0.625rem 1rem;
+    border-radius: 1.5625rem;
+    font-size: 1.25rem;
+    text-align: center;
+    background:var(--color-9);
+    border: 0.0625rem solid var(--color-1);
+
+}
+
+.share-button-border{
+font-family:var(--font-1);
+font-size: 1rem;
+font-weight: 500;
+line-height: 1.25rem;
+letter-spacing: 0em;
+text-align: center;
+color:var(--color-25);
+}
+
+.share-icon-main-border{
+color:var(--color-5);
+height: 1.0625rem;
+width: 0.9375rem;
+left: 18.4375rem;
+top: 1.125rem;
+border-radius: 0rem;
+}
+
+
+
+
+
+
+
+/* end edit button */
+
+/* start edit button text */
+
+.edit-button-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #164833;
+}
+
+/* end edit button text */
+
+
+/* start remove button */
+
+.remove-button {
+    border: 0.0625rem solid #FC813D;
+    filter: drop-shadow(0.125rem 0.125rem 0.5rem rgba(62, 125, 99, 0.44));
+    border-radius: 1.625rem;
+}
+
+/* end remove button */
+
+/* start remove button text */
+
+.remove-button-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #164833;
+}
+
+/* end remove button text */
+
+/* start  cash-on-delivery*/
+
+
+.cashon-delivery {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+    padding-bottom: 1.875rem;
+    padding-left:1rem;
+    padding-top: 1.875rem;
+}
+
+
+/* end cash-on-delivery*/
+
+/* start order-confirmation  */
+
+.placeorder-order-confirm {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+
+}
+
+/* end order-confirmation*/
+
+/* start your-other-address */
+
+.placeorder-your-other-address {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+    color: var(--color-17);
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+}
+
+/* end your-other-address */
+
+/* start your-other-address-card-1 */
+
+.your-other-address-card-1 {
+    background: #FFFFFF;
+    box-shadow: 0.125rem 0.125rem 0.375rem #D2B3B3;
+    border-radius: 0.375rem;
+
+
+}
+
+.your-other-address-card-1 .card {
+    border: 0rem;
+}
+
+.your-other-address-card-1-text {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 145%;
+    /* or 1.4375rem */
+    color: var(--color-17);
+}
+
+.your-other-address-card-1 .tanuja-radio {
+    border: 0.0625rem solid var(--color-1);
+
+}
+
+.placeorder-edit-remove-button {
+    border: 0.0625rem solid #FC813D;
+    border-radius: 0rem 0.375rem 0.375rem 0rem;
+    padding-top: 1.875rem;
+   
+}
+.placeorder-rmvebutton-padding
+{
+    padding-top: 30px;
+    
+}
+.placeorder-rmv-text-col
+{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-1);
+}
+.edit-remove-btn-color,
+.edit-remove-btn-color:hover {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #FC813D;
+}
+
+/* start modal */
+
+.edit-details{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.375rem;
+    line-height: 1.6875rem;
+
+
+    color: #304653;
+}
+
+.icon {
+    color: var(--color-12);
+}
+
+.modal-body .form-control {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 0.0625rem solid rgb(231, 223, 223);
+    ;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+
+
+    color: #3F515C;
+}
+
+.input-group-text {
+    background-color: white;
+    /* border: none; */
+}
+
+.checbox-color{
+    border: 0.0625rem solid #FC813D;
+    border-radius: 0.25rem;
+}
+
+.default-address{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    color: #3F515C;
+    padding-bottom: 1.6875rem;
+    padding-left: 0rem;
+}
+
+.placeorder-delivery-instrction{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #304653;
+    padding-bottom: 0.5rem;
+    padding-top: 1.6875rem;
+}
+.placeorder-text-delivery{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    color: #3F515C;
+    padding-bottom:1.5625rem;
+}
+.plcordr-drop-color
+{
+    background: #F9EEEE;
+    border-radius: 6px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px; 
+    color: #3F515C;
+
+}
+.delivery-instrction2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #304653;
+    padding-bottom: 1rem;
+}
+
+.select-address-type-btn{
+    background: #F9EEEE;
+    border-radius: 0.375rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: left;
+    color: #3F515C;
+    padding-bottom: 1.5625rem;
+}
+
+.btn-add{
+    background: #FC813D;
+box-shadow: 0.125rem 0.125rem 0.5rem rgba(62, 125, 99, 0.44);
+border-radius: 1.625rem;
+
+}
+
+.footercolor1, .footercolor1:hover{
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+/* end modal */
+
+/* end your-other-address-card-1 */
+
+.form-check-input:checked {
+    background-color: var(--color-1);
+    border-color: var(--color-1);
+}
+
+/* start your-other-address-card-2 */
+
+.your-other-address-card-2 {
+    background: #FFFFFF;
+    box-shadow: 0.125rem 0.125rem 0.375rem #D2B3B3;
+    border-radius: 0.375rem;
+    margin-top:0rem;
+
+}
+
+.your-other-address-edit-padding {
+    
+    padding-bottom: 1rem;
+    padding-left: 2.8rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;  
+    color: #FC813D;
+}
+
+
+.your-other-address-card-2 .card {
+    border: 0rem;
+}
+
+.placeorder-other-address-card-text {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 145%;
+    /* or 1.4375rem */
+    color: var(--color-17);
+}
+
+.your-other-address-card-2 .tanuja-radio {
+
+    border: 0.0625rem solid var(--color-1);
+
+}
+
+/* end your-other-address-card-2 */
+
+/* end section 1 */
+
+/* start secton 2 */
+
+/* start price-detail section */
+
+.price-details-section {
+
+    background-color: var(--color-9);
+    box-shadow: 0.125rem 0.125rem 0.375rem #D2B3B3;
+    border-radius: 0.375rem;
+    padding-top: 1.875rem;
+    /* padding-bottom: 58.0625rem; */
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    height: auto;
+}
+
+/* end price-detail section */
+
+/* start price detail row */
+
+.price-details {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.375rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+
+}
+
+/* end price detail row */
+
+/* start price 3 items */
+
+.price-3items {
+
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+}
+
+/* end price 3 items  */
+
+/* start discount row */
+
+.discount {
+
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+
+}
+
+.discount .price-color {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-8);
+}
+
+.discount .fa {
+    color: var(--color-8);
+}
+
+/* end discount row */
+
+/* start delivery charges row */
+
+.delivery-charges {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+}
+
+
+/* end delivery charges row */
+
+/* start total amount */
+
+.total-amount {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--color-17);
+}
+
+.total-amount .price-color {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-8);
+}
+
+.total-amount .fa {
+    color: var(--color-8);
+}
+
+/* end total amount */
+
+/* start your-total-savings */
+
+.your-total-savings {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: var(--color-8);
+
+}
+
+/* end your-total-savings */
+
+/* strat continue-button */
+
+.continue-button,
+.continue-button:hover {
+    background: #FC813D;
+    box-shadow: 0.125rem 0.125rem 0.5rem rgba(62, 125, 99, 0.44);
+    border-radius: 1.375rem;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+
+    color: #FFFFFF;
+}
+
+
+/* ============ */
+
+.share-btn{
+    height: 3.125rem;
+    width: 3.125rem;
+    left: 1614px;
+    top: 22.1875rem;
+    border-radius:50%;
+    border:none;
+    background-color: var(--color-1);
+    vertical-align:none;
+    }
+
+
+
+.btn-circle.btn-sm{
+    width: 1.875rem;
+    height: 3.125rem;
+    padding: 0.375rem 0rem;
+    border-radius:1.875rem;
+    font-size: 0.5rem;
+    text-align: center;
+    background-color:var(--color-1);
+    
+    
+}
+
+.btn-circle.btn-md{
+    width:3.125rem;
+    height: 3.125rem;
+    padding: 0.625rem 1rem;
+    border-radius: 1.5625rem;
+    font-size: 1.25rem;
+    text-align: center;
+    background:var(--color-16);
+
+}
+
+.share-button{
+font-family:var(--font-1);
+font-size: 1rem;
+font-weight: 500;
+line-height: 1.25rem;
+letter-spacing: 0em;
+text-align: center;
+color:var(--color-9);
+}
+
+.share-icon-main{
+color:var(--color-33);
+height: 1.0625rem;
+width: 0.9375rem;
+left: 18.4375rem;
+top: 1.125rem;
+border-radius: 0rem;
+}
+
+/*-----------------------hover button------------------------*/
+
+.share-btn-hover:hover{
+    height: 3.125rem;
+    width: 3.125rem;
+    left: 1614px;
+    top: 22.1875rem;
+    border-radius:50%;
+    border:none;
+    background-color: var(--color-34);
+    vertical-align:none;
+    transition-duration: 0.4s;
+}
+
+
+
+.btn-circle.btn-sm-hover{
+    width: 1.875rem;
+    height: 3.125rem;
+    padding: 0.375rem 0rem;
+    border-radius:1.875rem;
+    font-size: 0.5rem;
+    text-align: center;
+    background-color:var(--color-34);
+}
+
+.btn-circle.btn-md-hover{
+    width:3.125rem;
+    height: 3.125rem;
+    padding: 0.625rem 1rem;
+    border-radius: 1.5625rem;
+    font-size: 1.25rem;
+    text-align: center;
+    background:var(--color-16);
+}
+
+
+.share-button-hover{
+    font-family:var(--font-1);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color:var(--color-9);
+}
+
+.share-icon-hover{
+    color:var(--color-33);
+    height: 1.0625rem;
+    width: 0.9375rem;
+    left: 18.4375rem;
+    top: 1.125rem;
+    border-radius: 0rem;
+}
+    
+
+/*------------------------------------disable buttons---------------------------------*/
+
+.share-btn-hover{
+    height: 3.125rem;
+    width: 3.125rem;
+    left: 1614px;
+    top: 22.1875rem;
+    border-radius:50%;
+    border:none;
+    background-color: var(--color-34);
+    vertical-align:none;
+    
+    
+}
+
+/* end continue-button */
+
+/* end section 2 */
+
+/* Start Mobile view */
+
+@media all and (min-width: 577px)
+{
+    .no-desktop{
+        display: none;
+    }
+    .display-edit-moobile {
+		display: none;
+	}
+    .display-button{
+        display: none;
+    }
+
+}
+
+
+@media all and (max-width: 576px)
+{
+    .plceordr-top-padding
+{
+    padding-top: 20px;
+    padding-left: 16px;
+
+}
+
+    .delivery-address{      
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        color: var(--color-17);
+        /* padding-top:1.25rem ;
+        padding-left: 1.25rem; */
+    }
+
+
+   .no-button-mobile {
+    display: none;
+   }
+   .nomobile-addnew-address button {
+    display: none;
+   }
+   .placeorder-add-new-address-button {
+    box-sizing: border-box;              
+    border: 0rem solid #fc803d00;
+    border-radius: 0rem;
+    }
+
+    .display-edit-moobile button {
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 0.9375rem;
+		color: var(--color-1);
+	}
+
+    .placeorder-add-new-address-button {
+
+        font-family: var(--font-1);
+        font-style: normal;            
+        font-weight: 400;
+        font-size: 0rem;
+        line-height: 0rem;
+       
+    }
+    
+    .default-address{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        color: #3F515C;
+        padding-left:2.6875rem;
+        border-bottom: 1px solid rgba(63, 81, 92, 0.12);
+        padding-top: 0.25rem;
+        padding-left: 1.25rem;
+        
+    }
+    .tanuja {
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 145%;
+        color: var(--color-17);
+        padding-top:1rem;
+        padding-left:1rem;
+    
+    }
+
+    .tanuja-radio{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 145%;
+        color: #3F515C;
+        
+    }
+    .display-button button {
+		box-sizing: border-box;
+		border: 0.0625rem solid var(--color-1);
+		border-radius: 0.375rem;
+	}
+
+	.display-button button {
+
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.60rem;
+		line-height: 0.9375rem;
+		color: var(--color-5);
+
+	}
+
+    .address-mobile-view{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 145%;
+        color: #3F515C;
+    }
+
+    .btn-mobile-view{
+        display: none;
+    }
+
+    .cashon-delivery {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.625rem;
+        line-height: 0.75rem;
+        color: #3F515C;
+        padding-bottom:1rem;
+        padding-left:1.5rem;
+       
+    }
+    
+
+    .placeorder-order-confirm{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 145%;
+        color: #3F515C;
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+        padding-left:1.5rem;
+    }
+
+    .your-other-address{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        color: #3F515C;
+        padding-top: 1rem;
+    }
+
+    .your-other-address-card-2-padding {
+       
+       padding-top: 0rem;
+       padding-bottom: 0rem;
+        
+    }
+
+    .your-other-address-card-1, .your-other-address-card-2{
+        
+        box-shadow: 0rem 0rem 0rem #D2B3B3;
+        border-radius: 0rem;
+    }
+
+    .your-other-address-card-1-text .tanuja-radio, .placeorder-other-address-card-text .tanuja-radio{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 145%;
+        color: #3F515C;
+    }
+
+    .address-mobile-cards{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 145%;
+        color: #3F515C;
+    }
+
+    
+.placeorder-edit-remove-button {
+     display: none;
+}
+
+    .price-details{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        color: #3F515C;
+        padding-bottom: 1rem;
+    }
+
+    .price-3items{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        color: #3F515C;
+        padding-bottom: 0.625rem;
+        padding-top: 0.625rem;
+    }
+
+    .discount{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        color: #3F515C;
+        padding-bottom: 0.625rem;
+    }
+
+    .delivery-charges{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.25rem;
+
+        color: #3F515C;
+        padding-bottom: 0.625rem;
+    }
+
+    .total-amount{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        color: #3F515C;
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+    }
+
+    .your-total-savings{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: #108D34;
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+        
+    }
+
+    .btn-padding-mobile{
+        padding-top: 1rem;
+        padding-bottom: 3.125rem;
+    }
+    
+}
+
+@media (min-width: 577px)
+{
+    html{
+        font-size: 40%;
+    }
+    .your-other-address-edit-padding
+    {
+        display: none;
+    }
+    
+}
+
+@media (min-width: 768px)
+{
+    html{
+        font-size: 45%;
+    }
+    .your-other-address-edit-padding
+    {
+        display: none;
+    }
+}
+
+@media (min-width: 992px)
+{
+    html{
+        font-size: 60%;
+    }
+    .your-other-address-edit-padding
+    {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1200px)
+{
+    html{
+        font-size: 80%;
+    }
+    .your-other-address-edit-padding
+    {
+        display: none;
+    }
+}
+
+@media (min-width: 1920px)
+{
+    html{
+        font-size: 100%;
+    }
+    .your-other-address-edit-padding
+    {
+        display: none;
+    }
+    
+}
+
+
+
+/* End Mobile Views */

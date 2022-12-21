@@ -1,0 +1,1067 @@
+.quty {
+    font-family: var(--font-1);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: var(--color-5);
+    padding-top: 1rem;
+}
+
+.page-padding {
+    padding-left: 0rem;
+    padding-right: 0rem;
+
+}
+
+.buynow-rate-padding {
+    padding-top: 0.75rem;
+}
+
+.buynow-pddng {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+}
+
+/* start delivery-address */
+.buynow-deliverd-date {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #3F515C;
+}
+
+.buynow-remove-btn {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #3F515C;
+}
+
+.boorder-confirmation {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #3F515C;
+}
+
+.buynow-rupee-fs {
+    font-size: 1rem;
+}
+
+.delivery-address {
+    background: #FFFFFF;
+    box-shadow: 0.125rem 0.125rem 0.375rem #D2B3B3;
+    border-radius: 0.375rem;
+}
+
+/* end delivery-address */
+
+.delivery-address-card-box {
+    background: #FFFFFF;
+    box-shadow: 2px 2px 6px #D2B3B3;
+    border-radius: 6px;
+}
+
+.pad-card-box-address {
+    padding-top: 30px;
+}
+
+/* start delivery-address-text-heading */
+
+.delivery-address-text-heading {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-5);
+    padding-top: 1.875rem;
+    padding-left: 1.25rem;
+}
+
+.delivery-card-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+
+    color: #304653;
+}
+
+.product-name{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3F515C;
+}
+
+.buy-now-page-pad{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.price-3-items-buy-now{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3F515C;
+}
+
+.rupees{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+
+    color: #3F515C;
+}
+
+.design-card-outline-without-id{
+
+    background: #FFFFFF;
+    box-shadow: 2px 2px 6px #D2B3B3;
+    border-radius: 6px;
+
+}
+
+.btn-change-address{
+    border: 1px solid #FC813D;
+    border-radius: 6px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+
+    color: #304653;
+}
+
+.design-delivery-address{
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 145%;
+    /* or 23px */
+
+
+    color: #3F515C;
+}
+/* end delivery-address-text-heading */
+
+/* start delivery-address-text  */
+
+.delivery-address-text {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 145%;
+    color: var(--color-17);
+    padding-left: 1.875rem;
+    padding-bottom: 1.875rem;
+}
+
+/* end  delivery-address-text*/
+
+/* start button-padding */
+
+.button-padding {
+    margin-top: 0.75rem;
+    margin-right: 1.875rem;
+    margin-bottom: 2.875rem;
+}
+
+/* end button-padding */
+/* start change address button */
+
+.change-address-button {
+    border: 0.0625rem solid #FC813D;
+    border-radius: 0.375rem;
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+
+}
+
+/* end change address button */
+
+/* start change-address-button-text */
+
+.change-address-button-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #304653;
+}
+
+/* end change-address-button-text */
+
+
+/* start foldable-wooden-laptop-table */
+
+.foldable-wooden-laptop-table {
+    background: #FFFFFF;
+    box-shadow: 0.125rem 0.125rem 0.375rem #D2B3B3;
+    border-radius: 0.375rem;
+}
+
+/* end foldable-wooden-laptop-table */
+
+/* start  */
+
+.table-padding {
+    padding-top: 1.875rem;
+    padding-left: 1.25rem;
+    padding-bottom: 1.875rem;
+}
+
+/* end */
+
+/* start table-image */
+
+.table-image {
+    background: url(minimalist-office-with-table-laptop.jpg);
+    border-radius: 0rem;
+
+}
+
+/* end table-image */
+
+/* start foldable-table-text */
+
+.foldable-table-text {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+}
+
+/* end foldable-table-text */
+
+/* start sizes */
+
+.sizes {
+    /* font-family: var(--font-1);           1 */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+    padding-top: 0.75rem;
+
+}
+
+/* end sizes */
+
+/* start rupee-symbol */
+
+.rupee-symbol {
+    color: #3F515C;
+    font-size: 1rem;
+
+}
+
+/* end rupee-symbol */
+
+/* start rupee */
+
+.buynow-rupee {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    /* identical to box height */
+
+    color: #3F515C;
+}
+
+/* end rupee */
+
+/* start deleted-rupee */
+
+.deleted-rupee {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    /* identical to box height */
+
+
+    color: rgba(63, 81, 92, 0.37);
+}
+
+/* end deleted-rupee */
+
+/* start colored-rupee */
+
+.colored-rupee {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    /* identical to box height */
+
+
+    color: #108D34;
+}
+
+/* end colored-rupee */
+
+/* start color-black */
+
+.color-black {
+    /* font-family: 'Montserrat';     2 */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    /* identical to box height */
+    color: #3F515C;
+    padding-top: 0.75rem;
+}
+
+/* end color-black */
+
+/* start delivered-tue */
+
+.delivered-tue {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+
+
+    color: #3F515C;
+}
+
+/* end delivered-tue */
+
+/* start remove */
+
+.remove {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+
+    color: #3F515C;
+}
+
+/* end remove */
+
+/* start quantity */
+
+.quantity {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    /* identical to box height */
+    color: #304653;
+}
+
+/* end quantity */
+
+/* start quantity-button */
+
+.quantity-button {
+    border: 0.0625rem solid #3F515C;
+    border-radius: 0.375rem;
+    background: #FFFFFF;
+
+}
+
+/* end quantity-button */
+
+
+
+/* start quantity-button-item */
+
+.quantity-button-item {
+    filter: drop-shadow(0.125rem 0.125rem 0.375rem #D2B3B3);
+    min-width: 1.875rem;
+}
+
+/* end quantity-button-item */
+
+/* start order-confirmation  */
+
+.order-confirmation {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+}
+
+/* end order-confirmation*/
+
+/* start your-other-address */
+
+.your-other-address {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+    color: var(--color-17);
+}
+
+/* end your-other-address */
+
+/* start your-other-address-card-1 */
+
+.your-other-address-card-1 {
+    background: #FFFFFF;
+    box-shadow: 0.125rem 0.125rem 0.375rem #D2B3B3;
+    border-radius: 0.375rem;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    padding-left: 1.25rem;
+
+}
+
+.your-other-address-card-1 .card {
+    border: 0rem;
+}
+
+.your-other-address-card-1-text {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 145%;
+    /* or 1.4375rem */
+    color: var(--color-17);
+}
+
+.your-other-address-card-1 .tanuja-radio {
+    border: 0.0625rem solid var(--color-1);
+
+}
+
+/* end your-other-address-card-1 */
+
+.form-check-input:checked {
+    background-color: var(--color-1);
+    border-color: var(--color-1);
+}
+
+/* start your-other-address-card-2 */
+
+.your-other-address-card-2 {
+    background: #FFFFFF;
+    box-shadow: 0.125rem 0.125rem 0.375rem #D2B3B3;
+    border-radius: 0.375rem;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    padding-left: 1.25rem;
+}
+
+
+.your-other-address-card-2 .card {
+    border: 0rem;
+}
+
+.your-other-address-card-2-text {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 145%;
+    /* or 1.4375rem */
+    color: var(--color-17);
+}
+
+.your-other-address-card-2 .tanuja-radio {
+
+    border: 0.0625rem solid var(--color-1);
+
+}
+
+/* end your-other-address-card-2 */
+
+/* start secton 2 */
+
+/* start price-detail section */
+
+.buynow-price-details-section {
+
+    background-color: var(--color-9);
+    box-shadow: 0.125rem 0.125rem 0.375rem #D2B3B3;
+    border-radius: 0.375rem;
+    padding-top: 1.875rem;
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+    height: auto;
+
+}
+
+/* end price-detail section */
+
+/* start price detail row */
+
+.price-details {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.375rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+
+}
+
+/* end price detail row */
+
+/* start price 3 items */
+
+.price-3items {
+
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+}
+
+/* end price 3 items  */
+
+/* start discount row */
+
+.discount {
+
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+
+}
+
+.discount .price-color {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-8);
+}
+
+.discount .fa {
+    color: var(--color-8);
+}
+
+/* end discount row */
+
+/* start delivery charges row */
+
+.delivery-charges {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+}
+
+
+/* end delivery charges row */
+
+/* start total amount */
+
+.total-amount {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--color-17);
+}
+
+.total-amount .price-color {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-8);
+}
+
+.total-amount .fa {
+    color: var(--color-8);
+}
+
+/* end total amount */
+
+/* start your-total-savings */
+
+.your-total-savings {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: var(--color-8);
+
+}
+
+/* end your-total-savings */
+
+/* strat continue-button */
+
+.continue-button,
+.continue-button:hover {
+    background: #FC813D;
+    box-shadow: 0.125rem 0.125rem 0.5rem rgba(62, 125, 99, 0.44);
+    border-radius: 1.375rem;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+
+    color: #FFFFFF;
+}
+
+.confirmpadd {
+    padding-top: 1.875rem;
+    padding-bottom: 3.125rem;
+}
+
+.paddbutton {
+    padding-top: 1.125rem;
+}
+
+/* ============ */
+
+.share-btn {
+    height: 3.125rem;
+    width: 3.125rem;
+    left: 1614px;
+    top: 22.1875rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-1);
+    vertical-align: none;
+}
+
+
+
+.btn-circle.btn-sm {
+    width: 1.875rem;
+    height: 3.125rem;
+    padding: 0.375rem 0rem;
+    border-radius: 1.875rem;
+    font-size: 0.5rem;
+    text-align: center;
+    background-color: var(--color-1);
+
+
+}
+
+.btn-circle.btn-md {
+    width: 3.125rem;
+    height: 3.125rem;
+    padding: 0.625rem 1rem;
+    border-radius: 1.5625rem;
+    font-size: 1.25rem;
+    text-align: center;
+    background: var(--color-16);
+
+}
+
+.share-button {
+    font-family: var(--font-1);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--color-9);
+}
+
+.share-icon-main {
+    color: var(--color-33);
+    height: 1.0625rem;
+    width: 0.9375rem;
+    left: 18.4375rem;
+    top: 1.125rem;
+    border-radius: 0rem;
+}
+
+/*-----------------------hover button------------------------*/
+
+.share-btn-hover:hover {
+    height: 3.125rem;
+    width: 3.125rem;
+    left: 1614px;
+    top: 22.1875rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-34);
+    vertical-align: none;
+    transition-duration: 0.4s;
+}
+
+
+
+.btn-circle.btn-sm-hover {
+    width: 1.875rem;
+    height: 3.125rem;
+    padding: 0.375rem 0rem;
+    border-radius: 1.875rem;
+    font-size: 0.5rem;
+    text-align: center;
+    background-color: var(--color-34);
+}
+
+.btn-circle.btn-md-hover {
+    width: 3.125rem;
+    height: 3.125rem;
+    padding: 0.625rem 1rem;
+    border-radius: 1.5625rem;
+    font-size: 1.25rem;
+    text-align: center;
+    background: var(--color-16);
+}
+
+
+.share-button-hover {
+    font-family: var(--font-1);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--color-9);
+}
+
+.share-icon-hover {
+    color: var(--color-33);
+    height: 1.0625rem;
+    width: 0.9375rem;
+    left: 18.4375rem;
+    top: 1.125rem;
+    border-radius: 0rem;
+}
+
+
+/*------------------------------------disable buttons---------------------------------*/
+
+.share-btn-hover {
+    height: 3.125rem;
+    width: 3.125rem;
+    left: 1614px;
+    top: 22.1875rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-34);
+    vertical-align: none;
+
+
+}
+
+.buynow-rate-padding {
+    padding-top: 0.75rem;
+}
+
+.border-end-mobile {
+    border-right: 1px solid #dee2e6;
+
+}
+
+.buynow-qunt-toppddng {
+    padding-top: 72px;
+}
+
+/* end continue-button */
+
+/* end section 2 */
+
+
+/* Start Mobile view */
+
+@media all and (min-width: 577px) {
+    .buynow-mobile {
+        display: none;
+    }
+}
+
+
+@media all and (max-width: 576px) {
+    .buynow-price-details-section {
+        box-shadow: none;
+    }
+
+    .boorder-confirmation {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 145%;
+        color: #3F515C;
+    }
+
+    .buynow-deliverd-date {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        color: #3F515C;
+    }
+
+    .buynow-remove-btn {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        color: #3F515C;
+
+    }
+
+    .buynow-rate-padding {
+        padding-top: 0.625rem;
+    }
+
+    .paddbutton {
+        padding-top: 1.125rem;
+    }
+
+    .confirmpadd {
+        padding-top: 1em;
+        padding-bottom: 1rem;
+    }
+
+    .rupee-symbol {
+        color: #3F515C;
+        padding-top: 0.625rem;
+        font-size: 0.75rem;
+    }
+
+    .buynow-rupee {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        color: #3F515C;
+    }
+
+    .border-end-mobile {
+        border-right: 0px solid #dee2e600;
+
+    }
+
+    .buynow-qunt-toppddng {
+        padding-top: 25px;
+    }
+
+    .buynow-mobile {
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        color: var(--color-5);
+        /* padding-bottom:1rem ; */
+    }
+
+    .page-padding {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .foldable-table-text {
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.0625rem;
+        color: var(--color-17);
+    }
+
+    .sizes {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        color: #3F515C;
+        padding-top: 0.625rem;
+    }
+
+    .rupee {
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+
+    }
+
+    .deleted-rupee {
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+
+    }
+
+    .colored-rupee {
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+
+    }
+
+    .color-black {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        color: #3F515C;
+        padding-top: 0.625rem;
+
+    }
+
+    .padding-buynow-padding-mobile {
+        padding-top: 0.625rem;
+    }
+
+    .button-padding {
+        margin-top: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 0rem;
+        margin-left: 0.2rem;
+    }
+
+    .quantity {
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+    }
+
+    .foldable-wooden-laptop-table {
+        background: #FFFFFF;
+        box-shadow: 0rem 0rem 0rem #D2B3B3;
+        border-radius: 0.375rem;
+    }
+
+    .order-confirmation {
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 145%;
+        color: var(--color-17);
+        padding-top: 1rem;
+        /* padding-bottom:1rem; */
+        padding-left: 1rem;
+    }
+
+    .table-padding {
+        padding-top: 1rem;
+        padding-left: 0.3rem;
+        padding-bottom: 1rem;
+    }
+
+    .borderno {
+        border-right: none;
+    }
+
+    .remove {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        color: #3F515C;
+        padding-top: 0.75rem;
+    }
+
+    .price-3-items-mobile {
+        padding-top: 1.5625rem;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+
+        color: #3F515C;
+    }
+
+    .padding-buynow-padding-mobile {
+        padding-top: 0.625rem;
+    }
+}
+
+@media (min-width: 577px) {
+    html {
+        font-size: 40%;
+    }
+
+    .price-3-items-mobile {
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    html {
+        font-size: 100%;
+    }
+
+
+
+}
+
+/* End Mobile Views */

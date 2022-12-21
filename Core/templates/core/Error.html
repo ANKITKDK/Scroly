@@ -1,0 +1,306 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Error</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+   <!-- JavaScript Bundle with Popper -->
+   <link rel="stylesheet" href="{% static 'css/style-guid.css' %}" type="text/css">
+   <link rel="stylesheet" href="{% static 'css/base1.css' %}" type="text/css">
+   <link rel="stylesheet" href="{% static 'css/Error.css' %}" type="text/css">
+
+</head>
+
+<body>
+   <!-- start navbar1 -->
+   <nav class="navbar navbar-expand-md nav1-padding">
+
+
+      <div class="d-flex flex-grow-1">
+          <button type="button" class="btn" onclick="openNav()">
+              <img src="{% static 'images/3linesnav.png' %}" alt="">
+          </button>
+          <!-- start scroly logo -->
+          <a class="navbar-brand" href="#"><img src="{% static 'images/logo.png' %}" alt=""></a>
+          <!-- end scroly logo  -->
+
+
+      </div>
+
+      <!-- start toggle button -->
+      <!-- <button class="navbar-toggler order-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <!-- end toggle-button -->
+
+
+      <!-- <button class="navbar-toggler order-0" type="button" data-toggle="collapse" data-target="#navbar7">
+          <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="navbar-collapse collapse flex-shrink-1 flex-grow-0 order-last" id="myNavbar">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link earn-with-scroly" href="#">Earn with scroly</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link beacome-supplier" href="#">Become a Supplier</a>
+              </li>
+              {% if user.is_authenticated %}
+              <li class="nav-item">
+                  <a class="nav-link select-your-address" href="{% url 'saveaddress' %}">Select your address</a>
+              </li>
+              {% endif %}
+              <li class="nav-item">
+                  <a class="nav-link download-app" href="#">Download App</a>
+              </li>
+              {% if user.is_authenticated %}
+              <li class="nav-item">
+                  <a class="nav-link signin-signup" href="{% url 'logout' %}">Logout</a>
+              </li>
+              {% else %}
+              <li class="nav-item">
+                  <a class="nav-link signin-signup" href="{% url 'signin' %}">Sign in or Sign up</a>
+              </li>
+              {% endif %}
+              <li class="nav-item">
+
+                  <a class="nav-link cart" href="{% url 'AddToCard' %}"><i class="fa fa-shopping-cart" aria-hidden="true"></i><sup><span
+                              class="badge rounded-pill badge-notification bg-danger">1</span></sup> Cart</a>
+
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link notification" href="#"><i class="fa fa-bell" aria-hidden="true"></i><sup><span
+                              class="badge rounded-pill badge-notification bg-danger">1</span></sup>
+                      Notifications</a>
+              </li>
+
+              <!-- start profile icon with dropdown -->
+              {% if user.is_authenticated %}
+              <li class="nav-item dropdown">
+                  <div class="dropdown">
+                      <!-- start profile icon -->
+                      <button type="button" class="btn text-center profile-bt" data-bs-toggle="dropdown">
+                          <i class="fa fa-user"></i>
+                      </button>
+                      <!-- end profile icon -->
+
+                      <!-- start profile dropdown content -->
+                      <ul class="dropdown-menu dropdown-menu-end profileDropdown pt-sm-5 px-sm-4">
+                          <!-- profile dropdown heading start -->
+
+                          <li>
+                              <h3>Hello {{user.first_name}}</h3>
+                              <h5>{{user.email}}</h5>
+                              <h5>{{user.mobile_number}}</h5>
+                          </li>
+                          <hr class="dropdown-divider">
+              </li>
+
+              <li>
+                  <!-- start dropdown-item order -->
+              <li>
+                  <a class="dropdown-item sidenav-border mt-sm-2 py-sm-2" href="#">Orders</a>
+              </li>
+              <!-- end dropdown-item order -->
+
+              </li>
+
+              <li>
+                  <!-- start dropdown-item profile -->
+              <li>
+                  <a class="dropdown-item sidenav-border mt-sm-2 py-sm-2" href="{% url 'profile' %}">Profile</a>
+              </li>
+              <!-- end dropdown-item profile -->
+              </li>
+
+              <li>
+                  <!-- start dropdown-item logout -->
+              <li>
+                  <a class="dropdown-item sidenav-border mt-sm-2 py-sm-2" href="{% url 'logout'%}">Logout</a>
+              </li>
+              <!-- end dropdown-item logout -->
+              </li>
+              {% endif %}
+          </ul>
+      </div>
+  </nav>
+
+  <!-- start navbar1 -->
+
+  <div class="row padding-nav ">
+   <div class="col-md-12">
+
+       <nav class="navbar navbar-expand-lg navbar-light nav2-box nav2-mobile-view">
+           <div class="container-fluid">
+
+               <!-- <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                   data-bs-target="#navbar-content">
+                   <div class="hamburger-toggle">
+                       <div class="hamburger">
+                           <span></span>
+                           <span></span>
+                           <span></span>
+                       </div>
+                   </div>
+               </button> -->
+
+               <div class="collapse navbar-collapse nav-inner-content-padding" id="navbar-content">
+                   <!-- start category -->
+                   <ul class="navbar-nav ">
+
+                       <!-- start men category -->
+                       {% for c1 in cat1 %}
+                       <li class="nav-item dropdown dropdown-mega ">
+                           <a class="nav-link category-name" href="#" data-bs-toggle="dropdown"
+                               data-bs-auto-close="outside">{{c1.CategoryName}}</a>
+                           <div class="dropdown-menu shadow category-menu">
+                               <div class="mega-content px-4 cat-image">
+                                   <div class="container-fluid ">
+                                       <div class="row">
+                                           {% for c2 in cat2 %}
+                                           {% if c1.id is c2.CategoryLevel1Id.id %}
+                                           <div class="col-12 col-sm-4 col-md-3  padding-catname border-end">
+                                              <span class="category-name pe-5">{{c2.CategoryLevel2Name}}</span> 
+                                               <ul class="bullet2">
+                                                   {% for c3 in cat3 %}
+                                                   {% if c2.id is c3.CategoryLevel2Id.id %}
+                                                   <li class="mb-sm-2 subcategory-name"><a href="{% url 'SeeAll' c3.CategorySlug %}    ">{{c3.CategoryLevel3Name}}</a> </li>
+                                                   {% endif %}
+                                                   {% endfor %}
+                                                  
+                                               </ul>
+                                           </div>
+                                           {% endif %}
+                                           {% endfor %}
+           
+                                           
+                                           
+                                           
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </li>
+                       {% endfor %}
+                       <!-- end men category -->
+                     
+                   </ul>
+                   <!-- end category -->
+                   <!-- start searchbox -->
+                   <form class="d-flex">
+                       <div class="input-group">
+                           <input class="form-control rounded-pill category-searchbar" type="search"
+                               placeholder="Search" aria-label="Search" size="70%">
+
+                       </div>
+                   </form>
+                   <!-- end searchbox -->
+                   <!-- start diwali-sell -->
+                   <div class="diwali-sell ps-3">
+                       Diwali Sell is coming soon
+                       Add to cart your list now
+
+                   </div>
+                   <!-- end diwali-sell -->
+               </div>
+           </div>
+       </nav>
+
+   </div>
+</div>
+   <!-- category start -->
+   <div class="container-fluid pt-2">
+      <div class="row">
+
+         
+
+         <div class="col-sm-12">
+
+            <div class="row pb-2 ps-5">
+               <div class="col-md-3"></div>
+
+               <div class="col-md-4 text-center pt-5  opps-containt">Oops!</div>
+               <div class="col-md-5"></div>
+
+            </div>
+
+            <div class="row pt-4">
+               <div class="col-md-3"></div>
+               <div class="col-md-5 not-exist text-center">
+                  The page you are looking for Does not exist.
+               </div>
+               <div class="col-md-4"></div>
+
+            </div>
+
+            <div class="row pt-3">
+               <div class="col-md-4"></div>
+               <div class="col-md-3 error-page-code">
+                  404
+               </div>
+               <div class="col-md-5"></div>
+            </div>
+
+
+
+            <div class="row pt-5">
+               <div class="col-md-4"></div>
+               <div class="col-md-3 text-center">
+                  <div class="input-group ">
+                     <button type="button" class="form-control btn-circle btn-sm border border-0">
+                        <span class="arrow-button">Go Back Home</span> 
+                      </button>
+                      <span class="input-group-text arrow-btn border border-0"><button type="button" class="btn btn-circle btn-md"><i class="fa fa-long-arrow-left arrow-icon-main" aria-hidden="true"></i></button>
+                      </span>
+                   </div>
+               </div>
+               <div class="col-md-5"></div>
+            </div>
+
+
+            <div class="row text-center pt-3">
+               <div class="col-md-4"></div>
+               <div class="col-md-3 error-found">
+                  Error 404 - page not found
+               </div>
+               <div class="col-md-5"></div>
+            </div>
+
+         </div>
+
+       <!-- Page body -->
+
+      </div>
+   </div>
+   <!-- ---------------------col-sm-10 end--------------------- -->
+   <!-- -----------------------------------col2 end--------------------------------- -->
+
+
+
+   <!-- -------------------------bootstrap script link start------------------------------------ -->
+   <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+   <!-- -------------------------bootstrap script link end------------------------------------ -->
+
+   <!-- for 3lines dropdown script start -->
+   <script>
+      function openNav() {
+         document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+         document.getElementById("mySidenav").style.width = "0";
+      }
+   </script>
+
+   <!-- 3lines dropdown script end -->
+
+</body>
+
+</html>

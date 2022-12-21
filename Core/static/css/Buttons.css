@@ -1,0 +1,127 @@
+.share-btn{
+    height: 50px;
+    width: 50px;
+    left: 100.875rem;
+    top: 355px;
+    border-radius:50%;
+    border:none;
+    background-color: var(--color-1);
+    vertical-align:none;
+    }
+
+
+
+.btn-circle.btn-sm{
+    width: 30px;
+    height: 50px;
+    padding: 6px 0px;
+    border-radius:30px;
+    font-size: 8px;
+    text-align: center;
+    background-color:var(--color-1);
+    
+    
+}
+
+.btn-circle.btn-md{
+    width:50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 20px;
+    text-align: center;
+    background:var(--color-16);
+
+}
+
+.share-button{
+font-family:var(--font-1);
+font-size: 16px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+color:var(--color-9);
+}
+
+.share-icon-main{
+color:var(--color-33);
+height: 17px;
+width: 15px;
+left: 295px;
+top: 18px;
+border-radius: 0px;
+}
+
+/*-----------------------hover button------------------------*/
+
+.share-btn-hover:hover{
+    height: 50px;
+    width: 50px;
+    left: 100.875rem;
+    top: 355px;
+    border-radius:50%;
+    border:none;
+    background-color: var(--color-34);
+    vertical-align:none;
+    transition-duration: 0.4s;
+}
+
+
+
+.btn-circle.btn-sm-hover{
+    width: 30px;
+    height: 50px;
+    padding: 6px 0px;
+    border-radius:30px;
+    font-size: 8px;
+    text-align: center;
+    background-color:var(--color-34);
+}
+
+.btn-circle.btn-md-hover{
+    width:50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 20px;
+    text-align: center;
+    background:var(--color-16);
+}
+
+
+.share-button-hover{
+    font-family:var(--font-1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:var(--color-9);
+}
+
+.share-icon-hover{
+    color:var(--color-33);
+    height: 17px;
+    width: 15px;
+    left: 295px;
+    top: 18px;
+    border-radius: 0px;
+}
+    
+
+/*------------------------------------disable buttons---------------------------------*/
+
+.share-btn-hover{
+    height: 50px;
+    width: 50px;
+    left: 100.875rem;
+    top: 355px;
+    border-radius:50%;
+    border:none;
+    background-color: var(--color-34);
+    vertical-align:none;
+    
+    
+}
+

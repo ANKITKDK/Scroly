@@ -1,0 +1,971 @@
+body {
+    background-image: url("../images/background.png");
+}
+.adjust-pddng
+{
+    padding-right:1.75rem;
+}
+.addtocrt-addrs-bar-paddng
+{
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+
+}
+
+.ttl-amt-rup-fs
+{
+    font-size: 0.9375rem;
+}
+.addtocrt-size
+{
+    padding-top: 0.75rem;
+}
+
+.margin {
+    padding-top: 5.625rem;
+    /* padding-right:1.875rem; */
+}
+
+/* start delivery card */
+.design-card-outline {
+    background: var(--color-9);
+    box-shadow: 0.125rem 0.125rem 0.375rem var(--color-22);
+    border-radius: 0.375rem;
+    height: auto;
+    margin-bottom: 1.875rem;
+}
+
+
+
+.for-address-padding {
+    padding-left: 3.4375rem;
+}
+
+/* stop delivery card */
+
+/*start delivery address contents*/
+.delivery-card {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-5);
+
+}
+
+/*stop delivery address contents*/
+
+/*start start name contents*/
+.delivery-user-name {
+    padding-top: 3.875rem;
+    padding-bottom: 1.875rem;
+}
+
+.design-delivery-user-name {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 145%;
+    color: var(--color-17);
+}
+
+/*stop name contents*/
+
+/*start change address button */
+.btn-change-address {
+    border: 0.0625rem solid var(--color-1);
+    background-color: none;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-5);
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem; 
+    border-radius: 0.375rem;
+}
+
+
+
+/*stop change address button */
+
+.distance-between-to-card {
+    padding-top: 1.875rem;
+
+}
+
+/* css for 1st card */
+
+
+.deliverd-time-padding {
+
+    padding-top: 0.625rem;
+padding-left: 1rem;
+}
+
+
+.quality-number {
+    border: 0.0625rem solid var(--color-17);
+    border-radius: 0.375rem;
+    color: var(--color-17);
+   
+}
+.
+
+ .quality-number-dropdown {
+    filter: drop-shadow(0.125rem 0.125rem 0.375rem #D2B3B3);
+    min-width: 3rem;
+    background: var(--color-9);
+    border: 0.0625rem solid var(--color-17);
+    border-radius: 0.375rem;
+}
+
+.design-foldable-wooden-table {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+}
+
+/* .design-foldable-wooden-table-size
+{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color:var(--color-17);
+} */
+
+.design-foldable-wooden-table-price {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+}
+.design-foldable-wooden-table-text
+{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+}
+
+.design-foldable-wooden-table-disable-price {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: rgba(63, 81, 92, 0.37);
+}
+
+.abc {
+    padding-top: 1.875rem;
+}
+
+.pad-text-top{
+padding-top:1.875rem;
+
+}
+.degisn-btn,
+.degisn-btn:hover {
+    background: var(--color-1);
+    box-shadow: 0.125rem 0.125rem 0.5rem rgba(62, 125, 99, 0.44);
+    border-radius: 1.375rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: center;
+    color: var(--color-9);
+}
+
+/* start right side Price details Card */
+.design-price-details {
+
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+    color: var(--color-17);
+
+}
+
+.rupees {
+    width: 0.4375rem;
+    height: 0.75rem;
+    left: 110.3125rem;
+    top: 22.125rem;
+    color: var(--color-17);
+}
+
+.rupees-disable {
+    width: 0.4375rem;
+    height: 0.75rem;
+    left: 110.3125rem;
+    top: 22.125rem;
+    color: rgba(63, 81, 92, 0.37);
+}
+
+.price-3-items {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+}
+
+.discount1 {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-8);
+}
+
+.discount-ruppes {
+
+    color: var(--color-8);
+}
+
+.total-amount {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--color-17);
+
+}
+
+/* .for-bottom-hight
+{
+    height: auto;
+} */
+
+.design-out-of-stock {
+
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: var(--color-7);
+}
+
+/* end right side Price details Card */
+
+/* start secton 2 */
+
+/* start price-detail section */
+
+.price-details-section {
+
+    background-color: var(--color-9);
+    box-shadow: 0.125rem 0.125rem 0.375rem #D2B3B3;
+    border-radius: 0.375rem;
+    padding-top: 1.875rem;
+    padding-bottom: 0rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    height: auto;
+    margin-bottom: 1.875rem;
+}
+
+/* end price-detail section */
+
+/* start price detail row */
+
+.price-details {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.375rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+
+}
+
+/* end price detail row */
+
+/* start price 3 items */
+
+.price-3items {
+
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+}
+
+/* end price 3 items  */
+
+/* start discount row */
+
+.discount {
+
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+
+}
+
+.discount .price-color {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-8);
+}
+
+.discount .fa {
+    color: var(--color-8);
+}
+
+/* end discount row */
+
+/* start delivery charges row */
+
+.delivery-charges {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+}
+
+
+/* end delivery charges row */
+
+/* start total amount */
+
+.total-amount {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--color-17);
+}
+
+.total-amount .price-color {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-8);
+}
+
+.total-amount .fa {
+    color: var(--color-8);
+}
+
+/* end total amount */
+
+/* start your-total-savings */
+
+.your-total-savings {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: var(--color-8);
+
+}
+
+/* end your-total-savings */
+
+/* strat continue-button */
+
+.continue-button,
+.continue-button:hover {
+    background: #FC813D;
+    box-shadow: 0.125rem 0.125rem 0.5rem rgba(62, 125, 99, 0.44);
+    border-radius: 1.375rem;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+
+    color: #FFFFFF;
+}
+
+/* end continue-button */
+
+/* end section 2 */
+
+/* start circle button */
+.share-btn {
+    height: 3.125rem;
+    width: 3.125rem;
+    left: 1614px;
+    top: 22.1875rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-1);
+    vertical-align: none;
+}
+
+
+
+.btn-circle.btn-sm {
+    width: 1.875rem;
+    height: 3.125rem;
+    padding: 0.375rem 0rem;
+    border-radius: 1.875rem;
+    font-size: 0.5rem;
+    text-align: center;
+    background-color: var(--color-1);
+
+
+}
+
+.btn-circle.btn-md {
+    width: 3.125rem;
+    height: 3.125rem;
+    padding: 0.625rem 1rem;
+    border-radius: 1.5625rem;
+    font-size: 1.25rem;
+    text-align: center;
+    background: var(--color-16);
+
+}
+
+.share-button {
+    font-family: var(--font-1);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--color-9);
+}
+
+.share-icon-main {
+    color: var(--color-33);
+    height: 1.0625rem;
+    width: 0.9375rem;
+    left: 18.4375rem;
+    top: 1.125rem;
+    border-radius: 0rem;
+}
+
+
+.share-btn-hover {
+    height: 3.125rem;
+    width: 3.125rem;
+    left: 1614px;
+    top: 22.1875rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-34);
+    vertical-align: none;
+
+
+}
+
+/* end circle button */
+.share-btn-hover:hover {
+    height: 3.125rem;
+    width: 3.125rem;
+    left: 1614px;
+    top: 22.1875rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-34);
+    vertical-align: none;
+    transition-duration: 0.4s;
+}
+
+
+
+.btn-circle.btn-sm-hover {
+    width: 1.875rem;
+    height: 3.125rem;
+    padding: 0.375rem 0rem;
+    border-radius: 1.875rem;
+    font-size: 0.5rem;
+    text-align: center;
+    background-color: var(--color-34);
+}
+
+.btn-circle.btn-md-hover {
+    width: 3.125rem;
+    height: 3.125rem;
+    padding: 0.625rem 1rem;
+    border-radius: 1.5625rem;
+    font-size: 1.25rem;
+    text-align: center;
+    background: var(--color-16);
+}
+
+
+.share-button-hover {
+    font-family: var(--font-1);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--color-9);
+}
+
+.share-icon-hover {
+    color: var(--color-33);
+    height: 1.0625rem;
+    width: 0.9375rem;
+    left: 18.4375rem;
+    top: 1.125rem;
+    border-radius: 0rem;
+}
+
+.quty{
+font-family: var(--font-1);
+font-size: 1rem;
+font-weight: 500;
+line-height: 1.25rem;
+color: var(--color-5);
+padding-top: 1rem;
+}
+.padd-bottom{
+    padding-bottom:0rem ;
+    padding-left: 10px;
+    
+}
+/* Start Mobile view */
+
+@media all and (min-width: 577px) {
+    .mycart-mobile-view {
+        display: none;
+    }
+    .padding-deliver-mobile{
+        display: none;
+    }
+    .no-desktop-button{
+        display:none
+    }
+    .padding-mobile{
+        padding-top: 1rem;
+    }
+    .border-last{
+        border-right:1px solid rgba(63, 81, 92, 0.12);
+        padding-left: 15px;
+    }
+    
+}
+
+
+@media all and (max-width: 576px) {
+    .addtocrd-imgleft-pddng
+    {
+        padding-left: 1rem;
+    }
+    .addtocrt-deliaddrs-nt-avil
+    {
+        padding-left: 0rem;
+        
+    }
+.addtocrt-size
+{
+    padding-top: 0.625rem;
+}
+    .quty{
+       display: none;
+        }
+
+    .addtocrt-mobl-qty
+    {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #304653;
+        padding-top: 15px;
+    } 
+    .addtocrt-drpdwn-mbl
+    {
+        border: 1px solid rgba(63, 81, 92, 0.2);
+    }   
+    .mycart-mobile-view {
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        color: var(--color-5);
+        /* padding-bottom:1rem ; */
+        padding-top: 1.5rem;
+
+
+    }
+
+    .font-icon {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        color: var(--color-5);
+    }
+
+    .left-right-padding {
+        padding-left:  0rem;
+        padding-right: 0rem;
+    }
+
+    .design-card-outline {
+        background: var(--color-9);
+        box-shadow: 0rem 0rem 0rem var(--color-22);
+        border-radius: 0rem;
+        height: auto;
+        margin-bottom:0rem;
+    }
+    .mob-pad-endno{
+        padding-right: 0px;
+        padding-top:0px;
+    }
+    .mob-left-right{
+        border-left: none;
+        border-right: none;
+    }
+    
+    .btn-outline-padding{
+    padding-top: 2.75rem;
+    padding-bottom: 2.875rem;
+    padding-left: 1.875rem;
+}
+    .delivery-card {
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 145%;
+        color: var(--color-5);
+        padding-left: 0rem;
+        
+    
+    }
+    .quty{
+        font-family: var(--font-1);
+        font-size: 0.75rem;
+        font-weight: 500;
+        line-height: 0.9375rem;
+        color: var(--color-5);
+        padding-top: 1rem;
+        }
+    .btn-change-address {
+        border: 0.0625rem solid var(--color-1);
+        background-color: none;
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        color: var(--color-5);
+        padding-top: 0.4375rem;
+        padding-bottom:0.5rem;
+        padding-left: 1.5rem;
+        padding-right:1.5rem;      
+        border-radius: 0.375rem;
+    }
+    .btn-outline-padding {
+        padding-top: 0.75rem;
+        padding-bottom:1.5rem;
+        padding-left:0.8rem;
+    }
+    .border-end{
+        border-right: 0px;
+    }
+    .mob-leftright{
+        border-left: none;
+        border-right: none;
+        border-top:none;
+    }
+    /* .border-end{
+        display: none;
+    } */
+    .design-foldable-wooden-table {
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height:1.0625rem;
+        color: var(--color-17);
+    }
+    .price-3-items {
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height:0.9375rem;
+        color: var(--color-17);
+    }
+    .design-foldable-wooden-table-price {
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        color: var(--color-17);
+    }
+    .design-foldable-wooden-table-disable-price {
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        color: rgba(63, 81, 92, 0.37);
+    }
+    .quality-number {
+        border: 0.0625rem solid var(--color-17);
+        border-radius: 0.375rem;
+        color: var(--color-17);
+        padding-left:0.085rem;
+        padding-right: 0.085rem;
+    }
+    
+    .quality-number-dropdown {
+        /* filter: drop-shadow(0.125rem 0.125rem 0.375rem #D2B3B3); */
+        min-width: 3rem;
+        background: var(--color-9);
+        border: 0.0625rem solid var(--color-17);
+        border-radius: 0.375rem;
+    }
+    .discount1 {
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        color: var(--color-8);
+    }
+    .deliverd-time-padding {
+        display: none;
+    }
+    .padding-deliver-mobile{
+        padding-top:1rem ;
+    }
+    .no-buy-mobileview{
+        display:none;
+    }
+    .buy-now{
+        border: 0.0625rem solid var(--color-1);
+        background-color: none;
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height:1.25rem;
+        color: var(--color-5);
+        padding-top: 0.5rem;
+        padding-bottom:0.5rem;
+        padding-left: 1rem;
+        padding-right:1rem; 
+        border-radius: 0.375rem;
+    }
+    .price-details-section {
+
+        background-color: var(--color-9);
+        box-shadow: 0rem 0rem 0rem #D2B3B3;
+        border-radius: 0.375rem;
+        padding-top: 1.5rem;
+        /* padding-bottom: 58.0625rem; */
+        padding-left: 1.875rem;
+        padding-right: 1.875rem;
+        height: auto;
+    }
+    .price-details {
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        color: var(--color-17);
+        padding-bottom: 16px;
+    
+    }
+    .design-price-details {
+
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height:1.5rem;
+        color: var(--color-17);
+    
+    }
+    .price-3items {
+
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height:1.25rem;
+        color: var(--color-17);
+        border-top:1px solid rgba(63, 81, 92, 0.12);
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+    .delivery-charges {
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        color: var(--color-17);
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+    }
+    .total-amount {
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        color: var(--color-17);
+        padding-top:0.625rem;
+        padding-bottom: 0.625rem;
+    
+    }
+    .your-total-savings {
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height:1.25rem;
+        color: var(--color-8);
+        padding-top:0.625rem;
+        padding-bottom: 0.625rem;
+    
+    }
+    .padding-mobile{
+        padding-top: 1rem;
+    }
+    .border-last{
+        border-right:0px solid rgba(63, 81, 92, 0.12);
+       
+    }
+    .rupees {
+        /* width: 0.3125rem;
+        height: 0.5rem;
+        left: 6.375rem;
+        top: 22.875rem; */
+        color: var(--color-17);
+        font-size: 0.63rem;
+    }
+    .discount-ruppes
+    {
+        font-size: 0.63rem;
+    }
+    .design-foldable-wooden-table-text
+    {
+        display: none;
+    }
+    .adjust-pddng
+    {
+        padding-right:0px;
+    }
+}
+
+@media (min-width: 577px) {
+    html {
+        font-size: 40%;
+    }
+    .addtocrt-deliaddrs-nt-avil
+    {
+        display: none;
+    }
+    .addtocrt-mobl-qty
+    {
+        display: none;
+    }
+   
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 45%;
+    }
+    .addtocrt-deliaddrs-nt-avil
+    {
+        display: none;
+    }
+    .addtocrt-mobl-qty
+    {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 60%;
+    }
+    .addtocrt-deliaddrs-nt-avil
+    {
+        display: none;
+    }
+    .addtocrt-mobl-qty
+    {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 80%;
+    }
+    .addtocrt-mobl-qty
+    {
+        display: none;
+    }
+   
+}
+
+@media (min-width: 1920px) {
+    html {
+        font-size: 100%;
+    }
+    .addtocrt-mobl-qty
+    {
+        display: none;
+    }
+    .padd-bottom{
+        padding-bottom:0rem ;
+        padding-left: 25px;
+        
+    }
+    
+}
+
+/* End Mobile Views */

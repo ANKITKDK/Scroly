@@ -1,0 +1,773 @@
+/* .row
+{
+    --bs-gutter-x: 4rem;
+} */
+/* start page-padding */
+.body-padding
+{
+    padding-left: 0rem;
+    padding-right: 1.5rem;
+
+}
+.page-padding{
+    padding-left: 1.875rem;
+    padding-right: 0.5rem;
+}
+
+/* end page-padding */
+
+/* start section 1 */
+/* start filter-section */
+
+.filter-section{
+    background: #FEF2F2;
+    box-shadow: 0.25rem 0.25rem 0.375rem rgba(139, 125, 125, 0.26);
+    border-radius: 0rem 0.375rem 0.375rem 0rem;
+    height: auto;
+    padding-left: 1.875rem;
+    padding-right: 1.75rem;
+    padding-top: 1.875rem;
+}
+
+/* end filter-section */
+
+/* start filter-text */
+
+.filter-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.011em;
+    color: #304653;
+    padding-bottom: 1rem;
+}
+
+/* end filter-text */
+
+/* start men-input */
+
+.padding-top-inputs{
+    padding-top: 1.875rem;
+}
+
+.men-input{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    letter-spacing: -0.011em;
+
+    color: #3F515C;
+    padding-bottom: 1rem;
+
+}
+
+/* end men-input */
+
+/* start women-input */
+
+.women-input{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    letter-spacing: -0.011em;
+
+    color: #3F515C;
+    padding-bottom: 1rem;
+}
+
+/* end women-input */
+
+/* start kids-input */
+
+.kids-input{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    letter-spacing: -0.011em;
+
+    color: #3F515C;
+
+    padding-bottom: 1.875rem;
+}
+
+/* end kids-input */
+
+/* start radio button */
+
+.cat-radio{
+    border: 0.0625rem solid var(--color-1);
+}
+
+.form-check-input:checked {
+    background-color: var(--color-1);
+    border-color: var(--color-1);
+}
+
+/* end radio button */
+
+/* start brand */
+
+.brand{
+    padding-top: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+
+    letter-spacing: -0.011em;
+
+    color: #304653;
+    padding-bottom: 1rem;
+}
+
+/* end brand */
+
+/* start levi-input */
+
+.levi-input{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    letter-spacing: -0.011em;
+
+    color: #3F515C;
+    padding-bottom: 1rem;
+}
+
+/* end levi-input */
+
+/* start flying-input */
+
+.flying-input{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    /* identical to box height, or 150% */
+    text-align: center;
+    letter-spacing: -0.011em;
+    color: #3F515C;
+    padding-bottom: 1rem;
+}
+
+/* end flying-input */
+
+/* start more */
+.filter-line-padd
+{
+    padding-bottom: 1.875rem;
+}
+
+.more{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    letter-spacing: -0.011em;
+
+    color: #FC813D;
+    padding-bottom: 1.875rem;
+}
+
+/* end more */
+
+/* start price */
+
+.price{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.011em;
+
+    color: #304653;
+    padding-top: 1.875rem;
+    padding-bottom: 1rem;
+}
+
+/* end price */
+
+/* start min-max */
+
+.min-max{
+    padding-bottom: 1.875rem;
+}
+
+/* end min-max */
+
+/* strat customer-rating */
+
+.customer-rating{
+    padding-top: 1.875rem;
+    padding-bottom: 1rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.011em;
+    color: #304653;
+}
+
+/* end customer-rating */
+
+/* start icon-clr */
+
+.icon-clr{
+    color: #FC813D;
+
+}
+
+/* end icon-clr */
+
+/* start rating4 */
+
+.rating4{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    /* identical to box height, or 150% */
+    text-align: center;
+    letter-spacing: -0.011em;
+    color: #3F515C;
+    padding-bottom: 1rem;
+}
+
+/* end rating4 */
+
+/* start rating3 */
+
+.rating3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    /* identical to box height, or 150% */
+    text-align: center;
+    letter-spacing: -0.011em;
+    color: #3F515C;
+    padding-bottom: 1.875rem;
+}
+
+/* end rating3 */
+
+/* start color-heading */
+
+.color-heading{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+
+    letter-spacing: -0.011em;
+
+    color: #304653;
+    padding-top: 1.875rem;
+    padding-bottom: 1rem;
+}
+
+/* end color-heading */
+
+/* start blue */
+
+.blue{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    letter-spacing: -0.011em;
+
+    color: #3F515C;
+
+    padding-bottom: 1rem;
+}
+
+/* end blue */
+
+/* start navy-blue */
+
+.navy-blue{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    letter-spacing: -0.011em;
+
+    color: #3F515C;
+
+    padding-bottom: 1rem;
+}
+
+/* end navy-blue */
+
+/* start black */
+
+.black{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    letter-spacing: -0.011em;
+
+    color: #3F515C;
+
+    padding-bottom: 1rem;
+}
+
+/* end black */
+
+/* start grey */
+
+.grey{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    letter-spacing: -0.011em;
+
+    color: #3F515C;
+
+    padding-bottom: 1rem;
+}
+
+/* end grey */
+
+/* start white */
+
+.white{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    letter-spacing: -0.011em;
+
+    color: #3F515C;
+
+    padding-bottom: 1rem;
+}
+
+/* end white */
+
+/* start blue-clr */
+
+.blue-clr{
+    color: #8EA4F0;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+}
+
+/* end blue-clr */
+
+/* start navy-blue-clr */
+
+.navy-blue-clr{
+    color: #5064AC;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+}
+
+/* end navy-blue-clr */
+
+/* start black-clr */
+
+.black-clr{
+    color: #2E2B2B;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+}
+
+/* end black-clr */
+
+/* start grey-clr */
+
+.grey-clr{
+    color: #998F8F;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+}
+
+/* end grey-clr */
+
+/* start white-clr */
+
+.white-clr{
+    color: #FFFFFF;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+}
+
+/* end white-clr */
+
+/* end section 1 */
+
+/* start section 2 */
+
+.nav2{
+
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0rem 0.125rem 0.375rem #D2B3B3;
+    border-radius: 0.375rem;
+
+}
+
+/* end section 2 */
+
+
+/* Start Mobile view */
+
+@media all and (min-width: 577px)
+{
+
+}
+
+/* sawan */
+@media (min-width: 577px)and (max-width: 767px){
+
+
+    .page-padding {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    }
+
+
+
+
+}
+
+
+/* sawan */
+
+@media all and (max-width: 576px){
+
+
+    .mobile-d-none{
+        display: none;
+    }
+    .page-padding{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+    .filter-mobile-view{
+        display: none;
+    }
+
+    .padding-nav-mobile-view{
+        display: none;
+    }
+
+    #nav1{
+        display: none !important;
+
+    }
+
+    .padding-top-inputs{
+        padding-top: 0.875rem;
+    }
+
+    .filter-text{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        text-align: center;
+
+        color: #304653;
+    }
+
+    .men-input{
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        text-align: center;
+        letter-spacing: -0.011em;
+
+        color: #3F515C;
+
+        padding-bottom: 0.875rem;
+    }
+
+    .women-input{
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        /* identical to box height, or 171% */
+
+        text-align: center;
+        letter-spacing: -0.011em;
+
+        color: #3F515C;
+        padding-bottom: 0.875rem;
+    }
+
+    .kids-input{
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        /* identical to box height, or 171% */
+
+        text-align: center;
+        letter-spacing: -0.011em;
+
+        color: #3F515C;
+        padding-bottom: 0.75rem;
+    }
+
+    .brand{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        letter-spacing: -0.011em;
+        color: #304653;
+        padding-top: 0.875rem;
+        padding-bottom: 0.875rem;
+    }
+
+    .levi-input .flying-input{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+
+        text-align: center;
+        letter-spacing: -0.011em;
+
+        color: #3F515C;
+        padding-bottom: 0.75rem;
+    }
+
+    .price{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        letter-spacing: -0.011em;
+        color: #304653;
+        padding-bottom: 0.875rem;
+        padding-top: 0.875rem;
+
+    }
+
+    .min-max{
+
+        padding-bottom: 0.875rem;
+
+    }
+
+    .more{
+        padding-bottom: 0.875rem;
+        padding-top: 0.625rem;
+    }
+
+    .customer-rating{
+        padding-top: 0.875rem;
+        padding-bottom: 0.875rem;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        letter-spacing: -0.011em;
+
+        color: #304653;
+    }
+
+    .rating4, .rating3{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        letter-spacing: -0.011em;
+        color: #3F515C;
+        padding-bottom: 0.875rem;
+    }
+
+    .rating3{
+        padding-bottom: 0.875rem;
+
+    }
+
+    .color-heading{
+        padding-top: 0.875rem;
+        padding-bottom: 0.875rem;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        letter-spacing: -0.011em;
+
+        color: #304653;
+
+    }
+
+    .blue{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+
+        letter-spacing: -0.011em;
+
+        color: #3F515C;
+    }
+
+    .navy-blue{
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+
+        letter-spacing: -0.011em;
+
+        color: #3F515C;
+
+    }
+
+    .black{
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+
+        letter-spacing: -0.011em;
+
+        color: #3F515C;
+
+    }
+
+    .form-select{
+        border: 0.0625rem solid #FC813D;
+        border-radius: 0px;
+    }
+    .category-searchbar{
+        display: none;
+    }
+    
+}
+
+@media (min-width: 577px)
+{
+    html{
+        font-size: 40%;
+    }
+    #nav2{
+        display: none !important;
+
+    }
+
+    
+}
+
+@media (min-width: 768px)
+{
+    html{
+        font-size: 45%;
+    }
+
+    #nav2{
+        display: none !important;
+
+    }
+    
+    
+}
+
+@media (min-width: 992px)
+{
+    html{
+        font-size: 60%;
+    }
+
+    #nav2{
+        display: none !important;
+
+    }
+    
+}
+
+
+@media (min-width: 1200px)
+{
+    html{
+        font-size: 80%;
+    }
+
+    #nav2{
+        display: none !important;
+
+    }
+}
+
+@media (min-width: 1920px)
+{
+    html{
+        font-size: 100%;
+    }
+
+    #nav2{
+        display: none !important;
+
+    }
+}
+
+/* End Mobile Views */
+
+/* start preloader */
+.loader-bg{position:fixed;z-index:999999;background:#fff;width:100%;height:100%}.loader{border:0 solid transparent;border-radius:50%;width:150px;height:150px;position:absolute;top:calc(50vh - 75px);left:calc(50vw - 75px)}.loader:after,.loader:before{content:'';border:1em solid #ff5733;border-radius:50%;width:inherit;height:inherit;position:absolute;top:0;left:0;animation:loader 2s linear infinite;opacity:0}.loader:before{animation-delay:.5s}@keyframes loader{0%{transform:scale(0);opacity:0}50%{opacity:1}100%{transform:scale(1);opacity:0}}
+/* end preloader */

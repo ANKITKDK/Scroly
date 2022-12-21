@@ -1,0 +1,218 @@
+/* start heading */
+.main-heading {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--color-5);
+}
+
+/* reviews */
+.star-color1 {
+    font-size: 40px;
+    color: var(--color-1);
+}
+
+.sizee-num1 {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    color: var(--color-17);
+}
+
+
+.sizee-num2 {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--color-17);
+}
+
+
+/*start dropdown-btn  */
+
+.but-bod-col-drop{
+    border: 1px solid var(--color-1);
+    font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: var(--color-5);
+}
+
+.but-bod-col{
+    background-color: #FF4D6D;
+    /* border: 1px solid var(--color-1); */
+    font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: var(--color-5);
+border: 1px solid #FFFFFF;
+border-radius: 6px 6px 0px 0px;
+margin: 0px 0px;
+}
+
+.but-bod-coll{
+    background-color: #FF4D6D;
+    /* border: 1px solid var(--color-1); */
+    font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: var(--color-5);
+border: 1px solid #FFFFFF;
+/* border-radius: 6px 6px 0px 0px; */
+}
+
+/* end btn */
+/*  */
+.ruppes-col {
+    color: var(--color-17);
+}
+
+.ruppes-col-orange {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    color: var(--color-12)
+}
+
+/* text-decoration-line-through */
+.line-through-color {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    color: rgba(63, 81, 92, 0.37);
+}
+
+.com-color {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: var(--color-17);
+}
+
+/* =========== */
+
+.customer-rev-head {
+    font-family: var(--color-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--color-5);
+}
+
+/* srart row for See all customer images */
+.a-tag-color-size,
+.a-tag-color-size:hover {
+    text-decoration: none;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-12);
+}
+
+
+.custom-rev-91 {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: var(--color-5);
+}
+
+
+
+
+.star-col-s {
+    color: var(--color-9);
+    background-color: var(--color-1);
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+
+.customer-head-question {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+    color: var(--color-5);
+}
+
+.user-namee {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 145%;
+    color: var(--color-17);
+}
+
+/* ==start pagination======== */
+
+.pages-num-text{
+    font-family: var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+
+color: var(--color-5);
+}
+
+/* next */
+.next-col-test{
+    font-family: var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+color:#FC813D;
+/* background: #000; */
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+/* ==end pagination======== */

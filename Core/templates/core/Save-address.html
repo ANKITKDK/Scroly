@@ -1,0 +1,819 @@
+{% extends "core/base1.html" %}{% load static %}
+
+{% block content %}
+
+{% block own_css %}
+<link rel="stylesheet" href="{% static 'css/save-address.css' %}" type="text/css">
+{% endblock own_css %}
+
+<!-- start col-sm-10 for content of page -->
+<div class="col-sm-12 ">
+   <!-- start row for col-sm-10 section -->
+   <div class="row ">
+      <!-- start col-md-8 for select delivery address section-->
+      <div class="col-md-12  select-delivery-address-section ">
+         {% if multipleaddress %}
+         {% for i in multipleaddress%}
+         {% if i.AddressStatus %}
+
+         <div class="outer-blue ">
+            <!-- start delivery addres and add new address button -->
+            <div class="row saveadd-first-row-paddng ">
+               <!-- start select delivery address row -->
+               <div class="col-sm-9 col-md-9">
+                  <!-- mobile-view address saved -->
+                  <div class="row address-save-mobile-view">
+                     <div class="col-sm-12 col-md-12 d-grid">
+                           <!--button for address save-->
+                           <div class="row">
+                              <div class="col-2"><i class="fa fa-angle-left saveaddr-lft-angl"  aria-hidden="true"></i></div>
+                              <div class="col-10">
+                                    <span class="save-addres-text "><strong>Address Saved</strong> <img src="{% static 'images/img1_s.png' %}" alt="" > </span> 
+                              </div>
+                           </div>
+                           
+                     </div>
+                  </div>
+                  <div class="row sveaddr-gotohome border-bottom">
+                     <div class="col-12"><strong> Go To Home</strong></div>
+                  </div>
+                  <!-- start select delivery adrress -->
+                  <div class="row select-delivery-address ">
+                     <div class="col-sm-12 col-md-12">
+                      <strong>Your Addresses</strong>  
+                     </div>
+                  </div>
+                  <!-- end select delivery address -->
+               </div>
+               <!-- end select delivery address row -->
+               <!-- start add new address button -->
+               <div class="col-sm-3 col-md-3 d-grid button-display-mobil sve-addr-paddng">
+                  <button type="button"
+                     class="btn btn-outline btn-block add-new-address-button-text add-new-address-button"
+                     data-bs-toggle="modal" data-bs-target="#myModal2">Add
+                     New Address</button>
+               </div>
+               <!-- end add new address button -->
+            </div>
+            <!-- start delivery addres and add new address button -->
+
+            <!-- start default address -->
+            <div class="row default-address  default1">
+               <div class="col-md-12 ">
+                  Default Address
+               </div>
+            </div>
+            <!-- end default address -->
+            <!-- start tanuja nitin section -->
+            <div class="row ">
+               <!-- start col-md-8 for address -->
+               <div class="col-md-8 tanuja1">
+                  <!-- start radio button with text -->
+                  <div class="form-check">
+                     <input type="radio" class="form-check-input tanuja-radio" id="radio1" name="optradio"
+                        value="option1" checked> <strong>{{i.FullName}}</strong>
+                     <br> {{i.Address_line1}} {{i.Address_line2}} <br>Landmark : {{i.Landmark}} <br> {{i.City}}
+                     {{i.state}} {{i.PinCode}}<br>Phone Number : {{i.MobileNo}}
+                     <label class="form-check-label" for="radio1"></label>
+                  </div>
+                  <!-- end radio button with text -->
+               </div>
+               <!-- end col-md-8 for address -->
+               <!-- start blank section -->
+               <div class="col-md-4">
+
+               </div>
+               <!-- end blank section -->
+            </div>
+            <!-- end tanuja nitin section -->
+            <!-- add-new-address for mobile view -->
+            <div class="row ">
+               <div class="col col-sm-9 display-button saveadd-btn-pdd">
+                  <button type="button"
+                     class="btn btn-outline "
+                     data-bs-toggle="modal" data-bs-target="#myModal2">Add
+                     New Address</button>
+               </div>
+               <div class="col col-sm-3 display-edit-moobile">
+                  <button type="button" class="btn oran-text-col" data-bs-toggle="modal"
+                  data-bs-target="#myModal">Edit <span><i class="fa fa-pencil "
+                     aria-hidden="true"></i></span></button>
+               </div>
+            </div>
+
+            
+         
+            <!-- start edit remove button row-->
+            <div class="row saveadd-edit-btn">
+               <div class="col-sm-3  col-md-2  d-grid">
+                  <div class="row  ">
+                     <div class="col-md-12">
+                        <div class="input-group edit-no-btn">
+                           <button type="button" class="form-control edit btn-circle-border btn-sm-border"
+                              data-bs-toggle="modal" data-bs-target="#myModal"
+                              onclick="Edit_address('{{i.id}}','{{i.FullName}}','{{i.Address_line1}}','{{i.Address_line2}}',
+                                       '{{i.Landmark}}','{{i.City}}','{{i.state}}','{{i.PinCode}}','{{i.MobileNo}}','{{i.AddressType}}')">
+                              <span class="share-button-border">Edit</span>
+                           </button>
+
+                           <span class="input-group-text share-btn-border no">
+                              <button type="button" class="btn  btn-circle-border btn-md-border">
+                                 <i class="fa fa-pencil share-icon-main-border" aria-hidden="true"></i>
+                              </button>
+                           </span>
+                        </div>
+                     </div>
+
+                  </div>
+
+               </div>
+            </div>
+            <!-- end edit remove button row-->
+         </div>
+         {% else %}
+
+         {% endif %}
+         {% endfor %}
+         {% else %}
+         <div class="outer-blue p-4">
+            <!-- start delivery addres and add new address button -->
+            <div class="row pb-sm-2">
+               <!-- start select delivery address row -->
+               <div class="col-md-9">
+                  <!-- start select delivery adrress -->
+                  <div class="row select-delivery-address pb-sm-2">
+                     <div class="col-md-12">
+                        Add Your Addresses
+                     </div>
+                  </div>
+                  <!-- end select delivery address -->
+               </div>
+               <!-- end select delivery address row -->
+               <!-- start add new address button -->
+               <div class="col-md-3 d-grid add-new-address-mobile-view ">
+                  <button type="button"
+                     class="btn btn-outline btn-block add-new-address-button-text add-new-address-button"
+                     data-bs-toggle="modal" data-bs-target="#myModal2"> Add
+                     New Address</button>
+               </div>
+               <!-- end add new address button -->
+            </div>
+            <!-- start delivery addres and add new address button -->
+
+
+
+            <!-- end edit remove button row-->
+         </div>
+         {% endif %}
+         <!-- start Your Other Address row -->
+
+
+
+         <!-- end Your Other Address row -->
+
+         <!-- start Your Other Address card 1 row -->
+         {% if yourotheraddress %}
+         <div class="row your-other-address  other-address-mobile-view">
+            <div class="col-md-12">
+               Your Other Address  
+            </div>
+         </div>
+         {% endif %}
+         {% for i in multipleaddress%}
+         {% if i.AddressStatus %}
+         {% else %}
+         <div class="row your-other-address-card-1 mb-sm-4">
+            <!-- start col-md-12 for card 1 -->
+            <div class="col-md-12">
+               <!-- start card 1 -->
+               <div class="card">
+                  <!-- start card-body -->
+                  <div class="card-body p-0">
+                     <!-- start radio button with text -->
+                     <div class="row ">
+                        <div class="col-sm col-md-4 pad-mobile-view">
+                           <div class="form-check your-other-address-card-1-text ">
+
+                              <input class="form-check-input tanuja-radio " type="radio" id="defaultaddress"
+                                 onclick="defaultaddress('{{i.id}}')" name="flexRadioDefault" name="addressid"
+                                 value="{{i.id}}" id="flexRadioDefault1">
+                              <label class="form-check-label " for="flexRadioDefault1">
+                                 <strong>{{i.FullName}}</strong> <br>
+                                 {{i.Address_line1}} {{i.Address_line2}} <br>Landmark : {{i.Landmark}} <br> {{i.City}}
+                                 {{i.state}} {{i.PinCode}}<br>Phone Number : {{i.MobileNo}}
+                              </label>
+                              <!-- <div class="p-2">
+                                                   <button type="submit" class="btn  btn-add rounded-pill me-auto footercolor1 ">
+                                                      Remove
+                                                   </button>
+                                                </div> -->
+                              <!-- <a href="{% url 'SetDefaultAddress' i.id %}"><button type="button">Set as Default</button></a> -->
+                              <!--row start for mobile view edit and remove button  -->
+
+   
+                             
+                              <div class="row ">
+                                 <div class="col-4 savadd-edit-mobil-btn">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i> &nbsp;<span data-bs-toggle="modal" data-bs-target="#myModal"
+                                    onclick="Edit_address('{{i.id}}','{{i.FullName}}','{{i.Address_line1}}','{{i.Address_line2}}',
+                                             '{{i.Landmark}}','{{i.City}}','{{i.state}}','{{i.PinCode}}','{{i.MobileNo}}','{{i.AddressType}}')">Edit</span>
+                                 </div> 
+                                 <div class="col-4 ">
+                                    <form action="{% url 'remove_row' i.id %}">
+                                       <button type="submit" class="btn savadd-edit-mobil-btn-rmv">Remove</button>
+                                    </form>
+                                 </div>
+                                 
+                                    <div class="col-4 savadd-edit-mobil-btn-deflt">
+                                    Make this default
+                                    </div>
+                                
+
+                              </div>
+                              
+                              <!--row end for mobile view edit and remove button  -->
+                           </div>
+                        </div>
+                        <div class="col-sm col-md-2"></div>
+                        <div class="col-sm col-md-2 "><a href="" class="make-this-default" onclick="defaultaddress('{{i.id}}')">make this my default</a></div>
+                        <div class="col-sm col-md-2"></div>
+                        <div class="col-sm col-md-2  text-center orange no-edit-remove-mobile-view">
+                           <div class="row pt-3">
+                              <div class="col-sm col-md-12">
+                                 <button type="button" class="btn oran-text-col" data-bs-toggle="modal"
+                                    data-bs-target="#myModal" onclick="Edit_address('{{i.id}}','{{i.FullName}}','{{i.Address_line1}}','{{i.Address_line2}}',
+                                    '{{i.Landmark}}','{{i.City}}','{{i.state}}','{{i.PinCode}}','{{i.MobileNo}}','{{i.AddressType}}')"><span><i class="fa fa-pencil "
+                                          aria-hidden="true"></i></span>Edit</button>
+                              </div>
+                           </div>
+
+                           <div class="row pt-3 pb-3">
+                              <div class="col-sm col-md-12">
+                                 <form action="{% url 'remove_row' i.id %}">
+                                    <button type="submit" class="btn oran-text-col"><span><i class="fa fa-trash "
+                                       aria-hidden="true"></i></span>Remove</button>
+                                 </form>
+                                 
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+
+                     <!-- end radio button with text -->
+                  </div>
+                  <!-- end card-body -->
+               </div>
+               <!-- end card 1 -->
+            </div>
+            <!-- end col-md-12 for card 1 -->
+         </div>
+         {% endif %}
+         {% endfor %}
+
+         <!-- end Your Other Address card 1 row -->
+
+
+      </div>
+      <!-- end col-md-8 for select delivery address section-->
+      <!-- -------------------------------------------- -->
+      <!-- -------------------------------------------- -->
+      <!-- -------------------------------------------- -->
+      <!-- -------------------------------------------- -->
+      <!-- -------------------------------------------- -->
+      <!-- start col-md-4 price detail section-->
+
+      <!-- end col-md-4 for price detail section-->
+   </div>
+   <!-- end row for col-sm-10 section -->
+</div>
+<!-- end col-sm-10 for content of page -->
+
+<!---------Modal Edit Start------------>
+<div class="modal" id="myModal">
+   <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+         <!---row for header-->
+         <div class="row ">
+
+            <!---column for modal header-->
+            <div class="col-md-12">
+               <div class="modal-header border-bottom-0">
+
+                  <h4 class="modal-title  addnewpop ">Add New Address</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+               </div>
+            </div>
+
+         </div>
+         <!-- Modal Header -->
+         <!-- <div class="modal-header">
+                           <h4 class="modal-title">Add New Address</h4>
+                           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div> -->
+
+
+
+
+         <!--------Model Body-->
+         <!---row for model body-->
+         <div class="row">
+            <div class="col-md-1"></div>
+            <!----modal content in body-->
+            <div class="col-md-10">
+               <div class="modal-body input-text-popup">
+                  <!---------Form start for Add New Address------>
+                  <form action="" method="POST" id="addressedit">
+                     {% csrf_token %}
+                     <!-- start use current location for mobile view -->
+                     <div class="row location-mobile-view">
+                        <div class="col-md-12 d-grid">
+                           <button type="button" class="btn btn-block"><i class="fa fa-map-marker orange-logo" aria-hidden="true"></i> Use current location</button>
+                        </div>
+                     </div>
+                     <div class="row pt-2 desktop-none">
+                        <div class="col-md-12 mobile">
+                            <div class="color"><h1 class="or-mobile-view">OR</h1></div>
+                           <!-- <div id="wrapper">
+                              <div class="line"></div>
+                              <div class="textbox">
+                                 <div class="text">This is my Title</div>
+                              </div>
+                           </div> -->
+                        </div>
+                     </div>
+                    
+                     <!-- start use current location for mobile view -->
+                     <!-- start use current location for mobile view -->
+                     <!--div for name-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                    class="fa fa-user-o icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0" placeholder="Full Name" name="fname"
+                                 id="demo1">
+                           </div>
+                        </div>
+                     </div>
+
+                     <!--div for phone no.-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                    class="fa fa-phone icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0" placeholder="Mobile Number"
+                                 name="mnumber" id="demo2">
+                           </div>
+                        </div>
+                     </div>
+
+                     <!--div for pincode-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                    class="fa fa-bullseye icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0" placeholder="Pincode" name="pincode"
+                                 id="demo3">
+                           </div>
+                        </div>
+                     </div>
+
+                     <!---div for Flat house-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                    class="fa fa-building-o icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0"
+                                 placeholder="Flat, House no., Building, Company, Apartment" name="addressline1"
+                                 id="demo4">
+                           </div>
+                        </div>
+                     </div>
+
+                     <!----div for address-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                    class="fa fa-road icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0"
+                                 placeholder="Area, Street, Sector, Village" name="addressline2" id="demo5">
+                           </div>
+                        </div>
+                     </div>
+
+                     <!---div for main road-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                    class="fa fa-street-view icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0" placeholder="Landmark" name="landmark"
+                                 id="demo6">
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-----div for city-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                    class="fa fa-building icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0" placeholder="Town/City" name="city"
+                                 id="demo7">
+                           </div>
+                        </div>
+                     </div>
+
+                     <!----div for state-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                    class="fa fa-globe icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0" placeholder="State" name="state"
+                                 id="demo8">
+                           </div>
+                        </div>
+                     </div>
+
+                     <!------make my default Address checkbox-------->
+                     <div class="row">
+                           <div class="col-md-12">
+                              <div class="form-check">
+                                 <input class="form-check-input checbox-color" type="checkbox"
+                                    id="flexCheckDefault" name="defaultaddress">
+                                 <label class="form-check-label default-addr" for="flexCheckDefault">
+                                    Make this my default Address
+                                 </label>
+                              </div>
+                           </div>
+                     </div>
+
+                     <div>
+                        <!--------Add Delivery Instruction------>
+                        <div class="delivery-instrction1">Add Delivery Instruction</div>
+                        <div class="text-delivery">Preferences are use to plan your delivery.
+                           However,
+                           shipments can sometimes arrive early or later than planned</div>
+                        <div class="delivery-instrction1" id="demo9">Address Type - </div>
+                        <div class="delivery-instrction1" id="demo9"> </div>
+
+
+                        <!-----dropdown for Select a Address Type-------->
+                        <div class="row">
+                           <div class="col-md-12 d-grid">
+                              <div class="dropdown">
+
+                                 <select  class="form-select form-select-lg mb-3 drop-btn block"
+                                    aria-label=".form-select-lg example" name="selectaddresstype" required>
+
+                                    <option value="1">Home (7 am-9 pm
+                                       delivery)</option>
+                                    <option value="2">Office/Commercial(10
+                                       am-6
+                                       pm delivery)</option>
+
+                                 </select>
+
+                                 <!-- <button class="btn btn-secondary drop-btn block dropdown-toggle-0 pt-2 "
+                                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                aria-expanded="false" name="selectaddresstype">
+                                                Select a Address Type
+                                             </button>
+                                             
+                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Home (7 am-9 pm
+                                                      delivery)</a></li>
+                                                <li><a class="dropdown-item" href="#">Office/Commercial(10
+                                                      am-6
+                                                      pm delivery)</a></li>
+                                             </ul> -->
+                              </div>
+                           </div>
+                        </div>
+
+                        <!---------dropdown end---------->
+                        <!--div row for add address button start-->
+                        <div class="row py-4">
+
+                           <div class="col-md-12">
+                              <div class=" border-top-0">
+                                 <!--button for address save-->
+                                 <button type="submit" class="btn  btn-add rounded-pill me-auto footercolor1">
+                                    Update Address
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- div row for add address button end -->
+                     </div>
+
+                  </form>
+               </div>
+            </div>
+            <div class="col-md-1"></div>
+         </div>
+
+         <!-------Model Body End----->
+
+
+
+      </div>
+
+   </div>
+
+</div>
+<!------- Modal Edit End-------->
+
+
+
+<!-- start modal for add new address -->
+<div class="modal" id="myModal2">
+   <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+         <!---row for header-->
+         <div class="row ">
+
+            <!---column for modal header-->
+            <div class="col-md-12">
+               <div class="modal-header border-bottom-0">
+
+                  <h4 class="modal-title  addnewpop">Add New Address</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+               </div>
+            </div>
+
+         </div>
+         <!-- Modal Header -->
+         <!-- <div class="modal-header">
+                           <h4 class="modal-title">Add New Address</h4>
+                           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div> -->
+
+
+
+
+         <!--------Model Body-->
+         <!---row for model body-->
+         <div class="row">
+            <div class="col-md-1"></div>
+            <!----modal content in body-->
+            <div class="col-md-10">
+               <div class="modal-body input-text-popup">
+                  <!---------Form start for Add New Address------>
+                  <form action="{% url 'saveaddress' %}" method="POST">
+                     {% csrf_token %}
+                     <!-- start use current location for mobile view -->
+                     <div class="row location-mobile-view">
+                        <div class="col-md-12 d-grid">
+                           <button type="button" class="btn btn-block"><i class="fa fa-map-marker orange-logo" aria-hidden="true"></i> Use current location</button>
+                        </div>
+                     </div>
+
+                     <!-- <div class="row shilpa-text">
+                        <div class="col-md-12 ">
+                           
+                        </div>
+                     </div> -->
+                     <div class="row pt-2 desktop-none">
+                        <div class="col-md-12 mobile">
+                            <div class="color"><h1 class="or-mobile-view">OR</h1></div>
+                           <!-- <div id="wrapper">
+                              <div class="line"></div>
+                              <div class="textbox">
+                                 <div class="text">This is my Title</div>
+                              </div>
+                           </div> -->
+                        </div>
+                     </div>
+                    
+                     <!-- start use current location for mobile view -->
+                     <!--div for name-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                    class="fa fa-user-o icon" aria-hidden="true"></i></span>
+                              <input required type="text" class="form-control rounded-0" placeholder="Full Name" name="fname">
+                           </div>
+                        </div>
+                     </div>
+
+                     <!--div for phone no.-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                    class="fa fa-phone icon" aria-hidden="true"></i></span>
+                              <input required type="text" class="form-control rounded-0" placeholder="Mobile Number"
+                                 name="mnumber">
+                           </div>
+                        </div>
+                     </div>
+
+                     <!--div for pincode-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                    class="fa fa-bullseye icon" aria-hidden="true"></i></span>
+                              <input required type="text" class="form-control rounded-0" placeholder="Pincode" name="pincode">
+                           </div>
+                        </div>
+                     </div>
+
+                     <!---div for Flat house-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                    class="fa fa-building-o icon" aria-hidden="true"></i></span>
+                              <input required type="text" class="form-control rounded-0"
+                                 placeholder="Flat, House no., Building, Company, Apartment" name="addressline1">
+                           </div>
+                        </div>
+                     </div>
+
+                     <!----div for address-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                    class="fa fa-road icon" aria-hidden="true"></i></span>
+                              <input required type="text" class="form-control rounded-0"
+                                 placeholder="Area, Street, Sector, Village" name="addressline2">
+                           </div>
+                        </div>
+                     </div>
+
+                     <!---div for main road-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                    class="fa fa-street-view icon" aria-hidden="true"></i></span>
+                              <input required type="text" class="form-control rounded-0" placeholder="Landmark" name="landmark">
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-----div for city-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                    class="fa fa-building icon" aria-hidden="true"></i></span>
+                              <input required type="text" class="form-control rounded-0" placeholder="Town/City" name="city">
+                           </div>
+                        </div>
+                     </div>
+
+                     <!----div for state-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                    class="fa fa-globe icon" aria-hidden="true"></i></span>
+                              <input required type="text" class="form-control rounded-0" placeholder="State" name="state">
+                           </div>
+                        </div>
+                     </div>
+
+                     <!------make my default Address checkbox-------->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="form-check">
+                              <input  class="form-check-input checbox-color" type="checkbox" id="flexCheckDefault"
+                                 name="defaultaddress">
+                              <label class="form-check-label default-addr" for="flexCheckDefault">
+                                 Make this my default Address
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div>
+                        <!--------Add Delivery Instruction------>
+                        <div class="delivery-instrction1">Add Delivery Instruction</div>
+                        <div class="text-delivery">Preferences are use to plan your delivery.
+                           However,
+                           shipments can sometimes arrive early or later than planned</div>
+                        <div class="delivery-instrction1">Address Type</div>
+
+                        <!-----dropdown for Select a Address Type-------->
+                        <div class="row">
+                           <div class="col-md-12 d-grid">
+                              <div class="dropdown">
+
+                                 <select required class="form-select form-select-lg mb-3 drop-btn block"
+                                    aria-label=".form-select-lg example" name="selectaddresstype">
+                                    
+                                    <option value="1">Home (7 am-9 pm
+                                       delivery)</option>
+                                    <option value="2">Office/Commercial(10
+                                       am-6
+                                       pm delivery)</option>
+
+                                 </select>
+
+                                 <!-- <button class="btn btn-secondary drop-btn block dropdown-toggle-0 pt-2 "
+                                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                aria-expanded="false" name="selectaddresstype">
+                                                Select a Address Type
+                                             </button>
+                                             
+                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Home (7 am-9 pm
+                                                      delivery)</a></li>
+                                                <li><a class="dropdown-item" href="#">Office/Commercial(10
+                                                      am-6
+                                                      pm delivery)</a></li>
+                                             </ul> -->
+                              </div>
+                           </div>
+                        </div>
+
+                        <!---------dropdown end---------->
+                        <!--div row for add address button start-->
+                        <div class="row py-4">
+
+                           <div class="col-md-12">
+                              <div class=" border-top-0">
+                                 <!--button for address save-->
+                                 <button type="submit" class="btn  btn-add rounded-pill me-auto footercolor1">
+                                    Add Address
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- div row for add address button end -->
+                     </div>
+
+                  </form>
+               </div>
+            </div>
+            <div class="col-md-1"></div>
+         </div>
+
+         <!-------Model Body End----->
+
+
+
+      </div>
+
+   </div>
+
+</div>
+<!-- end modal for add new address -->
+
+<script>
+   function defaultaddress(id) {
+      window.location.assign("/SetDefaultAddress/" + id);
+   }
+</script>
+
+<!-- Start Edit Address The script -->
+<script>
+   function Edit_address(id, FullName, Address_line1, Address_line2, Landmark, City, state, PinCode, MobileNo, AddressType) {
+      console.log(FullName, Address_line1, Address_line2, Landmark, City, state, PinCode, MobileNo)
+      document.getElementById("addressedit").action = "/EditAdress/" + id
+      document.getElementById("demo1").value = FullName;
+      document.getElementById("demo2").value = MobileNo;
+      document.getElementById("demo3").value = PinCode;
+      document.getElementById("demo4").value = Address_line1;
+      document.getElementById("demo5").value = Address_line2;
+      document.getElementById("demo6").value = Landmark;
+      document.getElementById("demo7").value = City;
+      document.getElementById("demo8").value = state;
+      if (AddressType) {
+
+         document.getElementById("demo9").innerHTML = 'Home (7 am-9 pm delivery)';
+
+      }
+      else {
+
+         document.getElementById("demo9").innerHTML = 'Office/Commercial(10am-6pm delivery)';
+      }
+
+   }
+</script>
+<!-- End Edit Address The script -->
+{% endblock %}
+
+<!-- for 3lines dropdown script start -->
+<script>
+   function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+   }
+
+   function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+   }
+</script>
+<!-- 3lines dropdown script end -->

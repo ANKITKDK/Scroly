@@ -1,0 +1,2361 @@
+body {
+	background-image: url("../images/background.png");
+	max-width: 100%;
+	overflow-x: hidden;
+	padding-left: 1.563rem;
+	padding-right: 1.563rem;
+
+
+}
+
+.india-biggest-fashion {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.25rem;
+	line-height: 145%;
+	/* or 29px */
+
+
+	color: #3F515C;
+}
+
+.big-fashion {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 145%;
+	color: #3F515C;
+	padding-bottom: 1rem;
+}
+
+.date-clr {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.25rem;
+	line-height: 145%;
+	color: #F8772F;
+}
+
+.day-date {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 145%;
+	color: #3F515C;
+	padding-bottom: 5.625rem;
+}
+
+.alert-padding {
+	padding-left: 1.875rem;
+	background: #FFFFFF;
+	border: 0.0625rem solid #FC813D;
+	box-shadow: 0.125rem 0.125rem 0.375rem #D2B3B3;
+	border-radius: 0.375rem;
+
+}
+
+.alert {
+	width: 80%;
+}
+
+/* start boolywood theme */
+
+.bollywood-theme {
+	background-color: var(--color-2);
+}
+
+/* end boolywood theme */
+
+.after-nav2-padding {
+	padding-top: 1.875rem;
+}
+
+.padding-earn-with-scroly {
+	padding-top: 2.5rem;
+}
+
+
+.heading1-earn-with-scrolly {
+
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 4rem;
+	line-height: 5.3125rem;
+	text-align: center;
+
+	color: #304653;
+	padding-bottom: 1.0625rem;
+	padding-left: 2.8125rem;
+}
+
+.heading2-become-businessman {
+
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 2rem;
+	line-height: 2.4375rem;
+
+	color: #3F515C;
+	padding-left: 2.8125rem;
+	padding-right: 3.5rem;
+
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+
+.play-button {
+	color: var(--color-9);
+	font-size: 2rem;
+	border-radius: 70%;
+
+	background-color: var(--color-21);
+
+}
+
+/* ============== */
+
+
+.how-to-become-heading {
+	padding-top: 1.25rem;
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 1.8125rem;
+
+	color: var(--color-5);
+
+	opacity: 0.8;
+	padding-top: 1.875rem;
+	padding-bottom: 4.3125rem;
+	padding-left: 1.875rem;
+}
+
+.supplier-heading {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.75rem;
+	line-height: 2.125rem;
+
+	color: var(--color-5);
+
+	opacity: 0.8;
+}
+
+.watch-this {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 2.125rem;
+
+	color: var(--color-5);
+
+	opacity: 0.8;
+	padding-top: 1.875rem;
+	padding-bottom: 4.25rem;
+
+}
+
+.play-button-padding {
+	padding-left: 17rem;
+	padding-right: 16.9375rem;
+}
+
+.earnpadding {
+	font-family: var(--font-2);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 2.5rem;
+	line-height: 5.3125rem;
+
+	color: #304653
+}
+
+.padding-button-out {
+	padding-bottom: 3.0625rem;
+	padding-left: 2.8125rem;
+	padding-top: 2.5rem;
+}
+
+
+.know-more {
+	background: var(--color-1);
+	box-shadow: 0.125rem 0.125rem 0.5rem rgba(62, 125, 99, 0.44);
+	border-radius: 1.625rem;
+	color: var(--color-9);
+
+}
+
+.know-more:hover {
+	background: var(--color-1);
+	box-shadow: 0.125rem 0.125rem 0.5rem rgba(62, 125, 99, 0.44);
+	border-radius: 1.625rem;
+	color: var(--color-9);
+}
+
+
+/* =========== */
+
+
+.modal-body h6 {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	/* identical to box height, or 150% */
+	letter-spacing: -0.011em;
+
+	color: var(--color-5);
+}
+
+/* summer sale banner start */
+
+.summer-section {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 51%;
+	transform: translate(-60%, -60%);
+}
+
+.banner-img1 img {
+	height: 31.25rem;
+	width: 91.875rem;
+}
+
+.banner-img2 img {
+	height: 31.25rem;
+	width: 28.125rem;
+
+}
+
+.summer2padding {
+	padding-left: 5rem;
+}
+
+.text-1 {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 64px;
+	line-height: 78px;
+	color: #F8772F;
+}
+
+.text-2 {
+	font-family: var(--font-2);
+	font-style: normal;
+	font-weight: 800;
+	font-size: 64px;
+	line-height: 85px;
+	color: #304653;
+}
+
+.text-3 {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 59px;
+	color: #F8772F;
+	/* padding-top: 81px; */
+	/* padding-bottom:37px ; */
+}
+
+
+.hero-image {
+	background-image: url("../images/summersale.png");
+	height: 25rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.hero-text {
+
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	color: var(--color-9);
+
+}
+
+.hero-text h3 {
+	text-align: center;
+}
+
+.hero-text .summer {
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 4rem;
+	line-height: 4.875rem;
+	color: #F8772F;
+
+}
+
+.hero-text .up-to {
+
+
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 4rem;
+	line-height: 5.3125rem;
+	text-align: center;
+
+	color: #304653;
+}
+
+.hero-text .summer2 {
+
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 3rem;
+	line-height: 3.6875rem;
+
+
+	text-align: center;
+
+	color: #F8772F;
+
+}
+
+/* summer sale banner end */
+
+
+/* ----------------------------------------------------------------------------------- */
+
+.col2 {
+	background-color: var(--color-10);
+	border-radius: 0.375rem;
+
+
+}
+
+
+.col3 {
+	background-color: var(--color-10);
+	border-radius: 0.375rem;
+	width: 13.75rem;
+	height: 15rem;
+	background-size: contain;
+}
+
+.col3 p {
+	font-size: 1.125rem;
+	font-family: 'Montserrat';
+	color: var(--color-5);
+
+}
+
+/* ---------------end of col3   ------------------ */
+
+
+.heading {
+	font-family: var(--font-1);
+	font-size: 2rem;
+	font-weight: 500;
+	color: var(--color-5);
+	font-style: normal;
+	padding-left: 0.625rem;
+	padding-bottom: 1.375rem;
+
+
+}
+
+
+.card-shadow {
+	background: var(--color-10);
+	box-shadow: 0.25rem 0.25rem 0.375rem rgba(139, 125, 125, 0.26);
+	border-radius: 0.375rem;
+
+}
+
+
+.foldable-table {
+
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+	color: var(--color-5);
+	padding-bottom: 0.5rem;
+
+}
+
+.icon {
+	color: var(--color-17);
+}
+
+.rupee {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 1.8125rem;
+	color: var(--color-12);
+}
+
+.deleted-rupee {
+	color: rgba(63, 81, 92, 0.4);
+}
+
+.offer {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.125rem;
+	line-height: 1.375rem;
+	color: var(--color-5);
+}
+
+.free-delivery {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	color: var(--color-5);
+	padding-top: 0.375rem;
+}
+
+.img-text {
+	position: relative;
+	text-align: center;
+}
+
+.bottom-left {
+	position: absolute;
+	bottom: 0.5rem;
+	left: 1rem;
+
+}
+
+.rating {
+	background: var(--color-9);
+	border-radius: 0.125rem;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+.rating-clr {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 0.875rem;
+	line-height: 1.0625rem;
+	color: var(--color-5);
+}
+
+.star-icon {
+	color: var(--color-1);
+}
+
+.student-offer {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	/* identical to box height */
+
+
+	color: #F8772F;
+}
+
+
+/* ---------- start deal of the day card section----------- */
+
+.deal-of-the-day-heading {
+	font-family: var(--font-2);
+	color: #304653;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 3rem;
+	line-height: 4rem;
+
+
+}
+
+.deal-of-the-day-heading a {
+
+	text-decoration: none;
+	color: #FC813D;
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+
+}
+
+.deal-of-the-day-heading a:hover {
+
+	text-decoration: none;
+	color: #FC813D;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+
+}
+
+/* end dearls of the day card section */
+
+/* start summer collection section */
+
+.summer-collection {
+	font-family: var(--font-2);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 3rem;
+	line-height: 4rem;
+	color: #304653;
+}
+
+.summer-collection a {
+	text-decoration: none;
+	color: #FC813D;
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+}
+
+.summer-collection a:hover {
+
+	text-decoration: none;
+	color: #FC813D;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+
+}
+
+/* end summer collection section */
+
+/* start boolywood section */
+
+.bollywood-new {
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 6.875rem;
+	line-height: 9.1875rem;
+	color: #FFFFFF;
+
+}
+
+.theme-collection-new {
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 4rem;
+	line-height: 5.3125rem;
+	color: #FFFFFF;
+}
+
+.deal .bollywood-see-all a {
+	text-decoration: none;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	color: #FFFFFF;
+}
+
+.deal .bollywood-see-all a:hover {
+	text-decoration: none;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	color: #FFFFFF;
+}
+
+
+.slideimg {
+	display: flex;
+	overflow-x: auto;
+}
+
+.slideimg::-webkit-scrollbar {
+	width: 0;
+}
+
+/* end boolywood section */
+
+/* start recently viewed section */
+
+.recently-viewed {
+	font-family: var(--font-2);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 3rem;
+	line-height: 4rem;
+	color: #304653;
+}
+
+.recently-viewed a,
+.recently-viewed a:hover {
+	text-decoration: none;
+	color: #FC813D;
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+
+}
+
+/* end recently viewed section */
+
+/* start trending-offers section */
+
+.trending-offers {
+
+	font-family: var(--font-2);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 3rem;
+	line-height: 4rem;
+	color: #304653;
+
+}
+
+.trending-offers a,
+.trending-offers a:hover {
+	text-decoration: none;
+	color: #FC813D;
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+
+}
+
+/* end trending-offers section */
+
+/* start student-essentials */
+
+.student-essentials {
+
+	font-family: var(--font-2);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 3rem;
+	line-height: 4rem;
+	color: #304653;
+
+}
+
+/* end student-essentials */
+
+/* start night-wear */
+
+.night-wear {
+	font-family: var(--font-2);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 3rem;
+	line-height: 4rem;
+	color: #304653;
+}
+
+.night-wear a,
+.night-wear a:hover {
+	text-decoration: none;
+	color: #FC813D;
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+}
+
+/* end night-wear */
+
+/* start mobile-accessories */
+
+.mobile-accessories {
+	font-family: var(--font-2);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 3rem;
+	line-height: 4rem;
+	color: #304653;
+}
+
+.mobile-accessories a,
+.mobile-accessories a:hover {
+	text-decoration: none;
+	color: #FC813D;
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+}
+
+/* end mobile-accessories */
+
+/* start toys-games */
+
+.toys-games {
+	font-family: var(--font-2);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 3rem;
+	line-height: 4rem;
+	color: #304653;
+}
+
+.toys-games a,
+.toys-games a:hover {
+	text-decoration: none;
+	color: #FC813D;
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+}
+
+
+/* end toys-games */
+
+/* start footwear */
+
+.footwear {
+	font-family: var(--font-2);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 3rem;
+	line-height: 4rem;
+	color: #304653;
+}
+
+.footwear a,
+.footwear a:hover {
+	text-decoration: none;
+	color: #FC813D;
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+}
+
+/* end footwear */
+
+/* start customer also likes  */
+
+.customer-also-liked {
+	font-family: var(--font-2);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 3rem;
+	line-height: 4rem;
+	color: #304653;
+}
+
+.customer-also-liked a,
+.customer-also-liked a:hover {
+	text-decoration: none;
+	color: #FC813D;
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+}
+
+/* end customer also likes  */
+
+.row3 {
+	background-color: #FF4D6D;
+	width: 64.0625rem;
+
+
+}
+
+.row3 img {
+
+	width: 28.125rem;
+	height: 36.875rem;
+}
+
+.row3 h2 {
+	font-family: Playfair Display;
+	color: white;
+	font-size: 3.375rem;
+
+}
+
+.row3 span {
+	font-size: 5rem;
+}
+
+.collection-card {
+	width: 160px;
+}
+
+.trend .card-body .card-text h6 {
+	color: var(--color-5);
+	font-size: 0.3125rem;
+
+}
+
+.trend .card-body .rupee2 {
+	font-size: 1rem;
+
+}
+
+.row4 {
+	width: auto;
+	height: 18.75rem;
+	background-color: var(--color-10);
+	box-shadow: 0.25rem 0.25rem 0.375rem rgba(139, 125, 125, 0.26);
+	border-radius: 0.375rem 0rem 0rem 0.375rem;
+}
+
+.row4 .item {
+	width: 192px;
+}
+
+.row4 .item .card {
+	height: 18.75rem;
+	border: none;
+}
+
+.row4 .item .card .card-body h6 {
+	font-size: 0.3125rem;
+}
+
+
+.s {
+	display: flex;
+}
+
+/* button */
+.share-btn {
+	height: 3.125rem;
+	width: 3.125rem;
+	left: 1614px;
+	top: 22.1875rem;
+	border-radius: 50%;
+	border: none;
+	background-color: var(--color-1);
+	vertical-align: none;
+}
+
+
+.btn-circle.btn-sm {
+	width: 1.875rem;
+	height: 3.125rem;
+	padding: 0.375rem 0rem;
+	border-radius: 1.875rem;
+	font-size: 0.5rem;
+	text-align: center;
+	background-color: var(--color-1);
+
+
+}
+
+.btn-circle.btn-md {
+	width: 3.125rem;
+	height: 3.125rem;
+	padding: 0.625rem 1rem;
+	border-radius: 1.5625rem;
+	font-size: 1.25rem;
+	text-align: center;
+	background: var(--color-16);
+
+}
+
+.share-button {
+	font-family: var(--font-1);
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.25rem;
+	letter-spacing: 0em;
+	text-align: center;
+	color: var(--color-9);
+}
+
+.share-icon-main {
+	color: var(--color-33);
+	height: 1.0625rem;
+	width: 0.9375rem;
+	left: 18.4375rem;
+	top: 1.125rem;
+	border-radius: 0rem;
+}
+
+/*-----------------------hover button------------------------*/
+
+.share-btn-hover:hover {
+	height: 3.125rem;
+	width: 3.125rem;
+	left: 1614px;
+	top: 22.1875rem;
+	border-radius: 50%;
+	border: none;
+	background-color: var(--color-34);
+	vertical-align: none;
+	transition-duration: 0.4s;
+}
+
+
+.btn-circle.btn-sm-hover {
+	width: 1.875rem;
+	height: 3.125rem;
+	padding: 0.375rem 0rem;
+	border-radius: 1.875rem;
+	font-size: 0.5rem;
+	text-align: center;
+	background-color: var(--color-34);
+}
+
+.btn-circle.btn-md-hover {
+	width: 3.125rem;
+	height: 3.125rem;
+	padding: 0.625rem 1rem;
+	border-radius: 1.5625rem;
+	font-size: 1.25rem;
+	text-align: center;
+	background: var(--color-16);
+}
+
+
+.share-button-hover {
+	font-family: var(--font-1);
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.25rem;
+	letter-spacing: 0em;
+	text-align: center;
+	color: var(--color-9);
+}
+
+.share-icon-hover {
+	color: var(--color-33);
+	height: 1.0625rem;
+	width: 0.9375rem;
+	left: 18.4375rem;
+	top: 1.125rem;
+	border-radius: 0rem;
+}
+
+
+/*------------------------------------disable buttons---------------------------------*/
+
+.share-btn-hover {
+	height: 3.125rem;
+	width: 3.125rem;
+	left: 1614px;
+	top: 22.1875rem;
+	border-radius: 50%;
+	border: none;
+	background-color: var(--color-34);
+	vertical-align: none;
+
+
+}
+
+
+/* end button */
+
+.play-btn-new {
+	padding-bottom: 1.875rem;
+}
+
+/* start owl carousel */
+
+.stretch-card.card {
+	width: 100%;
+	min-width: 100%
+}
+
+
+.flex {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto
+}
+
+@media (max-width:61.9988rem) {
+	.padding {
+		padding: 24px
+	}
+}
+
+@media (max-width:47.9988rem) {
+	.padding {
+		padding: 16px
+	}
+}
+
+/* .padding {
+    padding: 8px
+} */
+
+.owl-carousel .item {
+	margin: 0.125rem;
+	width: 93%;
+
+}
+
+.owl-carousel .item img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+.owl-carousel {
+	margin-bottom: 0.9375rem;
+}
+
+/* end owl carousel */
+
+.card .card-header .img-fluid {
+	height: 12.5rem;
+}
+
+.owl-carousel .card .card-header .img-fluid {
+	height: 13.75rem;
+}
+
+.earn-with-scroly-background {
+	background: #FEF2F2;
+	border-radius: 0.375rem;
+	--bs-gutter-x: 0rem;
+}
+
+.earn-with-scroly-new {
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 4rem;
+	line-height: 5.3125rem;
+	color: #304653;
+	padding-top: 2.5rem;
+}
+
+.get-a-chance-new {
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 2rem;
+	line-height: 2.4375rem;
+	color: #3F515C;
+	padding-bottom: 2.5rem;
+}
+
+.left-new-padding {
+	padding-left: 2.8125rem;
+}
+
+.how-to-become-new {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 1.8125rem;
+	color: #304653;
+	opacity: 0.8;
+	padding-top: 1.875rem;
+	padding-bottom: 4.3125rem;
+	padding-left: 1.875rem;
+}
+
+.how-to-become-new .supplier-heading
+{
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+}
+
+.ply-btn-mobile a img {
+
+	font-size: 10px;
+
+}
+
+.watch-this-new {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.75rem;
+	line-height: 2.125rem;
+
+	color: #304653;
+
+	opacity: 0.8;
+}
+
+.banner-1
+{
+    padding-left:0rem;
+}
+
+.dynamic-banner
+{
+    padding-top:4.688rem;
+}
+
+.dynamic-banner .summer-sale
+{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 4.875rem;
+    color: var( --color-12);
+}
+
+
+.dynamic-banner .off
+{
+    font-family: var(--font-2);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 5.313rem;
+    color: var(--color-5);
+}
+
+.dynamic-banner .end-date
+{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3.688rem;
+    color: var(--color-12);
+}
+
+/* --------------------------------------------------------- */
+.bollywood-padding
+{
+    padding-left:0rem;
+}
+
+.earn-with-scroly-desktop-view .col-padding
+{
+    padding-left:0px;
+}
+/* Start Mobile view */
+
+@media all and (min-width: 577px) {}
+
+
+@media all and (max-width: 576px) {
+
+
+	.cover {
+		padding: 0rem 1.25rem;
+		position: relative;
+
+	}
+
+	.left {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.right {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.scroll-images {
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		overflow-y: hidden;
+		scroll-behavior: smooth;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.child img {
+		width: 60px;
+        height: 60px;
+		/*object-fit: cover;*/
+		object-position: center;
+	}
+
+	.scroll-images::-webkit-scrollbar {
+		width: 0rem;
+		height: 0rem;
+		background-color: #aaa;
+	}
+
+	.scroll-images::-webkit-scrollbar-thumb {
+		background-color: black;
+	}
+
+	.child {
+		min-width: 4.4375rem;
+		height: 2.75rem;
+		margin: 0rem 0rem;
+		overflow: hidden;
+	}
+
+	button {
+		background-color: transparent;
+		border: none;
+		outline: none;
+		cursor: pointer;
+	}
+
+	.scroll-images::-webkit-scrollbar {
+		-webkit-appearance: none;
+	}
+
+	.men {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.625rem;
+		line-height: 1.5rem;
+		letter-spacing: -0.011em;
+		color: #3F515C;
+		/*padding-left: 1.5625rem;
+		padding-right: 1.5625rem;*/
+	}
+
+	.women {
+
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.625rem;
+		line-height: 1.5rem;
+		letter-spacing: -0.011em;
+		color: #3F515C;
+		padding-left: 0.8125rem;
+
+	}
+
+	.kids {
+
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.625rem;
+		line-height: 1.5rem;
+		letter-spacing: -0.011em;
+		color: #3F515C;
+		padding-left: 1.5rem;
+
+	}
+
+	.bags {
+
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.625rem;
+		line-height: 1.5rem;
+		letter-spacing: -0.011em;
+		color: #3F515C;
+		padding-left: 1.375rem;
+
+	}
+
+	.beauty {
+
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.625rem;
+		line-height: 1.5rem;
+		letter-spacing: -0.011em;
+		color: #3F515C;
+		padding-left: 1.25rem;
+
+	}
+
+	.electronic {
+
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.625rem;
+		line-height: 1.5rem;
+		letter-spacing: -0.011em;
+		color: #3F515C;
+		padding-left: 0.625rem;
+
+	}
+
+	.home {
+
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.625rem;
+		line-height: 1.5rem;
+		letter-spacing: -0.011em;
+		color: #3F515C;
+		padding-left: 1.25rem;
+
+	}
+
+	.footwear {
+
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.625rem;
+		line-height: 1.5rem;
+		letter-spacing: -0.011em;
+		color: #3F515C;
+		padding-left: 0.8125rem;
+
+	}
+
+	.jewellery {
+
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.625rem;
+		line-height: 1.5rem;
+		letter-spacing: -0.011em;
+		color: #3F515C;
+		padding-left: 0.8125rem;
+
+	}
+
+
+	.earn-with-scroly-new {
+		font-family: 'Playfair Display';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1rem;
+		line-height: 1.3125rem;
+
+		color: #304653;
+		padding-top: 1rem;
+		padding-bottom: 0.25rem;
+	}
+
+	.get-a-chance-new {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.625rem;
+		line-height: 0.75rem;
+
+		color: #3F515C;
+		padding-bottom: 1rem;
+	}
+
+	.how-to-become-new {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 0.625rem;
+		line-height: 0.75rem;
+		color: #304653;
+		opacity: 0.8;
+		padding-top: 1rem;
+		padding-bottom: 0.25rem;
+		padding-left: 0.5rem;
+	}
+
+	.watch-this-new {
+
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 0.625rem;
+		line-height: 0.75rem;
+
+		color: #304653;
+
+		opacity: 0.8;
+		display: none;
+
+
+	}
+
+	.play-btn-new {
+		padding-bottom: 0rem;
+	}
+
+	.left-new-padding {
+		padding-left: 12px;
+	}
+
+	.watch-this-new-mobile {
+
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 0.625rem;
+		line-height: 0.75rem;
+
+		color: #304653;
+
+		opacity: 0.8;
+		padding-bottom: 0.8125rem;
+		padding-left: 0.5rem;
+
+	}
+
+	.img-padding-mobile {
+		padding-top: 1.5625rem;
+	}
+
+	.padding-earn-with-scroly {
+		padding-top: 1rem;
+	}
+
+	.heading1-earn-with-scrolly {
+		font-family: 'Playfair Display';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1rem;
+		line-height: 1.3125rem;
+
+		color: #304653;
+		padding-top: 1rem;
+		padding-bottom: 0.25rem;
+		padding-left: 0rem;
+
+	}
+
+
+	.padding-for-left-box {
+		padding-right: 1rem;
+	}
+
+	.heading2-become-businessman {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.625rem;
+		line-height: 0.75rem;
+
+		color: #3F515C;
+		padding-top: 0.25rem;
+		padding-bottom: 1rem;
+		padding-left: 0rem;
+		padding-right: 0rem;
+	}
+
+
+	.know-more-mobile {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 0.75rem;
+		line-height: 0.9375rem;
+
+		color: #F8772F;
+		padding-bottom: 0.875rem;
+	}
+
+	.know-more-btn-desktop {
+		display: none;
+	}
+
+
+	.how-to-become-heading {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 0.625rem;
+		line-height: 0.75rem;
+
+		color: #304653;
+
+		opacity: 0.8;
+		padding-top: 1rem;
+		padding-bottom: 0.25rem;
+		padding-left: 0rem;
+	}
+
+
+	.play-button {
+		font-size: 15px;
+		padding-bottom: 2.0625rem;
+		padding-left: 2.6875rem;
+		padding: 0.35rem;
+	}
+
+
+	.play-btn-padding {
+		padding-top: 0rem;
+	}
+
+	.watch-this {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 10px;
+		line-height: 12px;
+
+		color: #304653;
+
+		opacity: 0.8;
+		padding-top: 0rem;
+		padding-bottom: 0.8125rem;
+	}
+
+	/* start banner  */
+
+	.banner-img1 img {
+		height: 8.125rem;
+		width: 18.75rem;
+	}
+
+	.banner-img2 img {
+		height: 8.125rem;
+		width: 9.375rem;
+
+	}
+
+	.text-1 {
+
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 1.125rem;
+		line-height: 1.375rem;
+		/* identical to box height */
+
+		text-align: center;
+
+		color: #F8772F;
+	}
+
+	.text-2 {
+
+		font-family: 'Playfair Display';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 1.125rem;
+		line-height: 1.5rem;
+		/* identical to box height */
+
+		text-align: center;
+
+		color: #304653;
+
+
+	}
+
+	.text-3 {
+
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.875rem;
+		line-height: 1.0625rem;
+		/* identical to box height */
+
+		text-align: center;
+
+		color: #F8772F;
+
+
+	}
+
+	body
+	{
+        padding-left: 0rem;
+        padding-right: 0.75rem;
+	}
+
+	/* end banner */
+
+	.summer-img-bottom {
+		padding-bottom: 0.75rem;
+
+	}
+
+	.trending-offers {
+		padding-left: 1rem;
+	}
+
+	.trending-offers {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+
+		color: #304653;
+	}
+
+	.trending-offers a {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.25rem;
+		color: #FC813D;
+	}
+
+	/* .img-mobile img{
+    padding-top: 100px;
+} */
+
+
+	.bollywood-theme-mobile {
+		background-color: #FF4D6D;
+	}
+
+	.bolly-mobile {
+		font-family: 'Playfair Display';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 1.5rem;
+		line-height: 2rem;
+		color: #FFFFFF;
+	}
+
+	.theme-mobile {
+		font-family: 'Playfair Display';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 1rem;
+		line-height: 1.3125rem;
+		color: #FFFFFF;
+	}
+
+	.bollywood-see-all-mobile a {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.25rem;
+		color: #FFFFFF;
+		padding-bottom: 0.5rem;
+	}
+
+	.padding-mobile-bottom {
+		padding-bottom: 1rem;
+	}
+
+	.bolly-mobile-top {
+		padding-top: 0.5rem;
+	}
+
+	.owl-carousel .card .card-header .img-fluid {
+		height: 10.625rem;
+
+	}
+
+	.foldable-table,
+	.icon,
+	.deleted-rupee,
+	.offer {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.625rem;
+		line-height: 0.75rem;
+
+		color: #304653;
+		padding-bottom: 0.375rem;
+	}
+
+	.rupee {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 0.625rem;
+		line-height: 0.75rem;
+
+		color: #F8772F;
+	}
+
+	.free-delivery {
+		display: none;
+	}
+
+	.padding-bottom-mobile {
+		padding-bottom: 0.75rem;
+	}
+
+	.choose-location a {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.625rem;
+		line-height: 0.75rem;
+		color: #304653;
+
+	}
+
+	.choose-location {
+
+		padding-bottom: 0.875rem;
+	}
+
+	.watch-this-desktop {
+		display: none;
+	}
+
+
+	.deal .bollywood-see-all-mobile a {
+		text-decoration: none;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.25rem;
+		color: #FFFFFF;
+	}
+
+	.deal .bollywood-see-all-mobile a:hover {
+		text-decoration: none;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.25rem;
+		color: #FFFFFF;
+	}
+
+	.tagline {
+		font-family: 'Playfair Display';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 32px;
+		color: #FFFFFF;
+		padding-top: 7px;
+	}
+
+	.bollywood-new {
+		font-family: 'Playfair Display';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 1.5rem;
+		line-height: 2rem;
+		color: #FFFFFF;
+	}
+
+	.theme-collection-new {
+		font-family: 'Playfair Display';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 1rem;
+		line-height: 1.3125rem;
+		color: #FFFFFF;
+
+	}
+
+	.banner-1
+    {
+        padding-left:0.938rem;
+    }
+
+	.dynamic-banner
+	{
+        padding-top: 0.375rem;
+    }
+
+	.dynamic-banner .summer-sale
+	{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+        color: var( --color-12);
+    }
+
+    .dynamic-banner .off
+    {
+        font-family: var(--font-2);
+        font-style: normal;
+        font-weight: 800;
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        color: var(--color-5);
+    }
+
+    .dynamic-banner .end-date
+    {
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.063rem;
+        color: var(--color-12);
+    }
+
+    .bollywood-padding
+    {
+        padding-left:1.75rem;
+    }
+
+    .earn-with-scroly-desktop-view .col-padding
+    {
+        padding-left:10px;
+        padding-right:5px;
+    }
+
+    .how-to-become-new .supplier-heading
+    {
+        font-weight: 500;
+        font-size: 0.625rem;
+        line-height: 0.75rem;
+    }
+}
+
+@media (min-width: 577px) {
+	html {
+		font-size: 40%;
+	}
+
+	.know-more-mobile {
+		display: none;
+	}
+
+	.watch-this-mobile {
+		display: none;
+	}
+
+	.watch-this-new-mobile {
+		display: none;
+	}
+
+	.choose-location-mobile {
+		display: none;
+	}
+
+	.category-mobile-view {
+		display: none;
+	}
+
+	.play-button {
+		font-size: 15px;
+		padding-bottom: 2.0625rem;
+		padding-left: 2.6875rem;
+		padding: 0.40rem;
+	}
+
+
+
+
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 45%;
+	}
+
+	.watch-this-mobile {
+		display: none;
+	}
+
+	.know-more-mobile {
+		display: none;
+	}
+
+	.watch-this-new-mobile {
+		display: none;
+	}
+
+	.heading1-earn-with-scrolly {
+
+		font-family: 'Playfair Display';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 4rem;
+		line-height: 5.3125rem;
+		text-align: center;
+
+		color: #304653;
+		padding-bottom: 1.0625rem;
+		padding-left: 2.8125rem;
+	}
+
+	.heading2-become-businessman {
+
+
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 2rem;
+		line-height: 2.4375rem;
+
+		color: #3F515C;
+		padding-left: 2.8125rem;
+		padding-right: 3.5rem;
+
+	}
+
+	.play-button {
+		color: var(--color-9);
+		font-size: 2rem;
+		border-radius: 70%;
+
+		background-color: var(--color-21);
+
+	}
+
+	/* ============== */
+
+
+	.how-to-become-heading {
+		padding-top: 1.25rem;
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1.5rem;
+		line-height: 1.8125rem;
+
+		color: var(--color-5);
+
+		opacity: 0.8;
+		padding-top: 1.875rem;
+		padding-bottom: 2.80rem;
+		padding-left: 1.875rem;
+	}
+
+	.supplier-heading {
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 600;
+		font-size: 1.75rem;
+		line-height: 2.125rem;
+
+		color: var(--color-5);
+
+		opacity: 0.8;
+	}
+
+	.watch-this {
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1.5rem;
+		line-height: 2.125rem;
+
+		color: var(--color-5);
+
+		opacity: 0.8;
+		padding-top: 1.875rem;
+		padding-bottom: 4.25rem;
+
+	}
+
+	.play-button-padding {
+		padding-left: 17rem;
+		padding-right: 16.9375rem;
+	}
+
+}
+
+@media (min-width: 992px) {
+	html {
+		font-size: 60%;
+	}
+
+	.watch-this-mobile {
+		display: none;
+	}
+
+	.know-more-mobile {
+		display: none;
+	}
+
+	.watch-this-new-mobile {
+		display: none;
+	}
+
+	.category-mobile-view {
+		display: none;
+	}
+
+	.heading1-earn-with-scrolly {
+
+		font-family: 'Playfair Display';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 4rem;
+		line-height: 5.3125rem;
+		text-align: center;
+
+		color: #304653;
+		padding-bottom: 1.0625rem;
+		padding-left: 2.8125rem;
+	}
+
+	.heading2-become-businessman {
+
+
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 2rem;
+		line-height: 2.4375rem;
+
+		color: #3F515C;
+		padding-left: 2.8125rem;
+		padding-right: 3.5rem;
+
+	}
+
+	.play-button {
+		color: var(--color-9);
+		font-size: 2rem;
+		border-radius: 70%;
+
+		background-color: var(--color-21);
+
+	}
+
+	/* ============== */
+
+
+	.how-to-become-heading {
+		padding-top: 1.25rem;
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1.5rem;
+		line-height: 1.8125rem;
+
+		color: var(--color-5);
+
+		opacity: 0.8;
+		padding-top: 1.875rem;
+		padding-bottom: 2.80rem;
+		padding-left: 1.875rem;
+	}
+
+	.supplier-heading {
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 600;
+		font-size: 1.75rem;
+		line-height: 2.125rem;
+
+		color: var(--color-5);
+
+		opacity: 0.8;
+	}
+
+	.watch-this {
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1.5rem;
+		line-height: 2.125rem;
+
+		color: var(--color-5);
+
+		opacity: 0.8;
+		padding-top: 1.875rem;
+		padding-bottom: 4.25rem;
+
+	}
+
+	.play-button-padding {
+		padding-left: 17rem;
+		padding-right: 16.9375rem;
+	}
+
+}
+
+
+@media (min-width: 1200px) {
+	html {
+		font-size: 80%;
+	}
+
+	.watch-this-mobile {
+		display: none;
+	}
+
+	.know-more-mobile {
+		display: none;
+	}
+
+	.watch-this-new-mobile {
+		display: none;
+	}
+
+
+	.bollywood-theme-mobile {
+		display: none;
+	}
+
+	.choose-location-mobile {
+		display: none;
+	}
+
+	.category-mobile-view {
+		display: none;
+	}
+
+	.heading1-earn-with-scrolly {
+
+		font-family: 'Playfair Display';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 4rem;
+		line-height: 5.3125rem;
+		text-align: center;
+
+		color: #304653;
+		padding-bottom: 1.0625rem;
+		padding-left: 2.8125rem;
+	}
+
+	.heading2-become-businessman {
+
+
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 2rem;
+		line-height: 2.4375rem;
+
+		color: #3F515C;
+		padding-left: 2.8125rem;
+		padding-right: 3.5rem;
+
+	}
+
+	.play-button {
+		color: var(--color-9);
+		font-size: 2rem;
+		border-radius: 70%;
+
+		background-color: var(--color-21);
+
+	}
+
+	/* ============== */
+
+
+	.how-to-become-heading {
+		padding-top: 1.25rem;
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1.5rem;
+		line-height: 1.8125rem;
+
+		color: var(--color-5);
+
+		opacity: 0.8;
+		padding-top: 1.875rem;
+		padding-bottom: 4.3125rem;
+		padding-left: 1.875rem;
+	}
+
+	.supplier-heading {
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 600;
+		font-size: 1.75rem;
+		line-height: 2.125rem;
+
+		color: var(--color-5);
+
+		opacity: 0.8;
+	}
+
+	.watch-this {
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1.5rem;
+		line-height: 2.125rem;
+
+		color: var(--color-5);
+
+		opacity: 0.8;
+		padding-top: 1.875rem;
+		padding-bottom: 4.25rem;
+
+	}
+
+	.play-button-padding {
+		padding-left: 17rem;
+		padding-right: 16.9375rem;
+	}
+}
+
+@media (min-width: 1920px) {
+	html {
+		font-size: 100%;
+	}
+
+	.know-more-mobile {
+		display: none;
+	}
+
+
+	.bollywood-theme-mobile {
+		display: none;
+	}
+
+	.choose-location-mobile {
+		display: none;
+	}
+
+	.category-mobile-view {
+		display: none;
+	}
+
+	.watch-this-new-mobile {
+		display: none;
+	}
+
+	.heading1-earn-with-scrolly {
+
+		font-family: 'Playfair Display';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 4rem;
+		line-height: 5.3125rem;
+		text-align: center;
+
+		color: #304653;
+		padding-bottom: 1.0625rem;
+		padding-left: 2.8125rem;
+	}
+
+	.heading2-become-businessman {
+
+
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 2rem;
+		line-height: 2.4375rem;
+
+		color: #3F515C;
+		padding-left: 2.8125rem;
+		padding-right: 3.5rem;
+
+	}
+
+	.play-button {
+		color: var(--color-9);
+		font-size: 2rem;
+		border-radius: 70%;
+		background-color: var(--color-21);
+		padding: 0.85rem;
+
+	}
+
+	/* ============== */
+
+
+	.how-to-become-heading {
+		padding-top: 1.25rem;
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1.5rem;
+		line-height: 1.8125rem;
+
+		color: var(--color-5);
+
+		opacity: 0.8;
+		padding-top: 1.875rem;
+		padding-bottom: 4.3125rem;
+		padding-left: 1.875rem;
+	}
+
+	.supplier-heading {
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 600;
+		font-size: 1.75rem;
+		line-height: 2.125rem;
+
+		color: var(--color-5);
+
+		opacity: 0.8;
+	}
+
+	.watch-this {
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1.5rem;
+		line-height: 2.125rem;
+
+		color: var(--color-5);
+
+		opacity: 0.8;
+		padding-top: 1.875rem;
+		padding-bottom: 8.38rem;
+		padding-left: 2rem;
+
+	}
+
+	.play-button-padding {
+		padding-left: 17rem;
+		padding-right: 16.9375rem;
+	}
+
+	.watch-this-mobile {
+		display: none;
+	}
+
+	.tagline-for-mobile {
+		display: none;
+	}
+
+
+}
+
+
+/* End Mobile Views */

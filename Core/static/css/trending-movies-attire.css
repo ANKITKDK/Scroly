@@ -1,0 +1,186 @@
+
+.top-right {
+    position: absolute;
+    top: 110px;
+    right: 30px;
+    /* left: 2px; */
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 110px;
+    line-height: 147px;
+    
+
+    color: var(--color-9);
+  }
+
+  .bollywood {
+    position: relative;
+    /* text-align: center; */
+    color: white;
+    
+  }
+  .img-bollywood img{
+    width: 744px;
+    height: 500px;
+  }
+
+  .theme-collection{
+    padding-top: 155px;
+    font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 85px;
+
+
+color: #304653;
+  }
+
+.dress-like-star{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 145%;
+/* or 46px */
+
+
+color: #304653;
+
+}
+
+.dress-like-star-movie{
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 145%;
+    /* or 46px */
+    
+    
+    color: #304653;
+    padding-bottom: 119px;
+
+}
+
+.movie-name{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+
+
+color: #304653;
+padding-bottom: 4px;
+}
+
+.pattern-name{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+
+
+color: #304653;
+}
+
+.padding-bollywood{
+  padding-bottom: 30px;
+}
+
+.card-shadow{
+  background: var(--color-10);
+  box-shadow: 4px 4px 6px rgba(139, 125, 125, 0.26);
+  border-radius: 6px;
+}
+
+.img-text{
+  position: relative;
+text-align: center;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+
+}
+
+.rating{
+  background: var(--color-9);
+  border-radius: 2px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.rating-clr{
+  font-family: var(--font-1);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--color-5);
+}
+
+.star-icon{
+  color: var(--color-1);
+}
+
+.foldable-table{
+
+  font-family: var(--font-1);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--color-5);
+  padding-bottom: 8px;
+
+}
+
+.icon{
+  color: var(--color-17);
+}
+
+.rupee{
+  font-family: var(--font-1);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--color-12);
+}
+
+.deleted-rupee{
+  color: rgba(63, 81, 92, 0.4);
+}
+
+.offer{
+  font-family: var(--font-1);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-5);
+}
+
+.free-delivery{
+  font-family: var(--font-1);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-5);
+  padding-top: 6px;
+}
+
+.card, .img-fluid, .card-header{
+  height: 200px;
+
+}

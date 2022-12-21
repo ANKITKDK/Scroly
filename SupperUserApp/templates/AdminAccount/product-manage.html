@@ -1,0 +1,130 @@
+{% extends 'SupperUserApp/superuser-base.html' %}{% load static %}
+{% block content %}
+					
+
+					<div class="breadcrumb-wrapper d-flex align-items-center justify-content-between">
+						<div>
+							<h1>Product</h1>
+							<p class="breadcrumbs"><span><a href="{% url 'Index' %}">Home</a></span>
+								<span><i class="mdi mdi-chevron-right"></i></span>{{i.Product.ProductName}}</p>
+						</div>
+						<div>
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addcolorsize"> Add Product Size & Colour
+							</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="card card-default">
+								<div class="card-body">
+									<div class="table-responsive">
+										<table id="responsive-data-table" class="table"
+											style="width:100%">
+											<thead>
+												<tr>
+													<th>Product</th>
+													<th>Name</th>
+													<th>BrandName</th>
+													<th>Price</th>
+													<th>Disccount</th>
+													<th>Offerd Amount</th>
+													<th>Stock</th>
+													<th>Colour</th>
+													<th>Size</th>
+													<th>Action</th>
+												</tr>
+											</thead>
+
+											<tbody>
+												{% for i in allproduct %}
+												<tr>
+													<td><img class="tbl-thumb" src="{{i.Product.ProductMainImage.url}}" alt="Product Image" /></td>
+													<td>{{i.Product.ProductName}}</td>
+													<td>{{i.Product.ProductBrandName}}</td>
+													<td>{{i.Price}}</td>
+													<td>{{i.DiscountPercent}}%</td>
+													<td>{{i.discount}}</td>
+													<td>{{i.Stock}}</td>
+													<td>{{i.ProductColour}}</td>
+													<td>{{i.PrductSize}}</td>
+														
+													<td>
+														<div class="btn-group mb-1">
+															<button type="button"
+																class="btn btn-outline-success"><a href=""></a> Info</button>
+															<button type="button"
+																class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+																data-bs-toggle="dropdown" aria-haspopup="true"
+																aria-expanded="false" data-display="static">
+																<span class="sr-only">Info</span>
+															</button>
+
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="#">Edit</a>
+																<a class="dropdown-item" href="#">Delete</a>
+															</div>
+														</div>
+													</td>
+												</tr>
+												{% endfor %}
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="modal fade modal-add-contact" id="addcolorsize" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+							<div class="modal-content">
+								<form  action="{% url 'ProductManage' productobj.ProductSlug %}" method="post">
+									{% csrf_token %}
+									<div class="modal-header px-4">
+										<h5 class="modal-title" id="exampleModalCenterTitle">Add New Colors</h5>
+									</div>
+									
+									<div class="modal-body px-4">
+										<div class="row mb-2">
+											<div class="col-lg-6">
+												<div class="form-group">
+													<label for="firstName">Choose Color</label>
+													<input type="color" class="form-control" id="firstName" value="" name="choosecolor">
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class="form-group">
+													<label for="firstName">Enter Size</label>
+													<input type="text" class="form-control" id="firstName" value="" name="entersize">
+												</div>
+											</div>
+
+											 <div class="col-md-6">
+												<label class="form-label">Price </span></label>
+												<input type="number" class="form-control" name="prize" id="price1">
+											</div>
+
+											<div class="col-md-6">
+												<label class="form-label">Discount In Percent </span></label>
+												<input type="number" class="form-control" name="Discount" id="price1">
+											</div> 
+
+											<div class="col-lg-12">
+												<div class="form-group">
+													<label for="firstName">Enter Stock</label>
+													<input type="number" class="form-control" id="firstName" value="" name="enterstock">
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="modal-footer px-4">
+										<button type="button" class="btn btn-secondary btn-pill" data-bs-dismiss="modal">Cancel</button>
+										<button type="submit" class="btn btn-primary btn-pill">Save</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					{% endblock %}

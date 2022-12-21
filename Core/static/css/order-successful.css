@@ -1,0 +1,570 @@
+
+
+.pad-two-side{
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+}
+.order-large-image{
+    padding-top: 3.75rem;
+}
+
+.order-place .order-placed-text{
+    padding-top: 1.905rem;
+    font-family: var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 2rem;
+line-height: 2.4375rem;
+color: var(--color-1);
+}
+
+
+.order-place .order-placed-text .rupes-size{
+    font-size: 1.625rem;
+}
+
+.your-1-atem .your-1-atem-delivered{
+    padding-top: 1rem;
+font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 1.25rem;
+line-height: 1.5rem;
+text-align: center;
+color: var(--color-17);
+}
+
+.ribbon-image{
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+}
+
+.first-card .card{
+    background: var(--color-9);
+    border: 0.0625rem solid var(--color-16);
+    box-shadow: 0.25rem 0.25rem 0.375rem rgba(139, 125, 125, 0.26);
+    border-radius: 0.375rem;
+} 
+
+.second-card  .card{
+    background: var(--color-9);
+border: 0.0625rem solid var(--color-16);;
+box-shadow: 0.25rem 0.25rem 0.375rem rgba(139, 125, 125, 0.26);
+border-radius: 0.375rem;
+}
+
+.first-card .card .card-body{
+    padding: 1.875rem;
+}
+
+.first-card .card .card-body .delivery-text{
+    padding-top: 1rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--color-17);
+}
+
+.first-card .card .card-body .tanuja-text{
+    padding-top: 1rem;
+}
+
+.first-card .card .card-body .tanuja-text .name{
+padding-top: 1rem;
+font-family: var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 1rem;
+line-height: 145%;
+color: var(--color-17);
+}
+
+.first-card .card .card-body .tanuja-text .address{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 145%;
+    color: var(--color-17);
+    }
+
+.second-card{
+    padding-top: 1.875rem;
+}
+
+.second-card .card .card-body{
+    padding: 1.5rem 1.5625rem 1.5625rem 1.875rem;
+}
+
+.second-card .card .card-body .product-name{
+    padding-top: 0rem;
+font-family: var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 1rem;
+line-height: 1.25rem;
+color: var(--color-17);
+}
+
+.second-card .card .card-body .product-size{
+    padding-top: 0.75rem;
+    font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 1rem;
+line-height: 1.25rem;
+color: var(--color-17);
+}
+ 
+.second-card .card .card-body .main-prise{
+    padding-top: 0.75rem;
+}
+.second-card .card .card-body .main-prise .ruppe-size{
+    /* padding-top: 0.75rem; */
+font-weight: 500;
+font-size: 1rem;
+line-height: 1.25rem;
+color: var(--color-8);
+}
+
+.second-card .card .card-body .main-prise .rupee-color{
+    /* padding-top: 0.75rem; */
+    font-family: var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 1rem;
+line-height: 1.25rem;
+color: var(--color-8);
+
+}
+
+.second-card .card .card-body .product-color{
+    padding-top: 0.75rem;
+    font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 1rem;
+line-height: 1.25rem;
+color: var(--color-17);
+}
+
+/* start button */
+.share-btn{
+    height: 3.125rem;
+    width: 3.125rem;
+    left: 100.875rem;
+    top: 22.1875rem;
+    border-radius:50%;
+    border:none;
+    background-color: var(--color-1);
+    vertical-align:none;
+    }
+
+
+
+.btn-circle.btn-sm{
+    width: 1.875rem;
+    height: 3.125rem;
+    padding: 0.375rem 0rem;
+    border-radius:1.875rem;
+    font-size: 0.5rem;
+    text-align: center;
+    background-color:var(--color-1);
+    
+    
+}
+
+.btn-circle.btn-md{
+    width:3.125rem;
+    height: 3.125rem;
+    padding: 0.625rem 1rem;
+    border-radius: 1.5625rem;
+    font-size: 1.25rem;
+    text-align: center;
+    background:var(--color-16);
+
+}
+
+.share-button{
+font-family:var(--font-1);
+font-size: 1rem;
+font-weight: 500;
+line-height: 1.25rem;
+letter-spacing: 0em;
+text-align: center;
+color:var(--color-9);
+}
+
+.share-icon-main{
+color:var(--color-33);
+height: 1.0625rem;
+width: 0.9375rem;
+left: 18.4375rem;
+top: 1.125rem;
+border-radius: 0rem;
+}
+
+/*-----------------------hover button------------------------*/
+
+.share-btn-hover:hover{
+    height: 3.125rem;
+    width: 3.125rem;
+    left: 100.875rem;
+    top: 22.1875rem;
+    border-radius:50%;
+    border:none;
+    background-color: var(--color-34);
+    vertical-align:none;
+    transition-duration: 0.4s;
+}
+
+
+
+.btn-circle.btn-sm-hover{
+    width: 1.875rem;
+    height: 3.125rem;
+    padding: 0.375rem 0rem;
+    border-radius:1.875rem;
+    font-size: 0.5rem;
+    text-align: center;
+    background-color:var(--color-34);
+}
+
+.btn-circle.btn-md-hover{
+    width:3.125rem;
+    height: 3.125rem;
+    padding: 0.625rem 1rem;
+    border-radius: 1.5625rem;
+    font-size: 1.25rem;
+    text-align: center;
+    background:var(--color-16);
+}
+
+
+.share-button-hover{
+    font-family:var(--font-1);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color:var(--color-9);
+}
+
+.share-icon-hover{
+    color:var(--color-33);
+    height: 1.0625rem;
+    width: 0.9375rem;
+    left: 18.4375rem;
+    top: 1.125rem;
+    border-radius: 0rem;
+}
+
+
+.main-truck-delivery{
+    padding-top: 2.9375rem;
+    padding-bottom: 2.9375rem;
+
+}
+
+.icon .main-truck-delivery  .bg-circle{
+    height: 2.5rem;
+    /* width: 40px; */
+    border-radius: 60%;
+    background-color: var(--color-1);
+    font-size: 1.25rem;
+    padding: 0.5625rem 0.6875rem;
+
+}
+
+
+.icon .main-truck-delivery  .delivery-expect{
+    font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 1.25rem;
+line-height: 1.5rem;
+text-align: center;
+
+color: var(--color-17);
+}
+.go-to-main .go-orders{
+    padding-top: 2.375rem;
+    padding-bottom: 2.375rem;
+
+}
+
+.second-card{
+    padding-bottom: 4rem;
+}
+/* end button */
+
+/* # ---- mobile view media query ---- */
+/* Start Mobile view */
+
+@media all and (min-width: 577px)
+{
+    .text-back .back-to-home{
+        display: none;
+    }
+
+    .destop-border .border-top{
+        display: none;
+    }
+}
+
+
+@media all and (max-width: 576px)
+{
+    .pad-two-side{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .order-large-image{
+        padding-top: 3.75rem;
+    }
+    
+    .order-place .order-placed-text{
+        padding-top: 1.25rem;
+        font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-1);
+    }
+    
+    .order-place .order-placed-text .rupes-size{
+        font-size: 0.9375rem;
+    }
+
+    .your-1-atem .your-1-atem-delivered{
+        padding-top: 0.625rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: var(--color-17);
+    }
+
+    .your-1-atem .your-1-atem-delivered{
+        padding-top: 0.5rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 145%;
+    text-align: center;
+    color: var(--color-17);
+    }
+
+    .ribbon-image{
+        /* padding-top: 1rem;
+        padding-left: 1.625rem;
+        padding-right: 1.625rem;
+        padding-bottom: 1.875rem; */
+        padding-top: 1rem;
+        padding-left: 1.5625rem;
+        padding-right: 1.5625rem;
+        padding-bottom: 1.875rem;
+    }
+
+    .first-card .card .card-body .tanuja-text {
+        padding-top: 0.5rem;
+    }
+    .first-card .card{
+        background: #ffffff00;
+    border: 0.0625rem solid #96eff100;
+    box-shadow: none;
+    border-radius: 0rem;
+    }
+
+    .second-card  .card{
+        background: #ffffff00;
+    border: 0.0625rem solid #96eff100;
+    box-shadow: 0.25rem 0.25rem 0.375rem rgba(139, 125, 125, 0);
+    border-radius: 0rem;
+    }
+    
+    .first-card .card .card-body{
+        padding: 0rem;
+    }
+
+    .first-card .card .card-body .delivery-text{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        color: var(--color-17);
+    }
+    
+    .first-card .card .card-body .tanuja-text .name{
+    padding-top: 0.5rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 145%;
+    color: var(--color-17);
+    }
+
+    .first-card .card .card-body .tanuja-text .address{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 145%;
+    color: var(--color-17);
+    }
+
+    .second-card{
+        padding-top: 1rem;
+    }
+
+    
+    .second-card .card .card-body{
+        padding: 0rem 0rem 0rem 0rem;
+    }
+
+    .card{
+        border: none;
+    }
+
+    .second-card .card .card-body .product-name{
+        padding-top: 0rem;
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.0625rem;
+        color: var(--color-17);
+        }
+
+        .second-card .card .card-body .product-size{
+            padding-top: 0.625rem;
+            font-family: var(--font-1);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.75rem;
+            line-height: 0.9375rem;
+            color: var(--color-17);
+        }
+
+
+        .text-back{
+            padding-top: 1rem;
+            padding-bottom: 2.6875rem;
+        } 
+        
+        .text-back .back-to-home{
+            font-family: var(--font-1);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            text-align: center;
+
+            color: var(--color-1);
+            text-decoration: none;
+            /* padding-bottom: 2.6875rem; */
+
+        }
+
+        .second-card .card .card-body .main-prise {
+            padding-top: 0.625rem;
+        }
+
+        .second-card .card .card-body .product-color{
+            padding-top: 0.625rem;
+            font-family: var(--font-1);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.75rem;
+            line-height: 0.9375rem;
+            color: var(--color-17);
+        }
+
+        .main-truck-delivery {
+            padding-top: 0.5rem;
+            padding-bottom: 1rem;
+        }
+
+        .second-card{
+            padding-bottom: 0rem;
+        }
+
+        .icon{
+            padding-top:1rem;
+        }
+
+        .icon .main-truck-delivery  .delivery-expect {
+            font-family: var(--font-1);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.75rem;
+            line-height: 0.9375rem;
+            text-align: center;
+            color: var(--color-17);
+        }
+
+
+        .go-to-main .go-orders {
+            padding-top: 1.5625rem;
+            padding-bottom: 0rem;
+        }
+
+
+        .icon .main-truck-delivery  .bg-circle {
+            height: 1.25rem;
+            width: 1.25rem;
+            border-radius: 60%;
+            background-color: var(--color-1);
+            font-size: 1rem;
+            padding: 0.375rem 0.5rem;
+        }
+
+
+
+}
+
+@media (min-width: 577px)
+{
+    html{
+        font-size: 40%;
+    }
+}
+
+@media (min-width: 768px)
+{
+    html{
+        font-size: 45%;
+    }
+}
+
+@media (min-width: 992px)
+{
+    html{
+        font-size: 60%;
+    }
+}
+
+
+@media (min-width: 1200px)
+{
+    html{
+        font-size: 80%;
+    }
+}
+
+@media (min-width: 1920px)
+{
+    html{
+        font-size: 100%;
+    }
+}

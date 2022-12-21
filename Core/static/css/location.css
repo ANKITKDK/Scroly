@@ -1,0 +1,28 @@
+body{
+    /* The image used */    
+    background-image: url("/images/background.png");
+}
+
+.a{
+    color:var(--color-12);
+}
+.svg1{
+    color:var(--color-18);
+}
+.r3{
+    color:var(--color-17);
+}
+
+
+ 
+.serach-bar .form-group .form-control  
+{
+    border: 1px solid #ced4da;
+    border-radius: 24px;
+}
+
+.btn-user .btn
+{
+    background-color: var(--color-12);
+    border-radius: 26px;
+}

@@ -1,0 +1,3395 @@
+body{
+    background-image: url("/images/background.png");   
+    max-width: 100%;
+    overflow-x: hidden;
+    
+
+}
+
+body .buttonend{
+  background-color: #F8772F;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+  
+}
+
+.buttonend:hover{
+    color: white;
+}
+
+/* .modal-content{
+    background-color: #FF4D6D;
+    color: white;
+    font-family: Montserrat;
+    
+    
+}
+
+ .modal .modal-content .modal-body .row{
+    border: 1px solid #d9d9d9;
+ } */
+
+
+
+
+/* ----------------------- */
+
+.navbar1, .r1 .catname{
+    font-size: 16px;
+    
+}
+
+.navbar1 a, .navbar1 a:hover{
+    color: #304653;
+}
+
+.navbar1 .earnbutton, .navbar1 .earnbutton:hover{
+    width: 157px;
+    height: 30px;
+    background-color: #FC813D;
+    color: #FFFFFF;
+    
+}
+
+
+.searchbar .input-group-text , .searchbar .form-control
+{
+    border-radius: 6px;
+    box-shadow: 2px 2px 8px rgba(207, 193, 193, 0.53);
+    background-color: #F9EEEE;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+.Categorycol{
+
+    box-shadow: 4px 4px 6px rgba(139, 125, 125, 0.26);
+    border-radius: 0px 6px 6px 0px;
+    background-color: #FEF2F2;
+    height: 5770px;
+}
+
+.mens {
+    background-image: url(images/Categories/men_backgraound.png);
+}
+
+.womens {
+
+    background-image: url(../images/Categories/bags.png);
+
+}
+
+
+
+.bullet2 {
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    letter-spacing: -0.011em;
+
+    color: #3F515C;
+}
+
+.modal-body h6 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    
+    letter-spacing: -0.011em;
+
+    color: #304653;
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+
+.col2{
+    background-color: #FEF2F2;
+    border-radius: 6px;
+   
+    /* width: 750px;
+    height: 240px; */
+    
+}
+
+
+.col2 .p1{
+    font-size: 36px;
+    font-weight: 500;
+    color: #3F515C;
+    font-family: 'Playfair Display';
+}
+
+.col2 .p2{
+    font-size: 20px;
+    font-weight: 500;
+    color: #3F515C;
+    font-family: 'Montserrat';
+}
+
+.col2 button, .col2 button:hover{
+    width: 328px;
+    height: 52px;
+    box-shadow: 2px 2px 8px rgba(62, 125, 99, 0.44);
+    border-radius: 26px;
+    background-color: #FC813D;
+    color: #FFFFFF;
+}
+
+
+
+.imagescroly {
+    
+    height: 235px;
+    width: 250px;
+}
+
+
+
+.col3{
+    background-color: #FEF2F2;
+    border-radius: 6px;
+    width: 220px;
+    height: 240px;
+    background-size: contain;
+}
+
+.col3 p{
+    font-size: 18px;
+    font-family: 'Montserrat';
+    color: #304653;
+
+}
+
+/* ---------------end of col3   ------------------ */
+
+/* .col4 {
+    background-image: url(summersale.png);
+    
+
+} */
+
+.col4 img{
+    height: 300px;
+    width: 990px; 
+    
+
+}
+
+/* .col4 .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+ .container {
+    position: relative;
+    text-align: center;
+    color: black;
+  } */
+
+
+
+/* .col4 .card img{
+    width: 255px;
+    height: 240px;
+} */
+
+
+.card-body{
+    background-color: #FEF2F2;
+}
+
+.card-body h6 , .card-body p{
+    color: #304653;
+    font-family: Montserrat;
+}
+
+.card-body .rupee{
+    color: #F8772F;
+}
+
+
+
+/* --------------------- */
+
+.deal h1{
+    font-family: Playfair Display;
+    font-size: 38px;
+    color: #304653;
+
+}
+
+.deal h6 a{
+
+    text-decoration: none;
+    color: #FC813D;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    
+}
+
+.deal h6 a:hover{
+
+    text-decoration: none;
+    color: #FC813D;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    
+}
+
+
+
+.slideimg{
+    display: flex;
+    overflow-x: auto;
+}
+
+.slideimg::-webkit-scrollbar{
+    width: 0;
+}
+
+/* ---------------------------------- */
+
+.row3{
+    background-color: #FF4D6D;
+    width: 1025px;
+    
+
+}
+
+.row3 img{
+
+    width: 450px;
+    height: 590px;
+}
+
+.row3 h2{
+    font-family: Playfair Display;
+    color: white;
+    font-size: 54px;
+    
+}
+
+.row3 span{
+    font-size: 80px;
+}
+
+/* .trend .card img{
+    
+    width: 143px; 
+    height: 150px;
+
+} */
+
+.trend .card-body .card-text h6{
+    color: #304653;
+    font-size: 5px;
+    
+}
+
+.trend .card-body .rupee2{
+    font-size: 16px;
+
+}
+
+.row4{
+    width: auto;
+    height: 300px;
+    background-color: #FEF2F2;
+    box-shadow: 4px 4px 6px rgba(139, 125, 125, 0.26);
+    border-radius: 6px 0px 0px 6px;
+}
+
+.row4 .item{
+    width: 12rem;
+}
+
+.row4 .item .card{
+    height: 300px;
+    border: none;
+}
+
+.row4 .item .card .card-body h6{
+    font-size: 5px;
+}
+
+.bullet{
+    list-style-type: none;
+    font-family: Montserrat;
+    font-size: 14px;
+    color: #304653;
+    margin: 0;
+    padding: 0;
+}
+
+.footer h6{
+    font-family: Montserrat;
+    color: #304653;
+    font-size: 18px;
+
+}
+
+.footer p{
+    font-family: Montserrat;
+    color: #304653;
+    font-size: 14px;
+
+}
+
+.s{
+    display: flex;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    body{
+        background-image: url("/images/background.png");   
+        max-width: 100%;
+        overflow-x: hidden;
+        
+    
+    }
+    
+    body .buttonend{
+      background-color: #F8772F;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      
+      
+    }
+    
+    .buttonend:hover{
+        color: white;
+    }
+    
+    /* .modal-content{
+        background-color: #FF4D6D;
+        color: white;
+        font-family: Montserrat;
+        
+        
+    }
+    
+     .modal .modal-content .modal-body .row{
+        border: 1px solid #d9d9d9;
+     } */
+    
+    
+    
+    
+    /* ----------------------- */
+    
+    .navbar1, .r1 .catname{
+        font-size: 16px;
+        
+    }
+    
+    .navbar1 a, .navbar1 a:hover{
+        color: #304653;
+    }
+    
+    .navbar1 .earnbutton, .navbar1 .earnbutton:hover{
+        width: 157px;
+        height: 30px;
+        background-color: #FC813D;
+        color: #FFFFFF;
+        
+    }
+    
+    
+    .searchbar .input-group-text , .searchbar .form-control
+    {
+        border-radius: 6px;
+        box-shadow: 2px 2px 8px rgba(207, 193, 193, 0.53);
+        background-color: #F9EEEE;
+    }
+    
+    /* ------------------------------------------------------------------------------------ */
+    
+    .Categorycol{
+    
+        box-shadow: 4px 4px 6px rgba(139, 125, 125, 0.26);
+        border-radius: 0px 6px 6px 0px;
+        background-color: #FEF2F2;
+        height: 5770px;
+    }
+
+    .mens {
+        background-image: url(images/Categories/men_backgraound.png);
+    }
+
+    .womens {
+
+        background-image: url(../images/Categories/women_background.png);
+
+    }
+    
+    
+    
+    .bullet2 {
+        list-style-type: none;
+    
+        margin: 0;
+        padding: 0;
+    
+    
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    
+        letter-spacing: -0.011em;
+    
+        color: #3F515C;
+    }
+    
+    .bullet2 h6 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+    
+        
+        letter-spacing: -0.011em;
+    
+        color: #304653;
+    }
+    
+    
+    /* ----------------------------------------------------------------------------------- */
+    
+    .col2{
+        background-color: #FEF2F2;
+        border-radius: 6px;
+       
+        /* width: 750px;
+        height: 240px; */
+        
+    }
+    
+    
+    .col2 .p1{
+        font-size: 36px;
+        font-weight: 500;
+        color: #3F515C;
+        font-family: 'Playfair Display';
+    }
+    
+    .col2 .p2{
+        font-size: 20px;
+        font-weight: 500;
+        color: #3F515C;
+        font-family: 'Montserrat';
+    }
+    
+    .col2 button, .col2 button:hover{
+        width: 328px;
+        height: 52px;
+        box-shadow: 2px 2px 8px rgba(62, 125, 99, 0.44);
+        border-radius: 26px;
+        background-color: #FC813D;
+        color: #FFFFFF;
+    }
+    
+    
+    
+    .imagescroly {
+        
+        height: 235px;
+        width: 250px;
+    }
+    
+    
+    
+    .col3{
+        background-color: #FEF2F2;
+        border-radius: 6px;
+        width: 220px;
+        height: 240px;
+        background-size: contain;
+    }
+    
+    .col3 p{
+        font-size: 18px;
+        font-family: 'Montserrat';
+        color: #304653;
+    
+    }
+    
+    /* ---------------end of col3   ------------------ */
+    
+    /* .col4 {
+        background-image: url(summersale.png);
+        
+    
+    } */
+    
+    .col4 img{
+        height: 300px;
+        width: 990px; 
+        
+    
+    }
+    
+    /* .col4 .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    
+     .container {
+        position: relative;
+        text-align: center;
+        color: black;
+      } */
+    
+    
+    
+    /* .col4 .card img{
+        width: 255px;
+        height: 240px;
+    } */
+    
+    
+    .card-body{
+        background-color: #FEF2F2;
+    }
+    
+    .card-body h6 , .card-body p{
+        color: #304653;
+        font-family: Montserrat;
+    }
+    
+    .card-body .rupee{
+        color: #F8772F;
+    }
+    
+    
+    
+    /* --------------------- */
+    
+    .deal h1{
+        font-family: Playfair Display;
+        font-size: 38px;
+        color: #304653;
+    
+    }
+    
+    .deal h6 a{
+    
+        text-decoration: none;
+        color: #FC813D;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        
+    }
+    
+    .deal h6 a:hover{
+    
+        text-decoration: none;
+        color: #FC813D;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        
+    }
+    
+    
+    
+    .slideimg{
+        display: flex;
+        overflow-x: auto;
+    }
+    
+    .slideimg::-webkit-scrollbar{
+        width: 0;
+    }
+    
+    /* ---------------------------------- */
+    
+    .row3{
+        background-color: #FF4D6D;
+        width: 1025px;
+        
+    
+    }
+    
+    .row3 img{
+    
+        width: 450px;
+        height: 590px;
+    }
+    
+    .row3 h2{
+        font-family: Playfair Display;
+        color: white;
+        font-size: 54px;
+        
+    }
+    
+    .row3 span{
+        font-size: 80px;
+    }
+    
+    /* .trend .card img{
+        
+        width: 143px; 
+        height: 150px;
+    
+    } */
+    
+    .trend .card-body .card-text h6{
+        color: #304653;
+        font-size: 5px;
+        
+    }
+    
+    .trend .card-body .rupee2{
+        font-size: 16px;
+    
+    }
+    
+    .row4{
+        width: auto;
+        height: 300px;
+        background-color: #FEF2F2;
+        box-shadow: 4px 4px 6px rgba(139, 125, 125, 0.26);
+        border-radius: 6px 0px 0px 6px;
+    }
+    
+    .row4 .item{
+        width: 12rem;
+    }
+    
+    .row4 .item .card{
+        height: 300px;
+        border: none;
+    }
+    
+    .row4 .item .card .card-body h6{
+        font-size: 5px;
+    }
+    
+    .bullet{
+        list-style-type: none;
+        font-family: Montserrat;
+        font-size: 14px;
+        color: #304653;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .footer h6{
+        font-family: Montserrat;
+        color: #304653;
+        font-size: 18px;
+    
+    }
+    
+    .footer p{
+        font-family: Montserrat;
+        color: #304653;
+        font-size: 14px;
+    
+    }
+    
+    .s{
+        display: flex;
+    }
+    
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+
+    body{
+        background-image: url("/images/background.png");   
+        max-width: 100%;
+        overflow-x: hidden;
+        
+    
+    }
+    
+    body .buttonend{
+      background-color: #F8772F;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      
+      
+    }
+    
+    .buttonend:hover{
+        color: white;
+    }
+    
+    /* .modal-content{
+        background-color: #FF4D6D;
+        color: white;
+        font-family: Montserrat;
+        
+        
+    }
+    
+     .modal .modal-content .modal-body .row{
+        border: 1px solid #d9d9d9;
+     } */
+    
+    
+    
+    
+    /* ----------------------- */
+    
+    .navbar1, .r1 .catname{
+        font-size: 16px;
+        
+    }
+    
+    .navbar1 a, .navbar1 a:hover{
+        color: #304653;
+    }
+    
+    .navbar1 .earnbutton, .navbar1 .earnbutton:hover{
+        width: 157px;
+        height: 30px;
+        background-color: #FC813D;
+        color: #FFFFFF;
+        
+    }
+    
+    
+    .searchbar .input-group-text , .searchbar .form-control
+    {
+        border-radius: 6px;
+        box-shadow: 2px 2px 8px rgba(207, 193, 193, 0.53);
+        background-color: #F9EEEE;
+    }
+    
+    /* ------------------------------------------------------------------------------------ */
+    
+    .Categorycol{
+    
+        box-shadow: 4px 4px 6px rgba(139, 125, 125, 0.26);
+        border-radius: 0px 6px 6px 0px;
+        background-color: #FEF2F2;
+        height: 5770px;
+    }
+
+    .mens {
+        background-image: url(images/Categories/men_backgraound.png);
+    }
+
+    .womens{
+
+        background-image: url(../images/Categories/women_backgraound.png);
+
+    }
+
+
+
+    .bullet2 {
+        list-style-type: none;
+
+        margin: 0;
+        padding: 0;
+
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        letter-spacing: -0.011em;
+
+        color: #3F515C;
+    }
+
+    .modalheading {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+
+        
+        letter-spacing: -0.011em;
+
+        color: #304653;
+    }
+    
+    
+    /* ----------------------------------------------------------------------------------- */
+    
+    .col2{
+        background-color: #FEF2F2;
+        border-radius: 6px;
+       
+        /* width: 750px;
+        height: 240px; */
+        
+    }
+    
+    
+    .col2 .p1{
+        font-size: 36px;
+        font-weight: 500;
+        color: #3F515C;
+        font-family: 'Playfair Display';
+    }
+    
+    .col2 .p2{
+        font-size: 20px;
+        font-weight: 500;
+        color: #3F515C;
+        font-family: 'Montserrat';
+    }
+    
+    .col2 button, .col2 button:hover{
+        width: 328px;
+        height: 52px;
+        box-shadow: 2px 2px 8px rgba(62, 125, 99, 0.44);
+        border-radius: 26px;
+        background-color: #FC813D;
+        color: #FFFFFF;
+    }
+    
+    
+    
+    .imagescroly {
+        
+        height: 235px;
+        width: 250px;
+    }
+    
+    
+    
+    .col3{
+        background-color: #FEF2F2;
+        border-radius: 6px;
+        width: 220px;
+        height: 240px;
+        background-size: contain;
+    }
+    
+    .col3 p{
+        font-size: 18px;
+        font-family: 'Montserrat';
+        color: #304653;
+    
+    }
+    
+    /* ---------------end of col3   ------------------ */
+    
+    /* .col4 {
+        background-image: url(summersale.png);
+        
+    
+    } */
+    
+    .col4 img{
+        height: 300px;
+        width: 990px; 
+        
+    
+    }
+    
+    /* .col4 .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    
+     .container {
+        position: relative;
+        text-align: center;
+        color: black;
+      } */
+    
+    
+    
+    /* .col4 .card img{
+        width: 255px;
+        height: 240px;
+    } */
+    
+    
+    .card-body{
+        background-color: #FEF2F2;
+    }
+    
+    .card-body h6 , .card-body p{
+        color: #304653;
+        font-family: Montserrat;
+    }
+    
+    .card-body .rupee{
+        color: #F8772F;
+    }
+    
+    
+    
+    /* --------------------- */
+    
+    .deal h1{
+        font-family: Playfair Display;
+        font-size: 38px;
+        color: #304653;
+    
+    }
+    
+    .deal h6 a{
+    
+        text-decoration: none;
+        color: #FC813D;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        
+    }
+    
+    .deal h6 a:hover{
+    
+        text-decoration: none;
+        color: #FC813D;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        
+    }
+    
+    
+    
+    .slideimg{
+        display: flex;
+        overflow-x: auto;
+    }
+    
+    .slideimg::-webkit-scrollbar{
+        width: 0;
+    }
+    
+    /* ---------------------------------- */
+    
+    .row3{
+        background-color: #FF4D6D;
+        width: 1025px;
+        
+    
+    }
+    
+    .row3 img{
+    
+        width: 450px;
+        height: 590px;
+    }
+    
+    .row3 h2{
+        font-family: Playfair Display;
+        color: white;
+        font-size: 54px;
+        
+    }
+    
+    .row3 span{
+        font-size: 80px;
+    }
+    
+    /* .trend .card img{
+        
+        width: 143px; 
+        height: 150px;
+    
+    } */
+    
+    .trend .card-body .card-text h6{
+        color: #304653;
+        font-size: 5px;
+        
+    }
+    
+    .trend .card-body .rupee2{
+        font-size: 16px;
+    
+    }
+    
+    .row4{
+        width: auto;
+        height: 300px;
+        background-color: #FEF2F2;
+        box-shadow: 4px 4px 6px rgba(139, 125, 125, 0.26);
+        border-radius: 6px 0px 0px 6px;
+    }
+    
+    .row4 .item{
+        width: 12rem;
+    }
+    
+    .row4 .item .card{
+        height: 300px;
+        border: none;
+    }
+    
+    .row4 .item .card .card-body h6{
+        font-size: 5px;
+    }
+    
+    .bullet{
+        list-style-type: none;
+        font-family: Montserrat;
+        font-size: 14px;
+        color: #304653;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .footer h6{
+        font-family: Montserrat;
+        color: #304653;
+        font-size: 18px;
+    
+    }
+    
+    .footer p{
+        font-family: Montserrat;
+        color: #304653;
+        font-size: 14px;
+    
+    }
+    
+    .s{
+        display: flex;
+    }
+    
+    
+    
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+    
+        body{
+            background-image: url("/images/background.png");   
+            max-width: 100%;
+            overflow-x: hidden;
+            
+        
+        }
+        
+        body .buttonend{
+          background-color: #F8772F;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          
+          
+        }
+        
+        .buttonend:hover{
+            color: white;
+        }
+        
+        .modal-content{
+            background-color: #FF4D6D;
+            color: white;
+            font-family: Montserrat;
+            
+            
+        }
+        
+         .modal .modal-content .modal-body .row{
+            border: 1px solid #d9d9d9;
+         }
+        
+        
+        
+        
+        /* ----------------------- */
+        
+        .navbar1, .r1 .catname{
+            font-size: 16px;
+            
+        }
+        
+        .navbar1 a, .navbar1 a:hover{
+            color: #304653;
+        }
+        
+        .navbar1 .earnbutton, .navbar1 .earnbutton:hover{
+            width: 157px;
+            height: 30px;
+            background-color: #FC813D;
+            color: #FFFFFF;
+            
+        }
+        
+        
+        .searchbar .input-group-text , .searchbar .form-control
+        {
+            border-radius: 6px;
+            box-shadow: 2px 2px 8px rgba(207, 193, 193, 0.53);
+            background-color: #F9EEEE;
+        }
+        
+        /* ------------------------------------------------------------------------------------ */
+        
+        .Categorycol{
+        
+            box-shadow: 4px 4px 6px rgba(139, 125, 125, 0.26);
+            border-radius: 0px 6px 6px 0px;
+            background-color: #FEF2F2;
+            height: 5770px;
+        }
+        
+        .mens {
+            background-image: url(images/Categories/men_backgraound.png);
+        }
+
+        .womens{
+
+            background-image: url(../images/Categories/women_backgraound.png);
+    
+        }
+
+
+
+        .bullet2 {
+            list-style-type: none;
+
+            margin: 0;
+            padding: 0;
+
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+
+            letter-spacing: -0.011em;
+
+            color: #3F515C;
+        }
+
+        .modal-body h6 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height, or 150% */
+
+            
+            letter-spacing: -0.011em;
+
+            color: #304653;
+        }
+        
+        /* ----------------------------------------------------------------------------------- */
+        
+        .col2{
+            background-color: #FEF2F2;
+            border-radius: 6px;
+           
+            /* width: 750px;
+            height: 240px; */
+            
+        }
+        
+        
+        .col2 .p1{
+            font-size: 36px;
+            font-weight: 500;
+            color: #3F515C;
+            font-family: 'Playfair Display';
+        }
+        
+        .col2 .p2{
+            font-size: 20px;
+            font-weight: 500;
+            color: #3F515C;
+            font-family: 'Montserrat';
+        }
+        
+        .col2 button, .col2 button:hover{
+            width: 328px;
+            height: 52px;
+            box-shadow: 2px 2px 8px rgba(62, 125, 99, 0.44);
+            border-radius: 26px;
+            background-color: #FC813D;
+            color: #FFFFFF;
+        }
+        
+        
+        
+        .imagescroly {
+            
+            height: 235px;
+            width: 250px;
+        }
+        
+        
+        
+        .col3{
+            background-color: #FEF2F2;
+            border-radius: 6px;
+            width: 220px;
+            height: 240px;
+            background-size: contain;
+        }
+        
+        .col3 p{
+            font-size: 18px;
+            font-family: 'Montserrat';
+            color: #304653;
+        
+        }
+        
+        /* ---------------end of col3   ------------------ */
+        
+        /* .col4 {
+            background-image: url(summersale.png);
+            
+        
+        } */
+        
+        .col4 img{
+            height: 300px;
+            width: 990px; 
+            
+        
+        }
+        
+        /* .col4 .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        
+         .container {
+            position: relative;
+            text-align: center;
+            color: black;
+          } */
+        
+        
+        
+        /* .col4 .card img{
+            width: 255px;
+            height: 240px;
+        } */
+        
+        
+        .card-body{
+            background-color: #FEF2F2;
+        }
+        
+        .card-body h6 , .card-body p{
+            color: #304653;
+            font-family: Montserrat;
+        }
+        
+        .card-body .rupee{
+            color: #F8772F;
+        }
+        
+        
+        
+        /* --------------------- */
+        
+        .deal h1{
+            font-family: Playfair Display;
+            font-size: 38px;
+            color: #304653;
+        
+        }
+        
+        .deal h6 a{
+        
+            text-decoration: none;
+            color: #FC813D;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            
+        }
+        
+        .deal h6 a:hover{
+        
+            text-decoration: none;
+            color: #FC813D;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            
+        }
+        
+        
+        
+        .slideimg{
+            display: flex;
+            overflow-x: auto;
+        }
+        
+        .slideimg::-webkit-scrollbar{
+            width: 0;
+        }
+        
+        /* ---------------------------------- */
+        
+        .row3{
+            background-color: #FF4D6D;
+            width: 1025px;
+            
+        
+        }
+        
+        .row3 img{
+        
+            width: 450px;
+            height: 590px;
+        }
+        
+        .row3 h2{
+            font-family: Playfair Display;
+            color: white;
+            font-size: 54px;
+            
+        }
+        
+        .row3 span{
+            font-size: 80px;
+        }
+        
+        /* .trend .card img{
+            
+            width: 143px; 
+            height: 150px;
+        
+        } */
+        
+        .trend .card-body .card-text h6{
+            color: #304653;
+            font-size: 5px;
+            
+        }
+        
+        .trend .card-body .rupee2{
+            font-size: 16px;
+        
+        }
+        
+        .row4{
+            width: auto;
+            height: 300px;
+            background-color: #FEF2F2;
+            box-shadow: 4px 4px 6px rgba(139, 125, 125, 0.26);
+            border-radius: 6px 0px 0px 6px;
+        }
+        
+        .row4 .item{
+            width: 12rem;
+        }
+        
+        .row4 .item .card{
+            height: 300px;
+            border: none;
+        }
+        
+        .row4 .item .card .card-body h6{
+            font-size: 5px;
+        }
+        
+        .bullet{
+            list-style-type: none;
+            font-family: Montserrat;
+            font-size: 14px;
+            color: #304653;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .footer h6{
+            font-family: Montserrat;
+            color: #304653;
+            font-size: 18px;
+        
+        }
+        
+        .footer p{
+            font-family: Montserrat;
+            color: #304653;
+            font-size: 14px;
+        
+        }
+        
+        .s{
+            display: flex;
+        }
+        
+      }
+    
+    
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    body{
+        background-image: url("/images/background.png");   
+        max-width: 100%;
+        overflow-x: hidden;
+        
+    
+    }
+    
+    body .buttonend{
+      background-color: #F8772F;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      
+      
+    }
+    
+    .buttonend:hover{
+        color: white;
+    }
+    
+    /* .modal-content{
+        background-color: #FF4D6D;
+        color: white;
+        font-family: Montserrat;
+        
+        
+    }
+    
+     .modal .modal-content .modal-body .row{
+        border: 1px solid #d9d9d9;
+     }
+     */
+    
+    
+    
+    /* ----------------------- */
+    
+    .navbar1, .r1 .catname{
+        font-size: 16px;
+        
+    }
+    
+    .navbar1 a, .navbar1 a:hover{
+        color: #304653;
+    }
+    
+    .navbar1 .earnbutton, .navbar1 .earnbutton:hover{
+        width: 157px;
+        height: 30px;
+        background-color: #FC813D;
+        color: #FFFFFF;
+        
+    }
+    
+    
+    .searchbar .input-group-text , .searchbar .form-control
+    {
+        border-radius: 6px;
+        box-shadow: 2px 2px 8px rgba(207, 193, 193, 0.53);
+        background-color: #F9EEEE;
+    }
+    
+    /* ------------------------------------------------------------------------------------ */
+    
+    .Categorycol{
+    
+        box-shadow: 4px 4px 6px rgba(139, 125, 125, 0.26);
+        border-radius: 0px 6px 6px 0px;
+        background-color: #FEF2F2;
+        height: 5770px;
+    }
+
+    .mens {
+        background-image: url(images/Categories/men_backgraound.png);
+    }
+
+    .womens{
+
+        background-image: url(../images/Categories/women_backgraound.png);
+
+    }
+
+
+
+    .bullet2 {
+        list-style-type: none;
+
+        margin: 0;
+        padding: 0;
+
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        letter-spacing: -0.011em;
+
+        color: #3F515C;
+    }
+
+    .modal-body h6 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+
+        
+        letter-spacing: -0.011em;
+
+        color: #304653;
+    }
+    
+    
+    /* ----------------------------------------------------------------------------------- */
+    
+    .col2{
+        background-color: #FEF2F2;
+        border-radius: 6px;
+       
+        /* width: 750px;
+        height: 240px; */
+        
+    }
+    
+    
+    .col2 .p1{
+        font-size: 36px;
+        font-weight: 500;
+        color: #3F515C;
+        font-family: 'Playfair Display';
+    }
+    
+    .col2 .p2{
+        font-size: 20px;
+        font-weight: 500;
+        color: #3F515C;
+        font-family: 'Montserrat';
+    }
+    
+    .col2 button, .col2 button:hover{
+        width: 328px;
+        height: 52px;
+        box-shadow: 2px 2px 8px rgba(62, 125, 99, 0.44);
+        border-radius: 26px;
+        background-color: #FC813D;
+        color: #FFFFFF;
+    }
+    
+    
+    
+    .imagescroly {
+        
+        height: 235px;
+        width: 250px;
+    }
+    
+    
+    
+    .col3{
+        background-color: #FEF2F2;
+        border-radius: 6px;
+        width: 220px;
+        height: 240px;
+        background-size: contain;
+    }
+    
+    .col3 p{
+        font-size: 18px;
+        font-family: 'Montserrat';
+        color: #304653;
+    
+    }
+    
+    /* ---------------end of col3   ------------------ */
+    
+    /* .col4 {
+        background-image: url(summersale.png);
+        
+    
+    } */
+    
+    .col4 img{
+        height: 300px;
+        width: 990px; 
+        
+    
+    }
+    
+    /* .col4 .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    
+     .container {
+        position: relative;
+        text-align: center;
+        color: black;
+      } */
+    
+    
+    
+    /* .col4 .card img{
+        width: 255px;
+        height: 240px;
+    } */
+    
+    
+    .card-body{
+        background-color: #FEF2F2;
+    }
+    
+    .card-body h6 , .card-body p{
+        color: #304653;
+        font-family: Montserrat;
+    }
+    
+    .card-body .rupee{
+        color: #F8772F;
+    }
+    
+    
+    
+    /* --------------------- */
+    
+    .deal h1{
+        font-family: Playfair Display;
+        font-size: 38px;
+        color: #304653;
+    
+    }
+    
+    .deal h6 a{
+    
+        text-decoration: none;
+        color: #FC813D;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        
+    }
+    
+    .deal h6 a:hover{
+    
+        text-decoration: none;
+        color: #FC813D;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        
+    }
+    
+    
+    
+    .slideimg{
+        display: flex;
+        overflow-x: auto;
+    }
+    
+    .slideimg::-webkit-scrollbar{
+        width: 0;
+    }
+    
+    /* ---------------------------------- */
+    
+    .row3{
+        background-color: #FF4D6D;
+        width: 1025px;
+        
+    
+    }
+    
+    .row3 img{
+    
+        width: 450px;
+        height: 590px;
+    }
+    
+    .row3 h2{
+        font-family: Playfair Display;
+        color: white;
+        font-size: 54px;
+        
+    }
+    
+    .row3 span{
+        font-size: 80px;
+    }
+    
+    /* .trend .card img{
+        
+        width: 143px; 
+        height: 150px;
+    
+    } */
+    
+    .trend .card-body .card-text h6{
+        color: #304653;
+        font-size: 5px;
+        
+    }
+    
+    .trend .card-body .rupee2{
+        font-size: 16px;
+    
+    }
+    
+    .row4{
+        width: auto;
+        height: 300px;
+        background-color: #FEF2F2;
+        box-shadow: 4px 4px 6px rgba(139, 125, 125, 0.26);
+        border-radius: 6px 0px 0px 6px;
+    }
+    
+    .row4 .item{
+        width: 12rem;
+    }
+    
+    .row4 .item .card{
+        height: 300px;
+        border: none;
+    }
+    
+    .row4 .item .card .card-body h6{
+        font-size: 5px;
+    }
+    
+    .bullet{
+        list-style-type: none;
+        font-family: Montserrat;
+        font-size: 14px;
+        color: #304653;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .footer h6{
+        font-family: Montserrat;
+        color: #304653;
+        font-size: 18px;
+    
+    }
+    
+    .footer p{
+        font-family: Montserrat;
+        color: #304653;
+        font-size: 14px;
+    
+    }
+    
+    .s{
+        display: flex;
+    }
+    
+    
+    
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+    
+        body{
+            background-image: url("/images/background.png");   
+            max-width: 100%;
+            overflow-x: hidden;
+            
+        
+        }
+        
+        body .buttonend{
+          background-color: #F8772F;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          
+          
+        }
+        
+        .buttonend:hover{
+            color: white;
+        }
+        
+        /* .modal-content{
+            background-color: #FF4D6D;
+            color: white;
+            font-family: Montserrat;
+            
+            
+        }
+        
+         .modal .modal-content .modal-body .row{
+            border: 1px solid #d9d9d9;
+         } */
+        
+        
+        
+        
+        /* ----------------------- */
+        
+        .navbar1, .r1 .catname{
+            font-size: 16px;
+            
+        }
+        
+        .navbar1 a, .navbar1 a:hover{
+            color: #304653;
+        }
+        
+        .navbar1 .earnbutton, .navbar1 .earnbutton:hover{
+            width: 157px;
+            height: 30px;
+            background-color: #FC813D;
+            color: #FFFFFF;
+            
+        }
+        
+        
+        .searchbar .input-group-text , .searchbar .form-control
+        {
+            border-radius: 6px;
+            box-shadow: 2px 2px 8px rgba(207, 193, 193, 0.53);
+            background-color: #F9EEEE;
+        }
+        
+        /* ------------------------------------------------------------------------------------ */
+        
+        .Categorycol{
+        
+            box-shadow: 4px 4px 6px rgba(139, 125, 125, 0.26);
+            border-radius: 0px 6px 6px 0px;
+            background-color: #FEF2F2;
+            height: 5770px;
+        }
+
+        .mens {
+            background-image: url(images/Categories/men_backgraound.png);
+        }
+
+        .womens{
+
+            background-image: url(../images/Categories/women_backgraound.png);
+    
+        }
+
+
+
+        .bullet2 {
+            list-style-type: none;
+
+            margin: 0;
+            padding: 0;
+
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+
+            letter-spacing: -0.011em;
+
+            color: #3F515C;
+        }
+
+        .modal-body h6 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height, or 150% */
+
+            
+            letter-spacing: -0.011em;
+
+            color: #304653;
+        }
+        
+        
+        /* ----------------------------------------------------------------------------------- */
+        
+        .col2{
+            background-color: #FEF2F2;
+            border-radius: 6px;
+           
+            /* width: 750px;
+            height: 240px; */
+            
+        }
+        
+        
+        .col2 .p1{
+            font-size: 36px;
+            font-weight: 500;
+            color: #3F515C;
+            font-family: 'Playfair Display';
+        }
+        
+        .col2 .p2{
+            font-size: 20px;
+            font-weight: 500;
+            color: #3F515C;
+            font-family: 'Montserrat';
+        }
+        
+        .col2 button, .col2 button:hover{
+            width: 328px;
+            height: 52px;
+            box-shadow: 2px 2px 8px rgba(62, 125, 99, 0.44);
+            border-radius: 26px;
+            background-color: #FC813D;
+            color: #FFFFFF;
+        }
+        
+        
+        
+        .imagescroly {
+            
+            height: 235px;
+            width: 250px;
+        }
+        
+        
+        
+        .col3{
+            background-color: #FEF2F2;
+            border-radius: 6px;
+            width: 220px;
+            height: 240px;
+            background-size: contain;
+        }
+        
+        .col3 p{
+            font-size: 18px;
+            font-family: 'Montserrat';
+            color: #304653;
+        
+        }
+        
+        /* ---------------end of col3   ------------------ */
+        
+        /* .col4 {
+            background-image: url(summersale.png);
+            
+        
+        } */
+        
+        .col4 img{
+            height: 300px;
+            width: 990px; 
+            
+        
+        }
+        
+        /* .col4 .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        
+         .container {
+            position: relative;
+            text-align: center;
+            color: black;
+          } */
+        
+        
+        
+        /* .col4 .card img{
+            width: 255px;
+            height: 240px;
+        } */
+        
+        
+        .card-body{
+            background-color: #FEF2F2;
+        }
+        
+        .card-body h6 , .card-body p{
+            color: #304653;
+            font-family: Montserrat;
+        }
+        
+        .card-body .rupee{
+            color: #F8772F;
+        }
+        
+        
+        
+        /* --------------------- */
+        
+        .deal h1{
+            font-family: Playfair Display;
+            font-size: 38px;
+            color: #304653;
+        
+        }
+        
+        .deal h6 a{
+        
+            text-decoration: none;
+            color: #FC813D;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            
+        }
+        
+        .deal h6 a:hover{
+        
+            text-decoration: none;
+            color: #FC813D;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            
+        }
+        
+        
+        
+        .slideimg{
+            display: flex;
+            overflow-x: auto;
+        }
+        
+        .slideimg::-webkit-scrollbar{
+            width: 0;
+        }
+        
+        /* ---------------------------------- */
+        
+        .row3{
+            background-color: #FF4D6D;
+            width: 1025px;
+            
+        
+        }
+        
+        .row3 img{
+        
+            width: 450px;
+            height: 590px;
+        }
+        
+        .row3 h2{
+            font-family: Playfair Display;
+            color: white;
+            font-size: 54px;
+            
+        }
+        
+        .row3 span{
+            font-size: 80px;
+        }
+        
+        /* .trend .card img{
+            
+            width: 143px; 
+            height: 150px;
+        
+        } */
+        
+        .trend .card-body .card-text h6{
+            color: #304653;
+            font-size: 5px;
+            
+        }
+        
+        .trend .card-body .rupee2{
+            font-size: 16px;
+        
+        }
+        
+        .row4{
+            width: auto;
+            height: 300px;
+            background-color: #FEF2F2;
+            box-shadow: 4px 4px 6px rgba(139, 125, 125, 0.26);
+            border-radius: 6px 0px 0px 6px;
+        }
+        
+        .row4 .item{
+            width: 12rem;
+        }
+        
+        .row4 .item .card{
+            height: 300px;
+            border: none;
+        }
+        
+        .row4 .item .card .card-body h6{
+            font-size: 5px;
+        }
+        
+        .bullet{
+            list-style-type: none;
+            font-family: Montserrat;
+            font-size: 14px;
+            color: #304653;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .footer h6{
+            font-family: Montserrat;
+            color: #304653;
+            font-size: 18px;
+        
+        }
+        
+        .footer p{
+            font-family: Montserrat;
+            color: #304653;
+            font-size: 14px;
+        
+        }
+        
+        .s{
+            display: flex;
+        }
+        
+      }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    body{
+        background-image: url("/images/background.png");   
+        max-width: 100%;
+        overflow-x: hidden;
+        
+    
+    }
+    
+    body .buttonend{
+      background-color: #F8772F;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      
+      
+    }
+    
+    .buttonend:hover{
+        color: white;
+    }
+    
+    /* .modal-content{
+        background-color: #FF4D6D;
+        color: white;
+        font-family: Montserrat;
+        
+        
+    }
+    
+     .modal .modal-content .modal-body .row{
+        border: 1px solid #d9d9d9;
+     } */
+    
+    
+    
+    
+    /* ----------------------- */
+    
+    .navbar1, .r1 .catname{
+        font-size: 16px;
+        
+    }
+    
+    .navbar1 a, .navbar1 a:hover{
+        color: #304653;
+    }
+    
+    .navbar1 .earnbutton, .navbar1 .earnbutton:hover{
+        width: 157px;
+        height: 30px;
+        background-color: #FC813D;
+        color: #FFFFFF;
+        
+    }
+    
+    
+    .searchbar .input-group-text , .searchbar .form-control
+    {
+        border-radius: 6px;
+        box-shadow: 2px 2px 8px rgba(207, 193, 193, 0.53);
+        background-color: #F9EEEE;
+    }
+    
+    /* ------------------------------------------------------------------------------------ */
+    
+    .Categorycol{
+    
+        box-shadow: 4px 4px 6px rgba(139, 125, 125, 0.26);
+        border-radius: 0px 6px 6px 0px;
+        background-color: #FEF2F2;
+        height: 5770px;
+    }
+
+    .mens {
+        background-image: url(images/Categories/men_backgraound.png);
+    }
+
+    .womens{
+
+        background-image: url(../images/Categories/women_backgraound.png);
+
+    }
+
+
+
+    .bullet2 {
+        list-style-type: none;
+
+        margin: 0;
+        padding: 0;
+
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        letter-spacing: -0.011em;
+
+        color: #3F515C;
+    }
+
+    .modal-body h6 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+
+        
+        letter-spacing: -0.011em;
+
+        color: #304653;
+    }
+    
+    
+    /* ----------------------------------------------------------------------------------- */
+    
+    .col2{
+        background-color: #FEF2F2;
+        border-radius: 6px;
+       
+        /* width: 750px;
+        height: 240px; */
+        
+    }
+    
+    
+    .col2 .p1{
+        font-size: 36px;
+        font-weight: 500;
+        color: #3F515C;
+        font-family: 'Playfair Display';
+    }
+    
+    .col2 .p2{
+        font-size: 20px;
+        font-weight: 500;
+        color: #3F515C;
+        font-family: 'Montserrat';
+    }
+    
+    .col2 button, .col2 button:hover{
+        width: 328px;
+        height: 52px;
+        box-shadow: 2px 2px 8px rgba(62, 125, 99, 0.44);
+        border-radius: 26px;
+        background-color: #FC813D;
+        color: #FFFFFF;
+    }
+    
+    
+    
+    .imagescroly {
+        
+        height: 235px;
+        width: 250px;
+    }
+    
+    
+    
+    .col3{
+        background-color: #FEF2F2;
+        border-radius: 6px;
+        width: 220px;
+        height: 240px;
+        background-size: contain;
+    }
+    
+    .col3 p{
+        font-size: 18px;
+        font-family: 'Montserrat';
+        color: #304653;
+    
+    }
+    
+    /* ---------------end of col3   ------------------ */
+    
+    /* .col4 {
+        background-image: url(summersale.png);
+        
+    
+    } */
+    
+    .col4 img{
+        height: 300px;
+        width: 990px; 
+        
+    
+    }
+    
+    /* .col4 .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    
+     .container {
+        position: relative;
+        text-align: center;
+        color: black;
+      } */
+    
+    
+    
+    /* .col4 .card img{
+        width: 255px;
+        height: 240px;
+    } */
+    
+    
+    .card-body{
+        background-color: #FEF2F2;
+    }
+    
+    .card-body h6 , .card-body p{
+        color: #304653;
+        font-family: Montserrat;
+    }
+    
+    .card-body .rupee{
+        color: #F8772F;
+    }
+    
+    
+    
+    /* --------------------- */
+    
+    .deal h1{
+        font-family: Playfair Display;
+        font-size: 38px;
+        color: #304653;
+    
+    }
+    
+    .deal h6 a{
+    
+        text-decoration: none;
+        color: #FC813D;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        
+    }
+    
+    .deal h6 a:hover{
+    
+        text-decoration: none;
+        color: #FC813D;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        
+    }
+    
+    
+    
+    .slideimg{
+        display: flex;
+        overflow-x: auto;
+    }
+    
+    .slideimg::-webkit-scrollbar{
+        width: 0;
+    }
+    
+    /* ---------------------------------- */
+    
+    .row3{
+        background-color: #FF4D6D;
+        width: 1025px;
+        
+    
+    }
+    
+    .row3 img{
+    
+        width: 450px;
+        height: 590px;
+    }
+    
+    .row3 h2{
+        font-family: Playfair Display;
+        color: white;
+        font-size: 54px;
+        
+    }
+    
+    .row3 span{
+        font-size: 80px;
+    }
+    
+    /* .trend .card img{
+        
+        width: 143px; 
+        height: 150px;
+    
+    } */
+    
+    .trend .card-body .card-text h6{
+        color: #304653;
+        font-size: 5px;
+        
+    }
+    
+    .trend .card-body .rupee2{
+        font-size: 16px;
+    
+    }
+    
+    .row4{
+        width: auto;
+        height: 300px;
+        background-color: #FEF2F2;
+        box-shadow: 4px 4px 6px rgba(139, 125, 125, 0.26);
+        border-radius: 6px 0px 0px 6px;
+    }
+    
+    .row4 .item{
+        width: 12rem;
+    }
+    
+    .row4 .item .card{
+        height: 300px;
+        border: none;
+    }
+    
+    .row4 .item .card .card-body h6{
+        font-size: 5px;
+    }
+    
+    .bullet{
+        list-style-type: none;
+        font-family: Montserrat;
+        font-size: 14px;
+        color: #304653;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .footer h6{
+        font-family: Montserrat;
+        color: #304653;
+        font-size: 18px;
+    
+    }
+    
+    .footer p{
+        font-family: Montserrat;
+        color: #304653;
+        font-size: 14px;
+    
+    }
+    
+    .s{
+        display: flex;
+    }
+    
+    
+    
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+    
+        body{
+            background-image: url("/images/background.png");   
+            max-width: 100%;
+            overflow-x: hidden;
+            
+        
+        }
+        
+        body .buttonend{
+          background-color: #F8772F;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          
+          
+        }
+        
+        .buttonend:hover{
+            color: white;
+        }
+        
+        /* .modal-content{
+            background-color: #FF4D6D;
+            color: white;
+            font-family: Montserrat;
+            
+            
+        }
+        
+         .modal .modal-content .modal-body .row{
+            border: 1px solid #d9d9d9;
+         } */
+        
+        
+        
+        
+        /* ----------------------- */
+        
+        .navbar1, .r1 .catname{
+            font-size: 16px;
+            
+        }
+        
+        .navbar1 a, .navbar1 a:hover{
+            color: #304653;
+        }
+        
+        .navbar1 .earnbutton, .navbar1 .earnbutton:hover{
+            width: 157px;
+            height: 30px;
+            background-color: #FC813D;
+            color: #FFFFFF;
+            
+        }
+        
+        
+        .searchbar .input-group-text , .searchbar .form-control
+        {
+            border-radius: 6px;
+            box-shadow: 2px 2px 8px rgba(207, 193, 193, 0.53);
+            background-color: #F9EEEE;
+        }
+        
+        /* ------------------------------------------------------------------------------------ */
+        
+        .Categorycol{
+        
+            box-shadow: 4px 4px 6px rgba(139, 125, 125, 0.26);
+            border-radius: 0px 6px 6px 0px;
+            background-color: #FEF2F2;
+            height: 5770px;
+        }
+
+        .mens {
+            background-image: url(images/Categories/men_backgraound.png);
+        }
+
+        .womens{
+
+            background-image: url(../images/Categories/women_backgraound.png);
+    
+        }
+
+
+
+        .bullet2 {
+            list-style-type: none;
+
+            margin: 0;
+            padding: 0;
+
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+
+            letter-spacing: -0.011em;
+
+            color: #3F515C;
+        }
+
+        .modal-body h6 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height, or 150% */
+
+            
+            letter-spacing: -0.011em;
+
+            color: #304653;
+        }
+        
+        
+        /* ----------------------------------------------------------------------------------- */
+        
+        .col2{
+            background-color: #FEF2F2;
+            border-radius: 6px;
+           
+            /* width: 750px;
+            height: 240px; */
+            
+        }
+        
+        
+        .col2 .p1{
+            font-size: 36px;
+            font-weight: 500;
+            color: #3F515C;
+            font-family: 'Playfair Display';
+        }
+        
+        .col2 .p2{
+            font-size: 20px;
+            font-weight: 500;
+            color: #3F515C;
+            font-family: 'Montserrat';
+        }
+        
+        .col2 button, .col2 button:hover{
+            width: 328px;
+            height: 52px;
+            box-shadow: 2px 2px 8px rgba(62, 125, 99, 0.44);
+            border-radius: 26px;
+            background-color: #FC813D;
+            color: #FFFFFF;
+        }
+        
+        
+        
+        .imagescroly {
+            
+            height: 235px;
+            width: 250px;
+        }
+        
+        
+        
+        .col3{
+            background-color: #FEF2F2;
+            border-radius: 6px;
+            width: 220px;
+            height: 240px;
+            background-size: contain;
+        }
+        
+        .col3 p{
+            font-size: 18px;
+            font-family: 'Montserrat';
+            color: #304653;
+        
+        }
+        
+        /* ---------------end of col3   ------------------ */
+        
+        /* .col4 {
+            background-image: url(summersale.png);
+            
+        
+        } */
+        
+        .col4 img{
+            height: 300px;
+            width: 990px; 
+            
+        
+        }
+        
+        /* .col4 .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        
+         .container {
+            position: relative;
+            text-align: center;
+            color: black;
+          } */
+        
+        
+        
+        /* .col4 .card img{
+            width: 255px;
+            height: 240px;
+        } */
+        
+        
+        .card-body{
+            background-color: #FEF2F2;
+        }
+        
+        .card-body h6 , .card-body p{
+            color: #304653;
+            font-family: Montserrat;
+        }
+        
+        .card-body .rupee{
+            color: #F8772F;
+        }
+        
+        
+        
+        /* --------------------- */
+        
+        .deal h1{
+            font-family: Playfair Display;
+            font-size: 38px;
+            color: #304653;
+        
+        }
+        
+        .deal h6 a{
+        
+            text-decoration: none;
+            color: #FC813D;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            
+        }
+        
+        .deal h6 a:hover{
+        
+            text-decoration: none;
+            color: #FC813D;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            
+        }
+        
+        
+        
+        .slideimg{
+            display: flex;
+            overflow-x: auto;
+        }
+        
+        .slideimg::-webkit-scrollbar{
+            width: 0;
+        }
+        
+        /* ---------------------------------- */
+        
+        .row3{
+            background-color: #FF4D6D;
+            width: 1025px;
+            
+        
+        }
+        
+        .row3 img{
+        
+            width: 450px;
+            height: 590px;
+        }
+        
+        .row3 h2{
+            font-family: Playfair Display;
+            color: white;
+            font-size: 54px;
+            
+        }
+        
+        .row3 span{
+            font-size: 80px;
+        }
+        
+        /* .trend .card img{
+            
+            width: 143px; 
+            height: 150px;
+        
+        } */
+        
+        .trend .card-body .card-text h6{
+            color: #304653;
+            font-size: 5px;
+            
+        }
+        
+        .trend .card-body .rupee2{
+            font-size: 16px;
+        
+        }
+        
+        .row4{
+            width: auto;
+            height: 300px;
+            background-color: #FEF2F2;
+            box-shadow: 4px 4px 6px rgba(139, 125, 125, 0.26);
+            border-radius: 6px 0px 0px 6px;
+        }
+        
+        .row4 .item{
+            width: 12rem;
+        }
+        
+        .row4 .item .card{
+            height: 300px;
+            border: none;
+        }
+        
+        .row4 .item .card .card-body h6{
+            font-size: 5px;
+        }
+        
+        .bullet{
+            list-style-type: none;
+            font-family: Montserrat;
+            font-size: 14px;
+            color: #304653;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .footer h6{
+            font-family: Montserrat;
+            color: #304653;
+            font-size: 18px;
+        
+        }
+        
+        .footer p{
+            font-family: Montserrat;
+            color: #304653;
+            font-size: 14px;
+        
+        }
+        
+        .s{
+            display: flex;
+        }
+        
+      }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    
+
+    body{
+        background-image: url("/images/background.png");   
+        max-width: 100%;
+        overflow-x: hidden;
+        
+    
+    }
+    
+    body .buttonend{
+      background-color: #F8772F;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      
+      
+    }
+    
+    .buttonend:hover{
+        color: white;
+    }
+    
+    /* .modal-content{
+        background-color: #FF4D6D;
+        color: white;
+        font-family: Montserrat;
+        
+        
+    }
+    
+     .modal .modal-content .modal-body .row{
+        border: 1px solid #d9d9d9;
+     }
+     */
+    
+    
+    
+    /* ----------------------- */
+    
+    .navbar1, .r1 .catname{
+        font-size: 16px;
+        
+    }
+    
+    .navbar1 a, .navbar1 a:hover{
+        color: #304653;
+    }
+    
+    .navbar1 .earnbutton, .navbar1 .earnbutton:hover{
+        width: 157px;
+        height: 30px;
+        background-color: #FC813D;
+        color: #FFFFFF;
+        
+    }
+    
+    
+    .searchbar .input-group-text , .searchbar .form-control
+    {
+        border-radius: 6px;
+        box-shadow: 2px 2px 8px rgba(207, 193, 193, 0.53);
+        background-color: #F9EEEE;
+    }
+    
+    /* ------------------------------------------------------------------------------------ */
+    
+    .Categorycol{
+    
+        box-shadow: 4px 4px 6px rgba(139, 125, 125, 0.26);
+        border-radius: 0px 6px 6px 0px;
+        background-color: #FEF2F2;
+        height: 5770px;
+    }
+
+    .mens {
+        background-image: url(../images/Categories/men_backgraound.png);
+    }
+
+    .womens{
+
+        background-image: url(../images/Categories/women_backgraound.png);
+
+    }
+
+
+
+    .bullet2 {
+        list-style-type: none;
+
+        margin: 0;
+        padding: 0;
+
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        letter-spacing: -0.011em;
+
+        color: #3F515C;
+    }
+
+    .modal-body h6 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+
+        
+        letter-spacing: -0.011em;
+
+        color: #304653;
+    }
+    
+    
+    /* ----------------------------------------------------------------------------------- */
+    
+    .col2{
+        background-color: #FEF2F2;
+        border-radius: 6px;
+       
+        /* width: 750px;
+        height: 240px; */
+        
+    }
+    
+    
+    .col2 .p1{
+        font-size: 36px;
+        font-weight: 500;
+        color: #3F515C;
+        font-family: 'Playfair Display';
+    }
+    
+    .col2 .p2{
+        font-size: 20px;
+        font-weight: 500;
+        color: #3F515C;
+        font-family: 'Montserrat';
+    }
+    
+    .col2 button, .col2 button:hover{
+        width: 328px;
+        height: 52px;
+        box-shadow: 2px 2px 8px rgba(62, 125, 99, 0.44);
+        border-radius: 26px;
+        background-color: #FC813D;
+        color: #FFFFFF;
+    }
+    
+    
+    
+    .imagescroly {
+        
+        height: 235px;
+        width: 250px;
+    }
+    
+    
+    
+    .col3{
+        background-color: #FEF2F2;
+        border-radius: 6px;
+        width: 220px;
+        height: 240px;
+        background-size: contain;
+    }
+    
+    .col3 p{
+        font-size: 18px;
+        font-family: 'Montserrat';
+        color: #304653;
+    
+    }
+    
+    /* ---------------end of col3   ------------------ */
+    
+    /* .col4 {
+        background-image: url(summersale.png);
+        
+    
+    } */
+    
+    .col4 img{
+        height: 300px;
+        width: 990px; 
+        
+    
+    }
+    
+    /* .col4 .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    
+     .container {
+        position: relative;
+        text-align: center;
+        color: black;
+      } */
+    
+    
+    
+    /* .col4 .card img{
+        width: 255px;
+        height: 240px;
+    } */
+    
+    
+    .card-body{
+        background-color: #FEF2F2;
+    }
+    
+    .card-body h6 , .card-body p{
+        color: #304653;
+        font-family: Montserrat;
+    }
+    
+    .card-body .rupee{
+        color: #F8772F;
+    }
+    
+    
+    
+    /* --------------------- */
+    
+    .deal h1{
+        font-family: Playfair Display;
+        font-size: 38px;
+        color: #304653;
+    
+    }
+    
+    .deal h6 a{
+    
+        text-decoration: none;
+        color: #FC813D;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        
+    }
+    
+    .deal h6 a:hover{
+    
+        text-decoration: none;
+        color: #FC813D;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        
+    }
+    
+    
+    
+    .slideimg{
+        display: flex;
+        overflow-x: auto;
+    }
+    
+    .slideimg::-webkit-scrollbar{
+        width: 0;
+    }
+    
+    /* ---------------------------------- */
+    
+    .row3{
+        background-color: #FF4D6D;
+        width: 1025px;
+        
+    
+    }
+    
+    .row3 img{
+    
+        width: 450px;
+        height: 590px;
+    }
+    
+    .row3 h2{
+        font-family: Playfair Display;
+        color: white;
+        font-size: 54px;
+        
+    }
+    
+    .row3 span{
+        font-size: 80px;
+    }
+    
+    /* .trend .card img{
+        
+        width: 143px; 
+        height: 150px;
+    
+    } */
+    
+    .trend .card-body .card-text h6{
+        color: #304653;
+        font-size: 5px;
+        
+    }
+    
+    .trend .card-body .rupee2{
+        font-size: 16px;
+    
+    }
+    
+    .row4{
+        width: auto;
+        height: 300px;
+        background-color: #FEF2F2;
+        box-shadow: 4px 4px 6px rgba(139, 125, 125, 0.26);
+        border-radius: 6px 0px 0px 6px;
+    }
+    
+    .row4 .item{
+        width: 12rem;
+    }
+    
+    .row4 .item .card{
+        height: 300px;
+        border: none;
+    }
+    
+    .row4 .item .card .card-body h6{
+        font-size: 5px;
+    }
+    
+    .bullet{
+        list-style-type: none;
+        font-family: Montserrat;
+        font-size: 14px;
+        color: #304653;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .footer h6{
+        font-family: Montserrat;
+        color: #304653;
+        font-size: 18px;
+    
+    }
+    
+    .footer p{
+        font-family: Montserrat;
+        color: #304653;
+        font-size: 14px;
+    
+    }
+    
+    .s{
+        display: flex;
+    }
+    
+  }
+  
+
+
+    
+
+
+
+/* Yagnesh Rating CSS */
+
+.checked{
+    color: red;
+}
+.my-btn
+{
+    background-color: inherit !important;
+    border: 0 !important;
+}
+
+
+
+

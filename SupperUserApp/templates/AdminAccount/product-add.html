@@ -1,0 +1,279 @@
+	{%  extends 'SupperUserApp/superuser-base.html' %}{%  load static %}
+{%  block content %}
+<style>
+	.msgcolor{
+		color: red;
+		font-size: large;
+		padding-left:20px;
+		padding-top: 20px;
+	}
+</style>
+
+					<div class="breadcrumb-wrapper d-flex align-items-center justify-content-between">
+						<div>
+							<h1>Add Product</h1>
+							<p class="breadcrumbs"><span><a href="index.html">Home</a></span>
+								<span><i class="mdi mdi-chevron-right"></i></span>Product</p>
+						</div>
+						<div>
+							<a href="{% url 'ProductList' %}" class="btn btn-primary"> View All
+							</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="card card-default">
+								<div class="card-header card-header-border-bottom">
+									<h2>Add Product</h2>
+								</div>
+								
+									
+										{% if messages %}
+										{% for i in messages %}
+										
+										<h2 class="msgcolor " >{{i}}</h2>
+										
+										{% endfor %}
+										{% endif %}
+									
+								
+
+								<div class="card-body">
+									<form action="{% url 'AddProduct' %}" method="POST" enctype="multipart/form-data">
+										{% csrf_token %}
+									<div class="row ec-vendor-uploads">
+										<div class="col-lg-4">
+											<div class="ec-vendor-img-upload">
+												<div class="ec-vendor-main-img">
+													<div class="avatar-upload">
+														<div class="avatar-edit">
+															<input type='file' id="imageUpload" class="ec-image-upload" name="mainimage" required
+																accept="image/*" />
+															<label for="imageUpload"><img
+																	src="{% static  'supperuserstatic/img/icons/edit.svg' %}"
+																	class="svg_img header_svg" alt="edit" /></label>
+														</div>
+														<div class="avatar-preview ec-preview"> 
+															<div class="imagePreview ec-div-preview" >
+																<img class="ec-image-preview"
+																	src="{% static  'supperuserstatic/img/products/vender-upload-preview.jpg' %}" 
+																	alt="edit" />
+															</div>
+														</div>
+													</div>
+													<div class="thumb-upload-set colo-md-12">
+														<div class="thumb-upload">
+															<div class="thumb-edit">
+																<input type='file' id="thumbUpload01"
+																	class="ec-image-upload" name="file1" accept="image/*"
+																	/>
+																<label for="imageUpload"><img
+																		src="{% static  'supperuserstatic/img/icons/edit.svg' %}"
+																		class="svg_img header_svg" alt="edit" /></label>
+															</div>
+															<div class="thumb-preview ec-preview">
+																<div class="image-thumb-preview">
+																	<img class="image-thumb-preview ec-image-preview"
+																		src="{% static  'supperuserstatic/img/products/vender-upload-thumb-preview.jpg' %}"
+																		alt="edit" />
+																</div>
+															</div>
+														</div>
+														<div class="thumb-upload">
+															<div class="thumb-edit">
+																<input type='file' id="thumbUpload02"
+																	class="ec-image-upload" name="file2" accept="image/*"
+																	/>
+																<label for="imageUpload"><img
+																		src="{% static  'supperuserstatic/img/icons/edit.svg' %}"
+																		class="svg_img header_svg" alt="edit" /></label>
+															</div>
+															<div class="thumb-preview ec-preview">
+																<div class="image-thumb-preview">
+																	<img class="image-thumb-preview ec-image-preview"
+																		src="{% static  'supperuserstatic/img/products/vender-upload-thumb-preview.jpg' %}"
+																		alt="edit" />
+																</div>
+															</div>
+														</div>
+														<div class="thumb-upload">
+															<div class="thumb-edit">
+																<input type='file' id="thumbUpload03"
+																	class="ec-image-upload" accept="image/*"
+																	name="file3" />
+																<label for="imageUpload"><img
+																		src="{% static  'supperuserstatic/img/icons/edit.svg' %}"
+																		class="svg_img header_svg" alt="edit" /></label>
+															</div>
+															<div class="thumb-preview ec-preview">
+																<div class="image-thumb-preview">
+																	<img class="image-thumb-preview ec-image-preview"
+																		src="{% static  'supperuserstatic/img/products/vender-upload-thumb-preview.jpg' %}"
+																		alt="edit" />
+																</div>
+															</div>
+														</div>
+														<div class="thumb-upload">
+															<div class="thumb-edit">
+																<input type='file' id="thumbUpload04"
+																	class="ec-image-upload" accept="image/*"
+																	name="file4"/>
+																<label for="imageUpload"><img
+																		src="{% static  'supperuserstatic/img/icons/edit.svg' %}"
+																		class="svg_img header_svg" alt="edit" /></label>
+															</div>
+															<div class="thumb-preview ec-preview">
+																<div class="image-thumb-preview">
+																	<img class="image-thumb-preview ec-image-preview"
+																		src="{% static  'supperuserstatic/img/products/vender-upload-thumb-preview.jpg' %}"
+																		alt="edit" />
+																</div>
+															</div>
+														</div>
+														<div class="thumb-upload">
+															<div class="thumb-edit">
+																<input type='file' id="thumbUpload05"
+																	class="ec-image-upload" accept="image/*"
+																	name="file5" />
+																<label for="imageUpload"><img
+																		src="{% static  'supperuserstatic/img/icons/edit.svg' %}"
+																		class="svg_img header_svg" alt="edit" /></label>
+															</div>
+															<div class="thumb-preview ec-preview">
+																<div class="image-thumb-preview">
+																	<img class="image-thumb-preview ec-image-preview"
+																		src="{% static  'supperuserstatic/img/products/vender-upload-thumb-preview.jpg' %}"
+																		alt="edit" />
+																</div>
+															</div>
+														</div>
+														<div class="thumb-upload">
+															<div class="thumb-edit">
+																<input type='file' id="thumbUpload06"
+																	class="ec-image-upload" accept="image/*"
+																	name="file6" />
+																<label for="imageUpload"><img
+																		src="{% static  'supperuserstatic/img/icons/edit.svg' %}"
+																		class="svg_img header_svg" alt="edit" /></label>
+															</div>
+															<div class="thumb-preview ec-preview">
+																<div class="image-thumb-preview">
+																	<img class="image-thumb-preview ec-image-preview"
+																		src="{% static  'supperuserstatic/img/products/vender-upload-thumb-preview.jpg' %}"
+																		alt="edit" />
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-8">
+											<div class="ec-vendor-upload-detail">
+												<div class="row g-3">
+												
+													<div class="col-md-6">
+														<label for="inputEmail4" class="form-label">Product name</label>
+														<input type="text" name="Productname" class="form-control slug-title" id="inputEmail4" required>
+													</div>
+													<div class="col-md-6">
+														<label for="inputEmail4" class="form-label">Product Brand name</label>
+														<input type="text" name="Brandname" class="form-control" id="inputEmail4" required>
+													</div>
+													<div class="col-md-12">
+														<label class="form-label">Select Categories</label>
+											
+														<select name="selectcategories" id="Categories" class="form-select">
+															{% for c1 in cat1 %}
+															{% for c2 in cat2 %}
+															{% if c1.id is c2.CategoryLevel1Id.id %}
+															<optgroup label="{{c1.CategoryName}} - {{c2.CategoryLevel2Name}}">
+																
+																{% for c3 in cat3 %}
+                                          						{% if c2.id is c3.CategoryLevel2Id.id %}
+																<option value="{{c3.id}}">{{c3.CategoryLevel3Name}}</option>
+																{% endif %}
+																{% endfor %}
+															</optgroup>
+															{% endif %}
+															{% endfor %}
+															{% endfor %}
+															
+														</select>
+													</div>
+													<div class="col-md-12">
+														<label for="slug" class="col-12 col-form-label">Slug</label> 
+														<div class="col-12">
+															<input id="slug" name="slug" class="form-control here set-slug" type="text">
+														</div>
+													</div>
+													
+
+													
+													<!-- <div class="col-md-9 mb-25">
+														
+														<label class="form-label"> Colors</label>
+														
+														{% for color in ProductColorobj %}
+														<input type="checkbox" 
+															id="exampleColorInput1" name="colour" 
+															title="Choose your color" style="width:auto; ">
+															<span style="background-color: {{color.hexcolor}};" class="border border-1"> {{color.hexcolor}}</span>
+															{% endfor %}
+													</div>
+													<div class="col-md-3 mb-25">
+														<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addColor"> Add Color
+														</button>
+												    </div> -->
+
+													<!-- <div class="col-md-9 mb-25">
+														<label class="form-label">Size</label>
+														{% for size in ProductSizeobj %}
+														<div class="form-checkbox-box">
+															<div class="form-check form-check-inline">
+																<input type="checkbox" name="size" value="size">
+																<label>{{size.size}}</label>
+															</div>
+														</div>
+														{% endfor %}
+													</div>
+
+													<div class="col-md-3 mb-25">
+														<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addSize"> Add Size
+														</button>
+													 </div> -->
+
+													<!-- <div class="col-md-6">
+														<label class="form-label">Price </span></label>
+														<input type="number" class="form-control" name="prize" id="price1">
+													</div>
+													<div class="col-md-6">
+														<label class="form-label">Discount In Percent </span></label>
+														<input type="number" class="form-control" name="Discount" id="price1">
+													</div> -->
+													<!-- <div class="col-md-12">
+														<label class="form-label">Quantity</label>
+														<input type="number" class="form-control" name="quantity" id="quantity1">
+													</div> -->
+													<div class="col-md-12">
+														<label class="form-label">Full Detail</label>
+														<textarea class="form-control" name="fulldetail" rows="4" required></textarea><br>
+													</div>
+													
+													<div class="col-md-12">
+														<button type="submit" class="btn btn-primary">Submit</button>
+													</div>
+												
+											</div>
+											</div>
+										</div>
+									</div>
+								</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					
+						
+					{%  endblock %}

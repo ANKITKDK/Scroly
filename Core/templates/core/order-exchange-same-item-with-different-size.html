@@ -1,0 +1,423 @@
+{% extends "core/base1.html" %}{% load static %}
+
+{% block content %}
+    
+{% block own_css %}
+    
+    <link rel="stylesheet" href="{% static 'css/order-exchange-same-item-with-different-size.css' %}">
+    
+{% endblock own_css%}
+</head>
+<body>
+    
+    <!--start navbar -->
+
+    <!-- end navbar -->
+
+    <!-- start continer-flud  -->
+    <div class="continer-flud pad-left-top-righe pb-5">
+        <!--start row for Exchange Orders  -->
+        <div class="row">
+            <div class="col-md-12 border-bottom fw-bold pad-bottom-39px">
+                Exchange Orders
+            </div>
+        </div>
+        <!--end row for Exchange Orders  -->
+
+
+        <div class="row">
+            <!--start main column col-md-9  -->
+            <div class="col-md-9">
+                <div class="row pad-top-30px pad-right-30px">
+                    <div class="col-md-12 p-0">
+                        <div class="card card-shado">
+                            <div class="card-body pad-16px">
+                                <!-- start row for images  shirt size-->
+                                <div class="row">
+                                    <!-- start img col-md-1  -->
+                                    <div class="col-md-1 pe-0">
+                                        <img src="{% static 'images/order-exchange.png' %}" alt="">
+                                    </div>
+                                    <!-- end img col-md-1  -->
+
+
+                                    <div class="col-md-11 p-0">
+                                        <div class="row">
+                                            <div class="col-md-12 men-tex-col">
+                                                Men’s Printed Shirt....
+                                            </div>
+                                        </div>
+
+                                        <div class="row pt-2">
+                                            <div class="col-md-12 men-tex-col-xe">
+                                                Size: M
+                                            </div>
+                                        </div>
+
+                                        <div class="row pt-1">
+                                            <div class="col-md-12">
+                                                <span class="men-tex-col fw-bold">₹<span class="ps-1">1800</span></span>
+                                                <span class="ps-2 text-decoration-line-through tex-col-3100">₹<span class="ps-1">3100</span></span>
+                                                <span class="save-green-col ps-2">Saved</span>
+                                                <span class="save-green-col ps-2">₹ <span class="ps-1">1,700</span></i></span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!--end row for images  shirt size-->
+                            </div>
+                        </div>
+
+                        <!--start row pad-top-30px  -->
+                        <div class="row pad-top-30px">
+                            <div class="col-md-12"></div>
+                        </div>
+                        <!--end row pad-top-30px  -->
+
+                        <!-- start refresh icon Eligibility for exchange till 24 sep -->
+                        <div class="card card-shado">
+                            <div class="card-body pad-16px">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <span class="refresh-col-orang"><i class="fa fa-refresh" aria-hidden="true"></i></span><span class="ps-2 Eligibil-text">Eligibility for exchange till 24 sep</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- start refresh icon Eligibility for exchange till 24 sep -->
+
+                        <div class="row pad-top-30px">
+                            <div class="col-md-12"></div>
+                        </div>
+
+
+                        <div class="card card-shado">
+                            <div class="card-body pad-bottom-53px">
+                                <!-- start  Select Replacement Size  Original Size: M-->
+                                <div class="row border-bottom">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-12 replace-size-textrr">
+                                                Select Replacement Size
+                                            </div>
+                                        </div>
+        
+                                        <div class="row">
+                                            <div class="col-md-12 orig-size-text">
+                                                Original Size: M
+                                            </div>
+                                        </div>
+        
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- start  Select Replacement Size  Original Size: M-->
+
+
+                                <!--start all size button-->
+                                <div class="row border-bottom">
+                                    <div class="col-md-12 p-0">
+                                        <div class="row pad-top-30px pad-left-30px pad-bottom-30px">
+                                            <div class="col-md-2">
+                                                <div class="row">
+                                                    <!--start hover button  -->
+                                                    <div class="col-md-6">
+                                                        <button class="btn button-orignal"><span>XS</span></button>
+                                                    </div>
+                                                    
+                                                    <div class="col-md-6">
+                                                        <button class="btn button-orignal"><span>S</span></button>
+                                                    </div>
+                                                    <!--end hover button  -->
+                                                </div>
+                                            </div>
+
+
+                                            <!--start disabled  button 2 -->
+                                            <div class="col-md-2">
+                                                
+                                                <div class="row">
+                                                    <!-- start button 1 disabled -->
+                                                    <div class="col-md-6">
+                                                        <button class="btn button-xl " disabled><span class="text-decoration-line-through xl-text-col">Xs</span></button>
+                                                    </div>
+                                                    <!--end button 1 disabled -->
+
+                                                    <!-- start button 2 disabled-->
+                                                    <div class="col-md-6">
+                                                        <button class="btn button-xl" disabled><span class="text-decoration-line-through xl-text-col">Xs</span></button>
+                                                    </div>
+                                                    <!-- end button 2 disabled-->
+                                                </div>
+                                            </div>
+                                            <!--end disabled  button 2-->
+
+                                            <!--start simple button -->
+                                            <div class="col-md-2 replace-size-text">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <button class="btn button-xl"><span class="xs-text-col">M</span></button>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <button class="btn button-xl"><span class="xs-text-col">Xs</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end simple button -->
+
+                                            <div class="col-md-2 replace-size-text">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <button class="btn button-xl"><span class="text-decoration-line-through xl-text-col">Xs</span></button>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <button class="btn button-xl"><span class="text-decoration-line-through xl-text-col">Xs</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-2 replace-size-text">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <button class="btn button-xl"><span class="text-decoration-line-through xl-text-col">Xs</span></button>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <button class="btn button-xl"><span class="text-decoration-line-through xl-text-col">Xs</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-4">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end all size button-->
+
+                                <!-- start Size you want is unavailable? -->
+                                <div class="row border-bottom">
+                                    <div class="col-md-12 p-0">
+                                        <div class="row pad-top-30px pad-left-30px pad-bottom-30px">
+                                            <div class="col-md-3 unavab-text-color">
+                                                Size you want is unavailable?
+                                            </div>
+
+                                            <div class="col-md-2 return-col-orang">
+                                                Return
+                                            </div>
+
+                                            <div class="col-md-7">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end Size you want is unavailable? -->
+                            </div>
+                        </div>
+
+
+                        <!-- Why are you exchanging? 4 form-check -->
+                        <div class="cardd border-bottom">
+                            <div class="card-bodyy pad-left-30px">
+                                <!--start row Why are you exchanging? -->
+                                <div class="row">
+                                    <div class="col-md-12 Why-exchan-text pt-1">
+                                        Why are you exchanging?
+                                    </div>
+                                </div>
+                                <!--end row Why are you exchanging? -->
+
+                                <!-- start row for Please choose the correct reason for exchange. -->
+                                <div class="row">
+                                    <div class="col-md-12 Why-exchan-text correct-reason">
+                                        Please choose the correct reason for exchange. This information is only used to improve our service
+                                    </div>
+                                </div>
+                                <!-- end row for Please choose the correct reason for exchange. -->
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-check align-baseline ">
+                                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">
+                                            <div class="row">
+                                                <div class="col-md-12 damage-product ps-3 pt-1">
+                                                    I received wrong / Damage product
+                                                </div>
+                                            </div>
+                                            <label class="form-check-label" for="radio1"></label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-check align-baseline ">
+                                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">
+                                            <div class="row">
+                                                <div class="col-md-12 damage-product ps-3 pt-1">
+                                                    Size is too big
+                                                </div>
+                                            </div>
+                                            <label class="form-check-label" for="radio1"></label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-check align-baseline ">
+                                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">
+                                            <div class="row">
+                                                <div class="col-md-12 damage-product ps-3 pt-1">
+                                                    Size is too small
+                                                </div>
+                                            </div>
+                                            <label class="form-check-label" for="radio1"></label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="cardd border-bottom">
+                            <div class="card-bodyy pad-left-30px pad-top-30px pad-bottom-30px">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                                    <label class="form-check-label" for="check2">
+                                        <div class="row">
+                                            <div class="col-md-12 conform-product-text">
+                                                I confirm that the product is unused with the original  tags intact
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end Why are you exchanging? 4 form-check -->
+
+                        <!-- start Pickup Address button -->
+                        <div class="cardd">
+                            <div class="card-bodyy pad-left-30px pad-top-30px">
+                                <div class="row">
+                                    <div class="col-md-12 pickup-ddress-text">
+                                        Pickup Address
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-8 pickup-ddress-cust">
+                                        Sai villa, Forest Office Front of Ayurvedic Clinic Main Road Nagpur Maharashtra 201002 India
+                                        Phone Number : 1213141516
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="cardd border-bottom pad-bottom-30px">
+                            <div class="card-bodyy pad-left-30px pad-top-30px">
+                                <div class="row">
+                                    <div class="col-md-12 d-grid">
+                                        <button type="button" class="btn btn-block change-pickup-btn">
+                                            Change Pickup Address
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- start Pickup Address button -->
+
+                        <!--start Exchange will delivered by 28 sep 2022 -->
+                        <div class="cardd border-bottom pad-bottom-30px">
+                            <div class="card-bodyy pad-left-30px pad-top-30px">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <span class="refresh-col-orang"><i class="fa fa-refresh" aria-hidden="true"></i></span><span class="ps-2 Eligibil-text">Exchange will delivered by</span><span class="fw-bold Eligibil-text"> 28 sep 2022</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end  Exchange will delivered by 28 sep 2022 -->
+
+                        <!-- start button Exchange  -->
+                        <div class="cardd border-bottom pad-bottom-30px">
+                            <div class="card-bodyy pad-left-30px pad-top-30px">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="row">
+                                            <div class="input-group">
+                                                <button type="button" class="form-control btn-circle btn-sm border border-0">
+                                                    <span class="share-button">Exchange</span> 
+                                                </button>
+                                                <span class="input-group-text share-btn border border-0"><button type="button" class="btn btn-circle btn-md"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-9">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- start button Exchange  -->
+                    </div>
+                </div>
+            </div>
+            <!--end main column col-md-9  -->
+            <!--start main col-md-3 -->
+            <div class="col-md-3 pad-left-30px border-start">
+                <!--start Orders -->
+                <div class="row pad-top-30px">
+                    <div class="col-md-12 px-0  pad-top-30px  border-top order-text-col">
+                        Orders
+                    </div>
+                </div>
+                <!--end Orders -->
+
+                <!-- start Orders & Returns -->
+                <div class="row border-bottom pad-bottom-30px">
+                    <div class="col-md-12 p-0 order-ord-returns">
+                        Orders & Returns
+                    </div>
+                </div>
+                <!--end Orders & Returns -->
+
+                <!-- start Profile -->
+                <div class="row border-bottom pad-top-30px pad-bottom-30px order-text-col">
+                    <div class="col-md-12 p-0">
+                        Profile
+                    </div>
+                </div>
+                <!--end Profile -->
+            </div>
+            <!--end main col-md-3 -->
+
+        </div>
+
+
+    </div>
+    <!--end continer-flud  -->
+{% endblock %}

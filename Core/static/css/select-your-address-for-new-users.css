@@ -1,0 +1,53 @@
+body{
+    /* The image used */    
+    background-image: url("../images/background.png");
+}
+
+.choose-location{
+    font-family: var(--font-1); 
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px;
+    color:var(--color-5);
+    padding-bottom: 30px;
+}
+
+.select-location{
+    font-family: var(--font-1);  
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color:var(--color-17);
+    padding-bottom: 30px;
+    
+}
+.add-new-address{
+    font-family: var(--font-1);  
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px; 
+    color:var(--color-12) ;
+}
+.add-new-address:hover{
+    color:var(--color-12)
+} 
+
+
+.add-address-btncolor{
+    /* position: relative; */
+    background-color:var(--color-1) ;
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+     color: var(--color-9); 
+    border-color:var(--color-1) ;
+    /* float:left; */
+  }
+  
+  .add-address-btncolor:hover{
+    color: var(--color-9);
+  }

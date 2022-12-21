@@ -1,0 +1,307 @@
+{% extends "core/base2.html"%}
+{% load static %}
+{% load social_share %}
+{% block sidebar %}
+<div class="col-sm-3 col-md-2 categorycol mobile-d-none-1">
+   <!-- row start -->
+   <div class="row">
+      <div class="col-md-12  mt-3 sidebar-heading">
+         Category
+      </div>
+   </div>
+
+   <!-- Ankush Dynamic Code for category -->
+   {% for c1 in cat1 %}
+   <div class="row my-4 r1">
+      <!-- category img start -->
+      <div class="col-md-6">
+         <img src="{{c1.CategoryImage.url}}" alt="" class="img-fluid">
+      </div>
+      <!-- category img end -->
+
+      <!-- category dropdown start -->
+
+      <div class="col-md-6 ">
+         <p class="my-2 text-center">
+            <!-- dropdown start -->
+         <div class="dropdown">
+            <!-- category name start -->
+            <div class="col-sm-3">
+               <button class="dropbtn my-2">{{c1.CategoryName}}</button>
+            </div>
+            <!-- category name end -->
+            <!-- row start -->
+
+            <div class="row">
+               <!-- col-sm-3 start -->
+               <div class="col-sm-3">
+                  <!-- dropdwon content start -->
+                  <div class="dropdown-content men ps-sm-5 pt-sm-4 pb-sm-5 rounded">
+                     <!-- row start -->
+                     <div class="row">
+                        <!-- div col 1 start -->
+                        {% for c2 in cat2 %}
+                        {% if c1.id is c2.CategoryLevel1Id.id %}
+                        <div class="col-sm-3 pt-sm-3 border-end">
+                           <!-- topwear section start -->
+
+
+                           <h6 class="pb-sm-3 "><strong>{{c2.CategoryLevel2Name}}</strong></h6>
+                           <ul class="bullet2">
+
+                              {% for c3 in cat3 %}
+                              {% if c2.id is c3.CategoryLevel2Id.id %}
+                              <a href="{% url 'SeeAllProducts' c3.CategorySlug %}" class="p-0">
+                                 <li class="mb-sm-2">{{c3.CategoryLevel3Name}}</li>
+                              </a>
+                              {% endif %}
+                              {% endfor %}
+
+                           </ul>
+
+                           <!-- topwear section end -->
+
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+                        <!-- div col1 end -->
+
+                     </div>
+                     <!-- row end -->
+                  </div>
+                  <!-- dropdown content end -->
+               </div>
+               <!-- col-sm-3 end -->
+            </div>
+            <!-- row end -->
+         </div>
+         <!-- dropdown end -->
+         </p>
+      </div>
+
+      <!-- category dropdown end -->
+   </div>
+   {% endfor %}
+   <!-- End Ankush Code -->
+</div>
+{% endblock sidebar %}
+
+{% block content %}
+<style>
+   [type=radio] {
+      position: absolute;
+      opacity: 0;
+
+   }
+
+   [type=radio]+img {
+      cursor: pointer;
+      margin-right: 0.5rem;
+   }
+
+   [type=radio]:checked+img {
+      border: 1px solid cyan;
+   }
+</style>
+<!-- [type=radio]:checked + img {
+    outline: 1px solid orange;
+} -->
+
+{% block own_css %}
+<link rel="stylesheet" href="{% static 'css/Deals-of-the-day-product-buy-screen-new.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/save-address.css' %}" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Font family -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+<!--font-awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'css/base.css' %}" type="text/css">
+
+<link rel="stylesheet" href="{% static 'css/Return_request-submitted.css' %}" type="text/css">
+
+
+
+{% endblock own_css %}
+
+
+<div class="col-sm-10 col-md-10 ">
+
+   <!--Start exchange request mobile view -->
+   <div class="row return-item ">
+      <div class="col-sm-12">
+         <i class="fa fa-angle-left icon-padding" aria-hidden="true"></i>
+         Return Item
+      </div>
+   </div>
+   <!--End exchange request mobile view -->
+   <!----------request submitted button----------------------->
+   <div class="row logo-padding">
+
+      <div class="col-sm-12 col-md-12 ps-5 text-center">
+         <img src="{% static 'images/submitted.png' %}" class="img-fluid  mini-img" alt="Responsive image">
+
+      </div>
+
+   </div>
+
+   <div class="row">
+      <div class="col-sm-12 col-md-12 request-sbmmtted border-bottom pb-3  ">
+         Return Request Submitted
+      </div>
+
+   </div>
+
+
+
+   <!---refund item checked-->
+   <div class="row border-bottom  ">
+      <div class="col-3 col-sm-1 col-md-1 img-padding">
+         <img src="{{Return_obj.ProductId.ProductSizeColorId.ProductImage.url}}" class="img-fluid rounded"
+            alt="Responsive image" width="100%">
+      </div>
+
+      <div class="col-9 col-sm-11 col-md-11  text-padding">
+         <span class="refund-description ">A refund of<span class="refund-ammount "> Rs
+               {{Return_obj.ProductId.TotalPrice}}</span> <span class="refund-ammount "> Qty :
+               {{Return_obj.ProductId.Qunatity}}</span> will be initiated after the item is picked up and quality check
+            has passed.</span>
+
+      </div>
+
+   </div>
+   <!-- <div class="row">
+               <div class="col-md-12 border-bottom">
+                  <span><img src="{% static 'images/minimalist-office-with-table-laptop 1.png' %}" class="img-fluid" alt="Responsive image"></span>
+                  <span class="refund-description">A refund of<span class="refund-ammount">Rs 2600</span> will be initiated after the item is picked up and quality check has passed.</span>
+               </div>
+            </div> -->
+
+
+   <!--picked time -->
+   <div class="row">
+      <div class="col-sm-3 col-md-3   picked-padding">
+         <i class="fa fa-clock-o clock" aria-hidden="true"><span class="picked fw-bold">Picked By</span></i>
+      </div>
+      <div class="col-md-9"></div>
+   </div>
+   <!-----end picked time -->
+
+   <!--picked day and date -->
+   <div class="row picked-date-Time">
+      <div class="col-sm-3 col-md-3 ">
+         Wed, 18 Sep
+      </div>
+
+   </div>
+   <!--end picked section -->
+
+
+   <!--note from agent-->
+   <div class="row ">
+      <div class="col-sm-12 col-md-12 picked-padding">
+         <i class="fa fa-clock-o clock" aria-hidden="true"><Span class="picked fw-bold">Please Note</Span></i>
+
+      </div>
+   </div>
+
+   <div class="row ps-4 border-bottom">
+      <div class="col-sm-12 col-md-12 please-note-discribe ">
+         Keep your product and brand tags intact to give it back to delivery agent.
+      </div>
+   </div>
+   <!--end note section -->
+
+
+   <!--next step start -->
+   <div class="row ">
+      <div class="col-sm-12 col-md-12 next-step-head fw-bold">
+         Next Steps
+      </div>
+
+   </div>
+
+   <div class="row pb-3 border-bottom ">
+      <div class="col-sm-12 col-md-12 next-step-discribe">
+         Please check your orders page to track pick up and refund.
+      </div>
+   </div>
+
+
+   <!--returen request submit start-->
+   <div class="row submit-pad">
+      <div class="col-sm-12 col-md-12 return-request">
+         <i class="fa fa-check-circle check-circle" aria-hidden="true"></i> <span class="fw-bold"> Return Request
+            Submitted</span>
+      </div>
+
+   </div>
+   <!--returen request submit end-->
+
+   <!--picked instructions start-->
+   <div class="row">
+      <div class="col-sm-12 col-md-12 ">
+         <ul>
+            <li class="instruct-list ">Our style agent will come & pick up the item from the pickup address.</li>
+         </ul>
+      </div>
+   </div>
+
+   <div class="row border-bottom">
+      <div class="col-sm-12 col-md-12">
+         <ul>
+            <li class="instruct-list">Refund will be initiated once we receive the item an it passes the quality check.
+            </li>
+         </ul>
+      </div>
+   </div>
+
+
+
+   <div class="row  border-bottom ">
+      <div class="col-sm-12 col-md-12 pt-3">
+         <ul class="">
+            <li class="instruct-list ">We will send to the mail after refundable amount credited in your account
+            </li>
+         </ul>
+      </div>
+   </div>
+
+   <!--picked  instaructions end-->
+
+   <!--done button-->
+   <div class="row pt-3">
+      <div class="col-sm-3 col-md-3">
+         <div class="row">
+            <a href="{% url 'home' %}" class="text-decoration-none text-dark">
+               <div class="input-group">
+                  <button type="button" class="form-control btn-circle btn-sm border border-0">
+                     <span class="done-button">Done</span>
+                  </button>
+                  <span class="input-group-text done-btn border border-0"><button type="button"
+                        class="btn btn-circle btn-md"><i class="fa fa-check icon-check-colr"
+                           aria-hidden="true"></i></button>
+                  </span>
+               </div>
+            </a>
+
+
+         </div>
+
+      </div>
+      <div class="col-sm-9 col-md-9"></div>
+
+   </div>
+   <!-----done button end-->
+
+
+</div>
+
+</div>
+</div>
+<!-- ---------------------col-sm-10 end--------------------- -->
+<!-- -----------------------------------col2 end--------------------------------- -->
+</div>
+</div>
+{% endblock %}

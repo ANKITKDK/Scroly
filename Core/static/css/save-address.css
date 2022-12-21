@@ -1,0 +1,1325 @@
+/* start section 1 */
+
+/* start body */
+
+body {
+	background-image: url("../images/background.png");
+	max-width: 100%;
+	overflow-x: hidden;
+    }
+
+	.select-delivery-address {
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 500;
+		font-size: 2rem;
+		line-height: 2.4375rem;
+		color: var(--color-17);
+		padding-left: 6px;
+		padding-top: 30px;
+	}
+	.sve-addr-paddng
+	{
+		padding-top: 25px;
+	}
+	.saveadd-first-row-paddng
+	{
+		
+		padding-bottom: 0.9375rem;
+	}
+
+.pad-top {
+	padding-top: 1.5rem;
+}
+
+.edit {
+	font-family: var(--font-1);
+	border-color: var(--color-1);
+	color: var(--color-25);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1rem;
+	/* background-color: none; */
+	text-align: center;
+	border-radius: 1.625rem;
+}
+
+.edit:hover {
+	color: var(--color-25);
+}
+
+
+/* start select-delivery-address */
+
+/*--styling for default address-*/
+.default-addr{
+    font-family: var(--font-1); 
+    font-weight: 400px;
+    font-size: 12px; 
+    color:var(--color-17);
+    
+    }
+    
+
+
+/* end select-delivery-address */
+
+
+
+.select-delivery-address-section 
+{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+/* start add-new-address-button */
+
+.add-new-address-button {
+	box-sizing: border-box;
+	border: 0.0625rem solid #FC813D;
+	border-radius: 0.375rem;
+}
+
+.add-new-address-button-text {
+
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	color: var(--color-5);
+}
+
+/* end add-new-address-button */
+
+/* start tanuja address section */
+
+.tanuja1 {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 145%;
+	color: var(--color-17);
+	padding-left: 0.875rem;
+	padding-bottom: 20px;
+
+}
+
+.tanuja .tanuja-radio {
+	background: var(--color-1);
+	border: 0.0625rem solid var(--color-1);
+}
+.saveadd-edit-btn
+{
+	padding-left: 1.6875rem;
+}
+/* end tanuja address section */
+
+/* start edit button */
+
+/* .edit-button {
+    border: 0.0625rem solid #FC813D;
+    filter: drop-shadow(0.125rem 0.125rem 0.5rem rgba(62, 125, 99, 0.44));
+    border-radius: 1.625rem;
+} */
+
+.share-btn-border {
+	height: 3.125rem;
+	width: 3.125rem;
+	left: 1614px;
+	top: 22.1875rem;
+	border-radius: 50%;
+	border: 0.0625rem solid var(--color-1);
+	border-left: 0rem;
+	background-color: var(--color-9);
+	vertical-align: none;
+}
+
+.btn-circle-border.btn-sm-border {
+	width: 1.875rem;
+	height: 3.125rem;
+	padding: 0.375rem 0rem;
+	border-radius: 1.875rem;
+	font-size: 0.5rem;
+	text-align: center;
+	background-color: var(--color-9);
+	border: 0.0625rem solid var(--color-1);
+	border-right: 0rem;
+
+}
+
+.btn-circle-border.btn-md-border {
+	width: 3.125rem;
+	height: 3.125rem;
+	padding: 0.625rem 1rem;
+	border-radius: 1.5625rem;
+	font-size: 1.25rem;
+	text-align: center;
+	background: var(--color-9);
+	border: 0.0625rem solid var(--color-1);
+
+}
+
+.share-button-border {
+	font-family: var(--font-1);
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.25rem;
+	letter-spacing: 0em;
+	text-align: center;
+	color: var(--color-25);
+}
+
+.share-icon-main-border {
+	color: var(--color-5);
+	height: 1.0625rem;
+	width: 0.9375rem;
+	left: 18.4375rem;
+	top: 1.125rem;
+	border-radius: 0rem;
+}
+
+
+/* modal heading */
+.addnewpop {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 600px;
+	font-size: 1.375rem;
+	line-height: 1.6875rem;
+	color: var(--color-17);
+
+}
+
+.drop-btn{
+    font-family:var(--font-1) ;
+    background:var(--color-19);
+    border-radius: 6px;
+    border: none;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+}
+
+
+/* end edit button */
+
+/* start edit button text */
+
+.edit-button-text {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	/* identical to box height */
+
+	text-align: center;
+
+	color: #164833;
+}
+
+/* end edit button text */
+
+
+/* start remove button */
+
+.remove-button {
+	border: 0.0625rem solid #FC813D;
+	filter: drop-shadow(0.125rem 0.125rem 0.5rem rgba(62, 125, 99, 0.44));
+	border-radius: 1.625rem;
+}
+
+/* end remove button */
+
+/* start remove button text */
+
+.remove-button-text {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	/* identical to box height */
+
+	text-align: center;
+
+	color: #164833;
+}
+
+/* end remove button text */
+
+/* start  cash-on-delivery*/
+
+
+.cash-on-delivery {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	color: var(--color-17);
+}
+
+
+/* end cash-on-delivery*/
+
+/* start order-confirmation  */
+
+.order-confirmation {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	color: var(--color-17);
+}
+
+/* end order-confirmation*/
+
+/* start your-other-address */
+
+.your-other-address {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 1.8125rem;
+	color: var(--color-17);
+	padding-left: 7px;
+	padding-top: 35px;
+	padding-bottom: 25px;
+}
+
+/* end your-other-address */
+
+/* start your-other-address-card-1 */
+
+.your-other-address-card-1 {
+	background: #FFFFFF;
+	box-shadow: 0.125rem 0.125rem 0.375rem #D2B3B3;
+	border-radius: 0.375rem;
+
+
+}
+
+.your-other-address-card-1 .card {
+	border: 0rem;
+}
+
+.your-other-address-card-1-text {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 145%;
+	/* or 1.4375rem */
+	color: var(--color-17);
+}
+
+.your-other-address-card-1 .tanuja-radio {
+	border: 0.0625rem solid var(--color-1);
+
+}
+
+.edit-remove-button {
+	border: 0.0625rem solid #FC813D;
+	border-radius: 0rem 0.375rem 0.375rem 0rem;
+}
+
+.edit-remove-btn-color,
+.edit-remove-btn-color:hover {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	color: #FC813D;
+}
+
+/* start modal */
+
+.edit-details {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.375rem;
+	line-height: 1.6875rem;
+
+
+	color: #304653;
+}
+
+.icon {
+	color: var(--color-12);
+}
+
+.modal-body .form-control {
+	background: transparent;
+	outline: none;
+	border: none;
+	border-bottom: 0.0625rem solid rgb(231, 223, 223);
+	;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.875rem;
+	line-height: 1.0625rem;
+
+
+	color: #3F515C;
+}
+
+.input-group-text-bod {
+	background-color: white;
+	border: none;
+}
+
+.checbox-color {
+	border: 0.0625rem solid #FC813D;
+	border-radius: 0.25rem;
+}
+
+.default-address {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.75rem;
+	line-height: 0.9375rem;
+	color: #3F515C;
+	padding-bottom: 1.6875rem;
+	padding-left: 0.875rem;
+}
+
+.delivery-instrction1 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	color: #304653;
+	padding-bottom: 0.5rem;
+    padding-top:1.125rem ;
+}
+
+.text-delivery {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.75rem;
+	line-height: 0.9375rem;
+	color: #3F515C;
+	padding-bottom: 1.5625rem;
+}
+
+.delivery-instrction2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	color: #304653;
+	padding-bottom: 1rem;
+}
+
+.select-address-type-btn {
+	background: #F9EEEE;
+	border-radius: 0.375rem;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	text-align: left;
+	color: #3F515C;
+	padding-bottom: 1.5625rem;
+}
+
+.btn-add {
+	background: #FC813D;
+	box-shadow: 0.125rem 0.125rem 0.5rem rgba(62, 125, 99, 0.44);
+	border-radius: 1.625rem;
+
+}
+
+.footercolor1,
+.footercolor1:hover {
+	text-decoration: none;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 1.25rem;
+
+	text-align: center;
+
+	color: #FFFFFF;
+}
+
+/* end modal */
+
+/* end your-other-address-card-1 */
+
+.form-check-input:checked {
+	background-color: var(--color-1);
+	border-color: var(--color-1);
+}
+
+/* start your-other-address-card-2 */
+
+.your-other-address-card-2 {
+	background: #FFFFFF;
+	box-shadow: 0.125rem 0.125rem 0.375rem #D2B3B3;
+	border-radius: 0.375rem;
+
+}
+
+.your-other-address-card-2-padding {
+	padding-top: 1rem;
+	padding-bottom: 0.625rem;
+	padding-left: 1.25rem;
+}
+
+
+.your-other-address-card-2 .card {
+	border: 0rem;
+}
+
+.your-other-address-card-2-text {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 145%;
+	/* or 1.4375rem */
+	color: var(--color-17);
+}
+
+.your-other-address-card-2 .tanuja-radio {
+
+	border: 0.0625rem solid var(--color-1);
+
+}
+
+/* end your-other-address-card-2 */
+
+/* end section 1 */
+
+/* start secton 2 */
+
+/* start price-detail section */
+
+.price-details-section {
+
+	background-color: var(--color-9);
+	box-shadow: 0.125rem 0.125rem 0.375rem #D2B3B3;
+	border-radius: 0.375rem;
+	padding-top: 1.875rem;
+	/* padding-bottom: 58.0625rem; */
+	padding-left: 1.875rem;
+	padding-right: 1.875rem;
+	height: auto;
+}
+
+/* end price-detail section */
+
+/* start price detail row */
+
+.price-details {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.375rem;
+	line-height: 1.25rem;
+	color: var(--color-17);
+
+}
+
+/* end price detail row */
+
+/* start price 3 items */
+
+.price-3items {
+
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	color: var(--color-17);
+}
+
+/* end price 3 items  */
+
+/* start discount row */
+
+.discount {
+
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	color: var(--color-17);
+
+}
+
+.discount .price-color {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	color: var(--color-8);
+}
+
+.discount .fa {
+	color: var(--color-8);
+}
+
+/* end discount row */
+
+/* start delivery charges row */
+
+.delivery-charges {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	color: var(--color-17);
+}
+
+
+/* end delivery charges row */
+
+/* start total amount */
+
+.total-amount {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+	color: var(--color-17);
+}
+
+.total-amount .price-color {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	color: var(--color-8);
+}
+
+.total-amount .fa {
+	color: var(--color-8);
+}
+
+/* end total amount */
+
+/* start your-total-savings */
+
+.your-total-savings {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	color: var(--color-8);
+
+}
+
+/* end your-total-savings */
+
+/* strat continue-button */
+
+.continue-button,
+.continue-button:hover {
+	background: #FC813D;
+	box-shadow: 0.125rem 0.125rem 0.5rem rgba(62, 125, 99, 0.44);
+	border-radius: 1.375rem;
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+
+	color: #FFFFFF;
+}
+
+/* box-boder */
+.but-boder-col {
+	border: 0.0625rem solid var(--color-1);
+	border-radius: 0rem 0.375rem 0.375rem 0rem;
+	background-color: #FC813D;
+}
+
+.orange {
+	border: 0.0625rem solid var(--color-1);
+	border-radius: 0rem 0.375rem 0.375rem 0rem;
+}
+
+/* end button */
+
+/* make this default */
+.make-this-default {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+	color: var(--color-1);
+	text-decoration: none;
+}
+
+.make-this-default:hover {
+	text-decoration: none;
+	color: var(--color-1);
+}
+
+
+/* Your Other Address */
+.oran-text-col,
+.oran-text-col:hover {
+	font-family: var(--font-1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	/* identical to box height */
+
+	text-align: center;
+
+	color: var(--color-1);
+}
+
+.form-select-lg {
+	background-color: var(--color-19);
+}
+
+/* ============ */
+
+.share-btn {
+	height: 3.125rem;
+	width: 3.125rem;
+	left: 1614px;
+	top: 22.1875rem;
+	border-radius: 50%;
+	border: none;
+	background-color: var(--color-1);
+	vertical-align: none;
+}
+
+
+.btn-circle.btn-sm {
+	width: 1.875rem;
+	height: 3.125rem;
+	padding: 0.375rem 0rem;
+	border-radius: 1.875rem;
+	font-size: 0.5rem;
+	text-align: center;
+	background-color: var(--color-1);
+
+
+}
+
+.btn-circle.btn-md {
+	width: 3.125rem;
+	height: 3.125rem;
+	padding: 0.625rem 1rem;
+	border-radius: 1.5625rem;
+	font-size: 1.25rem;
+	text-align: center;
+	background: var(--color-16);
+
+}
+
+.share-button {
+	font-family: var(--font-1);
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.25rem;
+	letter-spacing: 0em;
+	text-align: center;
+	color: var(--color-9);
+}
+
+.share-icon-main {
+	color: var(--color-33);
+	height: 1.0625rem;
+	width: 0.9375rem;
+	left: 18.4375rem;
+	top: 1.125rem;
+	border-radius: 0rem;
+}
+
+/*-----------------------hover button------------------------*/
+
+.share-btn-hover:hover {
+	height: 3.125rem;
+	width: 3.125rem;
+	left: 1614px;
+	top: 22.1875rem;
+	border-radius: 50%;
+	border: none;
+	background-color: var(--color-34);
+	vertical-align: none;
+	transition-duration: 0.4s;
+}
+
+
+.btn-circle.btn-sm-hover {
+	width: 1.875rem;
+	height: 3.125rem;
+	padding: 0.375rem 0rem;
+	border-radius: 1.875rem;
+	font-size: 0.5rem;
+	text-align: center;
+	background-color: var(--color-34);
+}
+
+.btn-circle.btn-md-hover {
+	width: 3.125rem;
+	height: 3.125rem;
+	padding: 0.625rem 1rem;
+	border-radius: 1.5625rem;
+	font-size: 1.25rem;
+	text-align: center;
+	background: var(--color-16);
+}
+
+
+.share-button-hover {
+	font-family: var(--font-1);
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.25rem;
+	letter-spacing: 0em;
+	text-align: center;
+	color: var(--color-9);
+}
+
+.share-icon-hover {
+	color: var(--color-33);
+	height: 1.0625rem;
+	width: 0.9375rem;
+	left: 18.4375rem;
+	top: 1.125rem;
+	border-radius: 0rem;
+}
+
+
+/*------------------------------------disable buttons---------------------------------*/
+
+.share-btn-hover {
+	height: 3.125rem;
+	width: 3.125rem;
+	left: 1614px;
+	top: 22.1875rem;
+	border-radius: 50%;
+	border: none;
+	background-color: var(--color-34);
+	vertical-align: none;
+
+
+}
+
+/* end continue-button */
+
+/* end section 2 */
+
+/* ================================================================ */
+/* Start Mobile view */
+
+@media all and (min-width: 577px) {
+
+    .shilpa-text{
+        display: none;
+    }
+
+    .desktop-none .mobile div h1{
+        display: none;
+    }
+}
+
+/* for mobile view */
+@media all and (max-width: 576px) {
+	.sveaddr-gotohome
+	{
+		
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 17px;
+		color: #3F515C;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	.savadd-edit-mobil-btn
+	{
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.25rem;
+		color: #FC813D;
+		padding-top: 1.25rem;
+
+	}
+	.savadd-edit-mobil-btn-rmv
+	{
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.25rem;
+		color: #FC813D;
+		padding-top: 1.25rem;
+	}
+.savadd-edit-mobil-btn-deflt
+{
+	font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.25rem;
+		color: #FC813D;
+		opacity: 0.37;
+		padding-top: 1.25rem;
+}
+
+	.saveadd-btn-pdd
+	{
+		padding-left: 2.25rem;
+	}
+
+	.sve-addr-paddng
+	{
+		padding-top: 0rem;
+	}
+.address-save-mobile-view
+{
+	padding-top: 0.625rem;
+}
+	.saveaddr-lft-angl
+	{
+		font-size: 20px;
+		line-height: 24px;
+		color: #304653;
+	}
+
+	.save-addres-text
+	{
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+		color: #FC813D;
+		
+
+	}
+
+	.outer-blue .select-delivery-address {
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1.25rem;
+		line-height: 1.5rem;
+		color: var(--color-5);
+		padding-top: 1.25rem;
+		padding-left: 0rem;
+
+	}
+
+	.add-new-address-mobile-view {
+		display: none;
+	}
+
+	.button-display-mobil button {
+		display: none;
+	}
+
+	.default1 {
+		display: none;
+	}
+
+	.tanuja1 {
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1rem;
+		line-height: 1.25rem;
+		color: var(--color-17);
+		padding-top: 0.6875rem;
+		
+
+	}
+
+	.edit-no-btn button {
+		display: none;
+	}
+
+	.display-button button {
+		box-sizing: border-box;
+		border: 0.0625rem solid var(--color-1);
+		border-radius: 0.375rem;
+		
+	}
+
+	.display-button button {
+
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.70rem;
+		line-height: 0.9375rem;
+		color: var(--color-5);
+
+	}
+
+	.no {
+		display: none;
+	}
+
+	.other-address-mobile-view {
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 600;
+		font-size: 1rem;
+		line-height: 1.25rem;
+		color: var(--color-5);
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		border-top: 0.0625rem solid rgba(63, 81, 92, 0.12);
+	}
+
+	.your-other-address-card-1 {
+		background: #ffffff00;
+		box-shadow: 0rem 0rem 0rem #d2b3b300;
+		border-radius: 0rem;
+	}
+
+	.pad-mobile-view {
+		padding-left: 1rem;
+	}
+
+	.no-edit-remove-mobile-view button {
+		display: none;
+	}
+
+	.edit-remove-mobile-view button {
+		padding-left: 0rem;
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.75rem;
+		line-height: 1.25rem;
+		color: var(--color-1);
+	}
+
+	.default {
+
+		padding-left: 0rem;
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.75rem;
+		line-height: 1.25rem;
+		color: var(--color-1);
+		text-decoration: none;
+	}
+
+	.default a {
+		text-decoration: none;
+		color: var(--color-1);
+	}
+
+	.orange {
+		display: none;
+	}
+
+	.make-this-default {
+		display: none;
+	}
+
+	.add-new-for-mobile {
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1.25rem;
+		line-height: 1.5rem;
+		color: var(--color-5);
+	}
+
+	.location-mobile-view button {
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.875rem;
+		line-height: 1.0625rem;
+		color: var(--color-17);
+        border: 1px solid rgba(48, 70, 83, 0.2);
+        border-radius: 6px;
+
+	}
+    .orange-logo{
+        color:var(--color-1) ;
+        font-size: 1rem;
+    }
+    /* for hr line */
+    
+    h1 {
+        position: relative;
+        font-size: 30px;
+        z-index: 1;
+        overflow: hidden;
+        text-align: center;
+    }
+    h1:before, h1:after {
+        position: absolute;
+        top: 51%;
+        overflow: hidden;
+        width: 50%;
+        height: 1px;
+        content: '\a0';
+        background-color:rgba(48, 70, 83, 0.2);
+    }
+    h1:before {
+        margin-left: -50%;
+        text-align: right;
+    }
+    .color {
+        background-color:none;
+    }
+    .or-mobile-view{
+        font-family:var(--font1-);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.0625rem;  
+        color:var(--color-17);
+        
+    }
+    /* .floatClear {
+        clear: both;
+      }
+      #wrapper {
+        text-align: center;
+        position: relative;
+      }
+      #wrapper .line {
+        border-bottom: 2px solid red;
+        position: absolute;
+        width: 100%;
+        top: 15px;
+      }
+      #wrapper .textbox {
+        position: absolute;
+        width: 100%;
+      }
+      #wrapper .textbox .text {
+        background-color: white;
+        margin: 0px auto;
+        padding: 0px 10px;
+        text-align: center;
+        display: inline;
+        font-size: 24px;
+      }
+       */
+
+   .your-other-address-card-2 {
+        background: #FFFFFF;
+        box-shadow: 0rem 0rem 0rem #D2B3B3;
+        border-bottom:0.063rem solid rgba(63, 81, 92, 0.12);
+        border-radius: 0rem;
+    }
+
+    .price-details-section
+    {
+        margin-top:20px;
+    }
+
+    .price-details-section
+    {
+            box-shadow: 0rem 0rem 0rem #d2b3b3;
+    }
+
+}
+
+@media (min-width: 577px) {
+	html {
+		font-size: 40%;
+	}
+
+	.savadd-edit-mobil-btn-rmv
+	{
+		display: none;
+	}
+	.savadd-edit-mobil-btn-deflt
+	{
+		display: none;
+	}
+    
+
+	.address-save-mobile-view button {
+		display: none;
+	}
+
+	.display-button button {
+		display: none;
+	}
+
+	.display-edit-moobile {
+		display: none;
+	}
+
+	.display-edit-moobile button {
+		font-family: var(--font-1);
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.75rem;
+		line-height: 0.9375rem;
+		color: var(--color-1);
+	}
+
+	.edit-remove-mobile-view {
+		display: none;
+	}
+
+	
+    .location-mobile-view button {
+		display: none;
+	}
+	.save-addres-text
+	{
+		display: none;
+	}
+	.saveaddr-lft-angl
+	{
+		display: none;
+	}
+	.savadd-edit-mobil-btn
+	{
+		display: none;
+	}
+
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 45%;
+	}
+	.save-addres-text
+	{
+		display: none;
+	}
+	.saveaddr-lft-angl
+	{
+		display: none;
+	}
+	.savadd-edit-mobil-btn
+	{
+		display: none;
+	}
+	.savadd-edit-mobil-btn-rmv
+	{
+		display: none;
+	}
+	.savadd-edit-mobil-btn-deflt
+	{
+		display: none;
+	}
+}
+
+@media (min-width: 992px) {
+	html {
+		font-size: 60%;
+	}
+	.save-addres-text
+	{
+		display: none;
+	}
+	.saveaddr-lft-angl
+	{
+		display: none;
+	}
+	.savadd-edit-mobil-btn
+	{
+		display: none;
+	}
+	.savadd-edit-mobil-btn-rmv
+	{
+		display: none;
+	}
+	.savadd-edit-mobil-btn-deflt
+	{
+		display: none;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	html {
+		font-size: 80%;
+	}
+	.savadd-edit-mobil-btn
+	{
+		display: none;
+	}
+	.savadd-edit-mobil-btn-rmv
+	{
+		display: none;
+	}
+	.savadd-edit-mobil-btn-deflt
+	{
+		display: none;
+	}
+}
+
+@media (min-width: 1920px) {
+	html {
+		font-size: 100%;
+	}
+	.savadd-edit-mobil-btn-rmv
+	{
+		display: none;
+	}
+	.savadd-edit-mobil-btn-deflt
+	{
+		display: none;
+	}
+	.savadd-edit-mobil-btn
+	{
+		display: none;
+	}
+	.row{
+		--bs-gutter-x: 0rem;
+	}
+	.save-addres-text
+	{
+		display: none;
+	}
+	.saveaddr-lft-angl
+	{
+		display: none;
+	}
+
+	.location-mobile-view button {
+		display: none;
+	}
+
+    .desktop-none h1{
+        display: none;
+    }
+
+    
+}
+
+/* End Mobile Views */

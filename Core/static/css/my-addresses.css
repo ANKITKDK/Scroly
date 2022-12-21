@@ -1,0 +1,320 @@
+body {
+    background-image: url("../images/background.png"); 
+    /* font-family:var(--font-1); */
+}
+
+/* My Addresses */
+
+.pad-left-right-top-30px{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+.pad-left-top-30px{
+    padding-left: 30px;
+    /* padding-right: 30px; */
+    padding-top: 30px;
+}
+
+.pad-top-30px{
+    padding-top: 30px;
+}
+
+.pad-bottom-30px{
+    padding-bottom: 30px;
+}
+
+.my-addre-text{
+font-family:var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 39px;
+color: var(--color-17);
+padding-top: 30px;
+padding-left: 30px;
+}
+
+
+
+.pad-top-100px{
+    padding-top: 100px;
+}
+
+.add-new-btnn{
+    font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+padding: 14px 67px 14px 67px;
+border-color: var(--color-1);
+color: var(--color-5);
+}
+
+/* start button */
+.share-btn-border{
+    height: 50px;
+    width: 50px;
+    left: 100.875rem;
+    top: 355px;
+    border-radius:50%;
+    border:1px solid var(--color-1);
+    border-left: 0px;
+    background-color: var(--color-9);
+    vertical-align:none;
+    }
+
+.btn-circle-border.btn-sm-border{
+    width: 30px;
+    height: 50px;
+    padding: 6px 0px;
+    border-radius:30px;
+    font-size: 8px;
+    text-align: center;
+    background-color:var(--color-9);
+    border: 1px solid var(--color-1);
+    border-right: 0px;
+
+}
+.penc-col-size{
+    color:#304653;
+}
+.btn-circle-border.btn-md-border{
+    width:50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 20px;
+    text-align: center;
+    background:var(--color-9);
+    border: 1px solid var(--color-1);
+
+}
+
+.share-button-border{
+font-family:var(--font-1);
+font-size: 16px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+color: var(--color-25)
+}
+
+.form-control:focus,
+.btn:focus{
+    box-shadow: none;
+}
+
+.share-icon-main-border{
+color:var(--color-1);
+height: 17px;
+width: 15px;
+left: 295px;
+top: 18px;
+border-radius: 0px;
+}
+
+
+/* file icon for opeining choosen files start */
+
+.image-upload>input {
+    display: none;
+}
+
+/* file icon for opeining choosen files start --> */
+
+/* end button */
+
+.tanuja-tex-colo{
+    font-family: var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 145%;
+/* or 23px */
+
+
+color:var(--color-17);
+}
+
+.tanuja-tex-colo2{
+    padding-top: 8px;
+    font-family:var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 145%;
+color: var(--color-17);
+}
+
+/* edit button */
+
+.edit-btn-col{
+    font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+text-align: center;
+
+color: var(--color-1);
+}
+
+.edit-btn-col2{
+    /* font-family: 'Montserrat'; */
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+text-align: center;
+
+color: var(--color-1);
+}
+
+/*edit btn border color */
+.btn-bod-cola{
+    border: 1px solid var(--color-1);
+border-radius: 0px 6px 6px 0px;
+}
+
+.bag-shado-colot{
+    background: var(--color-9);
+/* shadow */
+
+box-shadow: 2px 2px 6px var(--color-22);
+border-radius: 6px;
+}
+
+
+/*form-check-input:checked  */
+
+.form-check-input:checked {
+    background-color: var(--color-1);
+    border-color: var(--color-1);
+} 
+
+.form-check-input:checked{
+    border: 1px solid var(--color-1);
+}
+
+/* button last */
+.share-btn{
+    height: 50px;
+    width: 50px;
+    left: 100.875rem;
+    top: 355px;
+    border-radius:50%;
+    border:none;
+    background-color: var(--color-1);
+    vertical-align:none;
+    }
+
+
+
+.btn-circle.btn-sm{
+    width: 30px;
+    height: 50px;
+    padding: 6px 0px;
+    border-radius:30px;
+    font-size: 8px;
+    text-align: center;
+    background-color:var(--color-1);
+    
+    
+}
+
+.btn-circle.btn-md{
+    width:50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 20px;
+    text-align: center;
+    background:var(--color-16);
+
+}
+
+.share-button{
+font-family:var(--font-1);
+font-size: 16px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+color:var(--color-9);
+}
+
+.share-icon-main{
+color:var(--color-33);
+height: 17px;
+width: 15px;
+left: 295px;
+top: 18px;
+border-radius: 0px;
+}
+
+/*-----------------------hover button------------------------*/
+
+.share-btn-hover:hover{
+    height: 50px;
+    width: 50px;
+    left: 100.875rem;
+    top: 355px;
+    border-radius:50%;
+    border:none;
+    background-color: var(--color-34);
+    vertical-align:none;
+    transition-duration: 0.4s;
+}
+
+
+
+.btn-circle.btn-sm-hover{
+    width: 30px;
+    height: 50px;
+    padding: 6px 0px;
+    border-radius:30px;
+    font-size: 8px;
+    text-align: center;
+    background-color:var(--color-34);
+}
+
+.btn-circle.btn-md-hover{
+    width:50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 20px;
+    text-align: center;
+    background:var(--color-16);
+}
+
+
+.share-button-hover{
+    font-family:var(--font-1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:var(--color-9);
+}
+
+.share-icon-hover{
+    color:var(--color-33);
+    height: 17px;
+    width: 15px;
+    left: 295px;
+    top: 18px;
+    border-radius: 0px;
+}
+
+/* end-button */

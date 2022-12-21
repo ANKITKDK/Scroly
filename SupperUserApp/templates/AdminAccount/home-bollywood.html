@@ -1,0 +1,97 @@
+{% extends 'SupperUserApp/superuser-base.html' %}{% load static %}
+{% block content %}
+
+			<!-- CONTENT WRAPPER -->
+			
+					<div class="breadcrumb-wrapper breadcrumb-wrapper-2 breadcrumb-contacts">
+							<h1>Home Product Details</h1>
+							<p class="breadcrumbs"><span><a href="index.html">Home</a></span>
+								<span><i class="mdi mdi-chevron-right"></i></span>Main Category</p>
+					</div>
+					<div class="row">
+						<div class="col-xl-4 col-lg-12">
+							<div class="ec-cat-list card card-default mb-24px">
+								<div class="card-body">
+									<div class="ec-cat-form">
+										<h4>Add New Home Products</h4>
+
+										<form action="{% url 'HomeBollyWood' %}" method="POST" enctype="multipart/form-data">
+											{% csrf_token %}
+											<div class="form-group row">
+												<label for="text" class="col-12 col-form-label">BollyWood Title</label> 
+												<div class="col-12">
+													<input id="text" name="bollywoodthemeheading" class="form-control slug-title" type="text" >
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label for="slug" class="col-12 col-form-label" >Slug</label> 
+												<div class="col-12" >
+													<input id="slug" name="bollywoodslug" class="form-control here set-slug" type="text" >
+													<small>The “slug” is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens.</small>
+												</div>
+											</div>
+
+											<div class="row">  
+												<div class="form-group col-md-12">
+												   <label class="col-12 col-form-label">Add Photo</label>
+												   <div class="col-12">
+												     <input type="file" class="form-control" id="" name="bollywoodmainimage" accept="image/*" required>
+												   </div>
+												 </div>
+											</div> 
+
+											<div class="row">
+												<div class="col-12">
+													<button name="submit" type="submit" class="btn btn-primary">Submit</button>
+												</div>
+											</div>
+
+												
+
+										</form>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-8 col-lg-12">
+							<div class="ec-cat-list card card-default">
+								<div class="card-body">
+									<div class="table-responsive">
+										<table id="" class="table">
+											<thead>
+												<tr>
+													<th>Sr. No.</th>
+													<th>BollywoodMainImage</th>
+													<th>BollyWood Title</th>
+													<th>Action</th>
+												</tr>
+											</thead>
+
+											<tbody>
+												{% for bollywood in BollyWoodCategoryObj %}
+												<tr>
+													<td>{{ forloop.counter }}</td>
+													<td><img class="cat-thumb" src="{{bollywood.MainImage.url}}" alt="BollyWood Image" /></td>
+													<td>{{bollywood.TagLine}}</td>
+												
+													<td>
+														<div class="btn-group">
+															
+																<a href="{% url 'DeleteHomeBollyWood' bollywood.id %}" type="button" 
+																class="btn btn-outline-success" onclick="return confirm('Are you sure you want to delete this item.')" >Delete</a>	
+														</div>
+													</td>
+													
+												{% endfor %}
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+		
+	{% endblock %}

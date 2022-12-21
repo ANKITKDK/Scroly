@@ -1,0 +1,55 @@
+{% extends "core/base.html" %}{% load static %}
+{% block content %}
+
+{% block own_css %}
+<link rel="stylesheet" href="{% static 'css/deals_of_the_day.css' %}" type="text/css">
+{% endblock own_css%}
+
+
+      <div class="col-sm-10">
+    
+        <div class="row heading">
+          <h1 class="ms-sm-2">Deal Of The Day</h1>
+        </div>
+  
+
+        <!--Start Product Card Row  -->
+        <div class="row pb-sm-4">
+
+          <!--  start Card Colum -->
+          <div class="col-6 col-md-2 p-1">
+          {% for pro in product %}
+          
+
+            <!--  start card -->
+           <a href="{% url 'ProductDetail' pro.ProductSlug %}"> <div class="card">
+              <!-- card-img start -->
+              <img class="card-img-top" src="{{pro.ProductMainImage.url}}" alt="Card image cap">
+              <!-- card-img end -->
+              <!-- card-body start -->
+              <div class="card-body">
+                <h6>{{pro.ProductName}}</h6>
+                <h6 class="fs-6 ">₹ <span class="rupee fw-bold">{{pro.discount}}</span> <small
+                    class="text-secondary text-decoration-line-through">₹ {{pro.Price}}</small> ( {{pro.DiscountPercent}}% Off )
+                </h6>
+                <p class="fw-light">Free Delivery</p>
+              </div>
+              <!-- card body end -->
+            </div></a>
+
+            <!--  end card -->
+
+
+          
+          {% endfor %}
+            <!--  end Card Colum -->
+          </div>
+
+        </div>
+        <!-- End Product Card Row -->
+
+        </div>
+
+
+
+{% endblock %}

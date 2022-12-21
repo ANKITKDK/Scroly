@@ -1,0 +1,753 @@
+*{
+    margin: 0;
+}
+
+
+.bgcolorcol1{
+    background-color: var(--color-9);
+
+}
+
+.video-popup-heading{
+  font-family:var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 39px;
+color: var(--color-9);
+}
+
+.container1{
+  text-overflow: hidden;
+  position: relative;
+  text-align: center;
+  font-family:var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+color: var(--color-17);
+}
+
+.centered {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-bg-colour{
+  background-color:var(--color-17);
+  border-top: 1px solid #3F515C;
+  border-bottom: 1px solid #3F515C;
+}
+
+.video-rext{
+font-family:var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+color: var(--color-17);
+}
+
+
+/* location icon */
+.font1{
+    font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+}
+/* ==================================================== */
+/* ----Questions and Answers------------- */
+.que-ans-heading{
+  font-family: var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 39px;
+color:var(--color-5);   /* #304653 */
+/* background-color: #04AA6D; */
+}
+
+/* start input search Questions and Answers */
+
+.search-color1{
+  color: var(--color-5);
+}
+.input-group-text{ 
+  background-color:transparent;
+}
+
+.input-text{
+  font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color:var(--color-17);   /* #3F515C */
+}
+
+/*end input search Questions and Answers */
+.que-css{
+  /* width: 392px; */
+  /* height: 20px; */
+  font-family:var(--font-1);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color:var(--color-5); 
+}
+
+.ans-css{
+  font-family:var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color:var(--color-17);
+}
+.user-name{
+  font-family:var(--font-1);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+  color:var(--color-17); 
+}
+.see-all-que-text{
+  font-family:var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+
+color: var(--color-12);
+}
+
+/* ==================================================== */
+/* ------last row--------- */
+/* Foldable Wooden Laptop Table */
+.product-name-heading{
+  font-family:var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 39px;
+color: var(--color-5);  /*  #304653; */
+}
+/* icon-orange */
+.iconshare1{
+  font-size:22px;
+  /* font-weight: 700; */
+  color:var(--color-12);
+  
+}
+/* .fa {
+  font-size: 100px;
+} */
+.icon-orange{
+  color:var(--color-12);   /*#F8772F */
+}
+
+/* rating-text */
+.rating-text{
+  font-family:var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+color:var(--color-17);
+}
+/* ₹ */
+.ruppes-col{
+  color: var(--color-17);
+}
+
+.ruppes-col-orange{
+  font-family:var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 27px;
+color:var(--color-12)
+}
+/* text-decoration-line-through */
+.line-through-color{
+  font-family:var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 27px;
+color: rgba(63, 81, 92, 0.37);
+}
+
+.com-color{
+  font-family:var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+color:var(--color-17);  
+}
+
+/* start inclusive of all taxes */
+.includ-tax-color{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+color: #3F515C;
+}
+
+
+/* color:white */
+.color-text-size1{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 27px;
+color: #304653;
+}
+/* white */
+.white-text-size1{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 27px;
+color: #304653;
+}
+
+.image-round-color{
+  /* border-color:1px ; */
+  /* border-color: 1px solid black;  */
+  border: 2px solid var(--color-16);
+
+}
+
+.select-size-text{
+  font-family:var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 27px;
+color:var(--color-5);
+}
+
+.border-size{
+  border: 1px solid #96F0F1;
+border-radius: 6px;
+}
+
+.selete-size-box-text{
+  font-family:var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: var(--color-17);
+}
+
+/* color_green */
+.in-stock-color{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+color:var(--color-8);
+}
+/* start quantity dropdown */
+
+.quantity{
+  font-family:var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+color: var(--color-5);
+}
+
+.quality-number{
+  border: 1px solid var(--color-17);
+  border-radius: 6px;
+  color: var(--color-17);
+
+}
+.number-colorr{
+  color: var(--color-17)
+}
+.quality-number:hover{
+  border: 1px solid var(--color-17);
+  border-radius: 6px;
+  color: var(--color-17);
+
+}
+
+.quality-number-dropdown{
+
+  /* filter: drop-shadow(2px 2px 6px #D2B3B3); */
+    min-width: 48px;
+    background:var(--color-9);
+    border: 1px solid var(--color-17);
+    border-radius: 6px;
+}
+/*end quantity dropdown */
+
+.location-text{
+  font-family: var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+color:var(--color-5);
+}
+
+.change-color{
+  font-family: var(--font-1);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #007185;
+}
+
+.usually-delivered-text{
+  font-family: var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+
+color:var(--color-5);
+}
+/* ----button add to card------- */
+
+/* ================ */
+.Add-to-card{
+  background-color:transparent;
+  border: 1px solid #FC813D;
+  filter: drop-shadow(2px 2px 8px rgba(62, 125, 99, 0.44));
+  color: #164833;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+  cursor: pointer;
+  /* border-radius: 26px; */
+}
+
+.Add-to-card:hover {
+  background-color:var(--color-1);
+  border-color:var(--color-1) ;
+}
+
+/* a tag text size underline remove */
+.add-to-card-underline-remove{
+  text-decoration: none;
+  color:#164833; 
+  font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #164833;
+}
+
+/* a tag hover colour */
+.add-to-card-underline-remove:hover{
+  color:#164833; 
+}
+
+/* ===================== */
+
+.buy-now-btn{
+  background-color:var(--color-1);
+  border-color:var(--color-1) ;
+  box-shadow: 2px 2px 8px rgba(62, 125, 99, 0.44);
+  color: #164833;
+
+}
+
+.buy-now-btn:hover{
+  background-color:var(--color-1);
+  border-color:var(--color-1) ;
+  box-shadow: 2px 2px 8px rgba(62, 125, 99, 0.44);
+}
+
+/* a tag text size underline remove */
+.buy-now-text{
+  text-decoration: none;
+font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color:var(--color-9);
+}
+
+.buy-now-text:hover{
+  color:var(--color-9);
+}
+
+/* ----button add to card  end------- */
+
+.prroduct-text{
+  font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color:var(--color-17);
+text-align: center;
+}
+
+/* Highlights */
+.highlights-text{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  
+  color: #304653;
+}
+
+
+.text-desk{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight:bolder;
+  /* font-weight: 500; */
+  font-size: 16px;
+  line-height: 145%;
+  /* or 23px */
+ 
+  color: #304653;
+}
+/* specifications-text */
+.specifications-text{
+font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 145%;
+color: var(--color-5);
+}
+
+.border-none{
+  border-color: transparent;
+  text-decoration: none;
+font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #007185;
+}
+
+.border-none:hover{
+  border-color: transparent;
+  text-decoration: none;
+font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #007185;
+}
+/* See more */
+.see-more-text{
+
+text-decoration: none;
+font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #007185;
+}
+
+/* a tag hover cplor change */
+.see-more-text{
+  color: #007185;
+}
+
+.about-this-text{
+font-family: var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+color:var(--color-5);
+}
+
+.about-inner-textt{
+font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: var(--color-17);
+}
+
+.rating-rew-text{
+font-family: var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+color:var(--color-5);
+}
+
+.star-icon-orange-size{
+font-size: 24px;
+font-weight: 500;
+line-height: 29px;
+color: var(--color-1);
+}
+
+.rating-42{
+font-family: var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+color: var(--color-17);
+}
+
+.ratinng-tex-size1{
+font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: var(--color-17);
+
+}
+
+.progress-bar-star{
+  color: var(--color-17);
+}
+
+.progress-bar-num{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+color: var(--color-5);
+}
+
+.rating-user-view{
+font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+text-align: center;
+color: var(--color-17);
+}
+
+/* Customer Photos & Videos (7) */
+.customer-photo-text{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px; 
+  color: #304653;
+}
+
+.see-all-customer-photo{
+text-decoration: none;
+font-family: var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+color:var(--color-12);
+}
+
+/* a tag hover color remove .see-all-customer-photo */
+.see-all-customer-photo:hover{
+  color:var(--color-12);
+}
+
+.customer-reviwe-tex{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+color: var(--color-5);
+}
+
+.customer-comment{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 145%;
+color:var(--color-5);
+}
+
+.customer-name-text{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 145%;
+color: var(--color-17);
+}
+
+.see-all-review{
+  text-decoration: none;
+  font-family: var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+color: var(--color-12);
+}
+.see-all-review:hover{
+  color: var(--color-12);
+}
+/* -----slider start -----------*/
+
+.Similar-products-text{
+font-family: var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 59px;
+color:var(--color-5);
+}
+
+.card-headingg{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  
+  color: #304653;
+}
+
+.rupee-rext{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+color: #F8772F;
+}
+
+.line-through-text{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+color: rgba(63, 81, 92, 0.4);
+}
+
+/* ( 20 % Off ) */
+.cart-discount{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+color: #304653;
+}
+
+.cart-freee{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #304653;
+}
+.card-body{
+  background-color: #FEF2F2;
+}
+
+.sliderimg{
+    display: flex;
+    overflow-x: auto;
+}
+
+
+.sliderimg::-webkit-scrollbar{
+    width: 0;
+}
+
+/* slider end */
+
+/* ------------progress bar------------------------ */
+
+.heading {
+  font-size: 15px;
+  margin-right: 0px;
+}
+
+
+
+/* Three column layout */
+.side {
+  width: 12%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:18px;
+  height: 2px;
+  width:76%;
+}
+
+/* Place text to the right */
+.right {
+  text-align:1px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 105%;
+  /* background-color:var(--color-9); */
+  background-color: #e8e0e0;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 100%; height: 13px; background-color:#04AA6D;}
+.bar-4 {width: 80%; height: 13px; background-color: #04AA6D;}
+.bar-3 {width: 60%; height: 13px; background-color: #04AA6D;}
+.bar-2 {width: 40%; height: 13px; background-color: #ff9800;}
+.bar-1 {width: 20%; height: 13px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+
+
+  
+

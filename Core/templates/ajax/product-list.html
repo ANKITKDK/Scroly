@@ -1,0 +1,80 @@
+
+   {% if home_category %}
+   {% for i in data %}
+      <div class="col card-bottom-padding">
+         <a href="{% url 'ProductDetail' i.ProductId.ProductSlug %}" class="text-decoration-none">
+         <div class="card  card-shadow ">
+            <div class="img-text card-header p-0">
+               <img class="card-img-top img-fluid"  src="{{i.ProductId.ProductMainImage.url}}" alt="Card image cap">
+               <div class="bottom-left rating"> <span class="rating-clr">{{i.ProductId.Star}}</span> <span class="star-icon"><i class="fa fa-star" aria-hidden="true"></i></span> <span class="dash">|</span> <span class="rating-clr">{{i.ProductId.TotalRatingCount}}</span>  </div>
+            </div>
+            <div class="card-body">
+               <!-- start foldable-table -->
+               <div class="row foldable-table">
+                  <div class="col-md-12">
+                     {{i.ProductId.ProductName}}
+                  </div>
+               </div>
+               <!-- end foldable-table -->
+               <!-- start ruppe section -->
+               <div class="row">
+                  <div class="col-md-12">
+                     <span class="icon"><i class="fa fa-inr" aria-hidden="true"></i></span>
+                     <span class="rupee fw-bold">{{i.ProductId.discount}}</span>
+                     <small class="text-secondary text-decoration-line-through deleted-rupee">₹ {{i.ProductId.Price}}</small>
+                     <span class="offer"> ( {{i.ProductId.DiscountPercent}} % Off )</span>
+                  </div>
+               </div>
+               <!-- end ruppe section -->
+               <!-- start free-delivery section -->
+               <div class="row free-delivery">
+                  <div class="col-md-12">
+                     Free Delivery
+                  </div>
+               </div>
+               <!-- end free-delivery section -->
+            </div>
+         </div> 
+         </a>
+      </div>
+      {% endfor %}
+   {% else %}
+      {% for i in data %}
+      <div class="col card-bottom-padding">
+         <a href="{% url 'ProductDetail' i.ProductSlug %}" class="text-decoration-none">
+         <div class="card  card-shadow ">
+            <div class="img-text card-header p-0">
+               <img class="card-img-top img-fluid"  src="{{i.ProductMainImage.url}}" alt="Card image cap">
+               <div class="bottom-left rating"> <span class="rating-clr">{{i.Star}}</span> <span class="star-icon"><i class="fa fa-star" aria-hidden="true"></i></span> <span class="dash">|</span> <span class="rating-clr">{{i.TotalRatingCount}}</span>  </div>
+            </div>
+            <div class="card-body">
+               <!-- start foldable-table -->
+               <div class="row foldable-table">
+                  <div class="col-md-12">
+                     {{i.ProductName}}
+                  </div>
+               </div>
+               <!-- end foldable-table -->
+               <!-- start ruppe section -->
+               <div class="row">
+                  <div class="col-md-12">
+                     <span class="icon"><i class="fa fa-inr" aria-hidden="true"></i></span>
+                     <span class="rupee fw-bold">{{i.discount}}</span>
+                     <small class="text-secondary text-decoration-line-through deleted-rupee">₹ {{i.Price}}</small>
+                     <span class="offer"> ( {{i.DiscountPercent}} % Off )</span>
+                  </div>
+               </div>
+               <!-- end ruppe section -->
+               <!-- start free-delivery section -->
+               <div class="row free-delivery">
+                  <div class="col-md-12">
+                     Free Delivery
+                  </div>
+               </div>
+               <!-- end free-delivery section -->
+            </div>
+         </div> 
+         </a>
+      </div>
+      {% endfor %}
+   {% endif %}

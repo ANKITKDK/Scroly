@@ -1,0 +1,350 @@
+{% extends "core/base1.html" %}{% load static %}
+{% block content %}
+
+{% block own_css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/buy-now.css' %}" type="text/css">
+{% endblock own_css %}
+    
+    <!-- start container-fluid for page -->
+    <div class="container-fluid">
+        <!-- start row for whole page -->
+        <div class="row">
+            
+            <!-- start col-sm-10 for content of page -->
+            <div class="col-sm-12 page-padding">
+
+                <!-- start delivery address section -->
+
+                <div class="row delivery-address mb-sm-4">
+                    <!-- strat address -->
+                    <div class="col-md-8">
+                        <div class="row delivery-address-text-heading pb-sm-3">
+                            <div class="col-md-12">
+                                Delivery Address
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 delivery-address-text">
+                                <strong>Tanuja Nitin Sethi</strong> <br>
+                                Sai villa Forest Office Front of Ayurvedic Clinic Main RoadNagpur, Maharashtra 201002 India Phone Number : 1213141516
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end address -->
+                    <!-- start blank -->
+                    <div class="col-md-1">
+
+                    </div>
+                    <!-- end blank -->
+                    <!-- start change address button -->
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-md-12 text-center button-padding d-grid">
+                                <button type="button" class="btn btn-outline change-address-button-text btn-block change-address-button">Change Address</button>
+                            </div>
+                        </div>
+                        <!-- <button type="button" class="btn btn-outline change-address-button-text  change-address-button">Change Address</button> -->
+                    </div>
+                    <!-- end change address button -->
+                </div>
+
+                <!-- end delivery address section -->
+                <!-- start row for foldable wooden laptop and price detail -->
+                <div class="row">
+                    <!-- start foldable wooden laptop-->
+                    <div class="col-md-9 pe-sm-4">
+                        <!-- start foldable wooden laptop with image-->
+                        <div class="row foldable-wooden-laptop-table mb-sm-4 border-bottom table-padding">
+                            <!-- start image and foldable wooden table section -->
+                            <div class="col-md-6 border-end">
+                                <!-- start image and foldable wooden table text -->
+                                <div class="row pb-sm-4">
+                                    <!-- start image -->
+                                    <div class="col-2 col-md-2 table-image">
+                                        <img src="{% static 'images/footble-wooden-laptop-table.png' %}" alt="" class="img-fluid">
+                                    </div>
+                                    <!-- end image -->
+                                    <!-- start text section -->
+                                    <div class="col-md-10">
+                                        <!-- start Foldable Wooden Laptop Table.... -->
+                                        <div class="row foldable-table-text">
+                                            <div class="col-md-12">
+                                                <strong> Foldable Wooden Laptop Table....</strong> 
+                                            </div>
+                                        </div>
+                                        <!-- end Foldable Wooden Laptop Table.... -->
+                                        <!-- start Size: 32”(H)X27”(W)X19”D In inch -->
+                                        <div class="row sizes">
+                                            <div class="col-md-12">
+                                                Size: 32”(H)X27”(W)X19”D In inch
+                                            </div>
+                                        </div>
+                                        <!-- end Size: 32”(H)X27”(W)X19”D In inch -->
+                                        <!-- start ruppees section -->
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <span class="rupee-symbol"><i class="fa fa-inr" aria-hidden="true"></i></span> <span class="rupee">1800</span> <del><span class="deleted-rupee"> <i class="fa fa-inr" aria-hidden="true"></i>3,100</span></del>  <span class="colored-rupee"> Saved <i class="fa fa-inr" aria-hidden="true"></i> 1,017</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- end ruees section -->
+
+                                        <!-- start color section -->
+                                        <div class="row color-black">
+                                            <div class="col-md-12">
+                                                Color: Black
+                                            </div>
+                                        </div>
+
+                                        <!-- end color section -->
+                                    </div>
+                                    <!-- end text section -->
+                                </div>
+                                <!-- end image and foldable wooden table text -->
+                                <!-- start delivered tuesday  -->
+                                <div class="row">
+                                    <div class="col-md-7 delivered-tue">
+                                        Delivered Tue, 8 Aug 2022
+                                    </div>
+                                    <div class="col-md-1">
+
+                                    </div>
+                                    <div class="col-md-4 remove">
+                                        Remove
+                                    </div>
+
+                                </div>
+                                <!-- end delivered tuesday -->
+                            </div> 
+                            <!-- end image and foldable wooden table section -->
+                            <!-- start quantity section -->
+                            <div class="col-md-3 border-end">
+                                <div class="row ">
+                                    <div class="col-md-7 quantity">
+                                        <div class="row pt-2">
+                                            <div class="col-md-12 text-center button-padding">
+                                                Quantity:
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="col-md-5 quality-button-position">
+                                        <div class="row pt-2">
+                                            <div class="col-md-12 text-center button-padding">
+                                                <div class="dropdown">
+                                                    <button type="button" class="btn-outline dropdown-toggle quantity-button" data-bs-toggle="dropdown">
+                                                      1
+                                                    </button>
+                                                    <ul class="dropdown-menu quantity-button-item">
+                                                      <li><a class="dropdown-item border-bottom" href="#"> 1</a></li>
+                                                      <li><a class="dropdown-item border-bottom" href="#"> 2</a></li>
+                                                      <li><a class="dropdown-item" href="#"> 3</a></li>
+                                                      
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <!-- <div class="col-md-7 quantity">
+                                        Quantity:
+                                    </div>
+                                    <div class="col-md-5 quality-button-position">
+                                        <div class="dropdown">
+                                            <button type="button" class="btn-outline dropdown-toggle quantity-button" data-bs-toggle="dropdown">
+                                                1
+                                            </button>
+                                            <ul class="dropdown-menu quantity-button-item">
+                                              <li><a class="dropdown-item border-bottom" href="#"> 1</a></li>
+                                              <li><a class="dropdown-item border-bottom" href="#"> 2</a></li>
+                                              <li><a class="dropdown-item" href="#"> 3</a></li>
+                                              
+                                            </ul>
+                                        </div>
+                                    </div> -->
+                                    
+                                </div>
+                                
+
+                            </div>
+                            <!-- end quantity section -->
+                            <!-- start balnk section -->
+                            <div class="col-md-3">
+
+                            </div>
+                            <!-- end blank section -->
+                        </div>
+                         <!-- end foldable wooden laptop with image-->
+                         <!-- start order confirmation row -->
+                        <div class="row border-bottom order-confirmation pt-sm-5 pb-sm-5">
+                            <div class="col-md-12">
+                                Order Confirmation email will be sent to <strong>tanujapatil@gmail.com</strong>
+                            </div>
+                        </div>
+                        <!-- end order confirmation row -->
+                        <!-- start Your Other Address row -->
+                        <div class="row your-other-address pt-sm-5 pb-sm-5">
+                            <div class="col-md-12">
+                                Your Other Address
+                            </div>
+                        </div>
+                        <!-- end Your Other Address row -->
+                        <!-- start Your Other Address card 1 row -->
+                        <div class="row your-other-address-card-1 mb-sm-4">
+                            <!-- start col-md-12 for card 1 -->
+                            <div class="col-md-12">
+                                <!-- start card 1 -->
+                                <div class="card">
+                                    <!-- start card-body -->
+                                    <div class="card-body">
+                                        <!-- start radio button with text -->
+                                        <div class="form-check your-other-address-card-1-text">
+                                            <input class="form-check-input tanuja-radio" type="radio"
+                                                name="flexRadioDefault" id="flexRadioDefault1">
+                                            <label class="form-check-label ps-sm-3" for="flexRadioDefault1">
+                                                <strong>Tanuja Nitin Sethi</strong> <br>
+                                                Sai villa Forest Office Front of Ayurvedic Clinic Main RoadNagpur,
+                                                Maharashtra 201002 India Phone Number : 0000120000
+                                            </label>
+                                        </div>
+                                        <!-- end radio button with text -->
+                                    </div>
+                                    <!-- end card-body -->
+                                </div>
+                                <!-- end card 1 -->
+                            </div>
+                            <!-- end col-md-12 for card 1 -->
+                        </div>
+                        <!-- end Your Other Address card 1 row -->
+                        <!-- start Your Other Address card 2 row -->
+                        <div class="row your-other-address-card-2">
+                            <!-- start col-md-12 for card 1 -->
+                            <div class="col-md-12">
+                                <!-- start card 2 -->
+                                <div class="card">
+                                    <!-- start card-body -->
+                                    <div class="card-body">
+                                        <!-- start radio button with text -->
+                                        <div class="form-check your-other-address-card-2-text">
+                                            <input class="form-check-input tanuja-radio" type="radio"
+                                                name="flexRadioDefault" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                <strong>Tanuja Nitin Sethi </strong> <br>
+                                                Sai villa Forest Office Front of Ayurvedic Clinic Main RoadNagpur,
+                                                Maharashtra 201002 India Phone Number : 0000120000
+                                            </label>
+                                        </div>
+                                        <!-- end radio button with text -->
+                                    </div>
+                                    <!-- end card-body -->
+                                </div>
+                                <!-- end card 2 -->
+                            </div>
+                            <!-- end col-md-12 for card 2 -->
+                        </div>
+                        <!-- end Your Other Address card 1 row -->
+                    </div>
+                    <!-- end col-md-8 -->
+                    <!-- end foldable wooden laptop-->
+                    <!-- start col-md-4 price detail section-->
+                    <div class="col-md-3 price-details-section">
+                        <!-- start heading price details -->
+
+                        <div class="row price-details">
+                            <div class="col-md-12">
+                                <strong>Price Details</strong>
+                            </div>
+                        </div>
+
+                        <!-- end heading price details -->
+                        <!-- start price (3 items) row -->
+                        <div class="row price-3items pt-sm-3">
+                            <div class="col-md-8">
+                                Price (3 Items)
+                            </div>
+                            <div class="col-md-4">
+                                <i class="fa fa-inr" aria-hidden="true"></i> 4800
+                            </div>
+                        </div>
+                        <!-- end price (3 items) row -->
+                        <!-- start discount row -->
+                        <div class="row discount pt-sm-3">
+                            <div class="col-md-8">
+                                Discount
+                            </div>
+                            <div class="col-md-4">
+                                <i class="fa fa-inr" aria-hidden="true"></i><span class="price-color"> 1800</span>
+                            </div>
+                        </div>
+                        <!-- end discount row -->
+                        <!-- start delivery charges row -->
+                        <div class="row border-bottom delivery-charges pt-sm-3 pb-sm-3">
+                            <div class="col-md-8">
+                                Delivery Charges
+                            </div>
+                            <div class="col-md-4">
+                                <del><i class="fa fa-inr " aria-hidden="true"></i> 80</del> <span>Free</span>
+                            </div>
+                        </div>
+                        <!-- end delivery charges row -->
+                        <!-- start total amount row -->
+
+                        <div class="row border-bottom total-amount pt-sm-3 pb-sm-3">
+                            <div class="col-md-8">
+                                Total Amount
+                            </div>
+                            <div class="col-md-4">
+                                <i class="fa fa-inr" aria-hidden="true"></i> <span class="price-color"> 3000</span>
+                            </div>
+                        </div>
+                        <!-- end total amount row -->
+
+                        <!-- start your total savings row -->
+
+                        <div class="row border-bottom your-total-savings pt-sm-3 pb-sm-3">
+                            <div class="col-md-12">
+                                Your total savings on this order <i class="fa fa-inr " aria-hidden="true"></i> 3000
+                            </div>
+
+                        </div>
+
+                        <!-- end your total savingsrow -->
+
+                        <!-- start continue button row -->
+
+
+                        <div class="row pt-sm-3 pb-sm-3">
+                           <div class="col-md-12">
+                              <a href="{% url 'PlaceOrderNew' %}" class="text-decoration-none">
+                              <div class="row">
+                                 <div class="input-group ">
+                                   <button type="button" class="form-control btn-circle btn-sm border border-0">
+                                       <span class="share-button">Continue</span> 
+                                    </button>
+                                    <span class="input-group-text share-btn border border-0"><button type="button" class="btn btn-circle btn-md"><i class="fa fa-window-maximize hare-icon-main" aria-hidden="true"></i></button>
+                                    </span>
+                                 </div>
+                              </a>  
+         
+                              </div>
+                           </div>
+            
+                        </div>
+                        <!-- end continue button row -->
+                        
+
+                    </div>
+                    
+                    <!-- end col-md-4 for price detail section-->
+                </div>
+                <!-- end row for foldable wooden laptop and price detail -->
+            </div>
+            <!-- end col-sm-10 for content of page -->
+        </div>
+        <!-- end row for whole page -->
+    </div>
+    <!-- end container-fluid for page -->
+{% endblock %}

@@ -1,0 +1,752 @@
+
+{% extends "core/base.html" %}{% load static %}
+
+{% block content %}
+    
+{% block own_css %}
+<link rel="stylesheet" href="{% static 'css/select-your-address-for-existing-user.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/address-save.css' %}" type="text/css">
+{% endblock own_css%}
+
+
+            <div class="col-sm-10">
+
+                <div class="mb-3 ps-3 bar ">
+                    <label for="text" class="form-label "><i class="fa fa-check-circle font1" aria-hidden="true"></i>
+                        Address Saved</label>
+                </div>
+
+                <!--------Start Your Address---------->
+                <!------outer row for your address------->
+                <div class="row  px-3">
+                    <div class="col-md-12 outer-blue pb-sm-5">
+                        <!--------row for main heading-------->
+                        <div class="row ms-sm-3 ">
+                            <div class="col-md-12 addrs-fontstyl">
+                                Your Addresses
+                            </div>
+                        </div>
+                        <!-----row for name ---->
+                        <div class="row ms-sm-3">
+                            <div class="col-sm-12 tanuja">
+                                Tanuja Nitin Sethi
+                            </div>
+                        </div>
+                        <!-----row for address-------->
+                        <div class="row ms-sm-3">
+                            <div class="col-md-12 sai-villa">
+                                Sai Villa
+                            </div>
+                        </div>
+                        <!-----row for address-------->
+                        <div class="row ms-sm-3">
+                            <div class="col-md-12 sai-villa">
+                                Forest Office Front of Ayurvedic Clinic Main Road <br>
+                            </div>
+                        </div>
+                        <!-----row for city state-------->
+                        <div class="row ms-sm-3">
+                            <div class="col-md-12 sai-villa">
+                                Nagpur, Maharashtra 440028
+                            </div>
+                        </div>
+                        <!------row for country-------->
+                        <div class="row ms-sm-3">
+                            <div class="col-md-12 sai-villa">
+                                India
+                            </div>
+                        </div>
+                        <!------row for phone no.------------->
+                        <div class="row ms-sm-3">
+                            <div class="col-md-12 sai-villa">
+                                Phone No: 22453675
+                            </div>
+                        </div>
+                        <!-----------Update delivery location---------->
+                        <!--------row for update delivery address----------->
+                        <div class="row ms-sm-3 px-3">
+                            <div class="col-md-12 update-delivery ">
+                                <!-- <a href="choose-location.html" class="delivery-color"><i class="fa fa-map-marker"
+                                        aria-hidden="true"></i>Add Delivery
+                                    Instruction</a> -->
+
+                                <button type="button" class="btn  delivery-instrctn" data-bs-toggle="modal"
+                                    data-bs-target="#myModal3"><i class="fa fa-map-marker" aria-hidden="true"></i>Add
+                                    Delivery Instruction</button>
+
+                            </div>
+                        </div>
+                        <!-----------Edit Remove Button----------->
+                        <!--------row for edit and remove buttons--------->
+                        <div class="row ms-sm-3">
+                            <!----column for edit button-->
+                            <div class="col-sm-3  col-xl-4 pt-4 d-grid ">
+                                <div class="row">
+                                    <div class="col-sm-12 d-grid">
+                                        <button type="button" class="btn edit rounded-pill py-2 " data-bs-toggle="modal"
+                                            data-bs-target="#myModal">Edit </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!----column for Remove button---->
+                            <div class="col-sm-3 col-xl-4 mt-4 d-grid">
+                                <div class="row">
+                                    <div class="col-sm-12 d-grid">
+                                        <button type="button" class="btn edit rounded-pill button-block">Remove</button>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6"></div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <!----for space between two blue border---->
+
+                <div class="py-3"></div>
+                <!--------End Your Address---------->
+
+
+                <!------Add a new addressor pick start---------->
+
+
+                <!--------row for Add a New address or a pick up point----->
+                <div class="row  px-3 py-3">
+                    <div class="col-md-12 outer-blue2 pe-5">
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <button type="button" class="btn add-new " data-bs-toggle="modal"
+                                    data-bs-target="#myModal2">Add a New address or a pick up point <i
+                                        class="fa fa-angle-right" aria-hidden="true"></i></button>
+
+
+                            </div>
+                            <div class="col-md-6"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <!---------Add a new addressor pick end---------->
+                <!---------Modal Edit Start------------>
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content" width="700" height="200">
+                            <!---row for header-->
+                            <div class="row addnewpop">
+                                <div class="col-md-2"></div>
+                                <!---column for modal header-->
+                                <div class="col-md-10">
+                                    <div class="modal-header border-bottom-0">
+
+                                        <h4 class="modal-title">Add New Address</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                </div>
+                                <!----column for close button-->
+                                <!-- <div class="col-md-2 pt-3">
+                                    <div class="modal-header ">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                </div> -->
+                            </div>
+
+                            <!--------Model Body-->
+                            <!---row for model body-->
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <!----modal content in body-->
+                                <div class="col-md-10">
+                                    <div class="modal-body input-text-popup">
+                                        <!---------Form start for Add New Address------>
+                                        <form>
+                                            <!--div for name-->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text border-end border-bottom"><i
+                                                                class="fa fa-user-o icon" aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Tanuja Nitin Sethi">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <!--div for phone no.-->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text border-end border-bottom"><i
+                                                                class="fa fa-phone icon" aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control" placeholder="22453675">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--div for pincode-->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text border-end border-bottom"><i
+                                                                class="fa fa-bullseye icon"
+                                                                aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control" placeholder="440028">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!---div for Flat house-->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text border-end border-bottom"><i
+                                                                class="fa fa-building-o icon"
+                                                                aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control" placeholder="Sai Villa">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <!----div for address-->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text border-end border-bottom"><i
+                                                                class="fa fa-road icon" aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Forest Office Front of Ayurvedic Clinic">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!---div for main road-->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text border-end border-bottom"><i
+                                                                class="fa fa-street-view icon"
+                                                                aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control" placeholder="Main Road">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-----div for city-->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text border-end border-bottom"><i
+                                                                class="fa fa-building icon"
+                                                                aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control" placeholder="Nagpur">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!----div for state-->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text border-end border-bottom"><i
+                                                                class="fa fa-globe icon" aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Maharashtra">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!------make my default Address checkbox-------->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input checbox-color" type="checkbox"
+                                                            value="" id="flexCheckDefault">
+                                                        <label class="form-check-label default-addr"
+                                                            for="flexCheckDefault">
+                                                            Make this my default Address
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <!--------Add Delivery Instruction------>
+                                                <div class="delivery-instrction1">Add Delivery Instruction</div>
+                                                <div class="text-delivery">Preferences are use to plan your delivery.
+                                                    However,
+                                                    shipments can sometimes arrive early or later than planned</div>
+                                                <div class="delivery-instrction1">Address Type</div>
+
+                                                <!-----dropdown for Select a Address Type-------->
+                                                <div class="dropdown">
+                                                    <button
+                                                        class="btn btn-secondary drop-btn block dropdown-toggle pt-2 "
+                                                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        Select a Address Type
+                                                    </button>
+                                                    <!---dropdown content-->
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                        <li><a class="dropdown-item" href="#">Home (7 am-9 pm
+                                                                delivery)</a></li>
+                                                        <li><a class="dropdown-item" href="#">Office/Commercial(10
+                                                                am-6
+                                                                pm delivery)</a></li>
+                                                    </ul>
+                                                </div>
+                                                <!---------dropdown end---------->
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <!--div row for footer-->
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-10">
+                                    <div class="modal-footer border-top-0">
+                                        <!--button for address save-->
+                                        <button type="button" class="btn  btn-add rounded-pill me-auto"
+                                            data-bs-dismiss="modal"><a href="Address-save.html" class="footercolor1">Add
+                                                Address</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!------- Modal Edit End-------->
+
+                <!--=============================================-->
+                <!--------Modal Add a new address or pick up Start------>
+                <div class="modal" id="myModal2">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content" width="700" height="200">
+                            <!---row for header-->
+                            <div class="row addnewpop">
+                                <div class="col-md-2"></div>
+                                <!---column for modal header-->
+                                <div class="col-md-10">
+                                    <div class="modal-header border-bottom-0">
+
+                                        <h4 class="modal-title">Add New Address</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Modal Header -->
+                            <!-- <div class="modal-header">
+                                <h4 class="modal-title">Add New Address</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div> -->
+
+
+
+
+                            <!--------Model Body-->
+                            <!---row for model body-->
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <!----modal content in body-->
+                                <div class="col-md-10">
+                                    <div class="modal-body input-text-popup">
+                                        <!---------Form start for Add New Address------>
+                                        <form>
+                                            <!--div for name-->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text border-end border-bottom"><i
+                                                                class="fa fa-user-o icon" aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control" placeholder="Full Name">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--div for phone no.-->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text border-end border-bottom"><i
+                                                                class="fa fa-phone icon" aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Mobile Number">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--div for pincode-->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text border-end border-bottom"><i
+                                                                class="fa fa-bullseye icon"
+                                                                aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control" placeholder="Pincode">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!---div for Flat house-->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text border-end border-bottom"><i
+                                                                class="fa fa-building-o icon"
+                                                                aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Flat, House no., Building, Company, Apartment">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!----div for address-->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text border-end border-bottom"><i
+                                                                class="fa fa-road icon" aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Area, Street, Sector, Village">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!---div for main road-->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text border-end border-bottom"><i
+                                                                class="fa fa-street-view icon"
+                                                                aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control" placeholder="Landmark">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-----div for city-->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text border-end border-bottom"><i
+                                                                class="fa fa-building icon"
+                                                                aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control" placeholder="Town/City">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!----div for state-->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text border-end border-bottom"><i
+                                                                class="fa fa-globe icon" aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control" placeholder="State">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!------make my default Address checkbox-------->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input checbox-color" type="checkbox"
+                                                            value="" id="flexCheckDefault">
+                                                        <label class="form-check-label default-addr"
+                                                            for="flexCheckDefault">
+                                                            Make this my default Address
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <!--------Add Delivery Instruction------>
+                                                <div class="delivery-instrction1">Add Delivery Instruction</div>
+                                                <div class="text-delivery">Preferences are use to plan your delivery.
+                                                    However,
+                                                    shipments can sometimes arrive early or later than planned</div>
+                                                <div class="delivery-instrction1">Address Type</div>
+
+                                                <!-----dropdown for Select a Address Type-------->
+                                                <div class="dropdown">
+                                                    <button
+                                                        class="btn btn-secondary drop-btn block dropdown-toggle pt-2 "
+                                                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        Select a Address Type
+                                                    </button>
+                                                    <!---dropdown content-->
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                        <li><a class="dropdown-item" href="#">Home (7 am-9 pm
+                                                                delivery)</a></li>
+                                                        <li><a class="dropdown-item" href="#">Office/Commercial(10
+                                                                am-6
+                                                                pm delivery)</a></li>
+                                                    </ul>
+                                                </div>
+                                                <!---------dropdown end---------->
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+
+                            <!-------Model Body End----->
+                            <!-- Modal footer -->
+                            <!--div row for footer-->
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-10">
+                                    <div class="modal-footer border-top-0">
+                                        <!--button for address save-->
+                                        <button type="button" class="btn  btn-add rounded-pill me-auto"
+                                            data-bs-dismiss="modal"><a href="Address-save.html" class="footercolor1">Add
+                                                Address</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="modal-footer border-top-0">
+                                <button type="button" class="btn  btn-add rounded-pill me-auto"
+                                    data-bs-dismiss="modal"><a href="Address-save.html">Add Address</a>
+                                </button>
+                            </div> -->
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--------Modal Add a new address or pick up End------>
+                <!--==========================================-->
+                <!-----Add Delivery Instruction Modal Start------>
+                <div class="modal" id="myModal3">
+                    <div class="modal-dialog modal-dialog modal-xl">
+                        <div class="modal-content" width="700" height="200">
+                            <!-- Modal Header -->
+                            <div class="modal-header border-bottom-0">
+                                <h4 class="modal-title add-delivery">Add delivery instructions</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!--------Model Body-->
+                            <div class="modal-body">
+                                <!--start row for Tanuja-->
+                                <div class="row pt-3">
+                                    <div class="col-md-12 tanuja1">
+                                        Tanuja Nitin Sethi
+                                    </div>
+                                </div>
+                                <!---start row for address-->
+                                <div class="row px-3">
+                                    <div class="col-md-12 sai1">
+                                        Sai villa Forest Office Front of Ayurvedic Clinic Main Road Nagpur, Maharashtra
+                                        201002 India Phone Number :
+                                        1213141516
+                                    </div>
+                                </div>
+
+                                <!--tab start-->
+                                <div class="tab tab-style">
+                                    <!--tab button for can you receive-->
+                                    <button class="tablinks tab-head" onclick="openCity(event, 'weekends')"
+                                        id="defaultOpen">Can you receive deliveries at
+                                        this address on weekends? <i class="fa fa-angle-right"
+                                            aria-hidden="true"></i></i>
+                                    </button>
+                                    <!--tab button for additional Information-->
+                                    <button class="tablinks tab-head" onclick="openCity(event, 'find-this-addrs')">Share
+                                        additional information to find this
+                                        address <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </button>
+                                    <!--tab button for do not disturb--->
+                                    <button class="tablinks tab-head" onclick="openCity(event, 'do-not-disturb')">Select
+                                        your
+                                        do not disturb delivery
+                                        preference <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <!---for first tab content-->
+                                <div id="weekends" class="tabcontent">
+                                    <!---start row for tab1 -->
+                                    <div class="row pt-3 ">
+                                        <!--column for tab-->
+                                        <div class="col-sm-4 tab-style ms-sm-4 pt-3">
+                                            <!--start row for Saturday-->
+                                            <div class="row pt-3 tab-head">
+                                                <!--column for saturday-->
+                                                <div class="col-sm ">
+                                                    Saturdays
+                                                </div>
+                                                <!--column for yes button-->
+                                                <div class="col-sm">
+                                                    <button type="button"
+                                                        class="btn btn-outline-dark text-color">Yes</button>
+                                                </div>
+                                                <!--column for No button-->
+                                                <div class="col-sm">
+                                                    <button type="button"
+                                                        class="btn btn-outline-dark text-color">No</button>
+                                                </div>
+                                            </div>
+                                            <!--start row for Sunday-->
+                                            <div class="row py-3 tab-head ">
+                                                <!--column for sunday-->
+                                                <div class="col-sm ">
+                                                    Sundays
+                                                </div>
+                                                <!--column for yes button-->
+                                                <div class="col-sm pe-4">
+                                                    <button type="button"
+                                                        class="btn btn-outline-dark text-color">Yes</button>
+                                                </div>
+                                                <!--column for No button-->
+                                                <div class="col-sm">
+                                                    <button type="button"
+                                                        class="btn btn-outline-dark text-color">No</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- <div class="col-sm-4"></div>
+                                        <div class="col-sm-4"></div> -->
+
+                                    </div>
+                                </div>
+                                    <!--div for share additional Information Start-->
+                                <div id="find-this-addrs" class="tabcontent">
+                                        <!--start row for text area-->
+                                    <div class="row">
+                                            <!--column for text area-->
+                                        <div class="col-md-8">
+                                            <div class="pt-3 tab-style">
+                                                <form action="">
+                                                    <textarea id="w3review" name="w3review" rows="5" cols="50"></textarea>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                   
+
+                                </div>
+                                 <!--div for share additional Information End-->
+
+
+                                <!--div for do not disturb start-->
+                                <div id="do-not-disturb" class="tabcontent">
+                                        <!--start row for select location content--->
+                                        <div class="row pt-2 ">
+                                            <!--start column for content box-->
+                                            <div class="col-sm-4 ">
+                                                    <!--start row for border-->
+                                                <div class="row border tab-style">
+                                                        <!--start column for first button-->
+                                                    <div class="col-sm-12 pt-2">
+                                                        <button type="button"
+                                                            class="btn btn-outline-secondary block1 text-color">Front
+                                                            door</button>
+                                                    </div>
+                                                     <!--start column for second button-->
+                                                    <div class="col-sm-12 pt-2">
+                                                        <button type="button"
+                                                            class="btn btn-outline-secondary block1 text-color">With
+                                                            a security guard</button>
+                                                    </div>
+                                                    <!--start column for third button-->
+                                                    <div class="col-sm-12 pt-2">
+                                                        <button type="button"
+                                                            class="btn btn-outline-secondary block1 text-color">Mailroom</button>
+                                                    </div>
+                                                    <!--start column for forth button-->
+                                                    <div class="col-sm-12 py-2">
+                                                        <button type="button"
+                                                            class="btn btn-outline-secondary block1 text-color">Turn
+                                                            off do not disturb delivery</button>
+
+                                                    </div>
+                                                </div>
+                                                <!-- <button type="button" class="btn btn-outline-secondary block">Front door</button> -->
+
+                                            </div>
+                                            <div class="col-sm-4"></div>
+                                            <div class="col-sm-4"></div>
+                                        </div>
+
+
+
+                                 
+                                </div>
+                                <!--row for your Instruction-->
+                                <div class="row pt-2">
+                                    <!--column for your instruction-->
+                                    <div class="col-md-12 your-instruction">
+                                        Your instructions help us deliver to this address. However, deliveries may not
+                                    always follow all the instructions.
+                                    </div>
+                                 
+                                </div>
+                                <!---start div for button-->
+                                <div >
+                                    <button type="button" class="btn  btn-add rounded-pill">Save
+                                        Instructions</button>
+                                </div>
+                                <!--script for tab menu start-->
+                                <script>
+                                    function openCity(evt, cityName) {
+                                        var i, tabcontent, tablinks;
+                                        tabcontent = document.getElementsByClassName("tabcontent");
+                                        for (i = 0; i < tabcontent.length; i++) {
+                                            tabcontent[i].style.display = "none";
+                                        }
+                                        tablinks = document.getElementsByClassName("tablinks");
+                                        for (i = 0; i < tablinks.length; i++) {
+                                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                                        }
+                                        document.getElementById(cityName).style.display = "block";
+                                        evt.currentTarget.className += " active";
+                                    }
+
+                                    // Get the element with id="defaultOpen" and click on it
+                                    document.getElementById("defaultOpen").click();
+                                </script>
+                                 <!--script for tab menu end-->
+                            </div>
+                            <!-- Modal footer -->
+
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-----Add Delivery Instruction Modal End------>
+
+{% endblock %}
+

@@ -1,0 +1,819 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Scroly</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- JavaScript Bundle with Popper -->
+    <link rel="stylesheet" href="{% static 'css/style-guid.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/base1.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/base2.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'js/product-filter.js' %} " type="text/js">
+    <script src="{% static 'js/fontawesome.js' %}"></script>
+    <style>
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+        -moz-appearance: textfield;
+        }
+    </style>
+
+</head>
+
+<body class="body-padding">
+    <!-- start preloader  -->
+    <div class="loader-bg">
+        <div class="loader"></div>
+    </div>
+    <!-- end preloader  -->
+   <!-- start navbar1 -->
+<nav class="navbar navbar-expand-sm nav1-padding" id="nav1">
+    <div class="d-flex flex-grow-1">
+        <button type="button" class="btn ps-0" onclick="openNav()">
+            <img src="{% static 'images/3linesnav.png' %}" alt="">
+        </button>
+        <!-- start scroly logo -->
+        <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" alt=""></a>
+        <!-- end scroly logo  -->
+    </div>
+    <!-- start toggle button -->
+    <!-- <button class="navbar-toggler order-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+       <span class="navbar-toggler-icon"></span>
+       </button> -->
+    <!-- end toggle-button -->
+    <!-- <button class="navbar-toggler order-0" type="button" data-toggle="collapse" data-target="#navbar7">
+       <span class="navbar-toggler-icon"></span>
+       </button> -->
+    <div class="navbar-collapse collapse flex-shrink-1 flex-grow-0 order-last" id="myNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link earn-with-scroly" href="{% url 'earn-scroly' %}">Earn with scroly</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link beacome-supplier" href="{% url 'become-supplier' %}">Become a Supplier</a>
+            </li>
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+                <a class="nav-link select-your-address" href="{% url 'saveaddress' %}">Select your address</a>
+            </li>
+            {% endif %}
+            <li class="nav-item">
+                <a class="nav-link download-app" href="#">Download App</a>
+            </li>
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+                <a class="nav-link signin-signup" href="{% url 'logout' %}">Logout</a>
+            </li>
+            {% else %}
+            <li class="nav-item">
+                <a class="nav-link signin-signup" href="{% url 'signin' %}">Sign in or Sign up</a>
+            </li>
+            {% endif %}
+            <li class="nav-item">
+                <a class="nav-link cart" href="{% url 'AddToCard' %}"><i class="fa fa-shopping-cart"
+                                                                         aria-hidden="true"></i><sup><span
+                        class="badge rounded-pill badge-notification ">{% if cart_count == 0 %}{% else %}{{cart_count}}{% endif %}</span></sup> Cart</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link notification" href="#"><i class="fa fa-bell" aria-hidden="true"></i><sup><span
+                        class="badge rounded-pill badge-notification ">1</span></sup>
+                    Notifications</a>
+            </li>
+            <!-- start profile icon with dropdown -->
+            {% if user.is_authenticated %}
+            <li class="nav-item dropdown">
+                <div class="dropdown">
+                    <!-- start profile icon -->
+                    <button type="button" class="btn text-center profile-bt" data-bs-toggle="dropdown">
+                        <i class="fa fa-user"></i>
+                    </button>
+                    <!-- end profile icon -->
+                    <!-- start profile dropdown content -->
+                    <ul class="dropdown-menu dropdown-menu-end profileDropdown pt-sm-5 px-sm-4">
+                        <!-- profile dropdown heading start -->
+                        <li>
+                            <h3>Hello {{user.first_name}}</h3>
+                            <h5>{{user.email}}</h5>
+                            <h5>{% if user.mobile_number %}{{user.mobile_number}}{% else %}{% endif %}</h5>
+                        </li>
+                        <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <!-- start dropdown-item order -->
+                        <li>
+                            <a class="dropdown-item sidenav-border mt-sm-2 py-sm-2" href="{% url 'Order' %}">Orders</a>
+                        </li>
+                        <!-- end dropdown-item order -->
+                        </li>
+                        <li>
+                            <!-- start dropdown-item profile -->
+                        <li>
+                            <a class="dropdown-item sidenav-border mt-sm-2 py-sm-2"
+                               href="{% url 'profile' %}">Profile</a>
+                        </li>
+                        <!-- end dropdown-item profile -->
+                        </li>
+                        <li>
+                            <!-- start dropdown-item logout -->
+                        <li>
+                            <a class="dropdown-item sidenav-border mt-sm-2 py-sm-2" href="{% url 'logout'%}">Logout</a>
+                        </li>
+                        <!-- end dropdown-item logout -->
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+</nav>
+<!-- end navbar1 -->
+
+<!-- start mobile navbar1 -->
+<nav class="navbar navbar-expand nav1-padding mobile-navbar" id="nav2">
+    <div class="d-flex flex-grow-1">
+        <button type="button" class="btn" onclick="openNav()">
+            <img src="{% static 'images/3linesnav.png' %}" alt="">
+        </button>
+        <!-- start scroly logo -->
+        <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" alt=""></a>
+        <!-- end scroly logo  -->
+    </div>
+    <!-- start toggle button -->
+    <!-- <button class="navbar-toggler order-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+       <span class="navbar-toggler-icon"></span>
+       </button> -->
+    <!-- end toggle-button -->
+    <!-- <button class="navbar-toggler order-0" type="button" data-toggle="collapse" data-target="#navbar7">
+       <span class="navbar-toggler-icon"></span>
+       </button> -->
+    <div class="navbar-collapse collapse flex-shrink-1 flex-grow-0 order-last" id="myNavbar">
+        <ul class="navbar-nav">
+            {% if user.is_authenticated %}
+            <!-- <li class="nav-item">
+                 <a class="nav-link select-your-address" href="{% url 'saveaddress' %}">Select your address</a>
+             </li>-->
+            {% endif %}
+            {% if user.is_authenticated %}
+            <!--<li class="nav-item">
+                <a class="nav-link signin-signup" href="{% url 'logout' %}">Logout</a>
+            </li>-->
+            {% else %}
+            <li class="nav-item">
+                <a class="nav-link signin-signup" href="{% url 'signin' %}">Sign/Sign up</a>
+            </li>
+            {% endif %}
+            <li class="nav-item">
+                <a class="nav-link cart" href="{% url 'AddToCard' %}"><i class="fa fa-shopping-cart"
+                                                                         aria-hidden="true"></i><sup><span
+                        class="badge rounded-pill badge-notification">{% if cart_count == 0 %}{% else %}{{cart_count}}{% endif %}</span></sup> </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link notification" href="#"><i class="fa fa-bell" aria-hidden="true"></i><sup><span
+                        class="badge rounded-pill badge-notification">1</span></sup>
+                </a>
+            </li>
+            <!-- start profile icon with dropdown -->
+            {% if user.is_authenticated %}
+            <li class="nav-item dropdown">
+                <div class="dropdown">
+                    <!-- start profile icon -->
+                    <button type="button" class="btn text-center profile-bt" data-bs-toggle="dropdown">
+                        <i class="fa fa-user"></i>
+                    </button>
+                    <!-- end profile icon -->
+                    <!-- start profile dropdown content -->
+                    <ul class="dropdown-menu dropdown-menu-end profileDropdown pt-sm-5 px-sm-4 pt-2 ps-2">
+                        <!-- profile dropdown heading start -->
+                        <li>
+                            <h3>Hello {{user.first_name}}</h3>
+                            <h5>{{user.email}}</h5>
+                            <h5>{% if user.mobile_number %}{{user.mobile_number}}{% else %}{% endif %}</h5>
+                        </li>
+                        <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <!-- start dropdown-item order -->
+                        <li class="li-list">
+                            <a class="dropdown-item sidenav-border mt-sm-2 py-sm-2" href="{% url 'Order' %}">Orders</a>
+                        </li>
+                        <!-- end dropdown-item order -->
+                        </li>
+                        <li>
+                            <!-- start dropdown-item profile -->
+                        <li class="li-list">
+                            <a class="dropdown-item sidenav-border mt-sm-2 py-sm-2"
+                               href="{% url 'profile' %}">Profile</a>
+                        </li>
+                        <!-- end dropdown-item profile -->
+                        </li>
+                        <li>
+                            <!-- start dropdown-item logout -->
+                        <li class="li-list">
+                            <a class="dropdown-item sidenav-border mt-sm-2 py-sm-2" href="{% url 'logout'%}">Logout</a>
+                        </li>
+                        <!-- end dropdown-item logout -->
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+</nav>
+<!-- end mobile navbar1 -->
+
+<!-- start container-fluid for whole-page -->
+<div class="container-fluid">
+    <!-- start filter and deals of the day section -->
+    <div class="row">
+        {% block sidebar %}
+
+        {% block slug_field %}
+        <p id="slug" hidden>hello world</p>
+        {% endblock slug_field %}
+
+        <!-- start filter -->
+        <div class="col-sm-3 col-md-2 filter-mobile-view">
+            <!-- start filter-section row -->
+            <div class="row filter-section">
+                <div class="col-md-12">
+                    <!-- start filter-text -->
+                    <div class="row  filter-text border-bottom">
+                        <div class="col-md-12 ">
+                            Filters
+                        </div><br>
+                        <div class="row filter-line-padd border-bottom">     
+                        </div>
+                        <!-- end filter-text -->
+                        <!-- start Jeans For Men -->
+                       
+                        <!-- end Jeans For Men -->
+
+                        <!-- start category-heading -->
+                        <!-- <div class="row brand">
+                            <div class="col-md-12">
+                                Category
+                            </div>
+                        </div> -->
+                        <!-- end category-heading -->
+
+                        <!-- start category check box -->
+
+                        <!-- <div class="row">
+                            <div class="col-md-12">
+                                {% for i in categorry_id %}
+                                <div class="form-check" >
+                                    <input class="form-check-input cat-radio filter-checkbox" type="checkbox" data-filter="Category" value="{{i.CategoryLevel3Id}}" id="flexCheckChecked">
+                                    <label class="form-check-label levi-input" for="flexCheckChecked">
+                                        {{i.CategoryLevel3Id.}}
+                                    </label>
+                                </div>
+                                {% endfor %}  
+                            </div>
+                        </div> -->
+                        <!-- end category check box -->
+
+
+                        <!-- start brand-heading -->
+                        <div class="row brand ">
+                            <div class="col-md-12">
+                                Brand
+                            </div>
+                        </div>
+                        <!-- end brand-heading -->
+
+                        <!-- start brand check box -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                {% for brand_obj in brands %}
+                                <div class="form-check" >
+                                    <input class="form-check-input cat-radio filter-checkbox" type="checkbox" data-filter="product" value="{{brand_obj.ProductBrandName}}" id="flexCheckChecked">
+                                    <label class="form-check-label levi-input" for="flexCheckChecked">
+                                        {{brand_obj.ProductBrandName}}
+                                    </label>
+                                </div>
+                                {% endfor %}  
+                            </div>
+                        </div>
+                        <!-- end brand check box -->
+
+                        <!-- start more -->
+                        <div class="row more border-bottom">
+                            <div class="col-md-12">
+                                More
+                            </div>
+                        </div>
+                        <!-- end more -->
+
+                         <!-- start size-heading -->
+                         <!-- <div class="row brand">
+                            <div class="col-md-12">
+                                Size
+                            </div>
+                        </div> -->
+                        <!-- end size-heading -->
+                        <!-- start size check box -->
+                        <!-- <div class="row">
+                            <div class="col-md-12">
+                                {% for size in size_obj %}
+                                <div class="form-check">
+                                    <input class="form-check-input cat-radio filter-checkbox" type="checkbox" data-filter="size" value="{{size.id}}" id="flexCheckChecked">
+                                    <label class="form-check-label levi-input" for="flexCheckChecked">
+                                       {{size.size}}
+                                    </label>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div> -->
+                         <!-- end size check box -->
+                         
+                            <!-- start more -->
+                            <!-- <div class="row more border-bottom">
+                                <div class="col-md-12">
+                                    More
+                                </div>
+                            </div> -->
+                            <!-- end more -->
+
+
+                        <!-- start more -->
+                        <div class="row price">
+                            <div class="col-md-12">
+                                Price
+                            </div>
+                        </div>
+                        <!-- end more -->
+
+                        <!-- start more -->
+                        <div class="row min-max border-bottom">
+                            <div class="col-md-12">
+                                <div class="form-check ps-0">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <input type="range" value="{{Price.Price__min}}" max={{Price.Price__max}} min={{Price.Price__min}} id="rangeInput" oninput="maxPrice.value=this.value" />
+                                            <p>{{Price.Price__min}}-{{Price.Price__max}}</p>
+                                        </li>
+                                        <li>
+                                            Max: 
+                                            <input type="number" value="{{Price.Price__min}}" max={{Price.Price__max}} min={{Price.Price__min}} class="form-control" id="maxPrice" onkeyup="rangeInput.value=this.value" />
+						                    <button id="priceFilterBtn" class="btn btn-info btn-sm mt-1">Filter</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="row min-max border-bottom">
+                            <div class="col-md-12">
+                                <div class="form-check">
+                                    <input class="form-check-input cat-radio filter-checkbox" type="checkbox" data-filter="price" value="0 - 999" id="flexCheckDefault">
+                                        
+                                    <label class="form-check-label rating4" for="flexCheckDefault">
+                                        0 - 999
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input cat-radio filter-checkbox" type="checkbox" data-filter="price" value="1000-1999" id="flexCheckDefault">
+                                        
+                                    <label class="form-check-label rating4" for="flexCheckDefault">
+                                        1000-1999
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input cat-radio filter-checkbox" type="checkbox" data-filter="price" value="2000 - 2999" id="flexCheckDefault">
+                                        
+                                    <label class="form-check-label rating4" for="flexCheckDefault">
+                                        2000 - 2999
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input cat-radio filter-checkbox" type="checkbox" data-filter="price" value="3000 - 3999" id="flexCheckDefault">
+                                        
+                                    <label class="form-check-label rating4" for="flexCheckDefault">
+                                        3000 - 3999
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input cat-radio filter-checkbox" type="checkbox" data-filter="price" value="4000 - 4999" id="flexCheckDefault">
+                                        
+                                    <label class="form-check-label rating4" for="flexCheckDefault">
+                                        4000 - 4999
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input cat-radio filter-checkbox" type="checkbox" data-filter="price" value="5000 & above" id="flexCheckDefault">
+                                        
+                                    <label class="form-check-label rating4" for="flexCheckDefault">
+                                        5000 & above
+                                    </label>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- end more -->
+
+                        <!-- start customer-rating-heading -->
+                        <div class="row customer-rating">
+                            <div class="col-md-12">
+                                Customer Ratings
+                            </div>
+                        </div>
+                        <!-- end customer-rating-heading -->
+                        <!-- start check box rating -->
+                        <div class="row border-bottom">
+                            <div class="col-md-12">
+                                <div class="form-check">
+                                    <input class="form-check-input cat-radio filter-checkbox" type="radio" data-filter="star" name="flexRadioDefault" value=4 id="flexRadioDefault1">
+                                    <label class="form-check-label rating4" for="flexRadioDefault1">
+                                        4 <span class="icon-clr"><i class="fa fa-star" aria-hidden="true"></i></span> & above 
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input cat-radio filter-checkbox" type="radio" data-filter="star" name="flexRadioDefault" value=3 id="flexRadioDefault2">
+                                    <label class="form-check-label rating3" for="flexRadioDefault2">
+                                        3 <span class="icon-clr"><i class="fa fa-star" aria-hidden="true"></i></span> & above
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input cat-radio filter-checkbox" type="radio" data-filter="star" value=2 id="flexRadioDefault3" name="flexRadioDefault">
+                                    <label class="form-check-label rating3" for="flexRadioDefault3">
+                                        2 <span class="icon-clr"><i class="fa fa-star" aria-hidden="true"></i></span> & above
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input cat-radio filter-checkbox" type="radio" data-filter="star" value=1 id="flexRadioDefault4" name="flexRadioDefault">
+                                    <label class="form-check-label rating3" for="flexRadioDefault4">
+                                        1 <span class="icon-clr"><i class="fa fa-star" aria-hidden="true"></i></span> & above
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                          
+
+                        <!-- end check box rating -->
+
+                        <!-- start color -->
+
+                        <!-- <div class="row color-heading">
+                            <div class="col-md-12">
+                                Color
+                            </div>
+                        </div> -->
+
+                        <!-- end color -->
+
+                        <!-- start check box color -->
+                        <!-- <div class="row">
+                            <div class="col-md-12">
+                                {% for color in color_obj %}
+                                <div class="form-check">
+                                    <input class="form-check-input cat-radio filter-checkbox" type="checkbox" data-filter="color_obj" value="{{color.id}}" id="flexCheckChecked">
+                                    <label class="form-check-label levi-input" for="flexCheckChecked">
+                                        {{color.ProductColorName}}
+                                    </label>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div> -->
+
+                        <!-- end check box color -->
+
+                        <!-- start more -->
+                        <!-- <div class="row more border-bottom">
+                            <div class="col-md-12">
+                                More
+                            </div>
+                        </div> -->
+                        <!-- end more -->
+
+
+
+
+                    </div>
+                    <!-- end filter-text -->
+                </div>
+            </div>
+            <!-- end filter-section row -->
+        </div>
+        <!-- end filter -->
+        {% endblock sidebar %}
+        <!-- start deals of the day section -->
+        <div class="col-sm-9 col-md-10 page-padding">
+            <!-- <div class="row nav2">
+                <div class="col-md-12">
+                    hgh
+                </div>
+            </div> -->
+
+            <!-- start navbar2 -->
+            <div class="row padding-nav-mobile-view">
+                <div class="col-md-12">
+
+                    <nav class="navbar navbar-expand-sm navbar-light nav2-box">
+
+                            <!-- <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbar-content">
+                                <div class="hamburger-toggle">
+                                    <div class="hamburger">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </button> -->
+
+                            <div class="navbar-collapse nav-inner-content-padding" id="navbar-content">
+                                <!-- start category -->
+                                <ul class="navbar-nav ">
+
+                                    {% for c1 in cat1 %}
+                                    <li class="nav-item dropdown dropdown-mega ">
+                                        <a class="nav-link category-name" href="#" data-bs-toggle="dropdown"
+                                           data-bs-auto-close="outside">{{c1.CategoryName}}</a>
+                                        <div class="dropdown-menu shadow category-menu">
+                                            <div class="mega-content px-4 cat-image">
+                                                <div class="container-fluid ">
+                                                    <div class="row">
+                                                        {% for c2 in cat2 %}
+                                                        {% if c1.id is c2.CategoryLevel1Id.id %}
+                                                        <div class="col-12 col-sm-4 col-md-3  padding-catname border-end">
+                                                            <span class="category-name pe-5">{{c2.CategoryLevel2Name}}</span>
+                                                            <ul class="bullet2">
+                                                                {% for c3 in cat3 %}
+                                                                {% if c2.id is c3.CategoryLevel2Id.id %}
+                                                                <li class="mb-sm-2 subcategory-name"><a
+                                                                        href="{% url 'SeeAll' c3.CategoryLevel2Id.CategoryLevel1Id.CategorySlug c3.CategoryLevel2Id.CategorySlug c3.CategorySlug  %}">{{c3.CategoryLevel3Name}}</a>
+                                                                </li>
+                                                                {% endif %}
+                                                                {% endfor %}
+
+                                                            </ul>
+                                                        </div>
+                                                        {% endif %}
+                                                        {% endfor %}
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    {% endfor %}
+
+                                    <li class="nav-item" style="width:80%;">
+                                        <form class="scroly-search-bar" action="{% url 'SearchProduct' %}">
+                                            <div class="input-group ">
+                                              <input type="text" class="form-control" placeholder="Search" name="search" required>
+                                              <button class="btn input-group-text" type="submit">
+                                                  <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                                              </button>
+                                            </div>
+                                        </form>
+                                    </li>
+
+                                </ul>
+                                <!-- end category -->
+                                <!-- start searchbox -->
+                                <!--<form class="d-flex ps-3" action="{% url 'SearchProduct' %}">
+                                    &lt;!&ndash;<div class="input-group">
+                                        <input class="form-control rounded-pill category-searchbar" type="search"
+                                               placeholder="Search" aria-label="Search" size="70%">
+                                    </div>&ndash;&gt;
+
+                                    <div class="input-group">
+                                        <input required name="search" type="text"
+                                               class="form-control rounded-pill category-searchbar"
+                                               placeholder="Search">
+                                        &nbsp;
+                                        <button type="submit"
+                                                style="background-color: transparent; border: none; box-shadow: none;">
+                                        <span class="input-group-text  rounded-pill category-searchbar">
+                                             <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+
+                                        </span>
+                                        </button>
+
+                                    </div>
+
+
+                                </form>-->
+                                <!-- end searchbox -->
+
+                            </div>
+                    </nav>
+
+                </div>
+            </div>
+            <!-- end navbar2 -->
+
+
+            <!-- Start navbar - 2 mobile view -->
+            <section>
+                <div class="row category-mobile-view">
+                    <div class="col-12 ps-0 pe-0">
+                        <div class="cover">
+                            <!-- <button class="left" onclick="leftScroll()">
+                               <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                               </button> -->
+                            <div class="row">
+                                <div class="col-12 pe-0">
+                                    <div class="scroll-images">
+                                        {% for i in cat1 %}
+                                        <div class="row pe-3">
+                                            <div class="col-12 text-center">
+                                                <a href="{% url 'MenCategoryMobile' i.CategorySlug %}"
+                                                   class="text-decoration-none">
+                                                    <div class="row">
+                                                        <div class="col-md-12 child">
+                                                            <img class="child-img" src="{{i.CategoryImage.url}}"
+                                                                 alt="image"/>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-12 men">
+                                                            {{i.CategoryName}}
+                                                        </div>
+                                                    </div>
+                                                    <!-- <span class="men">Men</span> -->
+                                                </a>
+                                            </div>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <button class="right" onclick="rightScroll()">
+                               <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                               </button> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End navbar - 2 mobile view -->
+
+            <div id="mySidenav" class="sidenav">
+                <!-- start close button -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <!--end close button  -->
+                <!-- start buy again section  -->
+                <div class="sidenav-border">
+                    <a href="#">Buy Again</a>
+                </div>
+                <!-- end buy again section  -->
+                <!--start your account section  -->
+                <div class="sidenav-border mt-sm-2">
+                    <a href="#">Your Account</a>
+                </div>
+                <!-- end your account section  -->
+                <!-- start order section  -->
+                <div class="sidenav-border mt-sm-2">
+                    <a href="#">Orders</a>
+                    <p>Your Orders</p>
+                </div>
+                <!-- end order section  -->
+                <!-- start help & setting section  -->
+                <div class="sidenav-border mt-sm-2">
+                    <a href="#">Help & Settings</a>
+                    <li class="mb-sm-2 pb-2"><a class="text-decoration-none" href="{% url 'about_us' %}">About us</a></li>
+                    <p>Notifications</p>
+                    <p>FAQ</p>
+                    <p>Switch Accounts</p>
+                    <p>Sign out</p>
+                </div>
+                <!-- end help & setting section  -->
+                <!-- start data&privacy section  -->
+                <div class="sidenav-border mt-sm-2">
+                    <a href="#">Data & Privacy</a>
+                    <p>Request Your information</p>
+                    <p>Close Your Account</p>
+                    <p>Privacy Notice</p>
+                </div>
+                <!-- end data & privacy section  -->
+            </div>
+
+            {% block content %}
+
+            {% endblock %}
+
+        </div>
+        <!-- end deals of the day section -->
+    </div>
+    <!-- end filter and deals of the day section -->
+</div>
+<!-- end container-fluid for whole-page -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- -------------------------bootstrap script link start------------------------------------ -->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <!-- -------------------------bootstrap script link end------------------------------------ -->
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script>
+        $(document).ready(function(){
+            $(".ajaxloader").hide();
+            var _slug = $("#slug").data('filter');
+            $(".filter-checkbox,#priceFilterBtn").on('click',function(){
+                var _filterObj = {};
+                var _minPrice=$('#maxPrice').attr('min');
+		        var _maxPrice=$('#maxPrice').val();
+                _filterObj.minPrice=_minPrice;
+		        _filterObj.maxPrice=_maxPrice;
+                $(".filter-checkbox").each(function(index,ele){
+                    var _filterVal = $(this).val();
+                    var _filterKey = $(this).data('filter');
+                    //console.log(_filterVal, _filterKey)
+                    _filterObj[_filterKey]=Array.from(document.querySelectorAll('input[data-filter='+_filterKey+']:checked')).map(function(el){
+                        return el.value;
+                   });
+                });
+                console.log(_slug)
+
+                $.ajax({
+                    url : '/filterdata/'+_slug,
+                    data : _filterObj,
+                    dataType : 'json',
+
+                    beforeSend:function(){
+                        $(".ajaxloader").show();
+                    },
+                    success:function(res){
+                        console.log(res);
+                        $("#filteredProducts").html(res.data)
+                        $(".ajaxloader").hide();
+
+                    }
+                })
+            });
+            // Filter Product According to the price
+            $("#maxPrice").on('blur',function(){
+                var _min=$(this).attr('min');
+                var _max=$(this).attr('max');
+                var _value=$(this).val();
+                console.log(_value,_min,_max);
+                if(_value < parseInt(_min) || _value > parseInt(_max)){
+                    //alert('Values should be '+_min+'-'+_max);
+                    $(this).val(_min);
+                    $(this).focus();
+                    $("#rangeInput").val(_min);
+                    return false;
+                }
+            });
+            // End
+        });
+    </script>
+
+
+
+
+
+
+
+    <!-- for 3lines dropdown script start -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+
+<!-- 3lines dropdown script end -->
+
+    <!-- start preloader script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      setTimeout(function(){
+        $('.loader-bg').fadeToggle();
+        }, 500);
+    </script>
+    <!-- end preloader script -->
+
+</body>
+
+</html>

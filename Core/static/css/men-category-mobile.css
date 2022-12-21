@@ -1,0 +1,93 @@
+body{
+  background-image: url("../images/background.png");
+}
+
+.men-img-text a{
+    position: relative;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: #304653;
+}
+
+.top-left{
+    position: absolute;
+    top: 5rem;
+    left: 0rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 0rem 0.9375rem 0rem 0rem;
+  }
+
+
+  .mens-padding{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.1875rem;
+  }
+
+  .men-cat-mobile{
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
+  }
+
+  .men-cat-mobile ul, .men-cat-mobile ul a{
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.011em;
+    color: #304653;
+    padding-bottom: 2.3125rem;
+
+  }
+
+
+
+  .men-cat-mobile ul li{
+    padding-bottom: 1rem;
+
+  }
+
+  .footer {
+    position: fixed;
+    left: 0rem;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    color: black;
+ }
+
+ .footer-cat-menu{
+    padding-left: 1rem;
+ }
+
+
+ .footer-menu{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.7rem;
+    line-height: 0.625rem;
+    /* identical to box height */
+    text-align: center;
+    color: #304653;
+ }
+
+ .footer-cat-menu i{
+  font-size: 30px;
+  color: #304653;
+ }
+
+ .padding-heading-img
+ {
+  padding-top: 60px;
+ }
+

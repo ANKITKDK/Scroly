@@ -1,0 +1,429 @@
+{% extends "core/base2.html"%}
+{% load static %}
+{% block sidebar %}
+<div class="col-sm-2 categorycol">
+    <!-- row start -->
+    <div class="row">
+        <div class="col-md-12  mt-3 sidebar-heading">
+            Category
+        </div>
+    </div>
+
+    <!-- Ankush Dynamic Code for category -->
+    {% for c1 in cat1 %}
+    <div class="row my-4 r1">
+
+
+        <!-- category img start -->
+        <div class="col-md-6">
+            <img src="{{c1.CategoryImage.url}}" alt="" class="img-fluid">
+        </div>
+        <!-- category img end -->
+
+        <!-- category dropdown start -->
+
+        <div class="col-md-6">
+            <p class="my-2 text-center">
+                <!-- dropdown start -->
+            <div class="dropdown">
+                <!-- category name start -->
+                <div class="col-sm-3">
+                    <button class="dropbtn my-2">{{c1.CategoryName}}</button>
+                </div>
+                <!-- category name end -->
+                <!-- row start -->
+
+                <div class="row">
+                    <!-- col-sm-3 start -->
+                    <div class="col-sm-3">
+                        <!-- dropdwon content start -->
+                        <div class="dropdown-content men ps-sm-5 pt-sm-4 pb-sm-5 rounded">
+                            <!-- row start -->
+                            <div class="row">
+                                <!-- div col 1 start -->
+                                {% for c2 in cat2 %}
+                                {% if c1.id is c2.CategoryLevel1Id.id %}
+                                <div class="col-sm-3 pt-sm-3 border-end">
+                                    <!-- topwear section start -->
+
+
+                                    <h6 class="pb-sm-3 "><strong>{{c2.CategoryLevel2Name}}</strong></h6>
+                                    <ul class="bullet2">
+
+                                        {% for c3 in cat3 %}
+                                        {% if c2.id is c3.CategoryLevel2Id.id %}
+                                        <a href="{% url 'SeeAll' c3.CategorySlug %}" class="p-0">
+                                            <li class="mb-sm-2">{{c3.CategoryLevel3Name}}</li>
+                                        </a>
+                                        {% endif %}
+                                        {% endfor %}
+
+                                    </ul>
+
+                                    <!-- topwear section end -->
+
+                                </div>
+                                {% endif %}
+                                {% endfor %}
+                                <!-- div col1 end -->
+
+                            </div>
+                            <!-- row end -->
+                        </div>
+                        <!-- dropdown content end -->
+                    </div>
+                    <!-- col-sm-3 end -->
+                </div>
+                <!-- row end -->
+            </div>
+            <!-- dropdown end -->
+            </p>
+        </div>
+
+        <!-- category dropdown end -->
+    </div>
+    {% endfor %}
+    <!-- End Ankush Code -->
+</div>
+{% endblock sidebar %}
+
+{% block content %}
+
+{% block own_css %}
+<link rel="stylesheet" href="{% static 'css/see-all-reviews.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/base.css' %}" type="text/css">
+{% endblock own_css %}
+<div class="row pading-two-side ">
+
+    <!-- start col-sm-12 -->
+    <div class="col-sm-12 ">
+        <div class="row border-bottom">
+            <!--  start image and content-->
+            <div class="col-sm-2">
+                <div class="row">
+                    <div class="col-sm-12">
+                       <a href="{% url 'ProductDetail' productobj.ProductSlug %}" class="text-decoration-none"><img src="{{productobj.ProductMainImage.url}}" class="img-fluid rounded" alt="..." width="100%"></a>
+                    </div>
+                </div>
+                <!--start product price nd offer price-->
+                <div class="row pt-1">
+                    <div class="col-md-12  pb-3">
+                        <span class="rupee-review">₹</span>
+                        <span class="ruppes-col-orange price "> {{productobj.discount}}</span>
+
+                        <span class="text-decoration-line-through  deleted-price px-3">₹ {{productobj.Price}} </span>
+
+                        <span class=" offer-price">({{productobj.DiscountPercent}} % off)</span>
+                    </div>
+                </div>
+                <!--start product price nd offer price-->
+
+
+            </div>
+            <!-- end image nd content -->
+
+            <!-- heading of the product -->
+            <div class="col-sm-10">
+                <div class="row ">
+                    <div class="col-sm-12 pb-4 border-bottom">
+                        <span class="product-heading">{{productobj.ProductName}} Reviews</span>
+
+                    </div>
+
+                </div>
+                <!-- end product-heading -->
+
+
+                <div class="row pt-3">
+                    <div class="col-sm-2 pt-1 border-end border-dark">
+
+                        <i class="fa fa-star start-color  pe-2" aria-hidden="true"></i><span
+                            class="rating-point">{{productobj.Star}}</span>
+
+                    </div>
+                    <!-- rating number start -->
+                    <div class="col-sm-3 ">
+                        <div class="row ps-3">
+                            <div class="col-sm-12">
+                                <span class="rating-numbers">{{reviewcount}} ratings</span>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <span class="rating-numbers">{{reviewsforprogressbar}} reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- rating number start -->
+
+
+                    <div class="col-sm-3"></div>
+
+
+                    <!-- most helpful button start -->
+                    <div class="col-sm-2">
+                        <div class="dropdown">
+                            <button type="button" class="btn dropdown-toggle helful1 " data-bs-toggle="dropdown"
+                                width="100%">
+                                <span class="helpful-btn">Most helpful</span>
+                            </button>
+                            <ul class="dropdown-menu  helpful-btn-color">
+                                <li>
+                                <li><a class="dropdown-item " href="#"><span class="helpful-txt">Most
+                                            helpful</span></a></li>
+                                <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                <li><a class="dropdown-item" href="#"><span class="helpful-txt">Most
+                                            recent</span></a></li>
+                                <hr class="dropdown-divider">
+                                </li>
+
+                                <li>
+                                <li><a class="dropdown-item" href="#"><span class="helpful-txt">Positive
+                                            first</span></a></li>
+                                <hr class="dropdown-divider">
+                                </li>
+
+                                <li>
+                                <li><a class="dropdown-item" href="#"><span class="helpful-txt">Negative
+                                            first</span></a></li>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-2"></div>
+                </div>
+                <!-- -----helful button end -------- -->
+
+
+                <!--start progress bar  -->
+                <div class="row pt-5">
+                    <div class="col-sm-8 col-xl-12">
+                        <!-- start progress bar -->
+                        <div class="row pt-1">
+                            <div class="col-2 col-sm-1 text-center">
+                                <span class="ps-2"><i class="fa fa-star progress-bar-star"
+                                        aria-hidden="true"></i></span><span class="ps-3 progress-bar-numm">5</span>
+                            </div>
+                            <div class="col-8 col-sm-5 pt-2 text-start">
+                                <div class="progress" style="height:10px">
+                                    <div class="progress-bar bg-success" style="width:{{fivestar}}%;height:10px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-1 text-center progress-bar-num">
+                                {{fivestarcount}}
+                            </div>
+                            <div class="col-0 col-sm-5">
+
+                            </div>
+                        </div>
+                        <!-- end progress bar -->
+
+
+                        <div class="row">
+                            <div class="col-sm-1 text-center">
+                                <span class="ps-1"><i class="fa fa-star progress-bar-star"
+                                        aria-hidden="true"></i></span><span class="ps-3 progress-bar-numm">4</span>
+                            </div>
+                            <div class="col-sm-5 pt-2 text-start">
+                                <div class="progress" style="height:10px">
+                                    <div class="progress-bar bg-success" style="width:{{fourstar}}%;height:10px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-1 text-center progress-bar-num">
+                                {{fourstarcount}}
+                            </div>
+                            <div class="col-sm-5">
+
+                            </div>
+                        </div>
+
+                        <div class="row pt- ">
+                            <div class="col-sm-1 text-center">
+                                <span class="ps-2"><i class="fa fa-star progress-bar-star"
+                                        aria-hidden="true"></i></span><span class="ps-3 progress-bar-numm">3</span>
+                            </div>
+                            <div class="col-sm-5 pt-2 text-start">
+                                <div class="progress" style="height:10px">
+                                    <div class="progress-bar bg-success" style="width:{{threestar}}%;height:10px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-1 text-center progress-bar-num">
+                                {{threestarcount}}
+                            </div>
+                            <div class="col-sm-5">
+
+                            </div>
+                        </div>
+
+                        <div class="row pt- ">
+                            <div class="col-sm-1 text-center">
+                                <span class="ps-2"><i class="fa fa-star progress-bar-star"
+                                        aria-hidden="true"></i></span><span class="ps-3 progress-bar-numm">2</span>
+                            </div>
+                            <div class="col-sm-5 pt-2 text-start">
+                                <div class="progress" style="height:10px">
+                                    <div class="progress-bar bg-warning" style="width:{{twostar}}%;height:10px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-1 text-center progress-bar-num">
+                                {{twostarcount}}
+                            </div>
+                            <div class="col-sm-5">
+
+                            </div>
+                        </div>
+
+
+                        <div class="row  pb-3">
+                            <div class="col-sm-1 text-center">
+                                <span class="ps-2"><i class="fa fa-star progress-bar-star"
+                                        aria-hidden="true"></i></span><span class="ps-3 progress-bar-numm">1</span>
+                            </div>
+                            <div class="col-sm-5 pt-2 text-start">
+                                <div class="progress" style="height:10px">
+                                    <div class="progress-bar bg-danger" style="width:{{onestar}}%;height:10px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-1 text-center progress-bar-num">
+                                {{onestarcount}}
+                            </div>
+                            <div class="col-sm-5">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- empty -->
+                    <div class="col-sm-4"></div>
+
+
+                </div>
+                <!--end progress bar  -->
+                
+
+            </div>
+        </div>
+    </div>
+    <!-- end col-sm-12 -->
+
+
+    <!-- customer photos -->
+    <div class="row pt-3 pb-3">
+        <div class="col-sm-12 Custom-img fw-bold">
+            Customer Photos & Videos
+        </div>
+    </div>
+    <!-- end -->
+
+    <!-- customer photos and videos start-->
+    <div class="row pb-3">
+        <div class="col-md-12 img-photo">
+            {% for i in reviews %}
+            {% if i.Image1 %}
+            <img src="{{i.Image1.url}}" alt="" class="img-fluid rounded" width="100">
+            {% endif %}
+            {% if i.Image2 %}
+            <img src="{{i.Image2.url}}" alt="" class="img-fluid rounded" width="100">
+            {% endif %}
+            {% endfor %}
+            <!-- <img src="{% static 'images/img3.png' %}" class="img-fluid" alt="...">
+            <img src="{% static 'images/img3.png' %}" class="img-fluid" alt="...">
+            <img src="{% static 'images/img3.png' %}" class="img-fluid" alt="...">
+            <img src="{% static 'images/img4.png' %}" class="img-fluid" alt="..."> -->
+        </div>
+
+    </div>
+    <!---customer photos and videos end--->
+
+    <!---see all customer images heading--->
+    <div class="row">
+        <div class="col-sm-12 border-bottom pb-3">
+            <a class="text-decoration-none" href="see-all-customers-photos_and-videos.html">
+                <span class="see-images text-decoration-none see-all-img">See all customer images</span>
+            </a>
+        </div>
+    </div>
+    <!---see all customer images heading--->
+
+
+    <!---customer reviews heading start--->
+    <div class="row pt-2">
+        <div class="col-sm-12 cusromer-review fw-bold">
+            <span >Customer Reviews ({{reviewcount}})</span>
+        </div>
+    </div>
+    <!---customer reviews heading end--->
+
+    <!-- first customer reviews -->
+    {% for i in reviews %}
+    <div class="row pt-3 border-bottom pb-2">
+        <!-- star icon start -->
+        <div class="col-md-12 star-icon-padng ">
+            {% for j in rating_star %}
+                {% if j.Cart.id is i.Cart.id %}
+                <span class="star-col-s  px-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                <span class="star-col-s px-1">{{j.Rating_star}}</span>
+                {% endif %}
+            {% endfor %}
+            <span class="user-coment ps-2">
+                {{i.Review}}
+            </span>
+        </div>
+        
+        <!-- user images -->
+        <div class="row user-img-paddng">
+            <div class="col-md-12 pt-1">
+                {% if i.Image1 %}
+                <img src="{{i.Image1.url}}" alt="" class="img-fluid rounded" width="100">
+                {% endif %}
+                {% if i.Image2 %}
+                <img src="{{i.Image2.url}}" alt="" class="img-fluid rounded" width="100">
+                {% endif %}
+            </div>
+        </div>
+        <!-- user name nd date -->
+        <div class="row pt-1">
+            <div class="col-md-12 user-name-date">
+                <span class="border-end pe-2">{{i.login_id.first_name}}</span>
+                <span>{{i.Review_Date}}</span>
+                <!-- <span><i class="fa fa-thumbs-o-up pull-right ps-1" aria-hidden="true"><span class="ps-2">6</span></i></span>
+                <span><i class="fa fa-thumbs-o-down pull-right ps-5 " aria-hidden="true"><span class="ps-2">2</span></i></span> -->
+                
+                
+                <form method="POST" action="{% url 'unliked_review' %}">
+                    {% csrf_token %}
+                    <input type="number" name="review_obj" value="{{i.id}}" hidden>
+                    <input type="hidden" name="next" value="{{ request.path }}">
+                    <button class="pull-right px-3" style="background-color: transparent; border: none; box-shadow: none;" type="submit">
+                       <i class="fa fa-thumbs-o-down"> <span>{{ i.dislikes.all.count }}</span></i>
+                    </button>
+                </form>
+                
+                <form method="POST" action="{% url 'liked_review' %}">
+                    {% csrf_token %}
+                    <input type="number" name="review_id" value="{{i.id}}" hidden>
+                    <input type="hidden" name="next" value="{{ request.path }}">
+                    <button class="pull-right" style="background-color: transparent; border: none; box-shadow: none;" type="submit">
+                       <i class="fa fa-thumbs-o-up"> <span>{{ i.likes.all.count }}</span></i>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    <!-- end first customer reviews -->
+</div>
+
+<!-----pegination start-->
+
+<!---------------pagination end----------------->
+{% endblock %}

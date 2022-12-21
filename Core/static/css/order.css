@@ -1,0 +1,1486 @@
+/* start page-padding */
+
+.page-padding{
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+}
+
+/* end page-padding */
+
+
+/* start account */
+
+.account{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.4375rem;
+    color: var(--color-5);
+    padding-bottom: 0.1875rem;
+}
+
+/* end account */
+
+/* start user-name */
+
+.user-name{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-17);
+    padding-bottom: 1rem;
+}
+
+/* end user-name */
+
+/* stsrt all-order-section-padding */
+
+.all-order-section-padding{
+    padding-top: 1.375rem;
+    padding-bottom: 1.875rem;
+}
+
+/* end all-order-section-padding */
+
+/* start all-order */
+
+.all-order{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.375rem;
+    line-height: 1.6875rem;
+    color: #304653;
+    padding-bottom: 0.3125rem;
+}
+
+/* end all-order */
+
+/* start from-anytime */
+
+.from-anytime{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #3F515C;
+}
+
+/* end from-anytime */
+
+
+/* start search bar */
+
+.search{
+    position: relative;
+    background: #FFFFFF;
+    border: 0.0625rem solid #FC813D;
+    border-radius: 0.375rem;
+
+    }
+
+    .search .search-text{
+
+     text-indent: 1.5625rem;
+     font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #3F515C;
+
+    }
+
+
+    .search .search-icon{
+
+     position: absolute;
+     top: 1.25rem;
+     left: 1rem;
+     color: #304653;
+
+    }
+    .right-icon-padding
+    {
+        padding-right: 1.5625rem;
+    }
+
+/* end search bar */
+
+/* start filter-button */
+
+/* .filter-button, .filter-button:hover{
+    background: #FC813D;
+    box-shadow: 2px 2px 8px rgba(62, 125, 99, 0.44);
+    border-radius: 26px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+} */
+
+.share-btn{
+    height: 3.125rem;
+    width: 3.125rem;
+    left: 100.875rem;
+    top: 22.1875rem;
+    border-radius:50%;
+    border:none;
+    background-color: var(--color-1);
+    vertical-align:none;
+    }
+
+
+
+.btn-circle.btn-sm{
+    width: 1.875rem;
+    height: 3.125rem;
+    padding: 0.375rem 0rem;
+    border-radius:1.875rem;
+    font-size: 0.5rem;
+    text-align: center;
+    background-color:var(--color-1);
+
+
+
+}
+
+.btn-circle.btn-md{
+    width:3.125rem;
+    height: 3.125rem;
+    padding: 0.625rem 1rem;
+    border-radius: 1.5625rem;
+    font-size: 1.25rem;
+    text-align: center;
+    background:var(--color-16);
+
+}
+
+.share-button{
+font-family:var(--font-1);
+font-size: 1rem;
+font-weight: 500;
+line-height: 1.25rem;
+letter-spacing: 0em;
+text-align: center;
+color:var(--color-9);
+}
+
+.share-icon-main{
+color:var(--color-33);
+height: 1.0625rem;
+width: 0.9375rem;
+left: 18.4375rem;
+top: 1.125rem;
+border-radius: 0rem;
+}
+
+/*-----------------------hover button------------------------*/
+
+.share-btn-hover:hover{
+    height: 3.125rem;
+    width: 3.125rem;
+    left: 100.875rem;
+    top: 22.1875rem;
+    border-radius:50%;
+    border:none;
+    background-color: var(--color-34);
+    vertical-align:none;
+    transition-duration: 0.4s;
+}
+
+
+
+.btn-circle.btn-sm-hover{
+    width: 1.875rem;
+    height: 3.125rem;
+    padding: 0.375rem 0rem;
+    border-radius:1.875rem;
+    font-size: 0.5rem;
+    text-align: center;
+    background-color:var(--color-34);
+}
+
+.btn-circle.btn-md-hover{
+    width:3.125rem;
+    height: 3.125rem;
+    padding: 0.625rem 1rem;
+    border-radius: 1.5625rem;
+    font-size: 1.25rem;
+    text-align: center;
+    background:var(--color-16);
+}
+
+
+.share-button-hover{
+    font-family:var(--font-1);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color:var(--color-9);
+}
+
+.share-icon-hover{
+    color:var(--color-33);
+    height: 1.0625rem;
+    width: 0.9375rem;
+    left: 18.4375rem;
+    top: 1.125rem;
+    border-radius: 0rem;
+}
+
+
+/*------------------------------------disable buttons---------------------------------*/
+
+.share-btn-hover{
+    height: 50zpx;
+    width: 3.125rem;
+    left: 100.875rem;
+    top: 22.1875rem;
+    border-radius:50%;
+    border:none;
+    background-color: var(--color-34);
+    vertical-align:none;
+
+
+}
+
+
+
+/* end filter-button */
+
+/* start return-request-card */
+
+.return-request-card{
+    background: #FFFFFF;
+
+    box-shadow: 0.125rem 0.125rem 0.375rem #D2B3B3;
+    border-radius: 0.375rem;
+}
+
+/* end return-request-card */
+
+/* start cards-padding */
+
+.cards-padding{
+    padding-bottom: 1.875rem;
+    padding-left: 1rem;
+
+
+}
+.return-cancelled-padding
+{
+    padding-left: 1.875rem;
+    padding-bottom: 1.875rem;
+}
+
+/* end cards-padding */
+
+/* start card1 */
+
+.return-request-button, .return-request-button:hover{
+    border-radius: 50%;
+    background: #FC813D;
+    color: #FFFFFF;
+}
+
+.return-request-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height:1.25rem;
+    color: #304653;
+    padding-bottom: 0.25rem;
+
+}
+
+.pickup-by{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #3F515C;
+    padding-bottom: 1rem;
+}
+
+.foldable-wooden-table-row-padding{
+    padding-top: 1rem;
+    padding-left: 2.75rem;
+}
+
+.foldable-table-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #3F515C;
+    padding-bottom: 0.625rem;
+}
+
+.size{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #3F515C;
+    padding-bottom: 0.625rem;
+}
+
+.rupee{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+
+    color: #3F515C;
+    padding-bottom: 1rem;
+}
+
+.see-more-detail{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    color: #3F515C;
+
+
+}
+
+.right-icon{
+    color: rgba(63, 81, 92, 0.8);
+    padding-top: 1.6875rem;
+
+
+}
+
+
+
+.track-button-padding{
+    padding-top: 1.875rem;
+    padding-bottom:  1.875rem;
+    padding-left: 2.75rem;
+
+}
+
+.track-button, .track-button:hover, .cancel-button, .cancel-button:hover{
+    background: #FC813D;
+    box-shadow: 0.125rem 0.125rem 0.5rem rgba(62, 125, 99, 0.44);
+    border-radius: 1.625rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.form-control:focus {
+
+    box-shadow: none;
+}
+
+
+
+/* end card1 */
+
+
+/* start card 2 */
+
+.return-row-padding{
+    padding-top: 1.938rem;
+    padding-left: 2.75rem;
+    padding-bottom: 1.125rem;
+}
+
+.rate-product-padding{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 1.875rem;
+}
+
+.rate-product{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 1rem;
+line-height: 1.25rem;
+
+
+color: #3F515C;
+}
+
+.star{
+
+    color: #FC813D;
+
+}
+
+.checked{
+    color: red;
+}
+
+.padding-row{
+    padding-top: 1.875rem;
+}
+/* end card 2 */
+
+
+/* start card 3 */
+.view-refund-details, .view-refund-details:hover{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 1rem;
+line-height: 1.25rem;
+
+
+color: #FC813D;
+}
+
+.exchange-return-padding{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.875rem;
+}
+
+.exchange-return{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 1rem;
+line-height: 1.25rem;
+
+
+color: #3F515C;
+}
+
+.exchange-button-padding{
+    padding-right: 1.875rem;
+}
+
+.exhange-button-row-padding{
+    padding-top: 1.875rem;
+    padding-left: 1.875rem;
+}
+
+.icon-circle{
+    font-size: 0.5625rem;
+    text-align: center;
+    line-height: 1.25rem;
+}
+
+/* end card 3 */
+
+/* start card 5 */
+
+.write-review, .write-review:hover{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 1rem;
+line-height: 1.25rem;
+/* identical to box height */
+
+text-align: center;
+
+color: #FC813D;
+}
+
+.btn:focus{
+    box-shadow: none;
+}
+
+.write-review-heading{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 1.25rem;
+line-height: 1.5rem;
+text-align: center;
+
+color: #304653;
+}
+
+/* end card 5 */
+
+/* start exchange popup */
+
+.exchnage-same-item{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 1.25rem;
+line-height: 145%;
+/* or 29px */
+
+
+color: #304653;
+}
+
+.exchnage-same-item-padding{
+    padding-bottom: 1.875rem;
+    padding-top: 1.875rem;
+}
+
+.form-check-input:checked {
+    background-color: var(--color-1);
+    border-color: var(--color-1);
+}
+
+.exchange-button-row-padding{
+    padding-top: 0  rem;
+    padding-bottom: 5.0625rem;
+}
+
+.choose-new-item{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 1.25rem;
+line-height: 145%;
+/* identical to box height, or 29px */
+
+
+color: #304653;
+}
+
+.are-you-sure{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 1.25rem;
+line-height: 145%;
+/* or 29px */
+
+text-align: center;
+
+color: #304653;
+}
+
+.yes-button, .yes-button:hover{
+    background: #FC813D;
+box-shadow: 0.125rem 0.125rem 0.5rem rgba(62, 125, 99, 0.44);
+border-radius: 1.625rem;
+color: #FFFFFF;
+}
+/* end exchange popup */
+
+/* start pagination-with-prev-next */
+
+.pagination-with-prev-next{
+    padding-top: 4.25rem;
+    padding-bottom: 4.6875rem;
+    /* padding-left: 552px;
+    padding-right: 552px; */
+}
+
+
+
+.prev, .prev:hover{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 1rem;
+line-height: 1.25rem;
+border: none;
+
+
+color: #FC813D;
+padding-right: 30px;
+background-color: #FFFFFF;
+}
+
+.next, .next:hover{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 1rem;
+line-height: 1.25rem;
+
+padding-left: 30px;
+border: none;
+
+color: #FC813D;
+background-color: #FFFFFF;
+}
+
+.one-round, .one-round:hover{
+    border-radius: 50%;
+    background-color: #FC813D;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    /* identical to box height */
+
+    border: 0.0625rem solid #FC813D;
+    color: #FFFFFF;
+
+
+}
+
+.pagination-padding{
+
+    padding-right: 16px;
+
+}
+
+.page-num, .page-num:hover{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+
+color: #304653;
+border: none;
+background-color: #FFFFFF;
+}
+
+/* end pagination-with-prev-next */
+
+/* start write review popup */
+
+.input-review{
+    padding-top: 2.875rem;
+
+}
+
+.text-border{
+    border: 0.0625rem solid #3F515C;
+}
+
+.photo{
+    border: 0.0625rem dashed #3F515C;
+border-radius: 0.375rem;
+}
+
+.photo-size{
+    font-size: 64px;
+}
+
+.add-photo{
+    padding-top: 0.75rem;
+    padding-bottom: 1rem;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 1rem;
+line-height: 1.25rem;
+
+
+color: #3F515C;
+}
+
+.after-sumiting-review{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 0.75rem;
+line-height: 145%;
+/* or 17px */
+
+
+color: #3F515C;
+}
+
+.terms-of-use{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 0.75rem;
+line-height: 145%;
+/* or 17px */
+
+
+color: #FC813D;
+}
+
+.submit-button-row{
+    padding-top: 1.5625rem;
+    padding-bottom: 1.9375rem;
+}
+/* end write review popup */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start section 2 */
+
+/* start order-section-padding */
+
+.order-section{
+    padding-left: 1.875rem;
+
+}
+
+.order-top-padding{
+    padding-top: 1.875rem;
+}
+
+/* end order-section-padding */
+
+/* start order */
+.order{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+
+    color: var(--color-5);
+    padding-top: 1.875rem;
+    padding-bottom: 0.4375rem;
+}
+
+/* end order */
+
+/* start order-return */
+.order-return{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+
+    color: var(--color-1);
+    padding-bottom: 30px;
+}
+
+/* end order-return */
+
+/* start profile */
+
+.profile{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--color-5);
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+}
+
+/* end profile */
+
+/* end section 2 */
+
+/* start refund details popup  */
+
+.refund-detail{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 1.75rem;
+line-height: 2.125rem;
+
+
+color: #304653;
+}
+
+.refund-detail-close{
+
+    font-weight: 500;
+font-size: 1.25rem;
+line-height: 2.125rem;
+
+
+color: #304653;
+
+}
+
+.total-refund{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 1rem;
+line-height: 1.25rem;
+
+
+color: #304653;
+}
+
+.total-refund-padding{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+
+}
+
+.refund-rupee{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 1rem;
+line-height: 1.25rem;
+
+
+color: #108D34;
+}
+
+.bank-row-padding{
+    padding-top: 1.875rem;
+    padding-bottom: 4.5rem;
+
+}
+
+.bank-row{
+
+    background: #F9EEEE;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+}
+
+.bank-icon{
+    color: #304653;;
+}
+
+.bank-text{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 1rem;
+line-height: 145%;
+/* or 23px */
+
+
+color: #3F515C;
+}
+/* end refund details popup */
+
+/* start track-return popup*/
+
+.track-return{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 1.75rem;
+line-height: 2.125rem;
+text-align: center;
+
+color: #304653;
+}
+
+.track-close{
+
+    font-weight: 500;
+font-size: 1.25rem;
+line-height: 2.125rem;
+text-align: center;
+
+color: #304653;
+
+}
+
+.wrapper {
+    width: 20.625rem;
+    font-family: 'Helvetica';
+    font-size: 0.875rem;
+}
+.StepProgress {
+    position: relative;
+    padding-left: 2.8125rem;
+    list-style: none;
+}
+.StepProgress::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0.9375rem;
+    width: 0.625rem;
+    height: 100%;
+}
+.StepProgress-item {
+    position: relative;
+    counter-increment: list;
+}
+.StepProgress-item:not(:last-child) {
+    padding-bottom: 1.25rem;
+}
+.StepProgress-item::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    left: -1.875rem;
+    height: 100%;
+    width: 0.625rem;
+}
+.StepProgress-item::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -2.3125rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 0.125rem solid #CCC;
+    border-radius: 50%;
+    background-color: #FFF;
+}
+.StepProgress-item.is-done::before {
+    border-left: 0.125rem solid #FC813D;
+}
+.StepProgress-item.is-done::after {
+    content: "✔";
+    font-size: 0.8125rem;
+    color: #FFF;
+    text-align: center;
+    border: 0.125rem solid #FC813D;
+    background-color: #FC813D;
+}
+.StepProgress-item.current::before {
+    border-left: 0.125rem solid #FC813D;
+}
+.StepProgress-item.current::after {
+    content: counter(list);
+    padding-top: 0.0625rem;
+    width: 1.5625rem;
+    height: 1.5625rem;
+    top: -0.25rem;
+    left: -2.5rem;
+    font-size: 0.875rem;
+    text-align: center;
+    color: #FC813D;
+    border: 0.125rem solid #FC813D;
+    background-color: white;
+}
+.StepProgress strong {
+    display: block;
+}
+
+.return-request-text-modal{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 1rem;
+line-height: 1.25rem;
+color: #304653;
+}
+
+.date-day{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 1rem;
+line-height: 1.25rem;
+/* identical to box height */
+
+text-align: center;
+
+color: #3F515C;
+}
+
+.return-request-modal-padding{
+    padding-bottom: 9.75rem;
+}
+
+
+
+/* end track-return popup*/
+
+/* start cancel popup */
+
+.return-cancel-text{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 1.75rem;
+line-height: 2.125rem;
+
+
+color: #304653;
+padding-top: 1.875rem;
+padding-bottom: 5rem;
+}
+
+
+/* end cancel popup */
+
+
+/* Start Mobile view */
+
+
+@media all and (min-width: 577px){
+
+
+.write-review, .write-review:hover{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+text-align: center;
+
+color: #FC813D;
+
+}
+    .padding-icon
+    {
+        padding-right:2.3rem;
+    }
+
+}
+
+@media all and (max-width: 576px){
+
+    .page-padding{
+        padding-left: 0rem;
+    }
+    .fa-filter{
+        color: #164833;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        padding-left: 0.375rem;
+    }
+
+    .return-request-card{
+
+        background: #FFFFFF;
+        box-shadow: 0.125rem 0.125rem 0.375rem #D2B3B3;
+    }
+
+    .size
+    {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        color: #3F515C;
+        padding-right: 35px;
+
+    }
+   .foldable-table-text
+   {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.0625rem;
+
+        color: #3F515C;
+        padding-right: 35px;
+   }
+   .rupee
+   {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    /* identical to box height */
+
+
+        color: #3F515C;
+   }
+   .rate-product
+   {
+    padding-left: 1rem;
+   }
+    .right-icon-padding
+    {
+        padding-right: 0px;
+    }
+    .see-more-detail
+    {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.625rem;
+        line-height: 0.75rem;
+        text-align: center;
+        padding-bottom: 1rem;
+        color: #3F515C;
+        /* padding-top: 0rem; */
+    }
+    .see-more-detail {
+     padding-top: 0rem;
+    }
+    .exchange-return-padding{
+        padding-left: 0rem;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.625rem;
+        line-height: 0.75rem;
+        text-align: center;
+
+        color: #3F515C;
+
+    }
+    .account
+    {
+        display: none;
+    }
+    .order-text
+    {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        color: #304653;
+
+    }
+    .left-arrow
+    {
+
+        font-size: 1.25rem;
+        padding-right: 1rem;
+    }
+    .all-order
+    {
+        display: none;
+    }
+    .from-anytime
+    {
+        display: none;
+    }
+    /* .btn-circle.btn-sm
+    {
+        display: none;
+    }
+    .btn-circle.btn-md
+    {
+        display: none;
+    }
+    .share-btn
+    {
+        display: none;
+    } */
+
+    .mobile-view
+    {
+        display: none;
+    }
+
+    .filter-text
+    {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.0625rem;
+
+        color: #FC813D;
+        padding-top: 1.4rem;
+        padding-bottom: 1.75rem;
+        padding-left: 2.25rem;
+    }
+    .search-padding
+    {
+        padding-left: 1rem;
+    }
+    .return-row-padding{
+        padding-left:0rem;
+    }
+   .see-more-detail
+   {
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+   }
+   .see-more-mobile-padding
+   {
+    padding-top: 0rem;
+    padding-left: 85px;
+   }
+   .share-button{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+   }
+
+.button-row-padding
+{
+    display: none;
+}
+.degisn-btn
+{
+    background: #FC813D;
+    border-radius: 22px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+.track-btn-padding
+{
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+.foldable-wooden-table-row-padding{
+
+    padding-left: 0rem;
+}
+
+.cards-padding
+{
+   padding-left: 0rem;
+
+   padding-right: 0rem;
+
+}
+
+
+.rupee
+{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    color: #3F515C;
+}
+.delete-icon
+{
+    padding-left: 0rem;
+}
+.return-request-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height:1.25rem;
+    color: #304653;
+    padding-bottom: 0.25rem;
+
+}
+.mobile-view-right
+{
+    display: none;
+}
+.return-cancelled-padding
+{
+    padding-left: 0rem;
+}
+.rate-product-padding
+{
+    padding-left: 0rem;
+}
+.pickup-by{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+
+    color: #3F515C;
+
+}
+.view-refund-details, .view-refund-details:hover{
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+   padding-top: 0px;
+    color: #FC813D;
+}
+
+
+.foldable-wooden-table-row-padding{
+    padding-right: 0rem;
+}
+.exchange-button-padding
+{
+    display: none;
+}
+.exchange-button-row-padding-mobile{
+    padding-top: 0rem;
+}
+}
+@media (min-width: 577px){
+    html{
+        font-size: 40%;
+    }
+    .order-text
+    {
+        display: none;
+    }
+    .filter-text
+    {
+        display: none;
+    }
+    .track-btn-padding
+    {
+        display: none;
+    }
+    .text-padding-mobile
+    {
+        padding-right:50px;
+    }
+    .btn-web
+    {
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px){
+    html{
+        font-size: 45%;
+    }
+    .order-text
+    {
+        display: none;
+    }
+    .filter-text
+    {
+        display: none;
+    }
+    .track-btn-padding
+    {
+        display: none;
+    }
+    .btn-web
+    {
+        display: none;
+    }
+
+}
+
+@media (min-width: 992px){
+    html{
+        font-size: 60%;
+    }
+    .order-text
+    {
+        display: none;
+    }
+    .filter-text
+    {
+        display: none;
+    }
+    .track-btn-padding
+    {
+        display: none;
+    }
+    .btn-web
+    {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1200px){
+    html{
+        font-size: 80%;
+    }
+    .order-text
+    {
+        display: none;
+    }
+    .filter-text
+    {
+        display: none;
+    }
+    .track-btn-padding
+    {
+        display: none;
+    }
+    .btn-web
+    {
+        display: none;
+    }
+}
+
+@media (min-width: 1920px){
+
+    html{
+        font-size: 100%;
+    }
+    .order-text
+    {
+        display: none;
+    }
+    .filter-text
+    {
+        display: none;
+    }
+    .track-btn-padding
+    {
+        display: none;
+    }
+    .btn-web
+    {
+        display: none;
+    }
+
+}
+
+
+
+/* end Mobile view */

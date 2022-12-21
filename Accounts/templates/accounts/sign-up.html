@@ -1,0 +1,296 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sign up</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style-guid.css' %}" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/sign_up.css' %}" type="text/css">
+</head>
+
+<body>
+
+    <div class="loader-bg">
+        <div class="loader"></div>
+    </div>
+    
+    <div class="container-fluid pad-top-bottom140">
+        <!-- start row -->
+        <div class="row  mob-min-high-none">
+            <!--start col-sm-2 column empty -->
+            <div class="col-sm-2"></div>
+            <!--end col-sm-2 column empty -->
+            <!--start sign-up page body -->
+            <div class="col-sm-8 page-shadow-roundedd ">
+                <div class="row  ">
+
+                    <!--start sign up page big image  -->
+                    <div class="col-sm-4  sign_in_img page-shadow-rounded">
+                        <div class="row">
+                            <div class="col col-sm-12">
+                                <img class="img-fluid"
+                                    src="{% static 'images/account_side/sign_up_page_baground.png' %}" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--end  sign up page big image -->
+
+                    <div class="col-sm-8">
+                        <!--start row text-have-an-account sign-in-button -->
+                        <div class="row pad-top-62px pad-right-30px  mobile-disply-none">
+                            <div class="col-sm-12 text-end have-an-acc have-an-account">
+                                <span class=" pe-3">Have an account</span>
+                                <span>
+                                    <button type="submit" class="btn  sign-in-btn-small">
+                                        <a href="{% url 'signin'%}" class="under-line-remove">
+                                            Sign in
+                                        </a>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <!--end roe text-have-an-account sign-in-button -->
+
+                        <!-- start row -->
+                        <div class="row">
+                            <div class="col-sm-2"></div>
+                            <!--start col-sm-7 -->
+                            <div class="col-sm-7 mob-pad-two">
+                                <!--start logo image -->
+                                <div class="row pad-top-23px mob-logo-pad">
+                                    <div class="col-sm-12">
+                                        <img class="img-flui  logo_image"
+                                            src="{% static 'images/account_side/logo.png'  %}" alt="">
+                                    </div>
+                                </div>
+                                <!--end logo image -->
+
+                                <!--start sign up heading -->
+                                <div class="row pad-top-16px">
+                                    <div class="col-sm-12 sing-up-text">
+                                        <span>Sign up</span>
+                                    </div>
+                                </div>
+                                <!--end  sign up heading -->
+
+                                <!--start enter your details below  -->
+                                <div class="row pad-top-16px">
+                                    <div class="col-sm-12 enter-your-detail">
+                                        <span>Enter your details below</span>
+                                    </div>
+                                </div>
+                                <!--end enter your details below -->
+
+                                <!--start  input form -->
+                                <div class="row">
+                                    <!-- start col-sm-12 -->
+                                    <div class="col-sm-12">
+                                        <form action="{% url 'signup' %}" method="POST">
+                                            {% csrf_token %}
+                                            <!--start input username -->
+                                            <div class="input-group pad-top-43px mob-pad-top-30px">
+                                                <span
+                                                    class="input-group-text border-start-0 border-top-0 rounded-0 input-image">
+                                                    <i class="fa fa-user icon-color-size-user" aria-hidden="true"></i>
+                                                </span>
+                                                <input type="text"
+                                                    class="form-control border-end-0 border-top-0 rounded-0 input-test1"
+                                                    required name="full-name" placeholder="Your Full Name">
+                                            </div>
+                                            <!--end input username -->
+
+                                            <!--Start Input Phone Number  -->
+                                            <div class="input-group pad-top-16px mob-pad-top-16px">
+                                                <span
+                                                    class="input-group-text border-start-0 rounded-0 border-top-0 input-image">
+                                                    <i class="fa fa-phone icon-color-size icon-color-size-phone"
+                                                        aria-hidden="true"></i>
+                                                </span>
+                                                <input type="text" required name='Phone'
+                                                    class="form-control border-end-0 border-top-0 rounded-0 input-test1"
+                                                    placeholder="Phone">
+                                            </div>
+                                            <!-- End Input Phone Number -->
+
+                                            <!--start input email -->
+                                            <div class="input-group pad-top-16px mob-pad-top-16px">
+                                                <span
+                                                    class="input-group-text border-start-0 border-top-0 rounded-0 input-image ">
+                                                    <i class="fa fa-envelope icon-color-size-email"
+                                                        aria-hidden="true"></i>
+                                                </span>
+                                                <input type="email" required name='email'
+                                                    class="form-control border-end-0 rounded-0 border-top-0 input-test1 "
+                                                    placeholder="Email">
+                                            </div>
+                                            <!--end input email -->
+
+
+                                            <!--start input Password  -->
+                                            <div class="input-group pad-top-16px mob-pad-top-16px">
+                                                <span
+                                                    class="input-group-text border-start-0 border-top-0 rounded-0 input-image">
+                                                    <i class="fa fa-unlock-alt icon-color-size-password"
+                                                        aria-hidden="true"></i></span>
+                                                <input type="password" required name="password" id="myInput"
+                                                    class="form-control border-end-0 border-top-0 rounded-0 input-test1"
+                                                    placeholder="Password">
+                                                <!-- <span><i class="fa fa-eye-slash icon-color-size pt-2" aria-hidden="true" ></i></span> -->
+
+                                                <!-- <span><i class="fa fa-eye-slash icon-color pt-2" aria-hidden="true" ></i></span>  -->
+
+                                            </div>
+                                            <!--end input Password  -->
+
+                                            <!-- start row -->
+                                            <div class="row pad-top-10px mob-pad-top-12px align-item-center">
+                                                <!-- start checkbox password -->
+                                                <div class="col col-sm-6  ps-3">
+                                                    <input type="checkbox" onclick="myFunction()"><span
+                                                        class="show-pass-text ps-2">Show Password</span>
+                                                </div>
+                                                <!-- end checkbox password -->
+
+                                                <!--start forgot password  -->
+                                                <div class="col col-sm-6 text-end">
+                                                    <a href="{% url 'forgetpassword' %}" class="forgot-pass-text">
+                                                        Forgot password </a>
+                                                </div>
+                                                <!--end forgot password -->
+                                            </div>
+                                            <!-- end row -->
+
+                                            <!--start I have read and agree to terms and conditions-->
+                                            <div class="row pad-top-21px mob-pad-top21px ps-1">
+                                                <div class="col-sm-12 ">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" required type="checkbox"
+                                                            name="term" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            <span class="i-have-text">I have read and agree to
+                                                            </span><span class="terms-and-text fw-bold">terms and
+                                                                conditions</span>
+
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end I have read and agree to terms and conditions-->
+
+                                            <!-- start error message -->
+
+                                            {% if messages %}
+                                            {% for message in messages %}
+                                                {{message}}
+                                            {% endfor %}
+                                            {% endif %}
+
+                                            <!-- end error message -->
+
+                                            <!-- start sign up button  -->
+                                            <div class="row pad-top-34px mob-pad-top-29px">
+                                                <div class=" col-sm-12 d-grid sign-up-btn-main">
+                                                    <div class="row">     
+                                                        <div class="input-group">
+                                                            <button type="submit"
+                                                                class="form-control btn-circle btn-sm border border-0">
+                                                                <span class="share-button ps-2">Sign Up</span>
+                                                            </button>
+                                                            <span
+                                                                class="input-group-text share-btn border border-0 pe-5"><button
+                                                                type="submit"
+                                                                    class="btn btn-circle btn-md"><i class="fa fa-user-o" aria-hidden="true"></i></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end sign up button  -->
+
+                                            <!--start login width google button  -->
+                                            <div class="row pad-bottom-59px pad-top-27px mob-pad-top-25px ">
+                                                <div class=" col-sm-12 d-grid gap-2 logi-with-btn-main">
+                                                    <div class="row">     
+                                                        <div class="input-group">
+                                                            <button type="submit"
+                                                                class="form-control btn-circle btn-sm border border-0">
+                                                                <span class="share-button">Login with Google</span>
+                                                            </button>
+                                                            <span
+                                                                class="input-group-text share-btn border border-0 pe-5"><button
+                                                                type="submit"
+                                                                    class="btn btn-circle btn-md"><i class="fa fa-google" aria-hidden="true"></i></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end login width google button  -->
+
+                                            
+                                        </form>
+                                            <!--start row text-have-an-account sign-in-button -->
+                                            <div class="row desktop-display-none ">
+                                                <div class="col-sm-12 text-center mob-top-pad-25px align-baseline">
+                                                    <span class="have-an-account">Have an account</span>
+                                                    <span>
+                                                        <a href="{% url 'signin'%}"
+                                                            class="under-line-remove mob-text-sign">
+                                                            Sign in
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <!--end roe text-have-an-account sign-in-button -->
+                                    </div>
+                                    <!--end col-sm-12 -->
+                                </div>
+                                <!-- end input form -->
+                            </div>
+                            <!--end col-sm-7 -->
+                            <!--start empty col-sm-3 -->
+                            <div class="col-sm-3"></div>
+                            <!--end empty col-sm-3 -->
+                        </div>
+                        <!-- end row -->
+                    </div>
+                </div>
+            </div>
+            <!--end sign-up page body -->
+            <div class="col-sm-2"></div>
+        </div>
+        <!-- end row -->
+    </div>
+
+
+    <!-- ==================== -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- start eye script -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+    <!-- end eye script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+          $('.loader-bg').fadeToggle();
+          }, 500);
+      </script>
+</body>
+
+</html>

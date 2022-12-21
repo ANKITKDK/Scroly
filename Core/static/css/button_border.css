@@ -1,0 +1,67 @@
+.share-btn-border{
+    height: 50px;
+    width: 50px;
+    left: 100.875rem;
+    top: 355px;
+    border-radius:50%;
+    border:1px solid var(--color-1);
+    border-left: 0px;
+    background-color: var(--color-9);
+    vertical-align:none;
+    }
+
+.btn-circle-border.btn-sm-border{
+    width: 30px;
+    height: 50px;
+    padding: 6px 0px;
+    border-radius:30px;
+    font-size: 8px;
+    text-align: center;
+    background-color:var(--color-9);
+    border: 1px solid var(--color-1);
+    border-right: 0px;
+
+}
+
+.btn-circle-border.btn-md-border{
+    width:50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 20px;
+    text-align: center;
+    background:var(--color-9);
+    border: 1px solid var(--color-1);
+
+}
+
+.share-button-border{
+font-family:var(--font-1);
+font-size: 16px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+color:var(--color-1);
+}
+
+.share-icon-main-border{
+color:var(--color-1);
+height: 17px;
+width: 15px;
+left: 295px;
+top: 18px;
+border-radius: 0px;
+}
+
+
+/* file icon for opeining choosen files start */
+
+.image-upload>input {
+    display: none;
+}
+
+/* file icon for opeining choosen files start --> */
+
+
+

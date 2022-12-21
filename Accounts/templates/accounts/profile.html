@@ -1,0 +1,775 @@
+{% extends "core/base1.html" %}{% load static %}
+{% block content %}
+
+{% block own_css %}
+<link rel="stylesheet" href="{% static 'css/profile.css' %}" type="text/css">
+
+{% endblock own_css%}
+<!-- shilpa code start -->
+<div class="col-md-12">
+   <!--start row for Profile-->
+   <div class="row  pb-3 ">
+      <!--start column for profile-->
+      <div class="col-md-12 profile-head ">
+         Profile
+      </div>
+      <!--start profile for mobile view -->
+      <div class="col-md-12 profile-mobile-view ">
+         <div class="row profile1">
+            <div class="col-md-12 profile2">
+               <i class="fa fa-angle-left pe-2" aria-hidden="true"></i>Profile
+            </div>
+         </div>
+      </div>
+      <!--end profile for mobile view -->
+   </div>
+   <!--end row for Profile-->
+   <!--hr tag for horizontal line-->
+   <!-- <hr class="style2"> -->
+   <!--start row for full content-->
+   <div class="row border-top">
+      <!--column for profile image-->
+      <div class="col-sm-9 col-md-9">
+         <!--start row for image-->
+         <div class="row">
+            <!--column for image-->
+            <!-- {% if profileobj.ProfilePic %}
+            <div class="col-md-12 pt-3 ps-5 ">
+               <img class="profile-center img-fluid img-profile1 rounded-circle image_decoration"
+                  src="{{profileobj.ProfilePic.url}}" alt="">
+            </div>
+            {% else %}
+            <div class="col-md-12 pt-3 ps-5 image_decoration">
+               {% if profileobj.ProfilePic %}
+               <img src="{{profileobj.ProfilePic.url}}" alt=""
+                  class="profile-center img-fluid img-profile1 rounded-circle">
+               {% else %}
+               <img src=" ay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt=""
+                  class="profile-center img-fluid img-profile1 rounded-circle">
+               {% endif %}
+            </div>
+            {% endif %} -->
+            {% if profileobj.ProfilePic %}
+            <div class="col-md-12 pt-3 ps-5 ">
+               <img class="profile-center img-fluid img-profile1 rounded-circle image_decoration"
+                  src="{{profileobj.ProfilePic.url}}" alt="">
+            </div>
+            {% else %}
+            <div class="col-md-12 pt-3 ps-5 ">
+               <!-- <img class="profile-center img-fluid img-profile1 rounded-circle image_decoration"
+                  src="{% static 'images/account_side/Profile.png' %}" alt=""> -->
+               <img src="{% static 'images/Profile.png' %}" alt=""
+                  class="img-fluid img-profile1 rounded-circle">
+            </div>
+            {% endif %}
+         </div>
+         <!--row for text Add Profile Image-->
+         <div class="row pt-3">
+            <!--column for add Image-->
+            <div class="col-md-12 text-center">
+               <!-- <a href="" class="add-profile font-20 " data-bs-toggle="modal" data-bs-target="#myModal2"><i class="fa fa-pencil" aria-hidden="true"></i>
+                  Change Profile Photo</a> -->
+               <!-- <a href="" class="add-profile font-20" >changes</a>  -->
+               <a href="" class="add-profile font-20" data-bs-toggle="modal" data-bs-target="#myModal2"><i
+                  class="fa fa-pencil pe-3" aria-hidden="true"></i>Change Profile Photo</a>
+            </div>
+         </div>
+         <div class="row  edit-profile-no-desktop pt-3">
+            <div class="col-sm-12 text-center">
+               <a href="" class="edit-profile-mobile-view text-center" data-bs-toggle="modal" data-bs-target="#myModal">
+               Edit Profile
+               </a>
+            </div>
+         </div>
+         <!--start row for details-->
+         <div class="row pt-5">
+            <div class="col-sm-3 col-md-4"></div>
+            <!-- start column for details -->
+            <div class="col-sm-7 col-md-7">
+               <!-- start row for  content-->
+               <div class="row font-text">
+                  <!-- row for full name -->
+                  <div class="row desktop-text-none">
+                     <div class="col-sm-3 col-md-3">
+                        Full Name:
+                     </div>
+                     <div class="col-sm-9 col-md-9">
+                        {{user.first_name}}
+                     </div>
+                  </div>
+                  <!--start full name mobile view -->
+                  <div class="row fname-mobile-view">
+                     <div class="col col-sm-12 ">
+                        <div class="row">
+                           <div class="col col-sm-12 ps-4">
+                              Full Name:{{user.first_name}}
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--end full name mobile view -->
+                  <!-- row for email -->
+                  <div class="row pt-3 desktop-text-none">
+                     <div class="col-sm-3">
+                        Email:
+                     </div>
+                     <div class="col-sm-9">
+                        {{user.email}}
+                     </div>
+                  </div>
+                  <!--start email mobile view -->
+                  <div class="row fname-mobile-view pt-2">
+                     <div class="col col-sm-12 ">
+                        <div class="row">
+                           <div class="col col-sm-12 ps-4">
+                              Email:{{user.email}}
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--end email mobile view -->
+                  <!-- row for mobile -->
+                  <div class="row pt-3 desktop-text-none">
+                     <div class="col-sm-3">
+                        Mobile Number:
+                     </div>
+                     <div class="col-sm-9">
+                        {{user.mobile_number}}
+                     </div>
+                  </div>
+                  <!--start mobile mobile view -->
+                  <div class="row fname-mobile-view pt-2">
+                     <div class="col col-sm-12 ">
+                        <div class="row">
+                           <div class="col col-sm-12 ps-4">
+                              Mobile Number:{{user.mobile_number}}
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--end mobile mobile view -->
+                  <!-- row for alternate mobile -->
+                  {% if profileobj.AlternateMobile %}
+                  <div class="row pt-3 desktop-text-none">
+                     <div class="col-sm-3">
+                        Alternate Mobile:
+                     </div>
+                     <div class="col-sm-9">
+                        {{profileobj.AlternateMobile}}
+                     </div>
+                  </div>
+                  <!--start alternate-no mobile view -->
+                  <div class="row fname-mobile-view pt-2">
+                     <div class="col col-sm-12 ">
+                        <div class="row">
+                           <div class="col col-sm-12 ps-4">
+                              Alternate Mobile:{{profileobj.AlternateMobile}}
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--end alternate-no mobile view -->
+                  <!-- row for gender -->
+                  <div class="row pt-3 desktop-text-none">
+                     <div class="col-sm-3">
+                        Gender:
+                     </div>
+                     <div class="col-sm-9">
+                        {% if 'M' in profileobj.Gender %}
+                        Male
+                        {% elif 'F' in profileobj.Gender  %}
+                        Female
+                        {% else %}
+                        None
+                        {% endif %}
+                     </div>
+                  </div>
+                  <!--start gender mobile view -->
+                  <div class="row fname-mobile-view pt-2">
+                     <div class="col col-sm-12 ">
+                        <div class="row">
+                           <div class="col col-sm-12 ps-4">
+                              Gender:{% if 'M' in profileobj.Gender %}
+                              Male
+                              {% else %}
+                              Female
+                              {% endif %}
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--end gender mobile view -->
+                  <!-- row for date of birth -->
+                  <div class="row pt-3 desktop-text-none">
+                     <div class="col-sm-3">
+                        Date of Birth:
+                     </div>
+                     <div class="col-sm-9">
+                        {{profileobj.DateOfBirth}}
+                     </div>
+                  </div>
+                  <!--start date-of-birth mobile view -->
+                  <div class="row fname-mobile-view pt-2">
+                     <div class="col col-sm-12 ">
+                        <div class="row">
+                           <div class="col col-sm-12 ps-4">
+                              Date of Birth:{{profileobj.DateOfBirth}}
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--end date-of-birth mobile view -->
+                  <!-- row for address -->
+                  <div class="row pt-3 desktop-text-none">
+                     <div class="col-sm-3">
+                        Address:
+                     </div>
+                     <div class="col-sm-9">
+                        {{profileobj.adderess}}
+                     </div>
+                  </div>
+                  <!--start address mobile view -->
+                  <div class="row fname-mobile-view pt-2">
+                     <div class="col col-sm-12 ">
+                        <div class="row">
+                           <div class="col col-sm-12 ps-4 fname-mobile-view">
+                              Address:{{profileobj.adderess}}
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--end address mobile view -->
+                  {% else %}
+                  {% endif %}
+               </div>
+            </div>
+            <div class="col-sm-2 col-md-1"></div>
+         </div>
+         <!-- for button -->
+         <div class="row pt-4 ">
+            <div class="col-md-3"></div>
+            <div class="col-md-5 text-center">
+               {% if profileobj.AlternateMobile %}
+               {% else %}
+               <button type="button" class="btn rounded-pill py-2  btn-details "><a href="" class="addyour-detail"
+                  data-bs-toggle="modal" data-bs-target="#myModal1">Add Your
+               Details</a></button>
+               {% endif %}
+            </div>
+            <div class="col-md-4"></div>
+         </div>
+      </div>
+      <!--start column for vertical line-->
+      <div class="col-sm-3 col-md-3 vl vertical-line-no">
+         <!--row for side content-->
+         <!-- <div class="row pt-3"> -->
+         <!--column for horizontal line-->
+         <!-- <div class="col-sm-12">
+            <hr>
+            </div>
+            </div> -->
+         <!--start row for Order-->
+         <div class="pt-3 "></div>
+         <div class="row pt-4 border-top mx-1">
+            <div class="col-sm col-md-12 ">
+               <a href="" class="add-profile font-20">Orders</a>
+            </div>
+         </div>
+         <!--start row for Orders & Returns-->
+         <div class="row pb-4 mx-1">
+            <div class="col-sm col-md-12 ">
+               <a href="" class="order-detail font-16">Orders & Returns</a>
+            </div>
+         </div>
+         <!--start row for Profile-->
+         <div class="row py-4 border-top mx-1">
+            <div class="col-sm col-md-12">
+               <a href="" class="order-detail font-20">Profile</a>
+            </div>
+         </div>
+         <!--Start row for Edit Profile-->
+         {% if profileobj.AlternateMobile %}
+         <div class="row py-3 border-top border-bottom mx-1">
+            <div class="col-sm col-md-12">
+               <a href="" class="add-profile font-20" data-bs-toggle="modal" data-bs-target="#myModal">
+               Edit Details
+               </a>
+            </div>
+         </div>
+         {% else %}
+         {% endif %}
+         <!--End row for horizontal line-->
+      </div>
+      <!--end column for vertical line-->
+   </div>
+   <!--end row for full content-->
+</div>
+<!-- shilpa code end -->
+<!--start profile photo modal -->
+<!-- start div modal -->
+<div class="modal" id="myModal2">
+   <!-- start  modal-dialog-->
+   <div class="modal-dialog modal-lg">
+      <!-- start div for  modal-content-->
+      <div class="modal-content">
+         <!---row for header-->
+         <div class="row ">
+            <!---column for modal header-->
+            <div class="col-md-12 profile-photo">
+               <div class="modal-header border-bottom-0">
+                  <span class="modal-title ps-3">Profile Photo</span>
+                  <button type="button" class="btn-close fs-5" data-bs-dismiss="modal"></button>
+               </div>
+            </div>
+            <!-- end profile photo mobile view -->
+         </div>
+         <!-- Modal Header -->
+         <!--------Model Body-->
+         <!---start row for model body-->
+         <div class="row ps-2 pe-2">
+            <!----start modal content div in body-->
+            <div class="col-md-12 ">
+               <div class="modal-body full-name">
+                  <div class="row space ">
+                     <div class="col-md-3"></div>
+                     <div class="col-md-6">
+                        {% if profileobj.ProfilePic %}
+                        <img src="{{profileobj.ProfilePic.url}}" alt="" class="img-fluid img-profile1 rounded-circle">
+                        {% else %}
+                        <img src="{% static 'images/Profile.png' %}" alt=""
+                           class="img-fluid img-profile1 rounded-circle">
+                        {% endif %}
+                     </div>
+                     <div class="col-md-3"></div>
+                  </div>
+                  <div class="row pt-3 border-top">
+                     <form action="{% url 'profileupload' %}" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="row pt-3 ">
+                           <div class="col-6 col-sm-3 col-md-2">
+                              <div class="row">
+                                 <div class="col-sm-6 col-md-12 add-photo">
+                                    <!-- <i class="fa fa-picture-o" aria-hidden="true"></i> -->
+                                    <!-- <input type="file" name="profileimage"> -->
+                                    <div class="image-upload">
+                                       <label for="file-input">
+                                       <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                                       </label>
+                                       <input id="file-input" type="file" name="profileimage"/>
+                                    </div>
+                                    Add Photo
+                                 </div>
+                              </div>
+                              <!-- <div class="row ps-2">
+                                 <div class="col-sm col-md-12 ">
+                                    
+                                    Add Photo
+                                 </div>
+                                 </div> -->
+                           </div>
+                           <div class="col-6 col-sm-3 col-md-3 ">
+                              <div class="row ">
+                                 <div class="col-sm-6 col-md-12  add-photo ">
+                                    <i class="fa fa-camera" aria-hidden="true"></i>
+                                 </div>
+                              </div> -->
+                              <!-- <div class="row ps-2 ">
+                                 <div class="col-sm-6  col-md-12   add-photo">
+                                    Use Camera
+                                 </div>
+                              </div> -->
+                           </div>
+                           <div class="col-0 col-sm-2 col-md-3"></div>
+                           <div class="col-12 col-sm-4 col-md-4 d-grid no-mobile">
+                              <button type="submit" class="btn save-photo rounded-pill btn-block " >Save Photo</button>
+                           </div>
+                           <div class="p-3  "></div>
+                           <!--start button for mobile view -->
+                           <div class="row border-top no-border">
+                              <div class="col col-sm-3  d-grid no-desktop p-3">
+                                 <button type="submit" class="btn save-photo  rounded-pill " >Save Photo</button>
+                              </div>
+                              <div class="col col-sm-9"></div>
+                           </div>
+                           <!--end button for mobile view -->
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <!----end modal content div in body-->
+            </div>
+            <!---end row for model body-->
+         </div>
+      </div>
+      <!-- End  modal-dialog-->
+   </div>
+   <!--end profile photo modal -->
+</div>
+<!--end profile photo modal -->
+<!---------Edit Details Modal Start------------>
+<!-- start div modal -->
+<div class="modal" id="myModal">
+   <!-- start  modal-dialog-->
+   <div class="modal-dialog modal-dialog-centered">
+      <!-- start div for  modal-content-->
+      <div class="modal-content" width="500" height="821">
+         <!--------Model Body-->
+         <!---start row for model body-->
+         <div class="row ps-2 pe-2">
+            <!-- <div class="col-md-1"></div> -->
+            <!----start modal content div in body-->
+            <div class="col-md-12 ">
+               <form action="{% url 'editprofile' %}" method="POST">
+                  {% csrf_token %}
+                  <div class="modal-body full-name">
+                     <!---------Form start for Add New Address------>
+                     <!--start row for Full Name-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <label for="text" class="form-label">Full Name</label>
+                           <div class="input-group ">
+                              <input type="text" value="{{user.first_name}}" disabled
+                                 class="form-control border border-end-0" placeholder="Full Name: Tanuja Nitin Sethi"
+                                 name="fullname">
+                              <div class="input-group-append border ">
+                                 <span class="input-group-text  bg-transparent border border-0" id="basic-addon2"><i
+                                    class="fa fa-pencil icon border border-0" aria-hidden="true"></i>
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- shilpa -->
+                     <!-- <div class="input-group pt-3">
+                        <input type="text" class="form-control border border-end-0" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append border ">
+                          <span class="input-group-text  bg-transparent border border-0" id="basic-addon2"><i class="fa fa-pencil icon border border-0" aria-hidden="true"></i>
+                          </span>
+                        </div>
+                        </div> -->
+                     <!-- shilpa -->
+                     <!--start row for Email-->
+                     <div class="row pt-3">
+                        <div class="col-md-12">
+                           <label for="email" class="form-label">Email</label>
+                           <div class="input-group ">
+                              <input type="email" class="form-control border border-end-0" disabled
+                                 value="{{user.email}}" placeholder="Email: rakeshpimpalkar99@gmail.com" name="email">
+                              <div class="input-group-append border ">
+                                 <span class="input-group-text  bg-transparent border border-0" id="basic-addon2"><i
+                                    class="fa fa-pencil icon border border-0" aria-hidden="true"></i>
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--start row for Mobile Number-->
+                     <div class="row pt-3">
+                        <div class="col-md-12">
+                           <label for="number" class="form-label">Mobile Number</label>
+                           <div class="input-group ">
+                              <input type="number" class="form-control border border-end-0" disabled
+                                 value="{{user.mobile_number}}" placeholder="Mobile Number: 0000110000"
+                                 name="mobilenumber">
+                              <div class="input-group-append border ">
+                                 <span class="input-group-text  bg-transparent border border-0" id="basic-addon2"><i
+                                    class="fa fa-pencil icon border border-0" aria-hidden="true"></i>
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--start row for Alternate Mobile-->
+                     <div class="row pt-3">
+                        <div class="col-md-12">
+                           <label for="number" class="form-label">Alternate Mobile</label>
+                           <div class="input-group ">
+                              <input type="number" class="form-control border border-end-0"
+                                 value="{{profileobj.AlternateMobile}}"
+                                 placeholder="Alternate Mobile Number: 0000110000" name="alternatenumber">
+                              <div class="input-group-append border ">
+                                 <span class="input-group-text  bg-transparent border border-0" id="basic-addon2"><i
+                                    class="fa fa-pencil icon border border-0" aria-hidden="true"></i>
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--start row Gender-->
+                     <div class="row pt-3">
+                        <div class="col-md-12">
+                           <label for="number" class="form-label">Gender</label>
+                           <!-- start row for text box -->
+                           <div class="row ">
+                              <!-- start column for full width textbox -->
+                              <div class="col-sm-12">
+                                 <!-- div for inline radio -->
+                                 <div class="form-control text-box1 radio-inline ">
+                                    {% if profileobj.gender is "M" %}
+                                    <!-- input for male -->
+                                    <input type="radio" name="gender" id="Radios1" checked value="M">
+                                    <label>
+                                    <span class="px-2"> Male</span>
+                                    </label>
+                                    <span class="px-4"></span>
+                                    <!-- input for female -->
+                                    <input type="radio" name="gender" id="Radios1" value="F">
+                                    <label>
+                                    <span class="px-2">Female</span>
+                                    </label>
+                                    {% else %}
+                                    <input type="radio" name="gender" id="Radios1" value="M">
+                                    <label>
+                                    <span class="px-2"> Male</span>
+                                    </label>
+                                    <span class="px-4"></span>
+                                    <!-- input for female -->
+                                    <input type="radio" name="gender" id="Radios1" checked value="F">
+                                    <label>
+                                    <span class="px-2">Female</span>
+                                    </label>
+                                    {% endif %}
+                                 </div>
+                              </div>
+                              <!-- end column for full width textbox -->
+                           </div>
+                           <!-- end row for text box -->
+                        </div>
+                     </div>
+                     <!--start row for Date of Birth-->
+                     <div class="row pt-3">
+                        <div class="col-md-12">
+                           <label for="date" class="form-label">Date of Birth</label>
+                           <div class="input-group ">
+                              <input type="date"  value="{{profileobj.DateOfBirth|date:'Y-m-d' }}"
+                                 class="form-control border border-end-0" placeholder="02/11/2022" name="dateofbirth">
+                              <div class="input-group-append border ">
+                                 <span class="input-group-text  bg-transparent border border-0" id="basic-addon2"><i
+                                    class="fa fa-pencil icon border border-0" aria-hidden="true"></i>
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--start row for Permanent Address-->
+                     <div class="row pt-3">
+                        <div class="col-md-12">
+                           <label for="text" class="form-label">Permanent Address</label>
+                           <div class="input-group ">
+                              <input type="text" class="form-control border border-end-0"
+                                 value="{{profileobj.adderess}}"
+                                 placeholder="Permanent Address: Sai villa Forest Office Fron.. "
+                                 name="permanent-address">
+                              <div class="input-group-append border ">
+                                 <span class="input-group-text  bg-transparent border border-0" id="basic-addon2"><i
+                                    class="fa fa-pencil icon border border-0" aria-hidden="true"></i>
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- start row for save cancle button -->
+                  <div class="row ms-sm-3 pb-5 pe-3 no-button-mobile-view">
+                     <!----start column for Save button-->
+                     <div class="col-md-6  pt-4 d-grid ">
+                        <!-- start row for grid save button -->
+                        <div class="row">
+                           <div class="col-sm-12 d-grid">
+                              <button type="submit " class="btn save rounded-pill py-2 ">Save
+                              </button>
+                           </div>
+                        </div>
+                        <!-- end row for grid button -->
+                     </div>
+                     <!----end column for Save button-->
+                     <!----start column for Cancle button---->
+                     <div class="col-md-6  mt-4 d-grid">
+                        <!-- start row for grid cancle button -->
+                        <div class="row">
+                           <div class="col-sm-12 d-grid ">
+                              <button type="button" class="btn cancle rounded-pill button-block"
+                                 data-bs-dismiss="modal">Cancle</button>
+                           </div>
+                        </div>
+                        <!-- end row for grid cancle button -->
+                     </div>
+                     <!----end column for Cancle button---->
+                     <div class="col-sm-6"></div>
+                  </div>
+                  <!-- end row for save cancle button -->
+                  <!-- ==========start save cancle button for mobile-view ======= -->
+                  <div class="row ms-sm-3 pb-5 pe-3 no-button-desk-view">
+                     <!----start column for Save button-->
+                     <div class="col-sm-6  pt-4  ">
+                        <!-- start row for grid save button -->
+                        <div class="row">
+                           <div class="col col-sm-6 ">
+                              <div class="row">
+                                 <div class="col-sm-12 d-grid">
+                                    <button type="submit " class="btn save rounded-pill  btn-block">Save
+                                    </button>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col col-sm-6 ">
+                              <div class="row">
+                                 <div class="col-sm-12 d-grid">
+                                    <button type="submit " class="btn cancle rounded-pill btn-block"
+                                       data-bs-dismiss="modal">cancle
+                                    </button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- end row for grid button -->
+                     </div>
+                  </div>
+                  <!-- =============end save cancle button for mobile-view============ -->
+               </form>
+            </div>
+            <!----end modal content div in body-->
+         </div>
+         <!---end row for model body-->
+      </div>
+      <!-- end div for  modal-content-->
+   </div>
+   <!-- End  modal-dialog-->
+</div>
+<!-- end div modal -->
+<!-------Edit Details Modal Ends-------->
+<!---------Add Your Details Modal Start------------>
+<!-- start div modal -->
+<div class="modal" id="myModal1">
+   <!-- start  modal-dialog-->
+   <div class="modal-dialog modal-dialog-centered">
+      <!-- start div for  modal-content-->
+      <div class="modal-content" width="500" height="821">
+         <!--------Model Body-->
+         <!---start row for model body-->
+         <div class="row ps-2 pe-2">
+            <!-- <div class="col-md-1"></div> -->
+            <!----start modal content div in body-->
+            <div class="col-md-12 ">
+               <form action="{% url 'profile' %}" method="POST">
+                  {% csrf_token %}
+                  <div class="modal-body full-name">
+                     <!---------Form start for Add New Address------>
+                     <!--start row for Full Name-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <label for="text" class="form-label">Full Name</label>
+                           <input type="text" value="{{user.first_name}}" disabled class="form-control text-box1"
+                              placeholder="Full Name" name="fullname">
+                        </div>
+                     </div>
+                     <!--start row for Email-->
+                     <div class="row pt-3">
+                        <div class="col-md-12">
+                           <label for="email" class="form-label">Email</label>
+                           <input type="email" value="{{user.email}}" disabled class="form-control text-box1"
+                              placeholder="Enter email" name="email">
+                        </div>
+                     </div>
+                     <!--start row for Mobile Number-->
+                     <div class="row pt-3">
+                        <div class="col-md-12">
+                           <label for="number" class="form-label">Mobile Number</label>
+                           <input type="number" class="form-control text-box1" placeholder="Mobile Number"
+                              value="{{user.mobile_number}}" disabled name="mobile-number">
+                        </div>
+                     </div>
+                     <!--start row for Alternate Mobile-->
+                     <div class="row pt-3">
+                        <div class="col-md-12">
+                           <label for="number" class="form-label">Alternate Mobile</label>
+                           <input type="number" required class="form-control text-box1" placeholder="Alternate Mobile"
+                              name="alternate">
+                        </div>
+                     </div>
+                     <!--start row Gender-->
+                     <div class="row pt-3">
+                        <div class="col-md-12">
+                           <label for="number" class="form-label">Gender</label>
+                           <!-- start row for text box -->
+                           <div class="row ">
+                              <!-- start column for full width textbox -->
+                              <div class="col-sm-12">
+                                 <!-- div for inline radio -->
+                                 <div class="form-control text-box1 radio-inline ">
+                                    <!-- input for male -->
+                                    <input type="radio" name="gender" checked id="Radios1" value="M">
+                                    <label>
+                                    <span class="px-2"> Male</span>
+                                    </label>
+                                    <span class="px-4"></span>
+                                    <!-- input for female -->
+                                    <input type="radio" name="gender" id="Radios1" value="F">
+                                    <label>
+                                    <span class="px-2">Female</span>
+                                    </label>
+                                 </div>
+                              </div>
+                              <!-- end column for full width textbox -->
+                           </div>
+                           <!-- end row for text box -->
+                        </div>
+                     </div>
+                     <!--start row for Date of Birth-->
+                     <div class="row pt-3">
+                        <div class="col-md-12">
+                           <label for="date" class="form-label">Date of Birth</label>
+                           <input type="date" required class="form-control text-box1" placeholder="DD/MM/YYYY"
+                              name="dateofbirth">
+                        </div>
+                     </div>
+                     <!--start row for Permanent Address-->
+                     <div class="row pt-3">
+                        <div class="cProfileUploadol-md-12">
+                           <label for="text" class="form-label">Permanent Address</label>
+                           <input type="text" required class="form-control text-box1" placeholder="Permanent Address"
+                              name="permanent-address">
+                        </div>
+                     </div>
+                  </div>
+                  <!-- start row for save cancle button -->
+                  <div class="row ms-sm-3 pb-5 pe-3">
+                     <!----start column for Save button-->
+                     <div class="col-md-6  pt-4 d-grid ">
+                        <!-- start row for grid save button -->
+                        <div class="row">
+                           <div class="col-sm-12 d-grid">
+                              <button type="submit" class="btn save rounded-pill py-2 ">Save
+                              </button>
+                           </div>
+                        </div>
+                        <!-- end row for grid button -->
+                     </div>
+                     <!----end column for Save button-->
+                     <!----start column for Cancle button---->
+                     <div class="col-md-6  mt-4 d-grid">
+                        <!-- start row for grid cancle button -->
+                        <div class="row">
+                           <div class="col-sm-12 d-grid ">
+                              <button type="button" class="btn cancle rounded-pill button-block"
+                                 data-bs-dismiss="modal">Cancle</button>
+                           </div>
+                        </div>
+                        <!-- end row for grid cancle button -->
+                     </div>
+                     <!----end column for Cancle button---->
+                     <div class="col-sm-6"></div>
+                  </div>
+                  <!-- end row for save cancle button -->
+               </form>
+            </div>
+            <!----end modal content div in body-->
+         </div>
+         <!---end row for model body-->
+         <!-- end div for  modal-content-->
+      </div>
+      <!-- End  modal-dialog-->
+   </div>
+</div>
+<!-- end div modal -->
+{% endblock %}

@@ -1,0 +1,164 @@
+{% extends 'SupperUserApp/superuser-base.html' %}{% load static %}
+{% block content %}
+
+			<!-- CONTENT WRAPPER -->
+			
+					<div class="breadcrumb-wrapper breadcrumb-wrapper-2 breadcrumb-contacts">
+							<h1>Banner</h1>
+							<p class="breadcrumbs"><span><a href="index.html"></a></span>
+								<span><i class="mdi mdi-chevron-right"></i></span></p>
+					</div>
+					<div class="row">
+						<div class="col-xl-4 col-lg-12">
+							<div class="ec-cat-list card card-default mb-24px">
+								<div class="card-body">
+									<div class="ec-cat-form">
+										<h4>Add New Category</h4>
+
+										<form action="{% url 'HomeBanner' %}" method="POST" enctype="multipart/form-data">
+											{% csrf_token %}
+											<div class="form-group row">
+												<label for="text" class="col-12 col-form-label">Banner title</label> 
+												<div class="col-12">
+													<input required id="text" name="BannerTitle" class="form-control here slug-title" type="text" required>
+												</div>
+											</div>
+
+                                            <div class="form-group row">
+												<label for="number" class="col-12 col-form-label">Banner discount</label> 
+												<div class="col-12">
+													<input required id="number" name="BannerDiscount" class="form-control here slug-title" type="text" required>
+												</div>
+											</div>
+
+                                            <div class="form-group row">
+												<label for="text" class="col-12 col-form-label">Banner Subtitle</label> 
+												<div class="col-12">
+													<input required id="text" name="BannerSubtitle" class="form-control here slug-title" type="text" required>
+												</div>
+											</div>
+
+                                            
+
+                                            <div class="form-group row">
+												<label for="file" class="col-12 col-form-label">Background image</label> 
+												<div class="col-12">
+													<input required id="file" name="BannerBackgroundimg" class="form-control here slug-title" accept="image/*" type="file" required>
+												</div>
+											</div>
+											
+                                            <div class="form-group row">
+												<label for="file" class="col-12 col-form-label">Banner side image</label> 
+												<div class="col-12">
+													<input required id="file" name="Bannersideimg" class="form-control here slug-title" accept="image/*" type="file" required>
+												</div>
+											</div>
+                                            
+											<div class="row">
+												<div class="col-12">
+													<input name="button" Value="Add" type="submit" class="btn btn-primary"/>
+												</div>
+											</div>
+
+										</form>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-8 col-lg-12">
+							<div class="ec-cat-list card card-default">
+								<div class="card-body">
+									<div class="table-responsive">
+										<table id="responsive-data-table" class="table">
+											<thead>
+												<tr>
+													<th>Sr. No.</th>
+
+													<th>Home Banner Title</th>
+													<th>Home Banner Subtitle</th>
+													<th>Action</th>
+												</tr>
+											</thead>
+
+											<tbody>
+												{% for banner in Homebannerlistobj %}
+												<tr>
+													<td>{{ forloop.counter }}</td>
+													<td>{{banner.BannerTitle}}</td>
+													<td>{{banner.BannerSubtitle	}}</td>
+													<td>
+														<div class="btn-group">
+																<a href="{% url 'DeteleHomeBanner' banner.id %}" type="button" 
+																class="btn btn-outline-success" onclick="return confirm('Are you sure you want to delete this item.')" >Delete</a>	
+														</div>
+													</td>
+												</tr>
+												{% endfor %}
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+
+			
+		<!-- start Edit Modal for Category1  -->
+		<div class="modal fade modal-add-contact" id="Editbtn" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+				<form action="" method="POST" id="category1edit" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="modal-header px-4">
+						<h5 class="modal-title" id="exampleModalCenterTitle">Edit Category-1</h5>
+					</div>
+
+					<div class="modal-body px-4">
+						
+						<div class="row mb-2">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<label for="firstName"> Name</label>
+									<input type="text" class="form-control" id="firstName" value="" name="name">
+								</div>
+							</div>
+	
+							
+
+							<div class="form-group row">
+								<label class="col-12 col-form-label">Slug</label> 
+								<div class="col-12">
+									<textarea id="fulldescription1" name="slug" cols="40" rows="4" class="form-control"></textarea>
+								</div>
+							</div> 
+						</div>
+					</div>
+
+					<div class="modal-footer px-4">
+						<button type="button" class="btn btn-secondary btn-pill"
+							data-bs-dismiss="modal">Cancel</button>
+						<input type="submit" Value="Edit"  name="button" class="btn btn-primary btn-pill">
+					</div>
+				</form>
+			</div>
+		</div>
+	    </div>
+		<!--end Edit Modal  -->
+
+		<!-- start script for edit category1 -->
+			<script>
+				function editcategory(id,val1,val2,val3){    //'editcategory' onclick function on edit button
+					console.log(id)
+					console.log(val1)
+					console.log(val2)
+
+				   document.getElementById('category1edit').action ='/HomeCategory/'+id;    //pass url in script action & in bracket pass id from form
+				   document.getElementById("firstName").value = val1;
+				   document.getElementById("fulldescription1").value = val2;
+				}
+			 </script>
+		<!-- end script for edit category1 -->
+	{% endblock %}

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>pickup details</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- JavaScript Bundle with Popper -->
+   <link rel="stylesheet" href="css/style-guid.css" type="text/css">
+   <link rel="stylesheet" href="css/base.css" type="text/css">
+   <link rel="stylesheet" href="css/pickup-details.css" type="text/css">
+</head>
+
+<body>
+   <!-- navbar start -->
+   <nav class="navbar navbar-expand-md navbar-light bg-faded">
+      <!-- start sidenav menu  -->
+      <div id="mySidenav" class="sidenav">
+         <!-- start close button -->
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <!--end close button  -->
+         <!-- start buy again section  -->
+         <div class="sidenav-border">
+            <a href="#">Buy Again</a>
+         </div>
+         <!-- end buy again section  -->
+         <!--start your account section  -->
+         <div class="sidenav-border mt-sm-2">
+            <a href="#">Your Account</a>
+         </div>
+         <!-- end your account section  -->
+         <!-- start order section  -->
+         <div class="sidenav-border mt-sm-2">
+            <a href="#">Orders</a>
+            <p>Your Orders</p>
+         </div>
+         <!-- end order section  -->
+         <!-- start help & setting section  -->
+         <div class="sidenav-border mt-sm-2">
+            <a href="#">Help & Settings</a>
+            <p>About Us</p>
+            <p>Notifications</p>
+            <p>FAQ</p>
+            <p>Switch Accounts</p>
+            <p>Sign out</p>
+         </div>
+         <!-- end help & setting section  -->
+         <!-- start data&privacy section  -->
+         <div class="sidenav-border mt-sm-2">
+            <a href="#">Data & Privacy</a>
+            <p>Request Your information</p>
+            <p>Close Your Account</p>
+            <p>Privacy Notice</p>
+         </div>
+         <!-- end data & privacy section  -->
+      </div>
+      <!-- end sidenav menu -->
+
+      <!-- start 3 lines button  -->
+      <button type="button" class="btn" onclick="openNav()">
+         <img src="images/3linesnav.png" alt="">
+      </button>
+      <!-- end 3 lines button -->
+      <!-- start scroly logo -->
+      <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+      <!-- end scroly logo  -->
+      <!-- start toggle button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- end toggle-button -->
+      <!-- start navbar-collapse -->
+      <div class="navbar-collapse collapse" id="collapsibleNavbar">
+         <!-- start before searchbar section -->
+         <ul class="navbar-nav navbar1">
+            <!-- start Select your address-->
+            <li class="nav-item">
+               <a class="nav-link" href="youraddress.html">Select your address</a>
+            </li>
+            <!-- end Select your address -->
+            <!-- start Earn with scroly button   -->
+            <li class="nav-item">
+               <button type="button" class="btn rounded-pill btn-block my-1  earnbutton">Earn with
+                  scroly</button>
+            </li>
+            <!-- end Earn with scroly button   -->
+         </ul>
+         <!-- end before searchbar section -->
+         <!-- start searchbar -->
+         <form class="px-2 my-auto d-inline searchbar">
+            <div class="input-group">
+               <input type="text" class="form-control border border-right-0" size="60%" placeholder="Search...">
+
+            </div>
+         </form>
+         <!-- end searchbar -->
+         <!-- end after searchbar section -->
+         <ul class="navbar-nav">
+            <!-- start download app -->
+            <li class="nav-item dropdown">
+               <a class="nav-link" href="#">Download App</a>
+            </li>
+            <!-- end download app -->
+            <!-- start Become a Supplier -->
+            <li class="nav-item dropdown">
+               <a class="nav-link" href="#">Become a Supplier</a>
+            </li>
+            <!-- end Become a Supplier -->
+            <!-- start Sign in or sign up-->
+            <li class="nav-item dropdown">
+               <a class="nav-link" href="sign-up.html">Sign in or sign up</a>
+            </li>
+            <!-- end Sign in or sign up-->
+            <!-- start cart icon -->
+            <li class="nav-item dropdown">
+               <a class="nav-link" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            </li>
+            <!-- end cart icon -->
+            <!-- start bell icon -->
+            <li class="nav-item dropdown">
+               <a class="nav-link" href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+            </li>
+            <!-- end bell icon -->
+            <!-- start profile icon with dropdown -->
+            <li class="nav-item dropdown">
+               <div class="dropdown">
+                  <!-- start profile icon -->
+                  <button type="button" class="btn text-center profile-bt" data-bs-toggle="dropdown">
+                     <i class="fa fa-user"></i>
+                  </button>
+                  <!-- end profile icon -->
+
+                  <!-- start profile dropdown content -->
+                  <ul class="dropdown-menu dropdown-menu-end profileDropdown pt-sm-5 px-sm-4">
+                     <!-- profile dropdown heading start -->
+
+                     <li>
+                        <h3>Hello Tanuja Nitin Sethi</h3>
+                        <h5>Mobile no or email here</h5>
+                     </li>
+                     <hr class="dropdown-divider">
+            </li>
+
+            <li>
+               <!-- start dropdown-item order -->
+            <li>
+               <a class="dropdown-item sidenav-border mt-sm-2 py-sm-2" href="#">Orders</a>
+            </li>
+            <!-- end dropdown-item order -->
+
+            </li>
+
+            <li>
+               <!-- start dropdown-item profile -->
+            <li>
+               <a class="dropdown-item sidenav-border mt-sm-2 py-sm-2" href="#">Profile</a>
+            </li>
+            <!-- end dropdown-item profile -->
+            </li>
+
+            <li>
+               <!-- start dropdown-item logout -->
+            <li>
+               <a class="dropdown-item sidenav-border mt-sm-2 py-sm-2" href="#">Logout</a>
+            </li>
+            <!-- end dropdown-item logout -->
+            </li>
+         </ul>
+         <!-- end after searchbar section -->
+      </div>
+
+      <!-- end navbar-collapse -->
+   </nav>
+   <!-- navbar end -->
+   <!-- category start -->
+   <div class="container-fluid pt-2">
+      <div class="row">
+
+         
+
+          <!--start col-sm-10  -->
+         <div class="col-sm-10 page-body-padding">
+
+            <!-- start Return Item -->
+            <div class="row ">
+               <div class="col-md-12 return-item bord-botte  col-12 ">
+                  <i class="fa fa-angle-left pe-2  arrow" aria-hidden="true"></i>
+                  Return Item
+               </div>
+            </div>
+            <!-- end Return Item -->
+
+            
+               
+         
+            
+
+            <!-- start foldable wooden table and order section -->
+            <div class="row foldable-wooden-table-and-order-padding">
+               <!-- start foldable wooden section -->
+               <div class="col-md-10">
+                  <!-- start foldable wooden table card 1 -->
+                  <div class="row cards-padding  ">
+                     <div class="col-sm-12 col-md-12  crd-pad  ">
+                        <!-- start foldable-wooden-table-card1 -->
+                        <div class="card foldable-wooden-table-card1 card-border">
+                           <!-- start foldable-wooden-table-card1-body -->
+                           <div class="card-body  ">
+                              <div class="row ">
+                                 <!-- start foldable-wooden-table-image -->
+                                 <div class=" col-3 col-sm-2 col-md-2 foldable-wooden-table-image">
+                                    <img src="images/foldable-table-pickup-details.png" alt="" class="img-fluid rounded" >
+                                 </div>
+                                 <!-- end foldable-wooden-table-image -->
+                                 
+                                 <!-- start foldable-wooden-table-text -->
+                                 <div class="col-9 col-sm-6  col-md-6">
+                                    <!-- start foldable-wooden-table-text-row1 -->
+                                    <div class="row ">
+                                       <div class="col-sm-12  col-md-12  col-12 foldable-table-text">
+                                          Foldable Wooden Laptop Table....
+                                       </div>
+                                    </div>
+                                    <!-- end foldable-wooden-table-text-row1 -->
+                                    <!-- start size-text-row2 -->
+                                    <div class="row size-text">
+                                       <div class="col-sm-12 col-md-12 col-12">
+                                          Size: 32”(H)X27”(W)X19”D In inch
+                                       </div>
+                                    </div>
+                                    <!-- end size-text-row2 -->
+                                    <!-- start ruppees-text-row3 -->
+                                    <div class="row">
+                                       <div class="col-sm-12 col-md-12 col-12">
+                                          <span class="rupee-symbol"><i class="fa fa-inr" aria-hidden="true"></i></span>
+                                          <span class="rupee pe-1">1800</span> <del><span class="deleted-rupee  pe-1"> <i
+                                                   class="fa fa-inr" aria-hidden="true"></i>3,100</span></del> <span
+                                             class="colored-rupee pe-1"> Saved <i class="fa fa-inr ps-1" aria-hidden="true"></i>
+                                             1,017</span>
+                                       </div>
+                                    </div>
+                                    
+                                    <!-- end ruppees-text-row3 -->
+                                 </div>
+                                 <div class="col-md-4 col-4"></div>
+                                 <!-- end foldable-wooden-table-text -->
+                              </div>
+
+                           </div>
+                           <!-- end foldable-wooden-table-card1-body -->
+                        </div>
+                        <!-- end foldable-wooden-table-card1 -->
+                     </div>
+                  </div>
+                  <!-- end foldable wooden table card 1 -->
+
+                <!-- start pickup address -->
+                  <div class="row cards-padding design-pickup-address">
+                     <!-- start pickup address heading -->
+                     <div class="col-md-12 pickup-address-pad">
+                      <strong >Pickup Address</strong>  
+                     </div>
+                      <!-- end pickup address heading -->
+                  </div>
+
+                  <!-- start pickup address text -->
+                  <div class="row design-pickup-address-text cards-padding">
+                     <div class="col-md-12">
+                        Sai villa, Forest Office Front of Ayurvedic <br> Clinic  Main Road Nagpur Maharashtra 201002 India
+                       <br> Phone Number : 1213141516
+                     </div>
+                  </div>
+                  <!-- end pickup address text -->
+                <!-- end pickup address -->
+
+                  <!-- start change pick up address button -->
+                  <div class="row pt-4">
+                     <div class="col-md-12 d-grid">
+                        <button type="button" class="btn change-pickup-address-btn btn-block"><strong>Change Pickup Address</strong></button>
+                     </div>
+                  </div>
+                 <!-- start change pick up address button -->
+
+
+                  <!-- start radio button section -->
+                  <div class="row to-acc-padd">
+                     <div class="col-md-12 ">
+                        <div class="form-check">
+                           <input type="radio" class="form-check-input select-radio-btn" id="radio1" name="optradio" value="option1">
+                           <label class="form-check-label radio-btn-text" for="radio1"> <strong>To bank account</strong> </label>
+                         </div>
+                     </div>
+                  </div>
+                  <!-- end radio button section -->
+
+                  <!-- start to bank account text -->
+                  <div class="row ps-sm-4 pt-2 to-bank-account-text">
+                     <div class="col-md-12">
+                        After quality check is passed, Rs. 2600.00 will be credited to the chosen bank account. Refund will be processed to bank account within 1 day
+                     </div>
+                  </div>
+                  <!-- end to bank account text -->
+
+                  <!-- start add account button -->
+                  <div class="row btn-padding">
+                     <div class="col-md-3 d-grid">
+                        <button type="button" class="btn btn-change-address btn-block p-2" data-bs-toggle="modal" data-bs-target="#addaccount">Add Account </button>
+                     </div>
+                  </div>
+                  <!-- end add account button -->
+                  
+               </div>
+               <!-- end foldable wooden table section -->
+               <!-- start order section -->
+               <div class="col-md-2 border-start  order-section">
+                  <!-- start Orders -->
+                  <div class="row order border-top">
+                     <div class="col-md-12">
+                        Orders
+                     </div>
+                  </div>
+                  <!-- end Orders -->
+                  <!-- start Orders & Returns -->
+                  <div class="row order-return border-bottom">
+                     <div class="col-md-12">
+                        Orders & Returns
+                     </div>
+                  </div>
+                  <!-- end Orders & Returns -->
+                  <!-- start Profile -->
+                  <div class="row profile border-bottom">
+                     <div class="col-md-12">
+                        Profile
+                     </div>
+                  </div>
+                  <!-- end Profile -->
+
+               </div>
+               <!-- end order section -->
+
+               <!-- mobileview added section start-->
+               <div class="row">
+                  <div class="col-12 selct-yr-add">
+                     Select Your Account
+                  </div>
+               </div>
+
+               <div class="row">
+                  <div class="col-12 ">
+                     <button type="button" class="btn-change-addres-mobilew" data-bs-toggle="modal" data-bs-target="#addaccount">Add  New Account </button>
+                  </div>
+               </div>
+
+
+               <!-- mobileview added section end-->
+
+            </div>
+
+            <!-- end foldable wooden table and order section -->
+         </div>
+
+
+
+      </div>
+   </div>
+   <!-- ---------------------col-sm-10 end--------------------- -->
+   <!-- -----------------------------------col2 end--------------------------------- -->
+   </div>
+   </div>
+   <p></p>
+
+<!--start Modal for select other Bank-->
+
+<div class="modal fade" id="addaccount" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <span class="modal-title model-heading" id="exampleModalLabel"><strong>Add Bank Account</strong> </span>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+        <!-- mobileview heading start -->
+        <div class="modal-header">
+         <span class="modal-title add-bank-mobilevieew" id="exampleModalLabel"><i class="fa fa-angle-left pe-2" aria-hidden="true"></i>Add Bank Account</span>
+       </div>
+         
+        <!-- mobileview heading end -->
+
+       
+       <div class="modal-body border-bottom">
+         <!-- start model form -->
+         <form class="ps-2 pe-2 ">
+             <!-- start customer name text -->
+             <div class="form-group text-box-top-padding form-placeholder-text ">
+               <input type="text" class="form-control form-placeholder-text-mobileview"  placeholder="Customer Name (as per the bank records)">
+            </div>
+             <!-- end customer name text -->
+
+            <!-- start account number text -->
+            <div class="form-group text-box-top-padding form-placeholder-text">
+               <input type="text" class="form-control form-placeholder-text-mobileview" placeholder="Account Number">
+            </div>
+            <!-- end account number text -->
+
+            <!-- start re-enter account number text -->
+            <div class="form-group text-box-top-padding form-placeholder-text">
+                  <input type="text" class="form-control form-placeholder-text-mobileview" placeholder="Re-enter Account Number">
+            </div>
+            <!-- end re-enter account number text -->
+
+            <!-- start bank IFSC code text -->
+            <div class="form-group text-box-top-padding form-placeholder-text">
+               <input type="text" class="form-control form-placeholder-text-mobileview" placeholder="Bank IFSC Code">
+            </div>
+            <!-- end bank IFSC code text -->
+
+            <!-- start Bank Name text -->
+            <div class="form-group text-box-top-padding form-placeholder-text">
+               <input type="text" class="form-control form-placeholder-text-mobileview" placeholder="Bank Name">
+            </div>
+            <!-- end Bank Name text -->
+
+            <!-- start Branch Name text -->
+            <div class="form-group text-box-top-padding form-placeholder-text">
+               <input type="text" class="form-control form-placeholder-text-mobileview" placeholder="Branch Name">
+            </div>
+            <!-- end Branch Name text -->
+
+            <!-- start account type heading -->
+            <div class="row pt-4 design-account-type">
+               <div class="col-md-12 ">
+                 <strong>Account Type</strong> 
+               </div>
+            </div>
+            <!-- end account type heading -->
+
+            <!-- start radio button  -->
+            <div class="form-check  pt-4 " >
+               <input type="radio" class="form-check-input select-radio-btn " id="radio1" name="optradio" value="option1">
+               <label class="form-check-label form-placeholder-text  save-account-mobile ps-2" for="radio1"> Savings Account</label>
+             </div>
+
+             <div class="form-check  pt-4 ">
+               <input type="radio" class="form-check-input select-radio-btn" id="radio1" name="optradio" value="option1">
+               <label class="form-check-label form-placeholder-text  save-account-mobile ps-2" for="radio1"> Current Account</label>
+             </div>
+            <!-- end start button -->
+
+            <!-- start cancle & conform button -->
+            <div class="row pt-4 padding-btn-c pb-4">
+               <div class="col-md-6 d-grid pt-1 col-6">
+                  <button type="button" class="btn rounded-pill btn-block cancle-btn">Cancel</button> 
+               </div>
+
+               <div class="col-md-6 d-grid  pt-1 col-6">
+                  <button type="button" class="btn rounded-pill btn-block  conform-btn">Confirm</button>
+               </div>
+            </div>
+            <!-- end cancle & conform button -->
+         </form>
+         <!-- end model form -->
+       </div>
+      
+         <!-- start refund details heading -->
+         <div class="row refund-return ps-4 ">
+            <div class="col-md-12  ">
+               Refund Details
+            </div>
+         </div>
+          <!-- end refund details heading -->
+
+          <!-- start refund details ruppes -->
+         <div class="row ps-4 padd-rupee">
+            <div class="col-md-12 ">
+               <i class='fa fa-rupee color-rupees'></i> <span class="refund-price refund-price-pad refund-price-padd">2600.</span>
+            </div>
+         </div>
+          <!-- end refund details ruppes -->
+      </div>
+   </div>
+ </div>
+<!--end Modal for select other Bank-->
+
+
+   
+
+
+   <!-- -------------------------bootstrap script link start------------------------------------ -->
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <!-- -------------------------bootstrap script link end------------------------------------ -->
+
+   <!-- for 3lines dropdown script start -->
+   <!-- <script>
+      function openNav() {
+         document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+         document.getElementById("mySidenav").style.width = "0";
+      }
+   </script> -->
+
+   <!-- 3lines dropdown script end -->
+
+</body>
+
+</html>

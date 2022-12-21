@@ -1,0 +1,358 @@
+
+
+
+.video {
+  width: 100%;
+  height: auto;
+}
+.video-background{
+  background-color:var(--color-17);
+  
+}
+.photo-padding
+{
+  padding-left: 1rem;
+}
+
+
+
+/* ---------------------------------model1--------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+  /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.ideo-bg-colour {
+  background-color: var(--color-5);
+}
+
+
+/*-------------------------customer video page--------------------*/
+
+.customer-img-video{
+font-family:var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 39px;
+color:var(--color-5);
+
+}
+
+/*-------------------------reviews in image modal---------------------*/
+.customer-review {
+  font-family: var(--font-1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.reviews-number-back{
+  background-color:var(--color-1);
+  color:var(--color-9);
+
+}
+
+/*-------------------------customer name nd date ---------------------*/
+.customer-name-nd-date {
+Font-family: Montserrat;
+Font-style:Regular;
+Font-size: 14px;
+Line-height: 20px;
+Line-height: 145%;
+align-items:Left;
+Vertical-align: Top;
+Fill: Solid;
+color:#3F515C;
+}
+
+/*---------------------------cutomer image heading---------------------*/
+.customer-images-page{
+font-family:var(--font-1);
+font-size: 2rem;
+font-weight: 500;
+line-height: 39px;
+letter-spacing: 0em;
+text-align: left;
+color:var(--color-5);
+padding-left: 1.785rem;
+}
+
+.border-shodow{
+padding: 0;
+border: none;
+background: none;
+
+}
+
+
+/* **********************************video-model start css******************************************/
+/* Carousel*/
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display:block;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  /* transition: 0.6s ease; */
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+} */
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color:grey;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */ 
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Carousel*/
+
+
+ 
+/*------------second try slider--------------*/
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+@media all and (max-width: 576px){
+.customer-images-page
+{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 1.25rem;
+line-height: 1.5rem;
+color: #304653;
+padding-left: 1rem;
+
+}
+.photo-padding
+{
+  padding-left: 0.2rem;
+}
+}
+
+@media (min-width: 577px){
+  html{
+    font-size: 40%;
+}
+.photo-arrow
+{
+  display: none;
+}
+}
+
+@media (min-width: 768px){
+  html{
+    font-size: 45%;
+}
+.photo-arrow
+{
+  display: none;
+}
+}
+
+@media (min-width: 992px){
+  html{
+    font-size: 60%;
+    }
+.photo-arrow
+{
+  display: none;
+}
+}
+
+@media (min-width: 1200px){
+  html{
+    font-size: 80%;
+    }
+  .photo-arrow
+{
+  display: none;
+}
+}
+
+@media (min-width: 1920px){
+  html{
+    font-size: 100%;
+}
+.photo-arrow
+{
+  display: none;
+}
+}

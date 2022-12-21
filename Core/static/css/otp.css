@@ -1,0 +1,461 @@
+
+body{
+    background-image: url("../images/background.png");
+}
+
+
+
+.form-control:focus{
+    box-shadow: none;
+}
+
+.btn:focus{
+    box-shadow: none;
+}
+
+.padding-four-side{
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.page-shadow-rounded{
+background: rgba(255, 255, 255, 0.5);
+box-shadow: 0.125rem 0.125rem 0.375rem #D2B3B3;
+border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+}
+
+.heading-top{
+    font-family:var(--font-2);
+font-style: normal;
+font-weight: 700;
+font-size: 3rem;
+line-height: 4rem;
+text-align: center;
+color:var(--color-5);
+padding-top:223px;
+padding-right:0px ;
+}
+
+.heading-small{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.4375rem;text-align: center;
+    color:var(--color-17);
+    padding-top:2rem;
+}
+
+
+.inputs input {
+    width: 2.5rem;
+    height: 2.5rem;
+    /* border-top: none;
+    border-left: none;
+    border-right:none; */
+    
+}
+
+.verify-otp-pad{
+    padding-top: 60px;
+}
+
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-5);
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top:transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: 2px solid var(--color-5);
+    /* border: 1px solid #304653; */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    /* /* transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
+} 
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0
+}
+
+/* button start */
+.otp-btn{
+    height: 50px;
+    width: 50px;
+    left: 100.875rem;
+    top: 355px;
+    border-radius:50%;
+    border:none;
+    background-color: var(--color-1);
+    vertical-align:none;
+    }
+
+.btn-circle.btn-sm{
+    width: 30px;
+    height: 50px;
+    padding: 6px 0px;
+    border-radius:30px;
+    font-size: 8px;
+    text-align: center;
+    background-color:var(--color-1);
+    
+    
+}
+
+.otp-button:hover{
+    color:var(--color-9);
+}
+
+.btn-circle.btn-md{
+    width:3.125rem;
+    height: 3.125rem;
+    padding: 0.625rem 1rem;
+    border-radius: 1.5625rem;
+    font-size: 1.25rem;
+    text-align: center;
+    background:var(--color-16);
+
+}
+
+.otp-button{
+font-family:var(--font-1);
+font-size: 1rem;
+font-weight: 500;
+line-height: 1.25rem;
+letter-spacing: 0em;
+text-align: center;
+color:var(--color-9);
+text-decoration: none;
+}
+
+.otp-icon-main{
+color:var(--color-33);
+height: 1.0625rem;
+width: 0.9375rem;
+left: 18.4375rem;
+top: 1.125rem;
+border-radius: 0rem;
+}
+/* otp button end */
+
+/* button start */
+/* .verify-otp-btn{   
+color:var(--color-1);
+background-color: var(--color-1);
+border-radius: 26px;
+font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 20px;
+text-align: center;
+color: #FFFFFF;
+} */
+
+
+
+/* .btn-lg{
+    font-size: 1rem; 
+} */
+
+/* button end */
+.resend-otp-text{
+font-family:var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+color:var(--color-17);
+padding-top:30px;
+padding-bottom: 178px;
+}
+
+
+/* reset password */
+.forget-color{
+text-decoration: none;
+color: var(--color-9);
+font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: var(--color-9);
+}
+/* .a .forget-color.text:hover{
+    color: var(--color-9);
+    
+    
+} */
+a.forget-color {
+    color:var(--color-9);
+    text-decoration: None;
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/ 
+
+
+
+
+.varify-otp-text{
+font-family:var(--font-2);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+text-align: center;
+color:var(--color-10);
+
+}
+
+
+/************************************/
+
+
+.dash-line-padd{
+    padding-top:4rem;
+}
+
+.share-btn{
+    height: 3.125rem;
+    width: 3.125rem;
+    left: 100.875rem;
+    top: 22.1875rem;
+    border-radius:50%;
+    border:none;
+    background-color: var(--color-1);
+    vertical-align:none;
+    }
+
+.btn-circle.btn-sm{
+    width: 1.875rem;
+    height: 3.125rem;
+    padding: 0.375rem 0rem;
+    border-radius:1.875rem;
+    font-size: 0.5rem;
+    text-align: center;
+    background-color:var(--color-1);
+}
+
+.btn-circle.btn-md{
+    width:3.125rem;
+    height: 3.125rem;
+    padding: 0.625rem 1rem;
+    border-radius: 1.5625rem;
+    font-size: 1.25rem;
+    text-align: center;
+    background:var(--color-16);
+}
+
+.share-button{
+font-family:var(--font-1);
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.25rem;
+letter-spacing: 0em;
+text-align: center;
+color:var(--color-9);
+}
+
+.share-icon-main{
+color:var(--color-33);
+height: 1.0625rem;
+width: 0.9375rem;
+left: 18.4375rem;
+top: 1.125rem;
+border-radius: 0rem;
+}
+
+/*-----------------------hover button------------------------*/
+
+.share-btn-hover:hover{
+    height: 3.125rem;
+    width: 3.125rem;
+    left: 100.875rem;
+    top: 22.1875rem;
+    border-radius:50%;
+    border:none;
+    background-color: var(--color-34);
+    vertical-align:none;
+    transition-duration: 0.4s;
+}
+
+
+
+.btn-circle.btn-sm-hover{
+    width: 1.875rem;
+    height: 3.125rem;
+    padding: 0.375rem 0rem;
+    border-radius:1.875rem;
+    font-size: 0.5rem;
+    text-align: center;
+    background-color:var(--color-34);
+}
+
+.btn-circle.btn-md-hover{
+    width:3.125rem;
+    height: 3.125rem;
+    padding: 0.625rem 1rem;
+    border-radius: 1.5625rem;
+    font-size: 1.25rem;
+    text-align: center;
+    background:var(--color-16);
+}
+
+
+.share-button-hover{
+    font-family:var(--font-1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:var(--color-9);
+}
+
+.share-icon-hover{
+    color:var(--color-33);
+    height: 1.0625rem;
+    width: 0.9375rem;
+    left: 18.4375rem;
+    top: 1.125rem;
+    border-radius: 0rem;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------*/
+/* # ---- mobile view media query ---- */
+/* Start Mobile view */
+
+@media all and (min-width: 577px)
+{
+    
+}
+
+
+@media all and (max-width: 576px)
+{
+
+    .padding-four-side {
+        padding-top:0rem;
+        padding-bottom:0rem;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .page-shadow-rounded{
+        background: rgba(255, 255, 255, 0);
+    box-shadow: 0rem 0rem 0rem #d2b3b300;
+    border-radius: 0rem 0rem 0rem 0rem;
+    }
+    
+
+    .Otp-password{
+        padding-top:223px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    
+
+    .heading-top{
+        font-family:var(--font-2);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color:var(--color-5);
+    padding-top:252px;
+    }
+
+    .heading-small{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color:var(--color-17);
+        padding-top:1rem;
+    }
+
+    .verify-otp-pad{
+        padding-top: 60px;
+    }
+
+
+    .verify-otp-pad{
+        padding-top: 60px;
+    }
+
+    .resend-otp-text{
+        font-family:var(--font-1);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color:var(--color-17);
+        padding-top:16px;
+        padding-bottom: 252px;
+        }
+
+
+
+
+
+
+}
+
+@media (min-width: 577px)
+{
+    html{
+        font-size: 40%;
+    }
+}
+
+@media (min-width: 768px)
+{
+    html{
+        font-size: 45%;
+    }
+}
+
+@media (min-width: 992px)
+{
+    html{
+        font-size: 60%;
+    }
+}
+
+
+@media (min-width: 1200px)
+{
+    html{
+        font-size: 80%;
+    }
+}
+
+@media (min-width: 1920px)
+{
+    html{
+        font-size: 100%;
+    }
+}

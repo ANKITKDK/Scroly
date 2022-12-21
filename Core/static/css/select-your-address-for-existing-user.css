@@ -1,0 +1,462 @@
+body {
+    background-image: url("../images/background.png"); 
+    font-family:var(--font-1);
+ }
+
+/*-For all Font style--*/
+.myfont{
+font-family:var(--font-1);
+}
+/*---*/
+/*--your address css-*/
+.addrs-fontstyl{
+    font-family: var(--font-1); 
+    color:var(--color-5);
+    font-size:79px;
+    font-weight: 500;
+    font-size: 48px;
+    font-style: normal;
+    padding-top:30px;
+    padding-left:30px;
+}
+/* .fw-bold {
+    font-weight: 500!important;
+} */
+/*-styling for Name--*/
+.tanuja{
+font-family: var(--font-1); 
+font-weight: 600;
+font-size: 24px;
+color:var(--color-17);
+padding-left:30px;
+}
+/*--styling for address-*/
+.sai-villa{
+font-family: var(--font-1); 
+font-weight: 400;
+font-size: 24px;
+color:var(--color-17);
+padding-left:30px;
+}
+/*--styling for border blue--*/
+.outer-blue{
+/* box-sizing: border-box; */
+border: 1px solid var(--color-16);
+border-radius: 6px;
+/* padding-bottom:39px; */
+}
+
+/*--styling for 2nd border blue-*/
+.outer-blue2{
+    border: 1px solid var(--color-16);
+    border-radius:6px;   
+}
+/*-styling for update delivery--*/
+.update-delivery{
+font-family: var(--font-1); 
+font-weight: 600px;
+font-size:24px;
+color: var(--color-1);
+
+}
+/*-color for delivery color--*/
+.delivery-color{
+    text-decoration: none; 
+    color:var(--color-1); 
+}
+/*--remove hover effect for delivery-*/
+a.delivery-color{
+    color:var(--color-1);
+    text-decoration: none;  
+}
+
+/*---*/
+
+
+/*--styling for add new address popup -*/
+.addnewpop{
+    font-family: var(--font-1); 
+    font-style: normal;
+    font-weight: 600px;
+    font-size: 22px; 
+    line-height: 27px;
+   color: var(--color-17);
+   
+}
+
+
+
+/*--styling for input-text popup-*/
+.input-text-popup{
+    font-family: var(--font-1); 
+    font-weight: 400px;
+    size: 14px; 
+   color: var(--color-17);
+  
+}
+/*-styling for checkbox--*/
+.checbox-color{
+border-color:var(--color-1);
+}
+/*--styling for default address-*/
+.default-addr{
+font-family: var(--font-1); 
+font-weight: 400px;
+font-size: 12px; 
+color:var(--color-17);
+
+}
+
+/*-styling for delivery instruction--*/
+.delivery-instrction1{
+ font-family: var(--font-1);  
+ font-style: normal;
+ font-size:16px;
+ 
+ color:var(--color-5);
+ font-weight: 600px;
+ padding-top:27px;
+ padding-bottom: 8px;
+  
+}
+/*-styling for text delivery--*/
+.text-delivery{
+font-family: var(--font-1);  
+ font-style: normal;
+ font-size:12px;
+ font-weight: 400px;
+ color:var(--color-17);
+}
+/*-styling for block button dropdown--*/
+.block {
+    font-family: var(--font-1);
+    display: block;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+  }
+  /*-styling for add address button --*/
+  .btn-add{
+    position: relative;
+    background-color:var(--color-1) ;
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    /* color: var(--color-9); */
+    border-color:var(--color-1) ;
+    float:left;
+    
+}
+/*--styling for footer button-*/
+.footercolor1{
+    text-decoration: none; 
+    color:var(--color-9); 
+}
+
+
+/*--hover effect remove for button-*/
+a.footercolor1{
+    color:var(--color-9);
+    text-decoration: none;  
+}
+
+/*--edit remove button---*/
+.edit{
+    font-family: var(--font-1); 
+    border-color:var(--color-1) ;
+    color: var(--color-25);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    /* background-color: none; */
+    text-align: center; 
+    border-radius: 26px;
+}
+
+/* not working */
+/* .drop, .dropdown, .btn, .btn-secondary {
+    color: var(--color-25);
+} */
+
+.edit:hover{
+    /* font-family: var(--font-1); 
+    border-color:var(--color-1) ; */
+    color: var(--color-25);
+    /* font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: none;
+    text-align: center; 
+    border-radius: 26px; */
+}
+/*-styling for edit and remove button--*/
+/* .button-style{
+    color:var(--color-1);
+    background-color:transparent;
+    border-color:var(--color-1); 
+    
+    border-radius: 26px;
+    } */
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.3;
+  }
+/*---remove hover for button*/
+.btn-hover{
+    text-decoration: none;
+    color: var(--color-25);
+}
+a.btn-hover{
+    color: var(--color-25);
+    text-decoration: none;
+}
+/*-styling for pick-up point--*/
+/* .new-addrs{
+    font-family: var(--font-1); 
+    font-size: 20px;
+    font-weight: 600px;
+    padding-top:21px ;
+    padding-bottom: 27px;
+    padding-left:30px;
+    } */
+/*----Add a new address button---*/
+.add-new{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+   color: var(--color-5);
+    background-color: none;
+    border: none;
+}
+.pick-up2{
+    text-decoration: none;
+    color: var(--color-5);
+}
+
+a.pick-up2{
+    color:var(--color-5);
+    text-decoration: none;  
+}
+
+.form-check-input:checked {
+    background-color: var(--color-1);
+    border-color: var(--color-1);
+}
+/*-------------*/
+/* a{
+color:var(--color-12);
+font-family: var(--font-1); 
+text-decoration: none;
+size: 400px;
+font-weight: 600;
+}  */
+/* .p{
+     font-family: var(--font-1); 
+    font-weight: 400;
+    size: 24px; 
+   color: var(--color-17);
+}
+ h5{
+    font-family:var(--font-1); 
+    size: 16px;
+    color: var(--color-5);
+    font-weight: 600;
+}  */
+.abc,.model,.model-header,.model-body,.p{
+     font-family: var(--font-1);  
+    font-weight: 400;
+    size: 12px; 
+   color: var(--color-17);
+}
+/* .drop,.dropdown,.btn,.btn-secondary
+/* {
+    color:var(--color-19);
+} */ 
+
+
+.dropdown .dropdown-menu .dropdown-item{
+    /* color: #F9EEEE; */
+    border-radius: 6px;
+    background-color:var(--color-19);
+    border-color:var(--color-12);
+    size: 12px;
+}
+.drop-btn{
+    background:var(--color-19);
+    border-radius: 6px;
+    border: none;
+    color: var(--color-17);
+}
+
+.drop-btn:hover{
+    
+    background-color:var(--color-19);
+    border-radius: 6px;
+    border: none;
+    color: var(--color-17);
+}
+
+
+.bar{
+    background-color: var(--color-19);
+    border-radius: 6px;
+    color: var(--color-5);
+    font-size: large;
+    font-weight:900;
+}
+
+.modal-body .form-control{
+background: transparent;
+outline: none;
+border: none;
+border-bottom: 1px solid rgb(231, 223, 223);
+;
+}
+.input-group-text{
+background-color: white;
+border: none;
+}
+.icon{
+color: var(--color-12);
+}
+/* span {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    margin: 6px;
+    border: 1px solid var(--color-12);
+    background-color: transparent;
+  } */
+  .first-btn .btn
+  {
+      padding: 7px 0px 5px 16px;
+      border-radius: 16px;
+  }
+  
+.first-btn .btn .icon-text
+{
+       font-size: 18px;
+} 
+.btn .icon-txt{
+    font-size: 38px;
+    float:right;
+    border-radius: 50%;
+    border: solid 1px;
+    padding-bottom: 10px;
+}
+.pad1{
+    padding-top:0rem;
+    
+}
+
+/* .navbar1, .r1 .catname{
+    font-size: 16px;
+    
+}
+
+.navbar1 a, .navbar1 a:hover{
+    color: var(--color-5);
+}
+
+.navbar1 .earnbutton, .navbar1 .earnbutton:hover{
+    width: 157px;
+    height: 30px;
+    background-color: var(--color-1);
+    color: var(--color-9);
+    
+} */
+
+/* 
+.searchbar .input-group-text , .searchbar .form-control
+{
+    border-radius: 6px;
+    box-shadow: 2px 2px 8px rgba(207, 193, 193, 0.53);
+    background-color:var(--color-19);
+} */
+
+/* .Categorycol{
+
+    box-shadow: 4px 4px 6px rgba(139, 125, 125, 0.26);
+    border-radius: 0px 6px 6px 0px;
+    background-color: var(--color-10);
+    height: 6265px;
+} */
+
+
+ .out-border {
+ 
+    border: 1px solid var(--color-16);
+}  
+
+.your-addrs{
+    font-size: 48px;
+    font-family:var(--font-1);
+}
+.dropdown-button{
+    background-color:var(--color-3);
+    color:var(--color-17)
+}
+
+/* =============Buttons================================== */
+/* =======================Border Button========================= */
+.share-btn-border{
+    height: 50px;
+    width: 50px;
+    left: 100.875rem;
+    top: 355px;
+    border-radius:50%;
+    border:1px solid var(--color-1);
+    border-left: 0px;
+    background-color: var(--color-9);
+    vertical-align:none;
+    }
+  
+  .btn-circle-border.btn-sm-border{
+    width: 30px;
+    height: 50px;
+    padding: 6px 0px;
+    border-radius:30px;
+    font-size: 8px;
+    text-align: center;
+    background-color:var(--color-9);
+    border: 1px solid var(--color-1);
+    border-right: 0px;
+  
+  }
+  
+  .btn-circle-border.btn-md-border{
+    width:50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 20px;
+    text-align: center;
+    background:var(--color-9);
+    border: 1px solid var(--color-1);
+  
+  }
+  
+  .share-button-border{
+  font-family:var(--font-1);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color:var(--color-25);
+  }
+  
+  .share-icon-main-border{
+  color:var(--color-25);
+  height: 17px;
+  width: 15px;
+  left: 295px;
+  top: 18px;
+  border-radius: 0px;
+  }

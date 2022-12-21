@@ -1,0 +1,82 @@
+
+
+.four-side-padding-30px{
+    padding: 30px;
+}
+
+.pad-top-30px{
+    padding-top: 30px;
+}
+
+.pad-bottom-30px{
+    padding-bottom: 30px;
+}
+
+.pad-left-30px{
+    padding-left: 30px;
+}
+
+.head-noti-text{
+    font-family:var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 39px;
+color:var(--color-5);
+}
+
+.box-shado-col-bg{
+    background: var(--color-19);
+/* shadow */
+
+box-shadow: 2px 2px 6px var(--color-22);
+border-radius: 6px;
+}
+
+/* first card */
+.card1-main-text{
+    font-family: var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 145%;
+color: var(--font-17);
+}
+
+
+.ora-date-col{
+
+    padding-top: 10px;
+    font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 145%;
+/* background-color: aqua; */
+color: var(--color-12);
+}
+
+
+.card1-sec-text{
+    padding-top: 10px;
+    font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 145%;
+padding-top: 10px;
+color: var(--color-17);
+}
+
+.card-first-date-tex{
+    padding-top: 16px;
+    font-family:var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 145%;
+/* or 23px */
+
+
+color:var(--color-17);
+}

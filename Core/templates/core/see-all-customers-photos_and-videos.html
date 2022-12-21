@@ -1,0 +1,486 @@
+{% extends "core/base1.html" %}{% load static %}
+{% block content %}
+
+{% block own_css %}
+<link rel="stylesheet" href="{% static 'css/see-all-customers-photos_and-videos.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/empty-add-to-card.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/home.css' %}" type="text/css">
+
+
+
+{% endblock own_css %}
+
+   <!-- category start -->
+   <div class="container-fluid pt-2">
+      <div class="row">
+
+         <!-- col-sm-2 start -->
+         <div class="col-sm-2 categorycol">
+
+            <!-- ----------------------------------------------------------------------------------------------- -->
+         </div>
+         <!-- Page body -->
+         <!-- --------------------- see all customer photos & videos-------------------- -->
+
+
+         <div class="col-12 col-sm-12">
+            <div class="row">
+               <div class="col-12 col-sm-12 pt-3 pb-3 customer-images-page">
+                 <i class="fa fa-angle-left photo-arrow" aria-hidden="true"></i> <span class="">Customer Images</span>
+               </div>
+
+            </div>
+
+            <!-- <div class="row photo-video-btn">
+               <div class="gap-2 d-sm-inline "> -->
+                  <!-- <button class="btn  btn-photo-video px-3" type="button">Videos (4)</button> -->
+                  <!-- <button class="btn  btn-photo-video" type="button">Photos</button>
+               </div>
+            </div> -->
+   
+            <!-- <div class="row">
+               <div class="col-md-1">
+                  <img src="{% static 'images/customer_image.png' %}" alt="" width="100">
+               </div>
+               <div class="col-md-1">
+                  <img src="{% static 'images/customer_image.png' %}" alt="" width="100">
+               </div>
+            </div> -->
+
+
+
+
+            <div class="row photo-padding" >
+               {% for i in Review_productsobj %}
+               <div class="col-4 col-md-1">
+                  {% if i.Image1 %}
+                  <button type="button" class="border-shodow" data-bs-toggle="modal" data-bs-target="#myModal" onclick="PassOBJ('{{i.id}}','{{i.image1}}')">
+                     <img class="img-fluid" src="{{i.Image1.url}}" alt="" width="100">
+                  </button>
+                     {% endif %}
+               </div>
+               <div class="col-4 col-md-1">
+                  {% if i.Image2 %}
+                  <button type="button" class="border-shodow" data-bs-toggle="modal" data-bs-target="#myModal" onclick="PassOBJ('{{i.id}}','{{i.image2}}')">
+                     <img class="img-fluid" src="{{i.Image2.url}}" alt="" >
+                  </button>
+                  {% endif %}
+               </div>   
+               {% endfor %}
+
+               <!-- The Modal -->
+               <div class="modal fade " id="myModal">
+                  <div class="modal-dialog modal-lg">
+                     <div class="modal-content ">
+                        <!-- Modal Header -->
+                        <div class="pt-3">
+                           <span class="modal-title customer-img-video ps-3">Customer </span>
+                           <button type="button" class="btn-close border-none pull-right"
+                              data-bs-dismiss="modal"></button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                           <div class="row">
+                              <!---Carousel one start--->
+                              <div class="col-sm-6 border-end">
+                                 <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                                    <!-- Indicators/dots -->
+                                    <!-- <div class="carousel-indicators back-color">
+                                       <button type="button" data-bs-target="#demo" data-bs-slide-to="0"
+                                          class="active"></button>
+                                       <button type="button" data-bs-target="#demo" data-bs-slide-to="1"
+                                          class="active"></button>
+                                       <button type="button" data-bs-target="#demo" data-bs-slide-to="2"
+                                          class="active"></button>
+                                    </div> -->
+                                    <!-- The slideshow/carousel -->
+                                    <div class="carousel-inner">
+                                       <div class="carousel-item active">
+                                          <img src="{% static 'images/customer_image.png' %}" alt="" id="image1" class="d-lg-block img-fluid">
+                                       </div>
+                                       <div class="carousel-item">
+                                          <img src="{% static 'images/customer_image.png' %}" alt="" id="image2" class="d-lg-block img-fluid">
+
+                                       </div>
+                                       
+                                    </div>
+                                    <!-- Left and right controls/icons -->
+                                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo"
+                                       data-bs-slide="prev">
+                                       <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#demo"
+                                       data-bs-slide="next">
+                                       <span class="carousel-control-next-icon"></span>
+                                    </button> -->
+                                 </div>
+                              </div>
+                              <!-- Carousel one end -->
+
+                              <!--reviews in model one  start-->
+                              <div class="col-sm-6">
+                                 <div class="row">
+                                    <div class="col-sm-1">
+                                       <i class="fa fa-star reviews-number-back" aria-hidden="true">4</i>
+                                    </div>
+                                    <div class="col-sm-11">
+                                       <div class="row">
+
+                                          <span class="customer-review">Good qaulity and easy to assemble computer or
+                                             study table. The
+                                             size is good for a laptop or PC and the quality of the wood is
+                                             good and the table is quite sturdy Good qaulity and easy to
+                                             assemble computer or study table. The size is good for a laptop
+                                             or PC and the quality of the wood is good and the table is quite
+                                             sturdy
+                                          </span>
+
+                                       </div>
+
+                                    </div>
+                                 </div>
+                                 <div class="row pt-2">
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-11">
+                                       <span class="customer-name-nd-date  border-end border-dark ps-1 pe-2">Rakesh
+                                          Pimpalkar</span>
+                                       <span class="customer-name-nd-date ">11 July 2022</span>
+                                       <span><i class="fa fa-thumbs-o-up pull-right " aria-hidden="true">6</i></span>
+
+                                       <span><i class="fa fa-thumbs-o-down pull-right" aria-hidden="true">7</i></span>
+
+
+                                    </div>
+
+                                 </div>
+                                 <!-- reviews in model one end-->
+
+                                 <!-- images for reviews -->
+                                 <div class="row pt-3">
+                                    <div class="col-sm-3">
+                                       <img src="{% static 'images/minimalist-office-with-table-laptop 2.png' %}" class="img-fluid"
+                                          alt="...">
+                                    </div>
+
+                                    <div class="col-sm-3">
+                                       <img src="{% static 'images/minimalist-office-with-table-laptop 2.png' %}" class="img-fluid"
+                                          alt="...">
+                                    </div>
+
+                                    <div class="col-sm-3">
+                                       <img src="{% static 'images/minimalist-office-with-table-laptop 2.png' %}" class="img-fluid"
+                                          alt="...">
+                                    </div>
+
+                                    <div class="col-sm-3">
+                                       <img src="{% static 'images/minimalist-office-with-table-laptop 2.png' %}" class="img-fluid"
+                                          alt="...">
+                                    </div>
+
+
+                                 </div>
+                                 <!-- imges end for reviews -->
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+                  <!---image modal end--->
+               
+
+               <!-------video modal start --->
+               <!-- <div class="col-sm-2">
+                  <button type="button" class="border-shodow" data-bs-toggle="modal" data-bs-target="#myModal2">
+                     <img class="img-fluid" src="{% static 'images/chair-table.png' %}" alt="">
+                  </button>
+               </div> -->
+
+
+               <!-- The Modal video button  -->
+               <!-- <div class="modal fade" id="myModal2">
+                  <div class="modal-dialog modal-lg">
+                     <div class="modal-content pt-3">
+                        
+                        <div class="">
+                           <span class="customer-img-video ps-2 ">Customer videos (39)</span>
+                           <button type="button" class="btn-close pull-right" data-bs-dismiss="modal"></button>
+                        </div>
+                       
+                        <div class="modal-body">
+                           <div class="row">
+                              
+                              <div class="col-sm-6 video-background ">
+                                
+                                 <div id="demo2" class="carousel slide  " data-bs-ride="carousel">
+
+
+
+                                    
+                                    <div class="carousel-inner ">
+                                       <div class="carousel-item active">
+                                          <video width="380" height="280" controls>
+                                             <source src="videos/videoplayback.mp4" type="video/mp4">
+                                          </video>
+                                       </div>
+
+
+                                       <div class="carousel-item">
+                                          <video width="380" height="280" controls>
+                                             <source src="videos/videoplayback.mp4" type="video/mp4">
+                                          </video>
+                                       </div>
+
+
+                                       <div class="carousel-item">
+                                          <video width="380" height="280" controls>
+                                             <source src="videos/videoplayback.mp4" type="video/mp4">
+                                          </video>
+                                       </div>
+                                    </div>
+
+
+
+                                 </div>
+                                 
+                                 <div class="carousel-indicators  carousel-indicators-padd">
+                                    <button type="button" data-bs-target="#demo2" data-bs-slide-to="0"
+                                       class="active"></button>
+                                    <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"
+                                       class="active"></button>
+                                    <button type="button" data-bs-target="#demo2" data-bs-slide-to="2"
+                                       class="active"></button>
+                                 </div>
+
+                              </div>
+
+
+
+                             
+                              <div class="col-sm-6">
+                                 <div class="row">
+                                    <div class="col-sm-1">
+                                       <i class="fa fa-star reviews-number-back" aria-hidden="true">4</i>
+                                    </div>
+                                    <div class="col-sm-11">
+                                       <div class="row">
+
+                                          <span class="customer-review">Good qaulity and easy to assemble computer or
+                                             study table. The
+                                             size is good for a laptop or PC and the quality of the wood is
+                                             good and the table is quite sturdy Good qaulity and easy to
+                                             assemble computer or study table. The size is good for a laptop
+                                             or PC and the quality of the wood is good and the table is quite
+                                             sturdy
+                                          </span>
+
+                                       </div>
+
+                                    </div>
+                                 </div>
+                                 <div class="row pt-2">
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-11">
+                                       <span class="customer-name-nd-date  border-end border-dark ps-1 pe-2">Rakesh
+                                          Pimpalkar</span>
+                                       <span class="customer-name-nd-date ">11 July 2022</span>
+                                       <span><i class="fa fa-thumbs-o-up pull-right " aria-hidden="true">6</i>
+                                       </span>
+
+                                       <span><i class="fa fa-thumbs-o-down pull-right" aria-hidden="true">7</i>
+                                       </span>
+
+
+                                    </div>
+
+                                 </div>
+                                 <div class="row pt-5">
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-11">
+                                       <img src="{% static 'images/video.png' %}" class="img-fluid" alt="...">
+                                       <img src="{% static 'images/video.png' %}" class="img-fluid" alt="...">
+                                       <img src="{% static 'images/video.png' %}" class="img-fluid" alt="...">
+                                       <img src="{% static 'images/video.png' %}" class="img-fluid" alt="...">
+
+                                    </div>
+                                 </div>
+                              </div>
+
+
+
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div> -->
+
+               <!-- end video modal -->
+
+               <!--fifth modal on images-->
+               
+            </div>
+
+
+   <!-- Start sorry n result found -->
+   <div class="row empty-cart-padding mobile-view-top-padding pt-3">
+      <div class="col-md-3">
+
+      </div>
+      <center>
+         <div class="col-md-6">
+
+            <div class="row">
+                  <div class="col-12 col-md-12 mobile-view-padding">
+                     <img src="{% static 'images/no-result-found.png' %}" alt="" class="img-fluid">
+                  </div>
+            </div>
+
+            <div class="row">
+                  <div class=" col-12 col-md-12 your-cart-is-empty cart-mobile-view mobile-view-padding">
+                     Sorry, no results found!
+                  </div>
+            </div>
+
+            <div class="row">
+                  <div class=" col-12 col-md-12 add-items mobile-view-padding">
+                     Please check the spelling or try searching for something else
+                  </div>
+            </div>
+
+            <div class="row shop-now-button ps-0 ">
+                  <div class=" col-12 col-md-12">
+
+
+                     <div class="row">
+
+                        <div class="col-md-4"></div>
+
+                        <div class="col-12 col-md-4 btn-padding">
+                              <a href="{% url 'home' %}" class="text-decoration-none">
+                                 <div class="input-group">
+                                    <button type="button"
+                                             class="form-control btn-circle btn-sm border border-0">
+                                          <span class="share-button">Go Back Home</span>
+                                    </button>
+                                    <span class="input-group-text share-btn border border-0">
+
+                                       <button type="button" class="btn btn-circle btn-md">
+                                          <i class="fa-solid fa-house-user"></i>
+                                       </button>
+
+                                    </span>
+                                 </div>
+                              </a>
+                        </div>
+
+                        <div class="col-md-4"></div>
+                     </div>
+                  </div>
+            </div>
+
+
+         </div>
+      </center>
+      <div class="col-md-3">
+
+      </div>
+   </div>
+   <!-- End sorry n result found -->
+            <!-------------------------------third row------------------------------------------------>
+           
+            <!------------------------------rows end----------------------------------------->
+         </div>
+      </div>
+   </div>
+
+   </div>
+   <!-- ---------------------col-sm-10 end--------------------- -->
+   <!-- -----------------------------------col2 end--------------------------------- -->
+   </div>
+   </div>
+
+
+
+   <!-- -------------------------bootstrap script link start------------------------------------ -->
+   <!--  -->
+   <!-- -------------------------bootstrap script link end------------------------------------ -->
+
+   <!-- for 3lines dropdown script start -->
+   <script>
+      function openNav() {
+         document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+         document.getElementById("mySidenav").style.width = "0";
+      }
+   </script>
+
+   <!-- 3lines dropdown script end -->
+
+
+   <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+         showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+         showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+         let i;
+         let slides = document.getElementsByClassName("mySlides");
+         let dots = document.getElementsByClassName("dot");
+         if (n > slides.length) { slideIndex = 1 }
+         if (n < 1) { slideIndex = slides.length }
+         for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+         }
+         for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+         }
+         slides[slideIndex - 1].style.display = "block";
+         dots[slideIndex - 1].className += " active";
+      }
+   </script>
+   <!-- script for video modal -->
+
+   <!-- fuction for morebtn -->
+   <script>
+      $(function () {
+         $('#readMore').click(function () {
+            $(this).text(function (i, def) {
+               return def == 'Read More' ? 'Show Less' : 'Read More';
+            });
+         })
+
+      });
+
+   </script>
+   <!-- fuction end for more button -->
+
+
+
+   <script>
+      var pic = ""
+      function PassOBJ(id,image){
+         console.log(id)
+         console.log(image)
+  
+         document.getElementById("id").value = id;
+         document.getElementById("image").src = image;
+
+         let divLocation1= document.getElementById("image1"); 
+         let imgElement = document.createElement("image1");
+         imgElement.src = image
+         divLocation.append(imgElement);
+
+         document.getElementById("name").innerHTML = name;
+      
+      }
+  </script>
+   {% endblock %}

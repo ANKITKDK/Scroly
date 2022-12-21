@@ -1,0 +1,118 @@
+.opps-containt{
+
+font-family:var(--font-1);
+font-style: normal;
+font-weight:400;
+font-size: 40px;
+line-height: 24px;
+text-align: center;
+letter-spacing: -0.011em;
+color:var(--color-17);
+}
+
+
+.not-exist{
+font-family:var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+letter-spacing: -0.011em;
+color:var(--color-17);
+}
+
+.Error-no{
+font-family:var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height, or 120% */
+text-align: center;
+letter-spacing: -0.011em;
+color:var(--color-17);
+    
+}
+
+.error-page-code{
+font-family:var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 128px;
+line-height: 156px;
+/* identical to box height */
+text-align: center;
+color:var(--color-21);
+/* shadow */
+text-shadow: 2px 2px 6px var(--color-23);
+}
+
+
+.arrow-btn{
+    height: 50px;
+    width: 50px;
+    left: 100.875rem;
+    top: 355px;
+    border-radius:50%;
+    border:none;
+    background-color: var(--color-1);
+    vertical-align:none;
+    }
+
+
+
+.btn-circle.btn-sm{
+    width: 30px;
+    height: 50px;
+    padding: 6px 0px;
+    border-radius:30px;
+    font-size: 8px;
+    text-align: center;
+    background-color:var(--color-1);
+    
+    
+}
+
+.btn-circle.btn-md{
+    width:50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 20px;
+    text-align: center;
+    background:var(--color-16);
+
+}
+
+.arrow-button{
+font-family:var(--font-1);
+font-size: 16px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+color:var(--color-9);
+}
+
+.arrow-icon-main{
+color:var(--color-33);
+height: 17px;
+width: 15px;
+left: 295px;
+top: 18px;
+border-radius: 0px;
+}
+
+.error-found{
+font-family:var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+text-align: center;
+letter-spacing: -0.011em;
+color:var(--color-17);
+
+}

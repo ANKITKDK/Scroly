@@ -1,0 +1,544 @@
+body {
+    background-image: url("../images/background.png"); 
+    /* font-family:var(--font-1); */
+}
+
+
+
+.delivery-address-padding {
+    padding-bottom: 30px;
+}
+
+
+
+.delivery-address-shadow {
+    background: var(--color-9);
+    box-shadow: 2px 2px 6px var(--color-22);
+    border-radius: 6px;
+}
+
+
+.page-padding {
+    padding-left:22px;
+    padding-right: 22px;
+}
+
+/* start delivery address */
+.card-bodyyy {
+    padding: 30px;
+}
+/*  */
+.deli-addr-text {
+
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-5);
+    /* padding-top: 14px; */
+}
+
+
+.text-xt1 {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 145%;
+    color: var(--color-17);
+    padding-top: 12px;
+}
+
+.text-xt2{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+    color:var(--color-17);
+    padding-top: 3px;
+}
+
+/* first btn */
+.btnx-textx,
+.btnx-textx:focus{
+    /* border-bo: ; */
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-5);
+    padding: 14px 14px;
+    border: 1px solid var(--color-1);
+    border-radius: 6px;
+}
+
+/* second-box */
+.box-sshado {
+    background: var(--color-9);
+    /* shadow */
+
+    box-shadow: 2px 2px 6px var(--color-22);
+    border-radius: 6px;
+}
+/* .pading end col-md-3 */
+.pading-second-row{
+    padding-right: 15px;
+}
+/* second card */
+.text-xt3 {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color:var(--color-17);
+}
+
+.text-xt4 {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-17);
+    padding-top: 12px;
+}
+
+.pading-texta2 {
+    padding-top: 12px;
+}
+
+.rupe-col {
+    /* font-family: 'Montserrat'; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+
+    color: var(--color-17);
+}
+
+.rupe-col-numm {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+
+    color: var(--color-17);
+}
+
+.orign-pric-tex {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(63, 81, 92, 0.37);
+}
+
+.tex-green-col {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-8);
+}
+
+.tex-green-cole {
+    /* font-family: 'Montserrat'; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color:  var(--color-8);
+}
+
+/* Color: Black */
+.col-black-teex {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-17);
+}
+
+.quantity-tex {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-5);
+}
+
+/* start quantity dropdown */
+.btn:focus{
+    box-shadow: none;
+}
+.quantity {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-5);
+}
+
+.quality-number{
+    border: 1px solid var(--color-17);
+    border-radius: 6px;
+    color: var(--color-17);
+
+}
+
+.number-colorr {
+    color: var(--color-17)
+}
+
+.quality-number:hover {
+    border: 1px solid var(--color-17);
+    border-radius: 6px;
+    color: var(--color-17);
+
+}
+
+.quality-number-dropdown {
+
+    /* filter: drop-shadow(2px 2px 6px #D2B3B3); */
+    min-width: 48px;
+    background: var(--color-9);
+    border: 1px solid var(--color-17);
+    border-radius: 6px;
+}
+
+/*end quantity dropdown */
+.Delivered-dat-text {
+    padding-top: 30px;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-17);
+}
+
+.Delivered-remove-text {
+    padding-top: 30px;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--color-17);
+}
+
+
+/* Order Confirmation email will be sent to tanujapatil@gmail.com */
+
+
+.pad-top-30px{
+    padding-top: 30px;
+}
+
+.pad-bottom-30px{
+    padding-bottom: 30px;
+}
+
+.pad-top-14px{
+    padding-top: 14px;
+}
+
+.pad-bottom-14px{
+    padding-top: 14px;
+}
+
+.your-other-text{
+    font-family: var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+/* text-align: center; */
+
+color: var(--color-17);
+}
+
+.tanu-text-cs{
+    font-family: var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 145%;
+color: var(--color-17);
+}
+
+
+
+
+
+/*start Price Details */
+
+.pri-det-text{
+    font-family: var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+/* text-align: center; */
+
+color: var(--color-17);
+}
+
+
+.text-text1{
+    font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+/* text-align: center; */
+
+color: var(--color-17);
+
+}
+
+.text-text2{
+    font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: var(--color-17);
+
+}
+
+.text-texttw{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: var(--color-17);
+}
+
+.text-text-green{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-8);
+}
+.pad-top-left-30px{
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+/*end Price Details */
+
+.address1{
+    background: var(--color-9);
+/* shadow */
+
+box-shadow: 2px 2px 6px var(--color-22);
+border-radius: 6px;
+}
+
+
+/*start button */
+.share-btn{
+    height: 50px;
+    width: 50px;
+    left: 100.875rem;
+    top: 355px;
+    border-radius:50%;
+    border:none;
+    background-color: var(--color-1);
+    vertical-align:none;
+    }
+
+.form-control:focus{
+    box-shadow: none;
+}
+
+.btn-circle.btn-sm{
+    width: 30px;
+    height: 50px;
+    padding: 6px 0px;
+    border-radius:30px;
+    font-size: 8px;
+    text-align: center;
+    background-color:var(--color-1);
+    
+    
+}
+
+.btn-circle.btn-md{
+    width:50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 20px;
+    text-align: center;
+    background:var(--color-16);
+
+}
+
+.share-button{
+font-family:var(--font-1);
+font-size: 16px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+color:var(--color-9);
+}
+
+.share-icon-main{
+color:var(--color-33);
+height: 17px;
+width: 15px;
+left: 295px;
+top: 18px;
+border-radius: 0px;
+}
+
+/*-----------------------hover button------------------------*/
+
+.share-btn-hover:hover{
+    height: 50px;
+    width: 50px;
+    left: 100.875rem;
+    top: 355px;
+    border-radius:50%;
+    border:none;
+    background-color: var(--color-34);
+    vertical-align:none;
+    transition-duration: 0.4s;
+}
+
+
+
+.btn-circle.btn-sm-hover{
+    width: 30px;
+    height: 50px;
+    padding: 6px 0px;
+    border-radius:30px;
+    font-size: 8px;
+    text-align: center;
+    background-color:var(--color-34);
+}
+
+.btn-circle.btn-md-hover{
+    width:50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 20px;
+    text-align: center;
+    background:var(--color-16);
+}
+
+
+.share-button-hover{
+    font-family:var(--font-1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:var(--color-9);
+}
+
+.share-icon-hover{
+    color:var(--color-33);
+    height: 17px;
+    width: 15px;
+    left: 295px;
+    top: 18px;
+    border-radius: 0px;
+}
+    
+
+/* end button */
+
+/* Your Other Address */
+.oran-text-col,
+.oran-text-col:hover{
+    font-family: var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+text-align: center;
+
+color: var(--color-1);
+}
+
+
+/* box-boder */
+.but-boder-col{
+    border: 1px solid var(--color-1);
+border-radius: 0px 6px 6px 0px;
+}
+
+/* .form-check-input:checked { */
+    /* background-color: var(--color-1); */
+    /* border: var(--color-1); */
+/* } */
+
+
+.form-check-input:checked {
+    background-color: var(--color-1);
+    border-color: 1px  solid var(--color-1) ;
+}
+
+.form-check-input,
+.form-check-input:hover{
+    /* background-color: #0d6efd; */
+    border-color: var(--color-1);
+}
+
+/* popup */
+.pading-popup{
+    padding-top:80px  ;
+    /* padding-left:235px ; */
+    /* padding-right: 235px; */
+    /* padding-bottom: 80px; */
+    
+}
+
+
+/* Exchange Successfully */
+.exch-succ{
+font-family: var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+line-height: 34px;
+/* text-align: center; */
+padding-top: 40px ;
+padding-bottom: 80px;
+color:  var(--color-5);
+
+}
+
+.modal-header {
+    border-bottom:transparent;
+}

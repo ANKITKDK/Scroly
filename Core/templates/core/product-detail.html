@@ -1,0 +1,2028 @@
+{% extends "core/base.html" %}{% load static %}
+{% block content %}
+
+{% block own_css %}
+<link rel="stylesheet" href="{% static 'css/product-detail.css' %}" type="text/css">
+
+{% endblock own_css%}
+
+<div class="col-sm-10">
+    <div class="row border-bottom">
+        <!--start row , small-image ,large-image and questions-ans   -->
+        <div class="col-md-6 border-end">
+
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <!-- start small-images product -->
+                    <div class="row border-bottom pb-4">
+                        <div class="col-md-2">
+                            <!--start first image-->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="container1">
+                                        <img src="{% static 'images/front.png' %}" alt="" class="img-fluid rounded">
+                                        <div class="centered">Front image</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end first image-->
+
+                            <!--start second image-->
+                            <div class="row py-3">
+                                <div class="col-md-12">
+                                    <div class="container1">
+                                        <img src="{% static 'images/front.png' %}" alt="" class="img-fluid rounded">
+                                        <div class="centered">Left side</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end second image-->
+
+                            <!-- start third image -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="container1">
+                                        <img src="{% static 'images/front.png' %}" alt="" class="img-fluid rounded">
+                                        <div class="centered">Right side</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end third image -->
+
+                            <!--start forth image -->
+                            <div class="row pt-3">
+                                <div class="col-md-12">
+                                    <div class="container1">
+                                        <img src="{% static 'images/front.png' %}" alt="" class="img-fluid rounded">
+                                        <div class="centered">Top front</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end forth image -->
+
+                            <!--start fifth image -->
+                            <div class="row py-3">
+                                <div class="col-md-12">
+                                    <div class="container1">
+                                        <img src="{% static 'images/front.png' %}" alt="" class="img-fluid rounded">
+                                        <div class="centered">Top Back</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end fifth image -->
+
+                            <!--start sixth image -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="container1">
+                                        <img src="{% static 'images/front.png' %}" alt="" class="img-fluid rounded">
+                                        <div class="centered">Bottom</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--start sixth image -->
+
+                            <!-- start video product -->
+                            <div class="row ps-1 pt-3">
+                                <div class="col-md-12">
+                                    <img src="{% static 'images/front-video-popup.png' %}" alt=""
+                                         class="img-fluid rounded"
+                                         data-bs-toggle="modal" data-bs-target="#myModal">
+                                </div>
+                            </div>
+                            <!--end video product -->
+
+                            <!-- start row for  2 Videos  -->
+                            <div class="row ps-1">
+                                <div class="col-md-12  video-rext">
+                                    2 Videos
+                                </div>
+                            </div>
+                            <!-- end row for  2 Videos  -->
+
+                        </div>
+                        <!--start large-image product-->
+                        <div class="col-md-10">
+                            <div class="row ">
+                                <div class="col-md-12">
+                                    <img src="{{product.ProductMainImage.url}}" alt="" class="img-fluid rounded">
+                                </div>
+                            </div>
+                        </div>
+                        <!--end large-image product-->
+                    </div>
+                    <!--end small-images product -->
+
+                    <!--start Questions and Answers heading-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row py-4">
+                                <div class="col-md-12 que-ans-heading">
+                                    Questions and Answers
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form>
+                                        <div class="input-group">
+                                                        <span class="input-group-text"><i
+                                                                class="fa fa-search search-color1"
+                                                                aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control input-text"
+                                                   placeholder="Type your question or keyword">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- start first question-user -->
+                            <div class="row pt-4">
+                                <div class="col-md-12 que-css">
+                                    Q: Is this suitable for someone who is 6 feet tall?
+                                </div>
+                            </div>
+                            <!--end first question -->
+
+                            <!-- start first-question-user ans-->
+                            <div class="row pt-3">
+                                <div class="col-md-12 ans-css">
+                                    A: Yes, Height wise you won't have an issue. The only
+                                    cons you
+                                    may face is the
+                                    table doesn't have any foot-rest & its a bit short breadth wise. But
+                                    these
+                                    doesn't matter,
+                                    you get used to it after 5-6Days
+                                </div>
+                            </div>
+                            <!--end first-question ans-->
+
+                            <!-- start first question-user name -->
+                            <div class="row  py-3 border-bottom">
+                                <div class="col-md-4 user-name">
+                                    Rakesh pimpalkar
+                                </div>
+                                <div class="col-md-6 user-name">
+                                    11 July 2022
+                                </div>
+                                <div class="col-md-1 user-name"><i class="fa fa-thumbs-o-up"
+                                                                   aria-hidden="true"></i><span class="ps-1">6</span>
+                                </div>
+
+                                <div class="col-md-1 user-name"><i class="fa fa-thumbs-o-down"
+                                                                   aria-hidden="true"></i><span class="ps-1">2</span>
+                                </div>
+                            </div>
+                            <!-- ---- -->
+                            <!-- start second question-user -->
+                            <div class="row pt-3">
+                                <div class="col-md-12 que-css">
+                                    Q: It is suitable for gaming pc?
+                                </div>
+                            </div>
+                            <!--end second question-user -->
+
+                            <!-- start second question-user ans -->
+                            <div class="row pt-3">
+                                <div class="col-md-12 ans-css">
+                                    A: Yes, Height wise you won't have an issue. The only cons you may
+                                    face is the table doesn't have any foot-rest & its a bit short breadth
+                                    wise. But
+                                    these doesn't matter, you get used to it after 5-6Days
+                                </div>
+                            </div>
+                            <!--end second question-user ans -->
+
+                            <!-- start second question-user name -->
+                            <div class="row border-bottom user-name pt-3">
+                                <div class="col-md-4">
+                                    Rakesh pimpalkar
+                                </div>
+                                <div class="col-md-3">
+                                    <p class="fs-6">11 July 2022</p>
+                                </div>
+                                <div class="col-md-3"></div>
+                                <div class="col-md-1"><i class="fa fa-thumbs-o-up"
+                                                         aria-hidden="true"></i><span class="ps-1">6</span>
+                                </div>
+                                <div class="col-md-1"><i class="fa fa-thumbs-o-down"
+                                                         aria-hidden="true"></i></i></i><span class="ps-1">2</span>
+                                </div>
+                            </div>
+                            <!--end second question-user name -->
+
+                            <!--start third question-user -->
+                            <div class="row pt-3">
+                                <div class="col-md-12 que-css">
+                                    Q: Is this suitable for someone who is 6 feet tall?
+                                </div>
+                            </div>
+                            <!--end third question-user -->
+
+                            <!--start third question-user ans -->
+                            <div class="row pt-3">
+                                <div class="col-md-12 ans-css">
+                                    A: Yes, Height wise you won't have an issue. The only cons you may
+                                    face is the table doesn't have any foot-rest & its a bit short breadth
+                                    wise. But
+                                    these doesn't matter, you get used to it after 5-6Days
+                                </div>
+                            </div>
+                            <!--end third question-user ans -->
+
+                            <!--start third question-user name -->
+                            <div class="row border-bottom py-3 user-name">
+                                <div class="col-md-4">
+                                    Rakesh pimpalkar
+                                </div>
+                                <div class="col-md-3">
+                                    <p class="fs-6">11 July 2022</p>
+                                </div>
+                                <div class="col-md-3"></div>
+                                <div class="col-md-1"><i class="fa fa-thumbs-o-up"
+                                                         aria-hidden="true"></i><span class="ps-1">6</span>
+                                </div>
+                                <div class="col-md-1"><i class="fa fa-thumbs-o-down"
+                                                         aria-hidden="true"></i></i></i><span class="ps-1">2</span>
+                                </div>
+                            </div>
+                            <!--end third question-user name -->
+
+                            <!--start forth question-user -->
+                            <div class="row pt-3">
+                                <div class="col-md-12 que-css">
+                                    Q: It is suitable for gaming pc?
+                                </div>
+                            </div>
+                            <!--end forth question-user -->
+
+                            <!--start forth question-user ans -->
+                            <div class="row pt-3">
+                                <div class="col-md-12 ans-css">
+                                    A: absolutely no
+                                </div>
+                            </div>
+                            <!--end forth question-user ans -->
+
+                            <!--start forth question-user name -->
+                            <div class="row border-bottom user-name pt-3">
+                                <div class="col-md-4">
+                                    Rakesh pimpalkar
+                                </div>
+                                <div class="col-md-3">
+                                    <p class="fs-6">11 July 2022</p>
+                                </div>
+                                <div class="col-md-3"></div>
+                                <div class="col-md-1"><i class="fa fa-thumbs-o-up"
+                                                         aria-hidden="true"></i><span class="ps-1">6</span>
+                                </div>
+                                <div class="col-md-1"><i class="fa fa-thumbs-o-down"
+                                                         aria-hidden="true"></i></i></i><span class="ps-1">2</span>
+                                </div>
+                            </div>
+                            <!--end forth question-user name -->
+
+                            <!--start fifth question-user -->
+                            <div class="row pt-3">
+                                <div class="col-md-12 que-css">
+                                    Q: Is this suitable for someone who is 6 feet tall?
+                                </div>
+                            </div>
+                            <!--end fifth question-user -->
+
+                            <!--start fifth question-user ans -->
+                            <div class="row pt-3">
+                                <div class="col-md-12 ans-css">
+                                    A: Yes, Height wise you won't have an issue. The only cons you may
+                                    face is the table doesn't have any foot-rest & its a bit short breadth
+                                    wise. But
+                                    these doesn't matter, you get used to it after 5-6Days
+                                </div>
+                            </div>
+                            <!--end fifth question-user ans -->
+
+                            <!--start fifth question-user name -->
+                            <div class="row border-bottom user-name pt-3">
+                                <div class="col-md-4">
+                                    Rakesh pimpalkar
+                                </div>
+                                <div class="col-md-3">
+                                    <p class="fs-6">11 July 2022</p>
+                                </div>
+                                <div class="col-md-3"></div>
+                                <div class="col-md-1"><i class="fa fa-thumbs-o-up"
+                                                         aria-hidden="true"></i><span class="ps-1">6</span>
+                                </div>
+                                <div class="col-md-1"><i class="fa fa-thumbs-o-down"
+                                                         aria-hidden="true"></i></i></i><span class="ps-1">2</span>
+                                </div>
+                            </div>
+                            <!--end fifth question-user name -->
+
+                            <!--start fifth question-user -->
+                            <div class="row pt-3">
+                                <div class="col-md-12 que-css">
+                                    Q: Is this suitable for someone who is 6 feet tall?
+                                </div>
+                            </div>
+                            <!--end fifth question-user -->
+
+                            <!--start sixth question-user ans -->
+                            <div class="row pt-3">
+                                <div class="col-md-12 ans-css">
+                                    A: Yes, Height wise you won't have an issue. The only cons you may
+                                    face is the table doesn't have any foot-rest & its a bit short breadth
+                                    wise. But
+                                    these doesn't matter, you get used to it after 5-6Days
+                                </div>
+                            </div>
+                            <!--end sixth question-user ans -->
+
+                            <!--start sixth question-user name -->
+                            <div class="row border-bottom user-name pt-3">
+                                <div class="col-md-4">
+                                    Rakesh pimpalkar
+                                </div>
+                                <div class="col-md-3">
+                                    <p class="fs-6">11 July 2022</p>
+                                </div>
+                                <div class="col-md-3"></div>
+                                <div class="col-md-1"><i class="fa fa-thumbs-o-up"
+                                                         aria-hidden="true"></i><span class="ps-1">6</span>
+                                </div>
+                                <div class="col-md-1"><i class="fa fa-thumbs-o-down"
+                                                         aria-hidden="true"></i></i></i><span class="ps-1">2</span>
+                                </div>
+                            </div>
+                            <!--end sixth question-user name -->
+
+                            <!-- start heading See all questions -->
+                            <div class="col-md-12 pt-3">
+                                <div class="row">
+                                    <p class="icon-orange">See all questions</p>
+                                </div>
+                            </div>
+                            <!--end heading See all questions -->
+                        </div>
+                    </div>
+                    <!--end Questions and Answers heading-->
+                </div>
+            </div>
+        </div>
+        <!--end row , small-image ,large-image and questions-ans   -->
+
+        <!-- start row product-heading, add-to-cart-button, customer-photos, review-and-ratings  -->
+        <div class="col-md-6 ">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <!-- ----- -->
+                    <div class="row ">
+                        <!-- start heading Foldable Wooden Laptop Table-->
+                        <div class="col-md-10 product-name-heading">
+                            {{product.ProductName}}
+                        </div>
+                        <!-- end heading Foldable Wooden Laptop Table-->
+
+                        <!-- start icon-share -->
+                        <div class="col-md-1">
+                            <i class="fa fa-share-alt iconshare1 pt-2" aria-hidden="true"></i>
+
+
+                            <!-- <i class="fa fa-share-alt iconshare1" aria-hidden="true"></i> -->
+                        </div>
+                        <!--end icon-share -->
+
+                        <div class="col-md-1"></div>
+                    </div>
+
+                    <!--start 4.3 3,100 rating -->
+                    <div class="row py-4 border-bottom rating-text">
+                        <div class="col-md-12">
+                            <i class="fa fa-star icon-orange" aria-hidden="true"></i><span
+                                class="ps-3">{{product.Star}}</span></i><span class="ps-3">|</span><span
+                                class="ps-3">{{product.TotalRatingCount}}
+                                        </span><span class="ps-1">rating</span><span class="ps-3">|</span><span
+                                class="ps-3">{{product.TotalReviewCount}}</span>
+                            <span class="ps-1">reviews</span>
+                        </div>
+                    </div>
+                    <!--end 4.3 3,100 rating -->
+
+                    <!--start row product-price, product-discount  and product-offer -->
+                    <div class="row pt-4">
+                        <div class="col-md-12">
+                            <span><i class="fa fa-inr ruppes-col" aria-hidden="true"></i></span><span
+                                class="ruppes-col-orange ps-1">{{product.discount}}</span></i><span
+                                class="text-decoration-line-through ps-4 line-through-color">₹ {{product.Price}}
+                                        </span><span class="ps-4 com-color">({{product.DiscountPercent}} % off)</span>
+                        </div>
+                    </div>
+                    <!--end row product-price, product-discount  and product-offer -->
+
+                    <!-- start inclusive of all taxes -->
+                    <div class="row py-2 ">
+                        <div class="col-md-12 includ-tax-color">
+                            inclusive of all taxes
+                        </div>
+                    </div>
+                    <!--end inclusive of all taxes -->
+
+                    <!--start product colour  -->
+                    <div class="row py-3">
+                        <div class="col-md-2">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <strong class="color-text-size1">Color:</strong><span
+                                        class="white-text-size1 ps-1">white</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="col-md-2">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    White
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="col-md-8">
+                        </div>
+                    </div>
+                    <!--end product colour  -->
+
+                    <!--start row color of product-images-->
+                    <div class="row">
+                        <!--start first color product-images   -->
+                        <div class="col-md-2 ">
+                            <img src="{% static 'images/color-photo.png' %}" alt=""
+                                 class="img-fluid rounded image-round-color">
+                        </div>
+                        <!--end first color product-images   -->
+
+                        <!--start second color product-images   -->
+                        <div class="col-md-2 text-left">
+                            <img src="{% static 'images/color-photo.png' %}" alt=""
+                                 class="img-fluid rounded image-round-color">
+                        </div>
+                        <!--end second color product-images   -->
+
+                        <!--start third color product-images   -->
+                        <div class="col-md-2 text-left">
+                            <img src="{% static 'images/color-photo.png' %}" alt=""
+                                 class="img-fluid rounded image-round-color">
+                        </div>
+                        <!--end third color product-images   -->
+
+                        <!--start forth color product-images   -->
+                        <div class="col-md-2">
+                            <img src="{% static 'images/color-photo.png' %}" alt=""
+                                 class="img-fluid rounded image-round-color">
+                        </div>
+                        <!--end forth color product-images   -->
+                        <div class="col-md-4">
+                        </div>
+                    </div>
+                    <!--end row color of product-images-->
+
+                    <!--start Select-Size heading-->
+                    <div class="row pt-3">
+                        <div class="col-md-12 select-size-text">
+                            Select Size
+                        </div>
+                    </div>
+                    <!--end Select-Size heading -->
+
+                    <!--start  Select-Size of product-->
+                    <div class="row pt-2 ">
+                        <!--start first-button Select-Size of product-->
+                        <div class="col-md-6">
+                            <div class="row pt-2">
+                                <div class="col-md-12 text-center  d-grid">
+                                    <button type="button"
+                                            class="btn btn-outline selete-size-box-text border-size btn-block">
+                                        32"(H)×27(W)×19"D
+                                        IN INCH
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end first-button Select-Size of product-->
+
+                        <!--start second-button Select-Size of product-->
+                        <div class="col-md-6">
+                            <div class="row pt-2">
+                                <div class="col-md-12 text-center  d-grid">
+                                    <button type="button"
+                                            class="btn btn-outline selete-size-box-text border-size  btn-block">
+                                        40"(H)×32(w)×19"D
+                                        In INCH
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end second-button Select-Size of product-->
+                    </div>
+                    <!--end Select-Size of product-->
+
+                    <!-- start in-stock quentity dropdown -->
+                    <div class="row py-3">
+
+                        <!-- start row instock -->
+                        <div class="col-md-3 in-stock-color">
+                            <span>in stock.</span>
+                        </div>
+                        <!-- end row instock -->
+
+                        <!-- start row product-quantity and dropdown-btn-->
+                        <div class="col-md-2 quantity">
+                            Quantity:
+                        </div>
+
+                        <!-- start dropdown -->
+                        <div class="col-md-2">
+                            <div class="dropdown">
+                                <div class="dropdown ">
+                                    <button type="button" class="btn dropdown-toggle quality-number"
+                                            data-bs-toggle="dropdown" aria-expanded="false">1
+                                    </button>
+                                    <ul class="dropdown-menu  quality-number-dropdown p-md-0">
+                                        <li><span class="dropdown-item number-colorr" href="#">1</span></li>
+                                        <!-- quality-number -->
+                                        <li>
+                                            <hr class="dropdown-divider ">
+                                        </li>
+                                        <li><a class="dropdown-item number-colorr" href="#"> 2</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item number-colorr" href="#"> 3</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item number-colorr" href="#"> 4</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--end dropdown -->
+
+                            <div class="col-md-5"></div>
+                            <!--end row product-quantity and dropdown-btn-->
+                        </div>
+                    </div>
+
+                    <!-- srart deliver address -->
+                    <div class="row  pt-3  ">
+                        <div class="col-md-12 location-text">
+                                        <span><i class="fa fa-map-marker" aria-hidden="true"></i> Deliver
+                                            to Tanuja Nitin Sethi Sai villa Forest Office Front of Ayurvedic Clinic Man
+                                            Rod
+                                            Nagpur, Maharashtra 201002 india Phone Number:1213141516 <span
+                                                    class="change-color">Change</span></span>
+                        </div>
+                    </div>
+                    <!--end deliver address -->
+
+                    <!-- start row for Usually delivered-->
+                    <div class="row py-3">
+                        <div class="col-md-12 usually-delivered-text">
+                            Usually delivered in 5 to 9 days
+                        </div>
+                    </div>
+                    <!-- start row for Usually delivered-->
+                    <!-- ============== -->
+                    <!-- ---Add to cart button start -->
+
+                    <div class="row pt-2">
+
+                        <div class="col-md-5 pt-2  block d-grid ">
+
+                            <button class="btn rounded-pill Add-to-card py-sm-3"><a href="#"
+                                                                                    class="add-to-card-underline-remove">Add
+                                to card</a></button>
+                        </div>
+
+
+                        <div class="col-md-5 pt-2 block d-grid">
+                            <!-- <button class="button rounded-pill buy-now-btn"><a href="#" class="buy-now-text">Buy Now</a></button> -->
+                            <button class="btn rounded-pill  py-sm-3 buy-now-btn"><a href="#"
+                                                                                     class="buy-now-text">Add to
+                                card</a></button>
+                        </div>
+
+                        <div class="col-md-2">
+
+                        </div>
+                    </div>
+
+                    <!-- ---Add to cart button end -->
+
+
+                    <!-- start section 100% Original products -->
+                    <div class="my-3 border-top border-bottom">
+
+                        <div class="row">
+                            <!-- start 100% Original products -->
+                            <div class="col-md-3 my-2 py-3 prroduct-text border-end">
+                                100% Original products
+                                <!-- <span class="pe-5 border-end"></span> -->
+                            </div>
+                            <!-- start 100% Original products -->
+
+                            <div class="col-md-3 my-2 py-3 border-end prroduct-text">
+                                Cash on delivery available
+                            </div>
+
+                            <div class="col-md-3 my-2 py-3 border-end prroduct-text">
+                                10 days Replacement only
+
+                            </div>
+
+                            <div class="col-md-3 mt-3 py-2  prroduct-text">
+                                No-Contact Delivery
+                            </div>
+                        </div>
+                    </div>
+                    <!--end section 100% Original products -->
+
+                    <!--start heading Highlights  -->
+
+                    <div class="row">
+                        <div class="col-md-12 highlights-text">
+                            <strong> Product Details</strong>
+                        </div>
+                    </div>
+                    <!--end heading Highlights  -->
+
+                    <!--start specifications   -->
+                    <div class="row pt-3 pb-3 border-bottom">
+                        <div class="col-md-4 text-desk">Desk design:</div>
+                        <div class="col-md-8 specifications-text">Computer Desk</div>
+
+                        <div class="col-md-4 text-desk">Product Dimensions:</div>
+                        <div class="col-md-8 specifications-text">48.3D x 80W x 76.2H Centimeters</div>
+
+                        <div class="col-md-4 text-desk">Colour:</div>
+                        <div class="col-md-8 specifications-text">Beige</div>
+
+                        <div class="col-md-4 text-desk">Room Type:</div>
+                        <div class="col-md-8 specifications-text">Office, Living Room</div>
+                    </div>
+                    <!--end specifications   -->
+
+                    <!-- start see more button -->
+                    <div class="row pt-1 pb-2">
+                        <div class="col-md-12">
+                            <!-- <a href="#" class="see-more-text"><i class="fa fa-angle-down" aria-hidden="true"></i>see more</a> -->
+                            <button type="button" class="btn border-none"><i class="fa fa-angle-down"
+                                                                             aria-hidden="true"> </i> see more
+                            </button>
+                        </div>
+                    </div>
+                    <!-- end see more button -->
+
+                    <!-- start row for About this product -->
+                    <div class="row pb-2">
+                        <div class="col-md-12 about-this-text">
+                            About this product
+                        </div>
+                    </div>
+                    <!--end row for About this product -->
+
+                    <!-- start see more text -->
+                    <div class="row ">
+                        <div class="col-md-12 about-inner-textt">
+                            {{product.ProductDescription}}
+                        </div>
+                        <!--end see more text -->
+                    </div>
+
+
+                    <!-- progress bar start-->
+
+                    <!-- start row heading rating & reviews -->
+                    <div class="row py-3">
+                        <div class="col-md-12 rating-rew-text">
+                            Ratings & Reviews
+                        </div>
+                    </div>
+                    <!--end row heading rating & reviews -->
+
+                    <!-- start row  rating & reviews -->
+                    <div class="row  border-bottom">
+                        <div class="col-md-3 pt-5 border-end">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                                <span><i class="fa fa-star star-icon-orange-size px-2"
+                                                         aria-hidden="true"></i><span
+                                                        class="rating-42">4.2</span></span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 text-center ratinng-tex-size1">
+                                    3,007 Ratings &
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 text-center ratinng-tex-size1">
+                                    455 Reviews
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-9">
+                            <div class="row pb-3">
+                                <!--start first bar -->
+                                <div class="side">
+                                    <div><span class="fa fa-star progress-bar-star"></span><span
+                                            class="ms-2 progress-bar-num">5</span></div>
+                                </div>
+                                <div class="middle">
+                                    <div class="bar-container">
+                                        <div class="bar-5"></div>
+                                    </div>
+                                </div>
+                                <div class="side right">
+                                    <div class="rating-user-view">150</div>
+                                </div>
+                                <!--end first bar -->
+
+                                <!--start second bar -->
+                                <div class="side">
+                                    <div><span class="fa fa-star progress-bar-star"></span><span
+                                            class="ps-1 progress-bar-num">4</span></div>
+                                </div>
+                                <div class="middle">
+                                    <div class="bar-container">
+                                        <div class="bar-4"></div>
+                                    </div>
+                                </div>
+                                <div class="side right">
+                                    <div class="rating-user-view">63</div>
+                                </div>
+                                <!--end second bar -->
+
+                                <!--start third bar -->
+                                <div class="side">
+                                    <div><span class="fa fa-star progress-bar-star"></span><span
+                                            class="ms-2 progress-bar-num">3</span></div>
+                                </div>
+                                <div class="middle">
+                                    <div class="bar-container">
+                                        <div class="bar-3"></div>
+                                    </div>
+                                </div>
+                                <div class="side right">
+                                    <div class="rating-user-view">15</div>
+                                </div>
+                                <!--end third bar -->
+
+                                <!-- start foth bar -->
+                                <div class="side">
+                                    <div><span class="fa fa-star progress-bar-star"></span><span
+                                            class="ms-2 progress-bar-num">2</span></div>
+                                </div>
+                                <div class="middle">
+                                    <div class="bar-container">
+                                        <div class="bar-2"></div>
+                                    </div>
+                                </div>
+                                <div class="side right">
+                                    <div class="rating-user-view">6</div>
+                                </div>
+                                <!--end foth bar -->
+
+                                <!-- start fifth bar -->
+                                <div class="side">
+                                    <div><span class="fa fa-star progress-bar-star"></span><span
+                                            class="ms-2 progress-bar-num">1</span></div>
+                                </div>
+                                <div class="middle">
+                                    <div class="bar-container">
+                                        <div class="bar-1"></div>
+                                    </div>
+                                </div>
+                                <div class="side right">
+                                    <div class="rating-user-view ">20</div>
+                                </div>
+                                <!--end fifth bar -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- progress bar end -->
+
+                    <!-- ===================== -->
+                    <!--start row for Customer Photos & Videos (7)  -->
+                    <div class="row pt-4 pb-3">
+                        <div class="col-md-12 customer-photo-text">
+                            Customer Photos & Videos (7)
+                        </div>
+                    </div>
+                    <!--end row for Customer Photos & Videos (7)  -->
+
+                    <!-- start row for Customer Photos  & Videos-->
+                    <div class="row">
+                        <!-- start row for first image  Customer -->
+                        <div class="col-md-2">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="container1">
+                                        <img src="{% static 'images/rectangle1.png' %}" alt=""
+                                             class="img-fluid rounded">
+                                        <div class="centered">image</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row for first image  Customer -->
+
+                        <!-- start row for second image  Customer -->
+                        <div class="col-md-2">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="container1">
+                                        <img src="{% static 'images/rectangle1.png' %}" alt=""
+                                             class="img-fluid rounded">
+                                        <div class="centered">image</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end row for second image  Customer -->
+
+                        <!-- start row for third image  Customer -->
+                        <div class="col-md-2">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="container1">
+                                        <img src="{% static 'images/rectangle1.png' %}" alt=""
+                                             class="img-fluid rounded">
+                                        <div class="centered">image</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end row for third image  Customer -->
+
+                        <!-- start row for forth image  Customer -->
+                        <div class="col-md-2">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="container1">
+                                        <img src="{% static 'images/rectangle1.png' %}" alt=""
+                                             class="img-fluid rounded">
+                                        <div class="centered">+39</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end row for forth image  Customer -->
+                        <div class="col-md-2"></div>
+                        <div class="col-md-2"></div>
+                    </div>
+                    <!--end row for Customer Photos & Videos-->
+
+                    <!-- start row for link See all customer Photos & Videos -->
+                    <div class="row my-2">
+                        <div class="col-md-12">
+                            <a href="#" class="see-all-customer-photo">See all customer Photos & Videos</a>
+                        </div>
+                    </div>
+                    <!-- end row for link See all customer Photos & Videos -->
+
+                    <!-- start row for Customer Reviews (91) -->
+                    <div class="row pb-2">
+                        <div class="col-md-12 customer-reviwe-tex">
+                            Customer Reviews (91)
+                        </div>
+                    </div>
+                    <!--end row for Customer Reviews (91) -->
+
+                    <!-- start customer reviwe -->
+                    <div class="row pb-3">
+                        <div class="col-md-12 customer-comment">
+                            Good qaulity and easy to assemble computer or study table. The size is good
+                            for a
+                            laptop or
+                            PC and the quality of the wood is good and the table is quite sturdy
+                        </div>
+                    </div>
+                    <!-- start customer reviwe -->
+
+                    <!-- start customer product image -->
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="container1">
+                                        <img src="{% static 'images/rectangle1.png' %}" alt=""
+                                             class="img-fluid rounded">
+                                        <div class="centered">image</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="container1">
+                                        <img src="{% static 'images/rectangle1.png' %}" alt=""
+                                             class="img-fluid rounded">
+                                        <div class="centered">image</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6"></div>
+                    </div>
+                    <!--end customer product image -->
+
+                    <!-- start customer name -->
+                    <div class="row border-bottom py-3">
+                        <div class="col-md-4 user-name">
+                            Rakesh pimpalkar
+                        </div>
+                        <div class="col-md-6 user-name">
+                            11 July 2022
+                        </div>
+
+                        <div class="col-md-1 user-name"><i class="fa fa-thumbs-o-up"
+                                                           aria-hidden="true"></i><span class="ps-1">6</span></div>
+
+                        <div class="col-md-1 user-name"><i class="fa fa-thumbs-o-down"
+                                                           aria-hidden="true"></i><span class="ps-1">2</span>
+                        </div>
+                    </div>
+                    <!-- start customer name -->
+
+                    <!-- start second customer reviews -->
+                    <div class="row pt-2">
+                        <div class="col-md-12 customer-comment">
+                            <p>Good qaulity and easy to assemble computer or study table. The size is good
+                                for a
+                                laptop or
+                                PC and the quality of the wood is good</p>
+                        </div>
+                    </div>
+                    <!--end second customer reviews -->
+
+                    <!-- start second customer name -->
+                    <div class="row border-bottom py-3">
+                        <div class="col-md-4 user-name">
+                            Golya kosurkar
+                        </div>
+                        <div class="col-md-6 user-name">
+                            11 July 2022
+                        </div>
+
+                        <div class="col-md-1 user-name"><i class="fa fa-thumbs-o-up"
+                                                           aria-hidden="true"></i><span class="ps-1">6</span></div>
+
+                        <div class="col-md-1 user-name"><i class="fa fa-thumbs-o-down"
+                                                           aria-hidden="true"></i><span class="ps-1">2</span>
+                        </div>
+                    </div>
+                    <!--end second customer name -->
+
+                    <!-- start see all reviews -->
+                    <div class="row py-3">
+                        <div class="col-md-12 ">
+                            <a href="#" class="see-all-review">See all reviews</a>
+                        </div>
+                    </div>
+                    <!--end see all reviews -->
+
+                    <!-- =========================================== -->
+                </div>
+            </div>
+        </div>
+        <!-- end row product-heading, add-to-cart-button, customer-photos, review-and-ratings  -->
+    </div>
+
+    <!-- -------------------slider start--------------- -->
+
+    <!--start first slider-cart -->
+    <div class="row deal">
+        <div class="col-md-12 py-3 Similar-products-text">
+            Similar products
+        </div>
+    </div>
+
+    <!-- start deals of the day card -->
+
+    <!-- start row -->
+    <div class="row">
+
+        <!--  start col-md-2 -->
+
+        <div class="col-md-2">
+
+            <!--  start card1 -->
+            <div class="card">
+                <!-- card-img start -->
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <!-- card-img end -->
+                <!-- card-body start -->
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card body end -->
+            </div>
+
+            <!--  end card1 -->
+
+
+        </div>
+
+        <!--  end col-md-1 -->
+
+        <!--  start col-md-2 -->
+
+        <div class="col-md-2">
+            <!--  start card2 -->
+            <div class="card">
+                <!-- card-img start -->
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <!-- card-img end -->
+                <!-- card-body start -->
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card body end -->
+            </div>
+
+            <!--  end card2 -->
+
+
+        </div>
+
+        <!--  end col-md-2 -->
+
+        <!--  start col-md-2 -->
+
+
+        <div class="col-md-2">
+            <!--  start card3 -->
+            <div class="card">
+
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  end card3 -->
+
+        </div>
+
+        <!--  end col-md-2 -->
+
+        <!--  start col-md-2 -->
+        <div class="col-md-2">
+            <!--  start card4 -->
+            <div class="card">
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  end card4 -->
+
+        </div>
+
+        <!--  end col-md-2 -->
+
+        <!--  start col-md-2 -->
+        <div class="col-md-2">
+            <!--  start card5 -->
+            <div class="card">
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  end card5 -->
+
+        </div>
+
+        <!--  end col-md-2 -->
+
+        <!--  start col-md-2 -->
+        <div class="col-md-2">
+            <!--  start card6 -->
+            <div class="card">
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  end card6 -->
+
+        </div>
+
+        <!--  start col-md-2 -->
+
+    </div>
+
+    <!--  end row -->
+
+
+    <!--end deals of the day card-->
+
+
+    <!--start second slider-cart -->
+    <div class="row deal">
+        <div class="col-md-12 py-3 Similar-products-text">
+            Recently Viewed
+        </div>
+    </div>
+
+    <div class="row">
+        <!--  start col-md-2 -->
+
+        <div class="col-md-2">
+
+            <!--  start card1 -->
+            <div class="card">
+                <!-- card-img start -->
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <!-- card-img end -->
+                <!-- card-body start -->
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card body end -->
+            </div>
+
+            <!--  end card1 -->
+
+
+        </div>
+
+        <!--  end col-md-1 -->
+
+        <!--  start col-md-2 -->
+
+        <div class="col-md-2">
+            <!--  start card2 -->
+            <div class="card">
+                <!-- card-img start -->
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <!-- card-img end -->
+                <!-- card-body start -->
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card body end -->
+            </div>
+
+            <!--  end card2 -->
+
+
+        </div>
+
+        <!--  end col-md-2 -->
+
+        <!--  start col-md-2 -->
+
+
+        <div class="col-md-2">
+            <!--  start card3 -->
+            <div class="card">
+
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  end card3 -->
+
+        </div>
+
+        <!--  end col-md-2 -->
+
+        <!--  start col-md-2 -->
+        <div class="col-md-2">
+            <!--  start card4 -->
+            <div class="card">
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  end card4 -->
+
+        </div>
+
+        <!--  end col-md-2 -->
+
+        <!--  start col-md-2 -->
+        <div class="col-md-2">
+            <!--  start card5 -->
+            <div class="card">
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  end card5 -->
+
+        </div>
+
+        <!--  end col-md-2 -->
+
+        <!--  start col-md-2 -->
+        <div class="col-md-2">
+            <!--  start card6 -->
+            <div class="card">
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  end card6 -->
+
+        </div>
+    </div>
+
+
+    <!--end second slider-cart -->
+
+    <!-- start third slider-cart -->
+    <div class="row deal">
+        <div class="col-md-12 py-3 Similar-products-text">
+            Bought together
+        </div>
+    </div>
+
+    <div class="row">
+        <!--  start col-md-2 -->
+
+        <div class="col-md-2">
+
+            <!--  start card1 -->
+            <div class="card">
+                <!-- card-img start -->
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <!-- card-img end -->
+                <!-- card-body start -->
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card body end -->
+            </div>
+
+            <!--  end card1 -->
+
+
+        </div>
+
+        <!--  end col-md-1 -->
+
+        <!--  start col-md-2 -->
+
+        <div class="col-md-2">
+            <!--  start card2 -->
+            <div class="card">
+                <!-- card-img start -->
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <!-- card-img end -->
+                <!-- card-body start -->
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card body end -->
+            </div>
+
+            <!--  end card2 -->
+
+
+        </div>
+
+        <!--  end col-md-2 -->
+
+        <!--  start col-md-2 -->
+
+
+        <div class="col-md-2">
+            <!--  start card3 -->
+            <div class="card">
+
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  end card3 -->
+
+        </div>
+
+        <!--  end col-md-2 -->
+
+        <!--  start col-md-2 -->
+        <div class="col-md-2">
+            <!--  start card4 -->
+            <div class="card">
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  end card4 -->
+
+        </div>
+
+        <!--  end col-md-2 -->
+
+        <!--  start col-md-2 -->
+        <div class="col-md-2">
+            <!--  start card5 -->
+            <div class="card">
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  end card5 -->
+
+        </div>
+
+        <!--  end col-md-2 -->
+
+        <!--  start col-md-2 -->
+        <div class="col-md-2">
+            <!--  start card6 -->
+            <div class="card">
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  end card6 -->
+        </div>
+    </div>
+
+
+    <!-- start third slider-cart -->
+
+    <!-- start forth slider-cart  -->
+    <div class="row deal">
+        <div class="col-md-12 py-3 Similar-products-text">
+
+            You might be iterested in
+        </div>
+    </div>
+
+    <div class="row">
+
+        <!--  start col-md-2 -->
+
+        <div class="col-md-2">
+
+            <!--  start card1 -->
+            <div class="card">
+                <!-- card-img start -->
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <!-- card-img end -->
+                <!-- card-body start -->
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card body end -->
+            </div>
+
+            <!--  end card1 -->
+
+
+        </div>
+
+        <!--  end col-md-1 -->
+
+        <!--  start col-md-2 -->
+
+        <div class="col-md-2">
+            <!--  start card2 -->
+            <div class="card">
+                <!-- card-img start -->
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <!-- card-img end -->
+                <!-- card-body start -->
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card body end -->
+            </div>
+
+            <!--  end card2 -->
+
+
+        </div>
+
+        <!--  end col-md-2 -->
+
+        <!--  start col-md-2 -->
+
+
+        <div class="col-md-2">
+            <!--  start card3 -->
+            <div class="card">
+
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  end card3 -->
+
+        </div>
+
+        <!--  end col-md-2 -->
+
+        <!--  start col-md-2 -->
+        <div class="col-md-2">
+            <!--  start card4 -->
+            <div class="card">
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  end card4 -->
+
+        </div>
+
+        <!--  end col-md-2 -->
+
+        <!--  start col-md-2 -->
+        <div class="col-md-2">
+            <!--  start card5 -->
+            <div class="card">
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  end card5 -->
+
+        </div>
+
+        <!--  end col-md-2 -->
+
+        <!--  start col-md-2 -->
+        <div class="col-md-2">
+            <!--  start card6 -->
+            <div class="card">
+                <img class="card-img-top" src="{% static 'images/dealoftheday.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 card-headingg">
+                                Foldable Wooden Laptop Table
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-md-12">
+                                ₹ <span class="rupee-rext">1800</span><span
+                                    class=" text-decoration-line-through line-through-text">₹
+                                                3000</span>
+                                <span class="cart-discount">( 20 % Off )</span>
+                            </div>
+                        </div>
+
+                        <div class="row pb-4">
+                            <div class="col-md-12 cart-freee">
+                                Free Delivery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  end card6 -->
+
+        </div>
+
+        <!--  start col-md-2 -->
+
+    </div>
+</div>
+<!-- end body -->
+
+<div class="modal " id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content video-bg-colour">
+
+            <!-- Modal Header -->
+            <div class="modal-header video-bg-colour pb-5">
+                <h6 class="modal-title text-white">Foldable Wooden Laptop Table</h6>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body  pt-5">
+                <video width="100%" controls>
+                    <source src="videos/20-Seconds Animation.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="modal-footer video-bg-colour pb-5">
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- The Video popup end -->
+
+{% endblock %}

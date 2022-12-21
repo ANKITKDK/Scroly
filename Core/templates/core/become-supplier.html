@@ -1,0 +1,67 @@
+{% extends "core/base1.html" %}
+{% load static %}
+{% block content %}
+
+{% block own_css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/become-supplier.css' %}" type="text/css">
+{% endblock own_css%}
+<div class="container-fluid">
+    <div class="col-md-12">
+        <div class="row pt-4 pb-4">
+            <div class="col-1 col-sm-1 col-md-1"></div>
+
+            <div class="col-10 col-sm-10 col-md-10 text-center grad">
+                <div class="row">
+                    <div class="col-12  col-sm-12  col-md-12  Become-Supplier ">
+                        Become a Supplier
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="grow-business  col-12 col-sm-12 col-md-12 ">
+                        Grow your business with scroly
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class=" col-12 col-sm-12 col-md-12 image-pad">
+
+                        <img class="img-fluid" src="{% static 'images/Web (2).png' %}" alt="">
+
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="col-12 col-sm-12  col-md-12  ">
+
+                        <button class="btn Come-Soon come-soon-btn hover " type="button">Coming
+                            Soon
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- text-move -->
+                    <div class=" col-12 col-sm-12 col-md-12 pb-3">
+                        <a href="{% url 'home' %}" class="text-decoration-none">
+                            <button type="button" class="btn go-home hover">
+                                <span classs="">Go back home</span>
+                            </button>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-1 col-sm-1 col-md-1"></div>
+
+        </div>
+    </div>
+
+</div>
+{% endblock %}

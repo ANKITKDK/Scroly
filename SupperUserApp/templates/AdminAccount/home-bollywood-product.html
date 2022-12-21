@@ -1,0 +1,96 @@
+{% extends 'SupperUserApp/superuser-base.html' %}{% load static %}
+{% block content %}
+
+			<!-- CONTENT WRAPPER -->
+			
+					<div class="breadcrumb-wrapper breadcrumb-wrapper-2 breadcrumb-contacts">
+							<h1>BollyWood Product Details</h1>
+							<p class="breadcrumbs"><span><a href="index.html">Home</a></span>
+								<span><i class="mdi mdi-chevron-right"></i></span>Main Category</p>
+					</div>
+					<div class="row">
+						<div class="col-xl-4 col-lg-12">
+							<div class="ec-cat-list card card-default mb-24px">
+								<div class="card-body">
+									<div class="ec-cat-form">
+										<h4>Add New Home Products</h4>
+
+										<form action="{% url 'HomeBollyWoodProduct' %}" method="POST" enctype="multipart/form-data">
+											{% csrf_token %}
+											<!-- <div class="form-group row"> -->
+												<label for="text" class="col-12 col-form-label">BollyWood Theme Name</label> 
+												<div class="col-12">
+													<input id="text" name="bwtitlename" class="form-control " type="text" value="{{BollyWoodCategoryObj1.TagLine}}" >
+												</div>
+											<!-- </div> -->
+
+											<div class="form-group row">
+												<label for="parent-category" class="col-12 col-form-label">Select Product</label> 
+												<div class="col-12">
+													<select class="form-select" aria-label="Default select example" name="bwproductname">
+														{% for i in homeproductobj%}
+													     <option value="{{i.id}}">{{i.ProductName}}</option>
+													{% endfor %}
+													</select>
+												</div>
+											</div>
+											
+
+											<div class="row">
+												<div class="col-12">
+													<button name="submit" type="submit" class="btn btn-primary">Submit</button>
+												</div>
+											</div>
+
+												
+
+										</form>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-8 col-lg-12">
+							<div class="ec-cat-list card card-default">
+								<div class="card-body">
+									<div class="table-responsive">
+										<table id="" class="table">
+											<thead>
+												<tr>
+													<th>Sr. No.</th>
+													<th>Bollywood Theme nme</th>
+													<th>Product Name</th>
+													<th>Action</th>
+												</tr>
+											</thead>
+
+											<tbody>
+												{% for bollywoodprd in homebollywoodproductobj %}
+												<tr>
+													<td>{{ forloop.counter }}</td>
+													<td>{{bollywoodprd.BollyWoodCategoryName.TagLine}}</td>
+													<td>{{bollywoodprd.ProductDetails.ProductName}}</td>
+													<td>
+														<div class="btn-group">
+															
+																<a href="{% url 'DeleteHomeBollyWoodProduct' bollywoodprd.id %}" type="button" 
+																class="btn btn-outline-success" onclick="return confirm('Are you sure you want to delete this item.')" >Delete</a>	
+														</div>
+													</td>
+													
+												{% endfor %}
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+
+			
+	
+
+	
+		
+	{% endblock %}

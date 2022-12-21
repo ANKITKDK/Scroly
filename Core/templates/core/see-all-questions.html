@@ -1,0 +1,486 @@
+{% extends "core/base2.html"%}{% load static %}
+
+{% block sidebar %}
+<div class="col-sm-2 categorycol">
+    <!-- row start -->
+    <div class="row">
+       <div class="col-md-12  mt-3 sidebar-heading">
+          Category
+       </div>
+    </div>
+   
+    <!-- Ankush Dynamic Code for category -->
+    {% for c1 in cat1 %}
+    <div class="row my-4 r1">
+
+      
+       <!-- category img start -->
+       <div class="col-md-6">
+          <img src="{{c1.CategoryImage.url}}" alt="" class="img-fluid">
+       </div>
+       <!-- category img end -->
+
+       <!-- category dropdown start -->
+
+       <div class="col-md-6">
+          <p class="my-2 text-center">
+             <!-- dropdown start -->
+          <div class="dropdown">
+             <!-- category name start -->
+             <div class="col-sm-3">
+                <button class="dropbtn my-2">{{c1.CategoryName}}</button>
+             </div>
+             <!-- category name end -->
+             <!-- row start -->
+             
+             <div class="row">
+                <!-- col-sm-3 start -->
+                <div class="col-sm-3">
+                   <!-- dropdwon content start -->
+                   <div class="dropdown-content men ps-sm-5 pt-sm-4 pb-sm-5 rounded">
+                      <!-- row start -->
+                      <div class="row">
+                         <!-- div col 1 start -->
+                         {% for c2 in cat2 %}
+                         {% if c1.id is c2.CategoryLevel1Id.id %}
+                         <div class="col-sm-3 pt-sm-3 border-end">
+                            <!-- topwear section start -->
+                            
+                            
+                            <h6 class="pb-sm-3 "><strong>{{c2.CategoryLevel2Name}}</strong></h6>
+                            <ul class="bullet2">
+                               
+                               {% for c3 in cat3 %}
+                                  {% if c2.id is c3.CategoryLevel2Id.id %}
+                                  <a href="{% url 'SeeAllProducts' c3.CategorySlug %}" class="p-0"><li class="mb-sm-2">{{c3.CategoryLevel3Name}}</li></a>
+                                  {% endif %}
+                               {% endfor %}
+                               
+                            </ul>
+                           
+                            <!-- topwear section end -->
+                            
+                         </div>
+                         {% endif %}
+                         {% endfor %}
+                         <!-- div col1 end -->
+                         
+                      </div>
+                      <!-- row end -->
+                   </div>
+                   <!-- dropdown content end -->
+                </div>
+                <!-- col-sm-3 end -->
+             </div>
+             <!-- row end -->
+          </div>
+          <!-- dropdown end -->
+          </p>
+       </div>
+
+       <!-- category dropdown end -->
+    </div>
+    {% endfor %}
+   <!-- End Ankush Code -->
+ </div>
+{% endblock sidebar %}
+
+{% block content %}
+{% block own_css %}
+<link rel="stylesheet" href="{% static 'css/see-all-questions.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/base.css' %}" type="text/css">
+{% endblock own_css %}
+
+            <div class="row ">
+               <!-- start col-sm-12 -->
+               <div class="col-sm-12 col-md-12 border-bottom">
+                   <!-- product-name for mobile-view -->
+                   <div class="row no-desktopname">
+                     <div class="col-sm-12 col-md-12  border-bottom  product-name">
+                      <i class="fa fa-angle-left product-mobile-arrow" aria-hidden="true"></i>  <span class="">{{product.ProductName}}</span>
+
+                     </div>
+                  </div>
+                  <!-- product-name for mobile-view -->
+                  <div class="row ">
+                    
+                     <!--  start image and content-->
+                     
+                     <div class="col-5 col-sm-2 col-md-2">
+                        <div class="row image-top">
+                           <div class="col-12 col-sm-12 col-md-12 ">
+                              <a href="{% url 'ProductDetail' product.ProductSlug %}"><img src="{{product.ProductMainImage.url}}" class="img-fluid" alt="..." width="100%"></a>  
+                           </div>
+                        </div>
+
+                        <!--start product price nd offer price-->
+                        <!-- <div class="row pricepadding">
+                           <div class="col col-sm-12 col-md-12"><i class='fa fa-rupee rupees'></i><span
+                              class='price fw-bold ps-2'>{{product.discount}}</span>
+                              &nbsp;<i
+                                 class='fa fa-rupee rupees text-decoration-line-through rupees-disable'></i>
+                                 <span
+                                 class=' text-decoration-line-through design-foldable-wooden-table-disable-price '>{{product.Price}}</span>
+
+                              <span class="discount1">({{product.DiscountPercent}}% off)</span>
+                           </div>
+                        </div> -->
+                        <!--end product price nd offer price-->
+
+                     </div>
+                     <!-- end image nd content -->
+
+                     <!-- heading of the product -->
+                     <div class="col-7 col-sm-10 col-md-10">
+                        <div class="row noname-mobileview">
+                           <div class="col-sm-12 col-md-12  border-bottom  product-name">
+                              <span class="">{{product.ProductName}}</span>
+
+                           </div>
+                        </div>
+                        <!-- end product-heading -->
+
+
+                        <!-- ratings nd rating number -->
+                        <div class="row padtoprating">
+                           <div class="col-6 col-sm-2 col-md-2  pt-1 borderside">
+
+                              <i class="fa fa-star start-color" aria-hidden="true"></i><span
+                                 class="rating-point">{{product.Star}}</span>
+
+                           </div>
+                           <!-- rating number start -->
+                           <div class="col-6 col-sm-3 col-md-3">
+                              <div class="row">
+                                 <div class="col col-sm-12 col-md-12">
+                                    <span class="rating">{{product.TotalRatingCount}}</span><span class="rating padrating">ratings</span>
+                                 </div>
+
+                                 <div class="col col-sm-12 col-md-12">
+                                    <span class="rating">{{product.TotalReviewCount}}</span><span class="rating padrating">reviews</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- rating number start -->
+                           <!-- border-bottom-in mobile view -->
+                           <div class="border-mobile">
+
+                           </div>
+                           <div class="col-sm-7 col-md-12 "></div>
+                        </div>
+                        <!-- ratings nd rating number -->
+
+
+
+                        <!--start progress bar  -->
+                        <div class="row padding-progress">
+                           <div class="col-12 col-sm-10 col-md-8 col-xl-12">
+                              <!-- start progress bar -->
+                              <div class="row ">
+                                 <div class="col-2 col-sm-1 text-center mobileallpadding ">
+                                    <span class="ps-sm-1"><i class="fa fa-star progress-bar-star"
+                                          aria-hidden="true"></i></span><span class="ps-sm-3 progress-bar-numm mobileleftpad">5 </span>
+                                 </div>
+                                 <div class="col-8 col-sm-5 padtopsmob text-start">
+                                    <div class="progress" style="height:8px">
+                                       <div class="progress-bar bg-success" style="width:{{fivestar}}%;height:8px">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-2 col-sm-1 padstartmob text-center progress-bar-num ">
+                                    {{fivestarcount}}
+                                 </div>
+                                 <div class="col-0 col-sm-5">
+
+                                 </div>
+                              </div>
+                              <!-- end progress bar -->
+
+
+                              <div class="row pt-1">
+                                 <div class="col-2 col-sm-1 text-center mobileallpadding ">
+                                    <span class="ps-sm-1"><i class="fa fa-star progress-bar-star"
+                                          aria-hidden="true"></i></span><span class="ps-sm-3 progress-bar-numm mobileleftpad">4</span>
+                                 </div>
+                                 <div class="col-8 col-sm-5 padtopsmob text-start">
+                                    <div class="progress" style="height:8px">
+                                       <div class="progress-bar bg-success" style="width:{{fourstar}}%;height:8px">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-2 col-sm-1 padstartmob text-center progress-bar-num ">
+                                    {{fourstarcount}}
+                                 </div>
+                                 <div class="col-0 col-sm-5">
+
+                                 </div>
+                              </div>
+
+                              <div class="row pt-1 ">
+                                 <div class="col-2 col-sm-1 text-center mobileallpadding ">
+                                    <span class="ps-sm-1"><i class="fa fa-star progress-bar-star"
+                                          aria-hidden="true"></i></span><span class="ps-sm-3 progress-bar-numm mobileleftpad">3</span>
+                                 </div>
+                                 <div class="col-8 col-sm-5 padtopsmob text-start">
+                                    <div class="progress" style="height:8px">
+                                       <div class="progress-bar bg-success" style="width:{{threestar}}%;height:8px">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-2 col-sm-1 padstartmob text-center progress-bar-num ">
+                                    {{threestarcount}}
+                                 </div>
+                                 <div class="col-0 col-sm-5">
+
+                                 </div>
+                              </div>
+
+                              <div class="row pt-1 ">
+                                 <div class="col-2 col-sm-1 text-center mobileallpadding ">
+                                    <span class="ps-sm-1"><i class="fa fa-star progress-bar-star"
+                                          aria-hidden="true"></i></span><span class="ps-sm-3 progress-bar-numm mobileleftpad">2</span>
+                                 </div>
+                                 <div class="col-8 col-sm-5 padtopsmob text-start">
+                                    <div class="progress" style="height:8px">
+                                       <div class="progress-bar bg-danger" style="width:{{twostar}}%;height:8px">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-2 col-sm-1 padstartmob text-center progress-bar-num ">
+                                    {{twostarcount}}
+                                 </div>
+                                 <div class="col-0 col-sm-5">
+
+                                 </div>
+                              </div>
+
+
+                              <div class="row pt-1  pb-3 border-bottom">
+                                 <div class="col-2 col-sm-1 text-center mobileallpadding ">
+                                    <span class="ps-sm-1"><i class="fa fa-star progress-bar-star"
+                                          aria-hidden="true"></i></span><span class="ps-sm-3 progress-bar-numm mobileleftpad">1</span>
+                                 </div>
+                                 <div class="col-8 col-sm-5 padtopsmob text-start">
+                                    <div class="progress" style="height:8px">
+                                       <div class="progress-bar bg-danger" style="width:{{onestar}}%;height:8px">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-2 col-sm-1 padstartmob text-center progress-bar-num ">
+                                    {{onestarcount}}
+                                 </div>
+                                 <div class="col-0 col-sm-5">
+
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- empty -->
+                           <div class="col-0 col-sm-2 col-md-4"></div>
+
+
+                        </div>
+                        <!--end progress bar  -->
+
+                     </div>
+                  </div>
+                   <!--start product price nd offer price-->
+                   <div class="row pricepadding">
+                     <div class="col col-sm-12 col-md-12"><i class='fa fa-rupee rupees'></i><span
+                        class='price fw-bold ps-2'>{{product.discount}}</span>
+                        &nbsp;<i
+                           class='fa fa-rupee rupees text-decoration-line-through rupees-disable'></i>
+                           <span
+                           class=' text-decoration-line-through design-foldable-wooden-table-disable-price '>{{product.Price}}</span>
+
+                        <span class="discount1">({{product.DiscountPercent}}% off)</span>
+                     </div>
+                  </div>
+                  <!--end product price nd offer price-->
+
+               </div>
+               <!-- end col-sm-12 -->
+
+               <!----------------Questions  and  answers starts----->
+
+               <!--heading -->
+               <div class="row pb-3 pt-3">
+                  <div class="col-sm-12 ques-nd-ans fw-bold">
+                     Questions and Answers
+                  </div>
+               </div>
+               <!----heading---->
+
+
+               <!--Text-box-start-->
+               <div class="row paddingbottom">
+
+                  <div class="input-group text-box-square ">
+                     <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+
+                     <input onkeyup="questionSearch()" id="question-serach" class="form-control input-text" placeholder="Type your question or keyword" type="text">
+                  </div>
+
+               </div>
+               <!--Text-box-start-->
+               
+
+
+
+               <!----questions start--->
+               <ul class="list-unstyled" id="question_id">
+                  <!----questions start--->
+                  {% for i in QuestionsAndAnswersobj %}
+                     <li>
+                        <div class="row padtop">
+                           <div class="col-12 col-sm-12 user-qes">
+                              <span class="fw-bolder">Q: <a class="text-decoration-none text-dark"> {{i.Question}}</a></span>
+                           </div>
+                        </div>
+   
+                        <div class="row padtopans">
+                           <div class="col-12 col-sm-12 user-qes">
+                              <span class="">A:</span> <span class="answer">{{i.Answer}}</span>
+                           </div>
+                        </div>
+                     
+                        <!--customer name nd dates posted-->
+                     
+                        <div class="row padding-date">
+                           <div class="col-12 col-sm-12 user-name-date border-bottom pb-2">
+                              <span class="border-end pe-2">{{i.Addedby.first_name}} {{i.Addedby.last_name}}</span>
+                              <span>{{i.Date}}</span>
+                              <!-- <span><i class="fa fa-thumbs-o-up pull-right px-3" aria-hidden="true"><span class="ps-2">{{i.Likecount}}</span></i></span>
+                              <span><i class="fa fa-thumbs-o-down pull-right " aria-hidden="true"><span class="ps-2">{{i.Dislikecount}}</span></i></span> -->
+                              
+                              <span>
+                                 <form method="POST" action="{% url 'unliked' %}">
+                                    {% csrf_token %}
+                                    <input type="number" name="question_obj" value="{{i.id}}" hidden>
+                                    <input type="hidden" name="next" value="{{ request.path }}">
+                                    <button class="pull-right px-3" style="background-color: transparent; border: none; box-shadow: none;" type="submit">
+                                       <i class="fa fa-thumbs-o-down"> <span>{{ i.dislikes.all.count }}</span></i>
+                                    </button>
+                                 </form>
+                              </span>
+
+                              <span>
+                                 <form method="POST" action="{% url 'liked' %}">
+                                    {% csrf_token %}
+                                    <input type="number" name="question_id" value="{{i.id}}" hidden>
+                                    <input type="hidden" name="next" value="{{ request.path }}">
+                                    <button class="pull-right" style="background-color: transparent; border: none; box-shadow: none;" type="submit">
+                                       <i class="fa fa-thumbs-o-up"> <span>{{ i.likes.all.count }}</span></i>
+                                    </button>
+                                 </form>
+                              </span>
+         
+                           </div>
+                        </div>
+                     </li>
+                  {% endfor %}
+                  <!-----answer end------->
+               </ul>
+               <!----questions start--->
+               
+
+               <!-----pegination start-->
+               <!-- <div class="row no-mobile">
+                  <div class="col-3 col-sm-3 page padding-page">
+                     Page 1 of 14
+                  </div>
+
+                  <div class="col-6 col-sm-6 paginationpadd">
+
+                     <div class="pagination_rounded">
+                        <ul>
+                           <li><a class="hidden-xs" href="#" >1</a>
+                           </li>
+                           <li class="hidden-xs"><a href="#">2</a>
+                           </li>
+                           <li class="hidden-xs"><a href="#">3</a>
+                           </li>
+                           <li class="hidden-xs"><a href="#">4</a>
+                           </li>
+                           <li class="hidden-xs"><a href="#">5</a>
+                           </li>
+                           <li class="hiddden-xs"><a href="#">6</a>
+                           </li>
+                           <li class="hidden-xs"><a href="#">7</a>
+                           </li>
+                           <li class="hidden-xs"><a href="#">8</a>
+                           </li>
+                           <li class="hidden-xs"><a href="#">9</a>
+                           </li>
+                           <li class="hidden-xs "><a class="next" href="#">Next</a>
+                           </li>
+                        </ul>
+
+                     </div>
+                  </div>
+
+                  <div class="col-sm-3"></div>
+               </div> -->
+            </div>
+         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <!-------------------------see all questions end ------------------------------------------------------------------>
+      </div>
+
+
+   </div>
+   <!-- ---------------------col-sm-10 end--------------------- -->
+   <!-- -----------------------------------col2 end--------------------------------- -->
+   </div>
+   </div>
+   <p></p>
+   <!-- back-to-top button start -->
+   
+   <!-- for 3lines dropdown script start -->
+   <script>
+      function openNav() {
+         document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+         document.getElementById("mySidenav").style.width = "0";
+      }
+   </script>
+
+
+   <!-- search script -->
+   <script>
+      function questionSearch() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("question-serach");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("question_id");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+         a = li[i].getElementsByTagName("a")[0];
+         if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+         } else {
+            li[i].style.display = "none";
+         }
+      }
+      }
+   </script>
+   <!-- end search script -->
+
+{% endblock %}

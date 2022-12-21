@@ -1,0 +1,421 @@
+
+
+
+
+
+/* start page-body-padding */
+.page-body-padding{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* end page-body-padding */
+
+/* start  Return Item*/
+
+.return-item{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--color-5);
+    padding-bottom: 39px;
+}
+
+/* end Return Item */
+
+/* start cards-padding */
+
+.cards-padding{
+    padding-bottom: 30px;
+}
+
+/* end cards-padding */
+
+/* start foldable-wooden-table-and-order-padding */
+
+.foldable-wooden-table-and-order-padding{
+    padding-top: 30px;
+}
+
+/* end foldable-wooden-table-and-order-padding */
+
+/* start foldable-wooden-table-card1 */
+
+.foldable-wooden-table-card1{
+    background: var(--color-9);
+    box-shadow: 2px 2px 6px var(--color-22);
+    border-radius: 6px;
+}
+
+/* end foldable-wooden-table-card1 */
+
+/* start foldable-wooden-table-image */
+
+.foldable-wooden-table-image{
+    padding-left: 30px;
+}
+
+/* end foldable-wooden-table-image */
+
+/* start foldable-table-text */
+.foldable-table-text{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: var(--color-17);
+    padding-bottom: 10px;
+    
+}
+
+/* end foldable-table-text */
+
+/* start size-text */
+
+.size-text{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-17);
+    padding-bottom: 10px;
+}
+
+/* end size-text */
+
+/* start rupee-symbol */
+
+.rupee-symbol{
+    color: var(--color-17);
+}
+
+/* end rupee-symbol */
+
+/* start rupee */
+
+.rupee{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+
+    color: var(--color-17);
+}
+
+/* end rupee */
+
+/* start deleted-rupee */
+
+.deleted-rupee
+{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(63, 81, 92, 0.37);
+}
+
+/* end deleted-rupee */
+
+/* start colored-rupee */
+
+.colored-rupee
+{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-8);
+}
+
+/* end colored-rupee */
+
+
+/* start section 2 */
+
+/* start order-section-padding */
+
+.order-section{
+    padding-left: 30px;
+}
+
+/* end order-section-padding */
+
+/* start order */
+.order{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-5);
+    padding-top: 30px;
+    padding-bottom: 7px;
+}
+
+/* end order */
+
+/* start order-return */
+.order-return{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-1);
+    padding-bottom: 30px;
+}
+
+/* end order-return */
+
+/* start profile */
+
+.profile{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-5);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* end profile */
+
+/* end section 2 */
+
+/*start pickup address */
+.design-pickup-address
+{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color:var(--color-5);
+}
+/* end pickup address */
+
+/* start pick-up address text */
+.design-pickup-address-text
+{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+    color: var(--color-17);
+}
+/* end pick-up address text */
+
+/* start pick-up address button */
+.change-pickup-address-btn
+{
+    border: 1px solid rgba(63, 81, 92, 0.37);
+    border-radius: 6px;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color:var(--color-5);
+}
+/* end pick-up address button */
+
+/* start radio button */
+.select-radio-btn
+{
+    border: 1px solid var(--color-1);
+    font-size: 20px;
+}
+
+.form-check-input:checked {
+    background-color: var(--color-1);
+    border-color:var(--color-1);
+}
+
+.radio-btn-text
+{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+
+color: #304653;
+}
+/* end radio button */
+
+/* start to bank account text */
+.to-bank-account-text
+{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%; 
+    color:var(--color-17);
+}
+
+/* end to bank account text */
+
+/* start add account button */
+.btn-change-address{
+    background:var(--color-1);
+    opacity: 0.37;
+    box-shadow: 2px 2px 8px rgba(62, 125, 99, 0.44);
+    border-radius: 26px;   
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--color-9);
+}
+
+.btn-change-address:hover
+{
+    color: var(--color-9);
+}
+
+.btn-padding
+{
+    padding-top: 40px;
+    padding-left:25px;
+    padding-bottom: 5px;
+}
+
+/* end add account button */
+
+/* start model */
+/* start add bank account model */
+.model-heading
+{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color:var(--color-5);
+}
+
+/* end add bank account model */
+
+/* start model form text */
+.form-placeholder-text
+{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-17);
+}
+
+.text-box-top-padding
+{
+    padding-top: 15px;
+}
+/* end model form text */
+
+/*  start account type heading  */
+.design-account-type
+{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-5);
+}
+/*  end account type heading  */
+
+/* start cancel button */
+.cancle-btn
+{
+    border: 1px solid var(--color-12);
+    filter: drop-shadow(2px 2px 8px rgba(62, 125, 99, 0.44));
+    border-radius: 26px;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color:var(--color-17);
+    padding: 10px 0px 10px;
+}
+/* end cancel button */
+
+/* start conform button */
+.conform-btn
+{
+    background: var(--color-12);
+    box-shadow: 2px 2px 8px rgba(62, 125, 99, 0.44);
+    border-radius: 26px;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-9);
+    padding: 10px 0px 10px;
+}
+
+.conform-btn:hover
+{
+    color: var(--color-9);
+}
+/* end conform button */
+
+/* start refund details heading */
+.refund-return
+{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--color-1);
+}
+/* end refund details heading */
+
+/* start refund price */
+.refund-price
+{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-17);
+    
+}
+.color-rupees
+{
+    color: var(--color-17);
+}
+
+
+/* end model */
+
+
+
+
+
+
+
+
+

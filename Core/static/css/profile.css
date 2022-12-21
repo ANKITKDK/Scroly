@@ -1,0 +1,448 @@
+
+/*-image on background-*/
+body {
+    background-image: url("../images/background.png"); 
+   font-family:var(--font-1);
+}
+.padding-page{
+    padding-left:5rem;
+    padding-top:1.875rem;
+}
+
+/*-Profile Head-*/
+.profile-head{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.4375rem;
+    color:var(--color-5);
+    padding-left:5rem;
+    padding-top: 1.875rem;
+    
+}
+
+.profile-photo{
+    font-family:var(--font-1);
+    padding-bottom:7.5rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.4375rem;
+    color:var(--color-5);
+}
+
+
+
+
+/*-style for hr tag-*/
+.style2{
+    
+    margin-bottom:0rem;
+    
+    
+} 
+/* for profile image */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .add-profile{
+    text-decoration: none;
+    color:var(--color-5);
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.25rem;
+    color: var(--color-5);
+    
+}
+
+
+a.add-profile{
+    color:var(--color-18);
+    text-decoration: None;
+}
+.btn-details{
+    color:var(--color-9);
+    background-color:var(--color-1);
+    width: 12.5rem;
+    border-radius: 1.625rem;
+
+}.btn-details{
+    font-family:var(--font-1);
+    color:var(--color-9);
+    font-size: 1rem;
+    background-color:var(--color-1);
+    width: 12.5rem;
+    border-radius: 1.625rem;
+
+}
+.border-end {
+    border-left: 0.0625rem solid black;
+}
+.add-photo{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--color-5);
+    text-align: center;
+}
+
+
+.vl {
+    padding-top: 0rem;
+    border-left: 0.0625rem solid rgba(63, 81, 92, 0.12);
+    
+    
+    /* border: 0.0625rem solid rgba(63, 81, 92, 0.12);
+    margin-top: 0rem; */
+    
+  }
+ /* for font 20 px */
+  .font-20{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color:var(--color-5);
+    padding-left:1.875rem ;
+}
+/* for font 16 px */
+.font-16{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    color:var(--color-5);
+    padding-left: 1.875rem;
+}  
+
+hr.style1{
+	border-top: 0.0625rem solid #8c8b8b;
+}
+ 
+a.order-return{
+    text-decoration: none;
+    color:var(--color-1);
+    font-family:var(--font-1);
+} 
+
+
+.order-detail{
+    text-decoration: none;
+    color:var(--color-5);
+    font-family:var(--font-1);
+    
+}
+a.order-detail{
+    color:var(--color-1);
+    text-decoration: None;
+}
+
+
+.addyour-detail{
+    text-decoration: none;
+    color:var(--color-9);
+    font-family:var(--font-1);
+    
+}
+a.addyour-detail{
+    color:var(--color-9);
+    text-decoration: None;
+}
+/* font text for add details */
+.font-text{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    color:var(--color-17);
+    
+}
+
+.img-profile1{
+    width:10.625rem;
+    height: 10.625rem;
+    background-color:var(--color-24);
+    
+}
+
+.full-name{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color:var(--color-17);
+    }
+    .save{
+        font-family: var(--font-1); 
+        border-color:var(--color-1) ;
+        color: var(--color-9);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1rem;
+        background-color:var(--color-1);
+        text-align: center; 
+        border-radius: 1.625rem;
+       
+    }
+    .save:hover{
+        color: var(--color-9);
+    }
+    .cancle{
+        font-family: var(--font-1); 
+        border-color:var(--color-1) ;
+        color: var(--color-25);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1rem;
+        /* background-color:var(--color-1); */
+        text-align: center; 
+        border-radius: 1.625rem;
+       
+    }
+    .cancle:hover{
+        color: var(--color-25);
+    }
+    .text-box1{
+        box-sizing: border-box;
+        border: 0.0625rem solid rgba(63, 81, 92, 0.12);
+        border-radius: 0.375rem;
+    }
+    
+.icon{
+    
+    font-size: 0.875rem;
+    
+}
+.image-upload input {
+    display: none;
+  }
+
+.save-photo{
+    font-family: var(--font-1); 
+    border-color:var(--color-1) ;
+    color: var(--color-9);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    background-color:var(--color-1);
+    text-align: center; 
+    box-shadow: 0.125rem 0.125rem 0.5rem rgba(62, 125, 99, 0.44);
+    border-radius: 1.625rem;
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;    
+    padding-left: 1.25rem;  
+    padding-right:1.25rem;
+}
+.save-photo:hover{
+    color:var(--color-9);
+    text-decoration: none;
+}
+
+.photo{
+font-family: var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 1.25rem;
+line-height: 1.5rem;
+text-align: center;
+color:var(--color-5)    
+}
+
+.space{
+    padding-bottom: 10.0625rem;
+    
+}
+
+/* ======================== */
+
+/* Start Mobile view */
+
+@media all and (min-width: 577px)
+{
+    .profile-mobile-view{
+        font-family: none;
+        font-style: normal;
+        font-weight: 00;
+        font-size:0rem;
+        line-height:0rem;
+        text-align:none;
+        color:#fc803d00;  
+    }
+    .profile-image-mobile-view{
+        display: none;
+    }
+    .fname-mobile-view{
+        display: none;
+    }
+    .edit-profile-no-desktop{
+        display: none;
+    }
+    .no-button-desk-view{
+        display: none;
+    }
+    .profile-mobile-view{
+        display: none;
+    }
+    
+    .no-desktop button{
+        display: none;
+    }
+    .no-border{
+        display: none;
+    }
+        
+    }
+
+
+
+@media all and (max-width: 576px)
+{
+    .profile-mobile-view{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 500;
+        font-size:1.25rem;
+        line-height:1.5rem;
+        color:var(--color-5); 
+        padding-left:1.1375rem ; 
+    }
+    .profile-head{
+        display: none;
+    }
+    .profile-image-mobile-view{
+        width: 6.25rem;
+        height: 6.25rem;
+        left: 8.125rem;
+        top: 10.6875rem; 
+    }
+    .fname-mobile-view{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.0625rem;
+    color:var(--color-17);
+    padding-left: 1rem;
+    }
+    .desktop-text-none{
+        display: none;
+    }
+    .vertical-line-no{
+        display: none;
+    }
+
+    .edit-profile-mobile-view{
+        text-decoration: none;
+        font-family:var(--font-1);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 1.0625rem;
+        color: var(--color-1);
+        
+    }
+    .no-button-mobile-view{
+        display: none;
+    }
+    .img-profile1{
+        width:6.25rem;
+        height:6.25rem;
+        background-color:var(--color-24);
+    }
+    
+    .profile-photo {
+        font-family: var(--font-1);
+        padding-bottom:0rem;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        color: var(--color-5);
+    }
+    .no-mobile .save-photo{
+        display:none;
+    }
+
+   
+    .add-photo{
+        font-family:var(--font-1);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.0625rem;
+        color: var(--color-5);
+        text-align: center;
+    }
+    .save-photo{
+        font-family: var(--font-1); 
+        border-color:var(--color-1) ;
+        color: var(--color-9);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 1.25rem;
+        background-color:var(--color-1);
+        text-align: center; 
+        box-shadow: 0.125rem 0.125rem 0.5rem rgba(62, 125, 99, 0.44);
+        border-radius: 1.625rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;    
+        padding-left:0rem;  
+        padding-right:0rem;
+        
+    }
+    .save-photo:hover{
+        color:var(--color-9);
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 577px)
+{
+    html{
+        font-size: 40%;
+    }
+}
+
+@media (min-width: 768px)
+{
+    html{
+        font-size: 45%;
+    }
+}
+
+@media (min-width: 992px)
+{
+    html{
+        font-size: 60%;
+    }
+}
+
+
+@media (min-width: 1200px)
+{
+    html{
+        font-size: 80%;
+    }
+}
+
+@media (min-width: 1920px)
+{
+    html{
+        font-size: 100%;
+    }
+}
+
+/* End Mobile Views */
+
+

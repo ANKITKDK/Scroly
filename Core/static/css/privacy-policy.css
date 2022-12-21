@@ -1,0 +1,1191 @@
+body{
+    background-image: url("../images/background.png");
+}
+
+
+/* start-privacy-policy */
+.privacy-policy-one{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.4375rem;
+    color: var(--color-17);
+    padding-bottom: 1.875rem;
+}
+/* end-privacy-policy */
+
+/* start-privacy-policy-two */
+.privacy-policy-two{
+    padding-top: 1.875rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--color-17);
+    padding-bottom: 0.75rem;
+}
+/* end-privacy-policy-two */
+
+/* start-this-privacy-policy */
+.this-privacy-policy{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+
+}
+/* end-this-privacy-policy */
+
+/* start-padding-bottom */
+.padding-bottom{
+    padding-bottom: 0.9375rem;
+}
+/* end-padding-bottom */
+
+/* start-interpretation-and-defination */
+.interpretation-and-defination{
+    padding-top: 1.875rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+}
+/* end-interpretation-and-defination */
+
+/* ================================================================ */
+
+/* start-interpretation */
+.interpretation{
+    padding-top: 1.25rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--color-17);
+}
+/* end-interpretation */
+
+/* start-the-word-of-which */
+.the-word-of-which{
+    padding-top: 0.75rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+}
+/* end-the-word-of-which */
+
+/* ================================================================ */
+
+/* start-definations */
+.definations{
+    padding-top: 1.875rem;
+    padding-bottom: 0.75rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--color-17);
+}
+/* end-definations */
+
+/* start-for-the-purpose */
+.for-the-purpose{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+
+}
+/* end-for-the-purpose */
+
+/* defination-dark */
+.defination-dark{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+}
+/* defination-dark */
+
+/* start-defination-content */
+.defination-content{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+}
+/* end-defination-content */
+
+/* start-defination-padding */
+.defination-padding{
+    padding-top: 1.25rem;
+}
+/* end-defination-padding */
+
+/* start-collecting */
+.collecting{
+    padding-top: 1.875rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+}
+/* end-collecting */
+
+
+/* start-type-of-data */
+.type-of-data{
+    padding-top: 1rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+    color: var(--color-17);
+
+}
+/* end-type-of-data */
+
+/* start-personal */
+.personal{
+    padding-top: 1.25rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--color-17);
+}
+/* end-personal */
+
+/* start-while-using */
+.while-using{
+    padding-top: 0.75rem;
+    padding-bottom: 1rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+}
+/* end-while-using */
+
+/* start-personal-data-same */
+.personal-data-same{
+    padding-bottom: 1.25rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+
+}
+/* end-personal-data-same */
+
+/* ================================================================ */
+
+/* start-usage-data */
+.usage-data{
+    padding-top: 0.625rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--color-17);
+}
+/* end-usage-data */
+
+/* start-usage-data-collected */
+.usage-data-collected{
+    padding-top: 0.75rem;
+    padding-bottom: 1rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+}
+/* end-usage-data-collected */
+
+/* start-data-usage-same */
+.data-usage-same{
+    padding-bottom: 1.25rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+
+}
+/* end-data-usage-same */
+
+/* ================================================================ */
+
+/* start-tracking-technologies */
+.tracking-technologies{
+    padding-top: 0.625rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--color-17);
+
+}
+/* end-tracking-technologies */
+
+/* start-we-use-cookies */
+.we-use-cookies{
+    padding-top: 0.75rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+}
+/* end-we-use-cookies */
+
+/* start-tracking-padding */
+.tracking-padding{
+    padding-top: 1rem;
+}
+/* end-tracking-padding */
+
+/* start-tracking-dark */
+.tracking-dark{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+
+}
+/* end-tracking-dark */
+
+/* start-tracking-content */
+.tracking-content{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+}
+/* end-tracking-content */
+
+/* start-flash-blue */
+.flash-blue{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-35);
+}
+/* end-flash-blue */
+
+/* ================================================================ */
+
+/* start-use-of-your */
+.use-of-your{
+    padding-top: 1.875rem;
+    padding-bottom: 0.75rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--color-17);
+}
+/* end-use-of-your */
+
+/* start-use-of-your-content */
+.use-of-your-content{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+}
+/* end-use-of-your-content */
+
+/* start-use-of-your-dark */
+.use-of-your-dark{
+    padding-top: 1.25rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+
+}
+/* end-use-of-your-dark */
+
+/* start-we-may-share-padding */
+.we-may-share-padding{
+    padding-top: 1.25rem;
+}
+/* end-we-may-share-padding */
+
+/* start-use-of-your-dark-padding-off */
+.use-of-your-dark-padding-off{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+
+}
+/* end-use-of-your-dark-padding-off */
+
+/* ================================================================ */
+
+/* start-retention */
+.retention{
+    padding-top: 1.875rem;
+    padding-bottom: 0.75rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--color-17);
+
+}
+/* end-retention */
+
+/* start-the-company-will-retain */
+.the-company-will-retain{
+    padding-bottom: 1.25rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+
+}
+/* end-the-company-will-retain */
+
+/* ================================================================ */
+
+/* start-transfer-of-your */
+.transfer-of-your{
+    padding-top: 0.625rem;
+    padding-bottom: 0.75rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--color-17);
+}
+/* end-transfer-of-your */
+
+/* start-transfer-of-your-content */
+.transfer-of-your-content{
+    padding-bottom: 1.25rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+
+}
+/* end-transfer-of-your-content */
+
+/* ================================================================ */
+
+/* start-disclouser-of-your */
+.disclouser-of-your{
+    padding-top: 0.625rem;
+    padding-bottom: 1.25rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+    color: var(--color-17);
+
+}
+/* end-disclouser-of-your */
+
+/* start-business-transaction */
+.business-transaction{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--color-17);
+}
+/* end-business-transaction */
+
+/* start-if-the-company */
+.if-the-company{
+    padding-top: 0.75rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+
+}
+/* end-if-the-company */
+
+/* start-law */
+.law{
+    padding-top: 1.875rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--color-17);
+}
+/* end-law */
+
+/* start-under-certain */
+.under-certain{
+    padding-top: 0.75rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+}
+/* end-under-certain */
+
+/* start-other-legal-requirement */
+.other-legal-requirement{
+    padding-top: 1.875rem;
+    padding-bottom: 0.75rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--color-17);
+}
+/* end-other-legal-requirement */
+
+/* start-the-company-may */
+.the-company-may{
+    padding-bottom: 1.25rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+}
+/* end-the-company-may */
+
+/* start-other-legal-requirement-same */
+.other-legal-requirement-same{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+}
+/* end-other-legal-requirement-same */
+
+/* ================================================================ */
+
+/* start-security-of-your */
+.security-of-your{
+    padding-top: 1.875rem;
+    padding-bottom: 0.75rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--color-17);
+}
+/* end-security-of-your */
+
+/* start-security-of-your-same */
+.security-of-your-same{
+    padding-bottom: 1.25rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 145%;
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+}
+/* end-security-of-your-same */
+
+/* ================================================================ */
+
+/* start-go-to-home */
+.go-to-home{
+    padding-top: 1.875rem;
+    padding-bottom: 4.4375rem;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--color-1);
+
+}
+/* end-go-to-home */
+
+.padd{
+    padding-left:1.875rem;
+}
+
+.home-but{
+    color:var(--color-1);
+    text-decoration:none;
+}
+
+.home-but:hover{
+    color:var(--color-1);
+    
+}
+
+
+
+
+
+
+/* Start Mobile view */
+
+@media all and (min-width: 577px)
+{
+    .icon-for-mobile-view{
+        display: none;
+    }
+}
+
+
+@media all and (max-width: 576px)
+{
+    .padd{
+        padding-left:1.875rem;
+        padding-right:1.1875rem;
+    }
+
+    .this-privacy-policy{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.625rem;
+        line-height: 145%;
+        /* or 15px */
+        letter-spacing: -0.011em;
+        color: var(--color-17);
+
+    }
+
+    .interpretation-and-defination{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 145%;
+        /* or 17px */
+        letter-spacing: -0.011em;
+        color: var(--color-17);
+
+    }
+    .Interpretation{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        /* identical to box height */
+       text-align: center;
+        color:var(--color-17);
+
+    }
+    .the-word-of-which{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.625rem;
+        line-height: 145%;
+        /* or 15px */
+        letter-spacing: -0.011em;
+         color:var(--color-17);
+
+    }
+    .definations{
+        font-family:var(--font-1);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        /* identical to box height */
+         color: var(--color-17);
+
+    }
+
+    .or-the-purpose{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.625rem;
+        line-height: 145%;
+        /* or 15px */
+        letter-spacing: -0.011em;
+        color:var(--color-17);
+
+    }
+    .defination-dark{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.625rem;
+        line-height: 145%;
+        /* or 15px */
+        letter-spacing: -0.011em;
+        color:var(--color-17);
+
+    }
+    .defination-content{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 145%;
+        /* or 15px */
+        letter-spacing: -0.011em;
+        color:var(--color-17);
+
+    }
+    .defination-dark{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.625rem;
+        line-height: 145%;
+        /* or 15px */
+        letter-spacing: -0.011em;
+        color:var(--color-17);
+
+    }
+    .collecting{
+        font-family:var(--font-1);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 145%;
+        /* or 17px */
+        letter-spacing: -0.011em;
+        color: var(--color-17);
+
+
+    }
+    .type-of-data{
+        font-family:var(--font-1);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+        /* identical to box height */
+        color:var(--color-17);
+
+    }
+    .text-primary{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 145%;
+    /* or 15px */
+    letter-spacing: -0.011em;
+    color: var(--color-17);
+
+
+    }
+    .type-of-data{
+
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    /* identical to box height */
+    color: var(--color-17);
+
+
+    }
+
+    .while-using{
+        font-family:var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.625rem;
+        line-height: 145%;
+        /* or 15px */
+        letter-spacing: -0.011em;
+        color:var(--color-17);
+
+    }
+    .personal{
+        font-family:var(--font-1);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        /* identical to box height */
+        color: var(--color-17);
+
+    }
+    .personal-data-same{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.625rem;
+        line-height: 145%;
+        /* or 15px */
+        letter-spacing: -0.011em;
+        color: var(--color-17);
+
+    }
+    .usage-data{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        /* identical to box height */
+        color: var(--color-17);
+
+
+    }
+
+    .usage-data-collected{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 145%;
+        /* identical to box height, or 15px */
+        letter-spacing: -0.011em;
+        color:var(--color-17);
+
+
+    }
+
+    .data-usage-same{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.625rem;
+        line-height: 145%;
+        /* or 15px */
+
+        letter-spacing: -0.011em;
+
+        color: var(--color-17);
+
+    }
+
+    .tracking-technologies{
+        font-family:var(--font-1);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        /* identical to box height */
+        color:var(--color-17);
+    }
+
+    .we-use-cookies{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.625rem;
+        line-height: 145%;
+        /* or 15px */
+        letter-spacing: -0.011em;
+        color: var(--color-17);
+
+    }
+    .tracking-dark{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.625rem;
+        line-height: 145%;
+        /* or 15px */
+        letter-spacing: -0.011em;
+        color:var(--color-17);
+
+
+    }
+    .racking-content{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.625rem;
+        line-height: 145%;
+        /* or 15px */
+        letter-spacing: -0.011em;
+        color:var(--color-17);
+    }
+
+    .tracking-content{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.625rem;
+        line-height: 145%;
+        /* or 15px */
+        letter-spacing: -0.011em;
+        color:var(--color-17);
+
+    }
+
+    .tracking-dark{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.625rem;
+        line-height: 145%;
+        /* or 15px */
+        letter-spacing: -0.011em;
+       color: var(--color-17);
+
+    }
+
+    .use-of-your{
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        /* identical to box height */
+        color: #3F515C;
+    }
+
+    .use-of-your-content{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.625rem;
+        line-height: 145%;
+        /* or 15px */
+        letter-spacing: -0.011em;
+        color: #3F515C;
+
+    }
+
+    .use-of-your-dark{
+        font-family:var(--font-1);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.625rem;
+        line-height: 145%;
+        /* or 15px */
+        letter-spacing: -0.011em;
+        color: var(--color-17);
+    }
+
+    .use-of-your-dark{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.625rem;
+        line-height: 145%;
+        /* or 15px */
+        letter-spacing: -0.011em;
+        color: #3F515C;
+
+    }
+    .use-of-your-dark-padding-off{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.625rem;
+        line-height: 145%;
+        /* or 15px */
+       letter-spacing: -0.011em;
+        color:var(--color-17);
+
+    }
+    .retention{
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        /* identical to box height */
+        color: #3F515C;
+
+    }
+
+    .the-company-will-retain{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.625rem;
+        line-height: 145%;
+        /* or 15px */
+        letter-spacing: -0.011em;
+        color:var(--color-17);
+
+    }
+
+    .transfer-of-your{
+
+        font-family: var(--color-17);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        /* identical to box height */
+        color:var(--color-17);
+
+    }
+    .transfer-of-your-content{
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.625rem;
+        line-height: 145%;
+        /* or 15px */
+        letter-spacing: -0.011em;
+        color: #3F515C;
+
+    }
+   
+    .disclouser-of-your{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+        /* identical to box height */
+        color: #3F515C;
+
+
+    }
+    .business-transaction{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+        color:var(--color-17);
+
+    }
+
+    .if-the-company{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.625rem;
+        line-height: 145%;
+        /* or 15px */
+        letter-spacing: -0.011em;
+        color:var(--color-17);
+
+    }
+
+    .law{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+        color: #3F515C;
+    }
+    .under-certain{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 145%;
+        /* or 15px */
+        letter-spacing: -0.011em;
+        color: #3F515C;
+    }
+
+    .other-legal-requirement{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+        color: #3F515C;
+    }
+
+   .the-company-may{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 145%;
+    /* or 15px */   
+    letter-spacing: -0.011em;    
+    color: #3F515C;
+    
+   } 
+
+   .other-legal-requirement-same{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.625rem;
+    line-height: 145%;
+    /* or 15px */
+    letter-spacing: -0.011em;
+    color: #3F515C;
+
+   }
+
+   .security-of-your{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */   
+    color: #3F515C;
+    
+   }
+   .security-of-your-same{
+    font-family:'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.625rem;
+    line-height: 145%;
+    /* or 15px */  
+    letter-spacing: -0.011em;   
+    color: #3F515C;
+    
+   }
+   .go-to-home{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    /* identical to box height */    
+    color: #FC813D;   
+ }
+
+ .home-but{
+    color:var(--color-1);
+    text-decoration:none;
+}
+
+.home-but:hover{
+    color:var(--color-1);
+    
+}
+
+}
+
+@media (min-width: 577px)
+{
+    html{
+        font-size: 40%;
+    }
+}
+
+@media (min-width: 768px)
+{
+    html{
+        font-size: 45%;
+    }
+}
+
+@media (min-width: 992px)
+{
+    html{
+        font-size: 60%;
+    }
+}
+
+
+@media (min-width: 1200px)
+{
+    html{
+        font-size: 80%;
+    }
+}
+
+@media (min-width: 1920px)
+{
+    html{
+        font-size: 100%;
+    }
+}
+
+/* End Mobile Views */
+
+
+
+

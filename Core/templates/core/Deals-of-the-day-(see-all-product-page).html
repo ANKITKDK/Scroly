@@ -1,0 +1,460 @@
+{% extends "core/base2.html"%}{% load static %}
+{% block content %}
+{% block own_css %}
+<link rel="stylesheet" href="{% static 'css/Deals-of-the-day-(see-all-product-page).css' %}" type="text/css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="{% static 'js/product-filter.js' %} " type="text/js">
+<link rel="stylesheet" href="{% static 'css/empty-add-to-card.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/base.css' %}" type="text/css">
+{% endblock own_css %}
+{% if home_category %}
+<div class="row heading">
+    <span> <i class="fa fa-angle-left pe-3" aria-hidden="true"></i> {{ home_category.HomeCategoryName }} </span>
+</div>
+{% else %}
+<div class="row heading">
+    <span> <i class="fa fa-angle-left pe-3" aria-hidden="true"></i> {{cat3obj.CategoryLevel3Name}} </span>
+</div>
+{% endif %}
+<!-- heading end -->
+
+{% block slug_field %}
+   {% if home_category %}
+      <p id="slug" hidden data-filter="{{home_category.HomeCategorySlug}}">{{home_category.HomeCategorySlug}}</p>
+   {% else %}
+      <p id="slug" hidden data-filter="{{cat3obj.CategorySlug}}">{{cat3obj.CategorySlug}}</p>
+   {% endif %}
+{% endblock slug_field %}
+
+<!--abcd-->
+{% if data %}
+   <div class="row row-cols-2 row-cols-sm-3 row-cols-md-5 " id="filteredProducts">
+      <p class="ajaxloader"></p>
+      {% if home_category %}
+      {% for i in data %}
+         <div class="col card-bottom-padding">
+            <a href="{% url 'ProductDetail' i.ProductId.ProductSlug %}" class="text-decoration-none">
+            <div class="card  card-shadow h-100">
+               <div class="img-text card-header p-0">
+                  <img class="card-img-top img-fluid"  src="{{i.ProductId.ProductMainImage.url}}" alt="Card image cap">
+                  <div class="bottom-left rating"> <span class="rating-clr">{{i.ProductId.Star}}</span> <span class="star-icon"><i class="fa fa-star" aria-hidden="true"></i></span> <span class="dash">|</span> <span class="rating-clr">{{i.ProductId.TotalRatingCount}}</span>  </div>
+               </div>
+               <div class="card-body">
+                  <!-- start foldable-table -->
+                  <div class="row foldable-table">
+                     <div class="col-md-12">
+                        {{i.ProductId.ProductName}}
+                     </div>
+                  </div>
+                  <!-- end foldable-table -->
+                  <!-- start ruppe section -->
+                  <div class="row">
+                     <div class="col-md-12">
+                        <span class="icon"><i class="fa fa-inr" aria-hidden="true"></i></span>
+                        <span class="rupee fw-bold">{% if i.ProductId.discount is None %}0{% else %}{{i.ProductId.discount}}{% endif %}</span>
+                        <small class="text-secondary text-decoration-line-through deleted-rupee">₹ {% if i.ProductId.Price is None %}0{% else %}{{i.ProductId.Price}}{% endif %}</small>
+                        <span class="offer"> ( {% if i.ProductId.DiscountPercent is None %} 0 {% else %} {{i.ProductId.DiscountPercent}} {% endif %} % Off )</span>
+                     </div>
+                  </div>
+                  <!-- end ruppe section -->
+                  <!-- start free-delivery section -->
+                  <div class="row free-delivery">
+                     <div class="col-md-12">
+                        Free Delivery 
+                     </div>
+                  </div>
+                  <!-- end free-delivery section -->
+               </div>
+            </div> 
+            </a>
+         </div>
+         {% endfor %}
+      {% else %}
+         {% for i in data %}
+         <div class="col card-bottom-padding">
+            <a href="{% url 'ProductDetail' i.ProductSlug %}" class="text-decoration-none">
+            <div class="card  card-shadow h-100" >
+               <div class="img-text card-header p-0">
+                  <img class="card-img-top img-fluid"  src="{{i.ProductMainImage.url}}" alt="Card image cap" >
+                  <div class="bottom-left rating"> <span class="rating-clr">{{i.Star}}</span> <span class="star-icon"><i class="fa fa-star" aria-hidden="true"></i></span> <span class="dash">|</span> <span class="rating-clr">{{i.TotalRatingCount}}</span>  </div>
+               </div>
+               <div class="card-body">
+                  <!-- start foldable-table -->
+                  <div class="row foldable-table">
+                     <div class="col-md-12">
+                        {{i.ProductName}}
+                     </div>
+                  </div>
+                  <!-- end foldable-table -->
+                  <!-- start ruppe section -->
+                  <div class="row">
+                     <div class="col-md-12">
+                        <span class="icon"><i class="fa fa-inr" aria-hidden="true"></i></span>
+                        <span class="rupee fw-bold">{% if i.discount is None %}0{% else %}{{i.discount}}{% endif %}</span>
+                        <small class="text-secondary text-decoration-line-through deleted-rupee">₹ {% if i.Price is None %} 0 {% else %} {{i.Price}} {% endif %}</small>
+                        <span class="offer"> ( {% if i.DiscountPercent is None %} 0 {% else %} {{i.DiscountPercent}} {% endif %} % Off )</span>
+                     </div>
+                  </div>
+                  <!-- end ruppe section -->
+                  <!-- start free delivery for mobile view -->
+                  <div class="row free-delivery-mobile">
+                     <div class="col-12">
+                        Free Delivery 
+                     </div>
+                  </div>
+                   <!-- end free delivery for mobile view -->
+                  <!-- start free-delivery section -->
+                  <div class="row free-delivery ">
+                     <div class="col-md-12">
+                        Free Delivery 
+                     </div>
+                  </div>
+                  <!-- end free-delivery section -->
+               </div>
+            </div> 
+            </a>
+         </div>
+         {% endfor %}
+      {% endif %}
+   </div>
+
+   <!-- start filter row -->
+   <div class="offcanvas offcanvas-start offcanvas-lg filter-section-mobible-veiw" id="demo">
+      <div class="offcanvas-header pb-0 border-bottom">
+         <h1 class="offcanvas-title filter-text">Filter</h1>
+         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body pt-0">
+         <!-- start filter-section row -->
+         <div class="row">
+            <div class="col-md-12">
+                  <!-- start Jeans For Men -->
+                  <!-- <div class="row border-bottom"> -->
+                     <!-- <div class="col-md-12"> -->
+                        <!-- start Jeans For Men - 2988 Items -->
+                        <!-- <div class="form-check padding-top-inputs">
+                              <input class="form-check-input cat-radio" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" checked>
+                              <label class="form-check-label men-input" for="flexRadioDefault1">
+                                 Jeans For Men - 2988 Items
+                              </label>
+                        </div> -->
+                        <!-- end Jeans For Men - 2988 Items -->
+                        <!-- start Women - 2988 Items -->
+                        <!-- <div class="form-check">
+                              <input class="form-check-input cat-radio" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2">
+                              <label class="form-check-label women-input" for="flexRadioDefault2">
+                                 Women - 2988 Items
+                              </label>
+                        </div> -->
+                        <!-- end Women - 2988 Items -->
+                        <!-- start Kids & Boy - 2988 Items -->
+                        <!-- <div class="form-check">
+                              <input class="form-check-input cat-radio" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault3">
+                              <label class="form-check-label kids-input" for="flexRadioDefault3">
+                                 Kids & Boy - 2988 Items
+                              </label>
+                        </div> -->
+                        <!-- end Kids & Boy - 2988 Items -->
+                     <!-- </div> -->
+                  <!-- </div> -->
+                  <!-- end Jeans For Men -->
+                  <!-- start brand-heading -->
+                  <div class="row brand">
+                     <div class="col-md-12">
+                        Brand
+                     </div>
+                  </div>
+                  <!-- end brand-heading -->
+                  <!-- start brand check box -->
+                  <!-- <div class="row">
+                     <div class="col-md-12">
+                        {% for brand_obj in brands %}
+                        <div class="form-check">
+                              <input class="form-check-input cat-radio filter-checkbox" type="checkbox" data-filter="product" value="{{brands.id}}" id="flexCheckChecked">
+                              <label class="form-check-label levi-input" for="flexCheckChecked">
+                                 {{brand_obj.ProductBrandName}}
+                              </label>
+                        </div>
+                        {% endfor %}
+                     </div>
+                  </div> -->
+                  <div class="row">
+                     <div class="col-md-12">
+                         {% for brand_obj in brands %}
+                         <div class="form-check" >
+                             <input class="form-check-input cat-radio filter-checkbox" type="checkbox" data-filter="product" value="{{brand_obj.ProductBrandName}}" id="flexCheckChecked">
+                             <label class="form-check-label levi-input" for="flexCheckChecked">
+                                 {{brand_obj.ProductBrandName}}
+                             </label>
+                         </div>
+                         {% endfor %}  
+                     </div>
+                  </div>
+                  <!-- end brand check box -->
+                  <!-- start more -->
+                  <div class="row more border-bottom">
+                     <div class="col-md-12">
+                        More
+                     </div>
+                  </div>
+                  <!-- end more -->
+                  <!-- start more -->
+                  <div class="row price">
+                     <div class="col-md-12">
+                        Price
+                     </div>
+                  </div>
+                  <!-- end more -->
+                  <!-- start more -->
+                  <!-- <div class="row min-max border-bottom">
+                     <div class="col-3">
+                        <select class="form-select">
+                              <option>Min</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                        </select>
+                     </div>
+                     <div class="col-2 text-center">
+                        to
+                     </div>
+                     <div class="col-3">
+                        <select class="form-select">
+                              <option>3000+</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                        </select>
+                     </div>
+                     <div class="col-4">
+                     </div>
+                  </div> -->
+                  <div class="row min-max border-bottom">
+                     <div class="col-md-12">
+                         <div class="form-check">
+                             <ul class="list-unstyled">
+                                 <li>
+                                     <input type="range" value="{{Price.Price__min}}" max={{Price.Price__max}} min={{Price.Price__min}} id="rangeInput" oninput="maxPrice.value=this.value" />
+                                     <p>{{Price.Price__min}}-{{Price.Price__max}}</p>
+                                 </li>
+                                 <li>
+                                     Max: 
+                                     <input type="number" value="{{Price.Price__min}}" max={{Price.Price__max}} min={{Price.Price__min}} class="form-control" id="maxPrice" onkeyup="rangeInput.value=this.value" />
+                               <button id="priceFilterBtn" class="btn btn-info btn-sm mt-1">Filter</button>
+                                 </li>
+                             </ul>
+                         </div>
+                     </div>
+                 </div>
+                  <!-- <div class="row min-max border-bottom">
+                     <div class="col-md-12">
+                        <div class="form-check">
+                              <input class="form-check-input cat-radio filter-checkbox" type="checkbox" value="" id="flexCheckDefault">
+                                 
+                              <label class="form-check-label rating4" for="flexCheckDefault">
+                                 0 - 999
+                              </label>
+                        </div>
+                        <div class="form-check">
+                              <input class="form-check-input cat-radio filter-checkbox" type="checkbox" value="" id="flexCheckDefault">
+                                 
+                              <label class="form-check-label rating4" for="flexCheckDefault">
+                                 1000-1999
+                              </label>
+                        </div>
+                        <div class="form-check">
+                              <input class="form-check-input cat-radio filter-checkbox" type="checkbox" value="" id="flexCheckDefault">
+                                 
+                              <label class="form-check-label rating4" for="flexCheckDefault">
+                                 2000 - 2999
+                              </label>
+                        </div>
+                        <div class="form-check">
+                              <input class="form-check-input cat-radio filter-checkbox" type="checkbox" value="" id="flexCheckDefault">
+                                 
+                              <label class="form-check-label rating4" for="flexCheckDefault">
+                                 3000 - 3999
+                              </label>
+                        </div>
+                        <div class="form-check">
+                              <input class="form-check-input cat-radio filter-checkbox" type="checkbox" value="" id="flexCheckDefault">
+                                 
+                              <label class="form-check-label rating4" for="flexCheckDefault">
+                                 4000 - 4999
+                              </label>
+                        </div>
+                        <div class="form-check">
+                              <input class="form-check-input cat-radio filter-checkbox" type="checkbox" value="" id="flexCheckDefault">
+                                 
+                              <label class="form-check-label rating4" for="flexCheckDefault">
+                                 5000 & above
+                              </label>
+                        </div>
+                     </div>
+                  </div> -->
+                  <!-- end more -->
+                  <!-- start customer-rating-heading -->
+                  <div class="row customer-rating">
+                     <div class="col-md-12">
+                        Customer Ratings
+                     </div>
+                  </div>
+                  <!-- end customer-rating-heading -->
+                  <!-- start check box rating -->
+                  <div class="row border-bottom">
+                     <div class="col-md-12">
+                         <div class="form-check">
+                             <input class="form-check-input cat-radio filter-checkbox" type="radio" data-filter="star" value=4 id="flexCheckDefault">
+                                 
+                             <label class="form-check-label rating4" for="flexCheckDefault">
+                                 4 <span class="icon-clr"><i class="fa fa-star" aria-hidden="true"></i></span> & above
+                             </label>
+                         </div>
+                         <div class="form-check">
+                             <input class="form-check-input cat-radio filter-checkbox" type="checkbox" data-filter="star" value=3 id="flexCheckDefault">
+                             <label class="form-check-label rating3" for="flexCheckDefault">
+                                 3 <span class="icon-clr"><i class="fa fa-star" aria-hidden="true"></i></span> & above
+                             </label>
+                         </div>
+                         <div class="form-check">
+                             <input class="form-check-input cat-radio filter-checkbox" type="checkbox" data-filter="star" value=2 id="flexCheckDefault">
+                             <label class="form-check-label rating3" for="flexCheckDefault">
+                                 2 <span class="icon-clr"><i class="fa fa-star" aria-hidden="true"></i></span> & above
+                             </label>
+                         </div>
+                         <div class="form-check">
+                             <input class="form-check-input cat-radio filter-checkbox" type="checkbox" data-filter="star" value=1 id="flexCheckDefault">
+                             <label class="form-check-label rating3" for="flexCheckDefault">
+                                 1 <span class="icon-clr"><i class="fa fa-star" aria-hidden="true"></i></span> & above
+                             </label>
+                         </div>
+                     </div>
+                 </div>
+                  <!-- end check box rating -->
+                  <!-- start color -->
+                  <!-- <div class="row color-heading">
+                     <div class="col-md-12">
+                        Color
+                     </div>
+                  </div> -->
+                  <!-- end color -->
+                  <!-- start check box color -->
+                  <!-- <div class="row">
+                     <div class="col-md-12">
+                        <div class="form-check">
+                              <input class="form-check-input cat-radio" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label blue" for="flexCheckDefault">
+                                 <span class="blue-clr"><i class="fa fa-circle " aria-hidden="true"></i></span> Blue
+                                 (1816)
+                              </label>
+                        </div>
+                        <div class="form-check">
+                              <input class="form-check-input cat-radio" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label navy-blue" for="flexCheckDefault">
+                                 <span class="navy-blue-clr"><i class="fa fa-circle " aria-hidden="true"></i></span> Navy
+                                 Blue (2162)
+                              </label>
+                        </div>
+                        <div class="form-check">
+                              <input class="form-check-input cat-radio" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label black" for="flexCheckDefault">
+                                 <span class="black-clr"><i class="fa fa-circle " aria-hidden="true"></i></span> Black
+                                 (1816)
+                              </label>
+                        </div>
+                     </div>
+                  </div> -->
+                  <!-- end check box color -->
+                  <!-- start more -->
+                  <!-- <div class="row more border-bottom">
+                     <div class="col-md-12">
+                        More
+                     </div>
+                  </div> -->
+                  <!-- end more -->
+            </div>
+         </div>
+         <!-- end filter-section row -->
+      </div>
+   </div>
+   <div class="row border-top filter-for-mobile-view">
+      <div class="col-md-12 text-end filter-icon">
+         <a href="" class="text-decoration-none " data-bs-toggle="offcanvas" data-bs-target="#demo"><i
+                  class="fa fa-filter" aria-hidden="true"></i>&nbsp; Filter</a>
+      </div>
+   </div>
+   <!-- end filter row -->
+{% else %}
+   <!-- Start sorry n result found -->
+   <div class="row empty-cart-padding mobile-view-top-padding pt-3">
+      <div class="col-md-3">
+
+      </div>
+      <center>
+         <div class="col-md-6">
+
+            <div class="row">
+                  <div class="col-12 col-md-12 mobile-view-padding">
+                     <img src="{% static 'images/no-result-found.png' %}" alt="" class="img-fluid">
+                  </div>
+            </div>
+
+            <div class="row">
+                  <div class=" col-12 col-md-12 your-cart-is-empty cart-mobile-view mobile-view-padding">
+                     Sorry, no results found!
+                  </div>
+            </div>
+
+            <div class="row">
+                  <div class=" col-12 col-md-12 add-items mobile-view-padding">
+                     Please check the spelling or try searching for something else
+                  </div>
+            </div>
+
+            <div class="row shop-now-button ps-0 ">
+                  <div class=" col-12 col-md-12">
+
+
+                     <div class="row">
+
+                        <div class="col-md-4"></div>
+
+                        <div class="col-12 col-md-4 btn-padding">
+                              <a href="{% url 'home' %}" class="text-decoration-none">
+                                 <div class="input-group">
+                                    <button type="button"
+                                             class="form-control btn-circle btn-sm border border-0">
+                                          <span class="share-button">Go Back Home</span>
+                                    </button>
+                                    <span class="input-group-text share-btn border border-0">
+
+                                       <button type="button" class="btn btn-circle btn-md">
+                                          <i class="fa-solid fa-house-user"></i>
+                                       </button>
+
+                                    </span>
+                                 </div>
+                              </a>
+                        </div>
+
+                        <div class="col-md-4"></div>
+                     </div>
+                  </div>
+            </div>
+
+
+         </div>
+      </center>
+      <div class="col-md-3">
+
+      </div>
+   </div>
+   <!-- End sorry n result found -->
+{% endif %}
+
+{% endblock %}
+
+

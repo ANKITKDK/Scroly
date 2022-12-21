@@ -1,0 +1,441 @@
+
+
+.pading-two-side{
+  padding: 1.875rem 0.0625rem;
+}
+
+
+
+/*------------------price for product----------------------------- */
+.price{
+  font-family:var(--font-1);
+  /* font-size:1.375rem; */
+  /* font-size:22px; */
+  font-weight: 500;
+  line-height: 1.688rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color:var(--color-1);
+  }
+  .rupee-review{
+    color:var(--color-17);
+    font-size: 1.2rem;
+    width: 8px;
+    height: 13px;
+    left: 345px;
+    top: 643px;
+  }
+  
+  
+  .deleted-price{
+  font-family: var(--font-1);
+  /* font-size: 1.375rem; */
+  font-weight: 500;
+  line-height: 1.688rem;
+  letter-spacing: 0em;
+  text-align:left;
+  text-decoration-line:line-through;
+  color:rgba(63, 81, 92, 0.37);
+  }
+  
+  .offer-price{
+  font-family: var(--font-1);
+  /* font-size: 1.375rem; */
+  font-weight: 400;
+  line-height: 1.688rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color:var(--color-17);
+  }
+/* progress bar start */
+.progress-bar-star{
+  /* font-family: 'Montserrat'; */
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+color: var(--color-17);
+}
+
+.progress-bar-numm{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+color: var(--color-5);
+}
+.progress-bar-num{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+color: var(--color-17);
+}
+
+/* end progress bar  */
+
+
+  /*----------heading product-------------------------*/
+  .product-heading{
+  font-family: var(--font-1);
+  font-size:2rem;
+  font-weight: 500;
+  line-height: 2.438rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color:var(--color-5);
+  }
+  
+  
+  /*--------------------rating range----------------------------------*/
+  .rating-point{
+  font-family: var(--font-1);
+  font-size: 2.5rem;
+  /* font-weight: 500; */
+  line-height: 3.063rem;
+  letter-spacing:0em;
+  text-align: left;
+  color:var(--color-17);
+  }
+  /*------------------------start icon color-------------------------*/
+  .start-color{
+    color:var(--color-1);
+    font-size: 2rem;
+    
+  }
+  /* -----------------------rating numbers----------------------- */
+  .rating-numbers{
+  font-family:var(--font-1);
+  font-size: 1.5rem;
+  /* font-weight: 400; */
+  line-height: 1.813rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color:var(--color-17);
+  }
+  .hr{
+    color:var(--color-17);
+  }
+  
+  .helpful-btn{
+  font-family:var(--font-1);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color:var(--color-5);
+  
+  }
+  
+  .helful1{
+    border-color: var(--color-1);
+  }
+  
+  .helpful-btn-color{
+  height: 12rem;
+  width: 12.938rem;
+  left: 1873.438rem;
+  top: -4080.313rem;
+  background-color:var(--color-2);
+  border-radius: 0.375rem;
+  }
+  
+  .helpful-txt{
+  font-family: var(--font-1);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color:var(--color-9);
+  }
+  
+  
+  
+  /*-------------customer images showing----------------*/
+  .Custom-img{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+    color: #304653;
+    
+  }
+  .cusromer-review{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: #304653;
+
+  }
+  .user-img-paddng
+  {
+    padding-left: 3.4375rem;
+  }
+  .star-icon-padng
+  {
+    padding-left: 0.875rem;
+  }
+
+  
+  .see-all-img{
+  font-family: var(--font-1);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color:var(--color-12);
+  }
+  
+  
+  /* customer reviews */
+  
+  
+.star-baground{
+background-color:var(--color-1);
+color:var(--color-9);
+font-style: normal;
+font-weight: 600;
+font-size: 10px;
+line-height: 12px;
+}
+  
+  .review-from-customer{
+  font-family:var(--font-1);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.438rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color:var(--color-5);
+  }
+  
+  /* first quation reviews */
+
+.user-coment{
+font-family:var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 145%;
+color:var(--color-5);
+}
+.user-name-date{
+font-family:var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 145%;
+color:var(--color-17);
+padding-left: 3.6875rem;
+
+}
+  
+/******************************************pegination**************************************** */
+  .pagicolor{
+    color: var(--color-1);
+  }
+  .pagicolor1{
+    color: var(--color-5);
+  
+  }
+  
+  .pagination_rounded, .pagination_square {
+    display: inline-block;
+    
+  }
+  
+  .pagination_rounded ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .pagination_rounded li:first-child {
+    margin-left: 0px;
+  }
+  
+  .pagination_rounded ul li {
+    float: left;
+    margin-left: 1.25rem;
+  }
+  
+  .pagination_rounded ul li a:hover {
+    background:var(--color-1);
+    color:var(--color-6);
+    border:var(--color-6);
+  }
+  
+  a:link {
+  text-decoration: none;
+  }
+  
+  
+  .pagination_rounded ul li a {
+    float:left;
+    color:var(--color-6);
+    border-radius:50%;
+    line-height: 1.875rem;
+    height: 1.875rem;
+    width: 1.875rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    /* border: 1px solid #e0e0e0; */
+  }
+  
+  
+  
+  .pagination_rounded .next {
+    color:var(--color-1);
+    
+  }
+  
+  .visible-xs {
+    display: none!important;
+  }
+  
+  
+    /* ********************************for progress bar *****************************/
+    .heading {
+      font-size: 1.563rem;
+      margin-right: 1.563rem;
+    }
+    .star-col-s {
+      color: var(--color-9);
+      background-color: var(--color-1);
+      font-family: var(--font-1);
+      font-style: normal;
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 12px;
+  }
+    /* .fa {
+      font-size: 1.563rem;
+    } */
+    
+    .checked {
+      color:var(--color-21);
+    }
+    
+    /* Three column layout */
+    .side {
+      float:left;
+      width: 15%;
+      margin-top: 0.625rem;
+    }
+    
+    .middle {
+      margin-top: 0.625rem;
+      float: left;
+      width: 70%;
+    }
+    
+    /* Place text to the right */
+    .right {
+      text-align: right;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* The bar container */
+    .bar-container {
+      width: 100%;
+      /* background-color: #f1f1f1; */
+      text-align: center;
+    
+    }
+    
+    /* Individual bars */
+    .bar-5 {
+      width:90%;
+      height: 0.313rem;
+      background-color:var(--color-8);
+      border-radius: 0.625rem;
+    
+    }
+    
+    .bar-4 {
+      width: 70%;
+      height:0.313rem;
+      background-color:var(--color-8);
+      border-radius: 0.625rem;
+    }
+    
+    .bar-3 {
+      width: 40%;
+      height: 0.313rem;
+      background-color:var(--color-8);
+      border-radius: 0.625rem;
+    }
+    
+    .bar-2 {
+      width: 7%;
+      height: 0.313rem;
+      background-color:var( --color-1);
+      border-radius: 0.625rem;
+    }
+    
+    .bar-1 {
+      width:20%;
+      height: 0.313rem;
+      background-color:var(--color-22);
+      border-radius: 0.625rem;
+    }
+    
+    /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+    @media (max-width: 400px) {
+    
+      .side,
+      .middle {
+        width: 100%;
+      }
+    
+      .right {
+        display: none;
+      }
+    }
+  
+  
+  
+    /* ********************************************model1 ******************************************************************* */
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 0.625rem;
+      height: 300px; /* Should be removed. Only for demonstration */
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  
+  .ideo-bg-colour{
+    background-color:var(--color-5);
+  }
+  
+
+  
+    
+    
+    
+    

@@ -1,0 +1,579 @@
+body{
+    background-image: url("../images/background.png");
+    
+}
+a{
+    text-decoration: none;
+}
+
+#loading{
+    width: 100%;
+    height: 100vh;
+    background: #fff 
+    url('https://loading.io/spinners/progres-pie/lg.percent-circular-preloader-gif.gif');
+}
+
+.form-control:focus{
+    box-shadow: none;
+}
+
+.btn:focus{
+    box-shadow: none;
+}
+
+
+.pad-top-bottom140{
+    padding-top: 8.75rem;
+    padding-bottom: 8.75rem;
+}
+.pad-top-70px{
+    padding-top: 4.375rem;
+}
+
+.padding-four-side{
+    padding-top: 8.75rem;
+}
+
+.page-shadow-roundedd{
+background: rgba(255, 255, 255, 0.5);
+box-shadow: 0.125rem 0.125rem 0.375rem var(--color-22);
+border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+}
+
+.page-shadow-rounded{
+    border-radius: 1.25rem 0rem 0rem 1.25rem;
+}
+
+
+/* big image */
+.large-image{
+    padding: 14.125rem 0.4756rem 11.795rem 2.6563rem;
+}
+
+.sign_in_img{
+    background-color:var(--color-16);  
+}
+
+.sign-in-button-pad-t{
+    padding-top: 2.5rem;
+}
+
+.login-google-pad-t-b{
+    padding-top: 1.6875rem;
+    padding-bottom:7.6875rem ;
+}
+
+/*start small-btn sign in */
+.sign-in-btn-small{
+    filter: drop-shadow(0.125rem 0.125rem 0.375rem #D2B3B3); /* shadow */
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    background-color: var(--color-1);
+    padding: 8px 18px;
+    border-radius: 18px;
+}
+.logo_image{
+    padding-top:4.5rem;
+}
+
+.sign-in-text{
+    padding-top: 1.0625rem;
+font-family:var(--font-2);
+font-style: normal;
+font-weight: 700;
+font-size: 1.5rem;
+line-height: 2rem;
+color:var(--color-5);
+}
+
+.dont-have-an-account{
+font-family:var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 1rem;
+line-height: 1.25rem;
+color:var(--color-5);
+padding-top: 3.875rem;
+padding-right: 1.875rem;
+}
+
+
+/* forgot password */
+.forgot-pass-text{
+text-decoration: none;
+color: var(--color-17);
+font-family:var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 0.875rem;
+line-height: 1.0625rem;
+}
+.forgot-pass-text:hover{
+    color:var(--color-17);
+}
+
+.i-have-text{
+    font-family:var(--font-1);
+font-style: normal;
+font-weight: 400;
+font-size: 0.875rem;
+line-height: 1.0625rem;
+color: var(--color-17);
+}
+
+.term-and-text{
+    font-family:var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 0.875rem;
+line-height: 1.0625rem;
+color: var(--color-5);
+}
+
+.show-pass-text{
+    text-decoration: none;
+    color: var(--color-17);
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.0625rem;
+    padding-left: 0.3125rem;
+}
+
+/*start sign up  */
+.sing-up{
+    font-family:var( --font-2);
+    font-size:1.5rem ;
+    line-height:2rem ;
+    line-height:100% ;
+    align-items: center;
+    vertical-align: top;
+    color: var( --color-5);
+}
+
+/*end sign up */
+.enter-your-detail{
+    padding-top: 1rem;
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;   
+    color: var(--color-5);
+}
+
+
+/* input image bg none */
+.input-image{
+    background-color: transparent;
+}
+
+/* icon color  */
+.icon-color{
+    color: var(--color-1);
+}
+
+.icon-color-size{
+    font-size: 1.5625rem;
+    color: var(--color-1);
+}
+
+.pad-inupt-email-pad{
+    padding-top: 2.5rem;
+}
+
+.pad-top-paddword{
+    padding-top: 1rem;
+}
+
+.sho-password-pad{
+    padding-top: 0.875rem;
+}
+
+
+.i-have-red-pad{
+    padding-top: 1.3125rem;
+}
+
+.input-test1{  
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color:var(--color-17);
+
+}
+
+/* dha button start */
+.share-btn{
+    height: 3.125rem;
+    width: 3.125rem;
+    left: 100.875rem;
+    top: 22.1875rem;
+    border-radius:50%;
+    border:none;
+    background-color: var(--color-1);
+    vertical-align:none;
+    }
+
+.btn-circle.btn-sm{
+    width: 1.875rem;
+    height: 3.125rem;
+    padding: 0.375rem 0rem;
+    border-radius:1.875rem;
+    font-size: 0.5rem;
+    text-align: center;
+    background-color:var(--color-1);
+}
+
+.btn-circle.btn-md{
+    width:3.125rem;
+    height: 3.125rem;
+    padding: 0.625rem 1rem;
+    border-radius: 1.5625rem;
+    font-size: 1.25rem;
+    text-align: center;
+    background:var(--color-16);
+}
+
+.share-button{
+font-family:var(--font-1);
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.25rem;
+letter-spacing: 0em;
+text-align: center;
+color:var(--color-9);
+}
+
+.share-icon-main{
+color:var(--color-33);
+height: 1.0625rem;
+width: 0.9375rem;
+left: 18.4375rem;
+top: 1.125rem;
+border-radius: 0rem;
+}
+
+/*-----------------------hover button------------------------*/
+
+.share-btn-hover:hover{
+    height: 3.125rem;
+    width: 3.125rem;
+    left: 100.875rem;
+    top: 22.1875rem;
+    border-radius:50%;
+    border:none;
+    background-color: var(--color-34);
+    vertical-align:none;
+    transition-duration: 0.4s;
+}
+
+
+
+.btn-circle.btn-sm-hover{
+    width: 1.875rem;
+    height: 3.125rem;
+    padding: 0.375rem 0rem;
+    border-radius:1.875rem;
+    font-size: 0.5rem;
+    text-align: center;
+    background-color:var(--color-34);
+}
+
+.btn-circle.btn-md-hover{
+    width:3.125rem;
+    height: 3.125rem;
+    padding: 0.625rem 1rem;
+    border-radius: 1.5625rem;
+    font-size: 1.25rem;
+    text-align: center;
+    background:var(--color-16);
+}
+
+
+.share-button-hover{
+    font-family:var(--font-1);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color:var(--color-9);
+}
+
+.share-icon-hover{
+    color:var(--color-33);
+    height: 1.0625rem;
+    width: 0.9375rem;
+    left: 18.4375rem;
+    top: 1.125rem;
+    border-radius: 0rem;
+}
+/* button end */
+
+
+/* --------------------------------- */
+/* =================================== */
+/*start Main sign up web button */
+.sign-in-btn{
+    background: var(--color-1);
+    box-shadow: 0.125rem 0.125rem 0.5rem rgba(62, 125, 99, 0.44);
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-9);
+
+}
+
+/* under-line-remove */
+.under-line-remove{
+    text-decoration: none;
+    color: var(--color-9);
+}
+
+/* a tag hover color remove */
+.under-line-remove:hover{
+    color: var(--color-9);
+}
+/* end Main sign up web button */
+/* ================================= */
+/* start Login with Google btn  */
+
+.logi-with-btn{
+    background: var(--color-1);
+    box-shadow: 0.125rem 0.125rem 0.5rem rgba(62, 125, 99, 0.44);
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size:1rem;
+    line-height: 1.25rem;
+    color: var(--color-9);
+}
+
+/* under-line-remove */
+.under-line-remove{
+    text-decoration: none;
+    color: var(--color-9);
+}
+
+/* a tag hover color remove */
+.under-line-remove:hover{
+    color: var(--color-9);
+}
+/* end Login with Google btn  */
+
+
+
+/* Start Mobile view */
+
+@media all and (min-width: 577px)
+{
+    .dextop-display-none{
+        display: none;
+    }
+}
+
+
+@media all and (max-width: 576px)
+{
+    
+
+        .padding-four-side{
+            padding: 0rem 0rem 0rem 0rem;
+        }
+
+        
+        .large-image{
+            padding:1.75rem 3.375rem 0rem 3.375rem;
+        }
+
+        .logo_image{
+            padding-top:0rem;
+        }
+
+        .mobile-logo-center{
+            text-align: center;
+        }
+
+        .pad-top-bottom140{
+            padding-top: 0rem;
+            padding-bottom: 0rem;
+        }
+
+        .page-shadow-roundedd{
+            background: rgba(0, 0, 0, 0);
+            box-shadow: 0rem 0rem 0rem #d2b3b300;
+            border-radius: 0rem 0rem 0rem 0rem;
+            }
+
+
+        .sign_in_img{
+            background-color:#96eff100;  
+        }
+
+        .mobile-view-none{
+            display: none;
+        }
+
+
+        .sign-in-text {
+            font-family: var(--font-2);
+            font-style: normal;
+            font-weight: 700;
+            color: var(--color-5);
+            padding-top:0.8125rem;
+            font-size: 1.375rem;
+            line-height: 1.8125rem;
+        }
+
+        .pad-inupt-email-pad{
+            padding-top:1.5625rem;
+        }
+
+        .pad-top-paddword{
+            padding-top: 1rem;
+        }
+
+        .sho-password-pad{
+            padding-top: 0.75rem;
+        }
+        
+
+        .login-google-pad-t-b{
+            padding-top:1.5625rem;
+            padding-bottom:0rem ;
+        }
+
+        .enter-your-detail {
+            padding-top: 0.625rem;
+            font-family: var(--font-1);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            color: var(--color-5);
+            color: var(--color-17);
+        }
+        
+        .i-have-red-pad{
+            padding-top: 1.3125rem;
+        }
+
+        .forgot-pass-textmobile {
+            text-decoration: none;
+            color: var(--color-17);
+            font-family: var(--font-1);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.75rem;
+            line-height: 0.9375rem;
+            color: var(--color-17);
+        }
+
+        .mobile-sign-text-size{
+            font-family: var(--font-1);
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            color: var(--color-5);
+        }
+
+        .mobile-pading-left-right{
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .mob-pading-top-25px{
+            padding-top: 1.5625rem;
+            padding-bottom: 4.0287rem;
+        }
+
+        .dont-have-an-account {
+            font-family: var(--font-1);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            color: var(--color-5);
+            text-align: center;
+        }
+
+        .i-have-text{
+            font-family:var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        color: var(--color-17);
+        }
+
+        .term-and-text{
+            font-family: var(--font-1);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.75rem;
+            line-height: 0.9375rem;
+            text-align: center;
+            color: var(--color-17);
+        }
+
+        .sign-in-button-pad-t{
+            padding-top: 1.8125rem;
+        }
+}
+
+@media (min-width: 577px)
+{
+    html{
+        font-size: 40%;
+    }
+}
+
+@media (min-width: 768px)
+{
+    html{
+        font-size: 45%;
+    }
+}
+
+@media (min-width: 992px)
+{
+    html{
+        font-size: 60%;
+    }
+}
+
+
+@media (min-width: 1200px)
+{
+    html{
+        font-size: 80%;
+    }
+}
+
+@media (min-width: 1920px)
+{
+    html{
+        font-size: 100%;
+    }
+}
+
+/* End Mobile Views */
+
+
+
+
+
+
+/* start preloader */
+.loader-bg{position:fixed;z-index:999999;background:#fff;width:100%;height:100%}.loader{border:0 solid transparent;border-radius:50%;width:150px;height:150px;position:absolute;top:calc(50vh - 75px);left:calc(50vw - 75px)}.loader:after,.loader:before{content:'';border:1em solid #ff5733;border-radius:50%;width:inherit;height:inherit;position:absolute;top:0;left:0;animation:loader 2s linear infinite;opacity:0}.loader:before{animation-delay:.5s}@keyframes loader{0%{transform:scale(0);opacity:0}50%{opacity:1}100%{transform:scale(1);opacity:0}}
+/* end preloader */

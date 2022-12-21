@@ -1,0 +1,303 @@
+/*-image on background-*/
+body {
+    background-image: url("../images/background.png"); 
+    font-family:var(--font-1);
+}
+ .pad-2-side{
+    padding: 0px 30px;
+ }
+ .exchange-req{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    color:var(--color-5);
+    text-align:center ;
+    padding-top:30px;
+ }
+.ref-no{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color:var(--color-17);
+    text-align:center ; 
+    padding-top:16px ; 
+}
+.shadow{
+    box-shadow: 2px 2px 6px #D2B3B3;
+border-radius: 6px;
+}
+
+.shirt{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color:var(--color-17);
+    padding-bottom:10px ;
+    
+}
+
+.colororange{
+    color:var(--color-1);
+}
+
+.what-next{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color:var(--color-5);  
+    padding-top:30px ; 
+}
+.please-check{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color:var(--color-17);  
+    padding-top:16px ;
+    
+}
+.exchge-req{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color:var(--color-1);  
+    padding-top:16px ; 
+}
+
+.repack{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color:var(--color-5);  
+}
+
+.done{
+    font-family:var(--font-1);
+    color:var(--color-9);
+    font-size: 14px;
+    font-weight: 500;
+    background-color:var(--color-1);
+    border-radius: 26px;
+    text-align: center;
+}
+.download{
+    text-decoration: none;
+    color:var(--color-9);
+    font-family:var(--font-1);
+    
+}
+
+/* for vertical line */
+.vl {
+    padding-top: 0px;
+    border-left: 1px solid rgba(63, 81, 92, 0.12);
+    margin-top: 0px;
+  }
+
+/* for hover color remove  */
+.order{
+    text-decoration: none;
+    color:var(--color-5);
+    font-family:var(--font-1);
+    
+}
+/* for hover */
+a.order{
+    color:var(--color-5);
+    text-decoration: None;
+}
+
+
+.font-20{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color:var(--color-5);
+    padding-left:30px ;
+}
+
+.font-16{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color:var(--color-5);
+    padding-left: 30px;
+}
+
+.order-detail{
+    text-decoration: none;
+    color:var(--color-5);
+    font-family:var(--font-1);
+    
+}
+a.order-detail{
+    color:var(--color-1);
+    text-decoration: None;
+}
+
+
+.style2{
+    
+    margin-bottom:0px;
+    
+    
+} 
+  /*vertical progress bar CSS  */
+  .wrapper {
+    /* width: 330px; */
+    font-family:var(--font-1);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color:var(--color-1);
+}
+
+.StepProgress {
+    position: relative;
+    padding-left: 45px;
+    list-style: none;
+}
+.StepProgress::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 10px;
+    height: 100%;
+}
+.StepProgress-item {
+    position: relative;
+    counter-increment: list;
+}
+.StepProgress-item:not(:last-child) {
+    padding-bottom: 20px;
+}
+.StepProgress-item::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    left: -30px;
+    height: 100%;
+    width: 10px;
+}
+.StepProgress-item::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -37px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #CCC;
+    border-radius: 50%;
+    background-color: #FFF;
+}
+.StepProgress-item.is-done::before {
+    border-left: 2px solid var(--color-1);
+}
+.StepProgress-item.is-done::after {
+    content: "✔";
+    font-size: 16px;
+    color:var(--color-9);
+    text-align: center;
+    border: 2px solid var(--color-1);
+    background-color:var(--color-1);
+}
+.StepProgress-item.current::before {
+    border-left: 2px solid var(--color-1);
+}
+.StepProgress-item.current::after {
+    /* content: counter(list); */
+    padding-top: 1px;
+    width: 25px;
+    height: 25px;
+    top: -4px;
+    left: -40px;
+    font-size: 14px;
+    text-align: center;
+    color: var(--color-1);
+    border: 2px solid var(--color-1);
+    background-color: white;
+}
+.StepProgress strong {
+    display: block;
+}
+
+ .col-black{
+    color:var(--color-17);
+}
+/* --------Button CSS------------- */
+
+.share-btn{
+    height: 50px;
+    width: 50px;
+    left: 100.875rem;
+    top: 355px;
+    border-radius:50%;
+    border:none;
+    background-color: var(--color-1);
+    vertical-align:none;
+    }
+
+
+
+.btn-circle.btn-sm{
+    width: 30px;
+    height: 50px;
+    padding: 6px 0px;
+    border-radius:30px;
+    font-size: 8px;
+    text-align: center;
+    background-color:var(--color-1);
+    
+    
+}
+
+.btn-circle.btn-md{
+    width:50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 20px;
+    text-align: center;
+    background:var(--color-16);
+
+}
+
+.share-button{
+font-family:var(--font-1);
+font-size: 16px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+color:var(--color-9);
+}
+
+.share-icon-main{
+color:var(--color-33);
+height: 17px;
+width: 15px;
+left: 295px;
+top: 18px;
+border-radius: 0px;
+}
+
+
+ 

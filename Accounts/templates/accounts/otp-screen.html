@@ -1,0 +1,148 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>OTP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS only -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style-guid.css' %}" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/otp.css' %}">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- start row -->
+        <div class="row padding-four-side">
+            <div class="col-sm-2"></div>
+            <!-- start col-sm-8  -->
+            <div class="col-sm-8 page-shadow-rounded pad-mobile-two-side">
+                <div class="row">
+                    <!-- start col-sm-2 column empty -->
+                    <div class="col-sm-2">
+                    <!--end col-sm-2 column empty -->
+                    </div>
+                    <!--start forgot-password body -->
+                    <div class="col-sm-8 ">
+                        <!--start otp heading start -->
+                        <div class="row">
+                            <div class="col-sm-12 heading-top">
+                                <span>We have sent you one time <br> password to your email </span>
+                            </div>
+                        </div>
+                        <!--end otp heading end -->
+
+                        <!--start enter one time password -->
+                        <div class="row ">
+                            <div class="col-sm-12 heading-small">
+                                <span>Enter one time password</span>
+                            </div>
+                        </div>
+                        <!--end enter one time password -->
+
+                        <!--start row for otp-input-box, verify-otp-button and resend-otp text -->
+                        <div class="row">
+                            <!--start empty column -->
+                            <div class="col-sm-3"></div>
+                            <!--end empty column -->
+                            <!-- start col-sm-6-->
+                            <div class="col-sm-6 ">
+                                <!--start row  -->
+                                <div class="row">
+                                    <!-- start col-sm-12 -->
+                                    <div class="col-sm-12 dash-line-padd">
+                                        <!--start otp input-number -->
+                                        
+                                        <div id="otp" class="inputs d-flex flex-row justify-content-center mt-2"> 
+                                            <input class="m-2 text-center form-control rounded-0" type="text" id="first" maxlength="1" />
+                                            <input class="m-2 text-center form-control rounded-0" type="text" id="second" maxlength="1" />
+                                            <input class="m-2 text-center form-control rounded-0" type="text" id="third" maxlength="1" />
+                                            <input class="m-2 text-center form-control rounded-0" type="text" id="fourth" maxlength="1" /> 
+                                            <input class="m-2 text-center form-control rounded-0" type="text" id="fifth" maxlength="1" /> 
+                                            <input class="m-2 text-center form-control rounded-0" type="text" id="sixth" maxlength="1" /> 
+                                        </div>
+                                            
+                                    </div>
+                                    <!--end otp input-number -->
+                                </div>
+
+                                <!-- start button verify OTP -->
+                                
+                                <!-- start button verify OTP -->
+                                <div class="row">
+                                    <div class="col-sm-12 verify-otp-pad">
+                                        <!-- <div class="input-group ">
+                                            <button type="button" class="form-control btn-circle btn-sm border border-0">
+                                                <a href="" class="otp-button-mobileview  otp-button:hover  otp-button otp-button-mobileview:hover varify-otp-text">Verify OTP</a>
+
+                                                <span class="otp-button-mobileview  otp-button">Verify OTP</span>  
+                                            </button>
+                                            <span class="input-group-text otp-btn-mobileview border border-0 otp-btn"><button type="button" class="btn btn-circle btn-md"><i class="fa fa-window-maximize otp-icon-main-mobileview  otp-icon-main" aria-hidden="true"></i></button>
+                                            </span>        
+                                        </div> -->
+
+                                        <div class="row">     
+                                            <div class="input-group">
+                                                <button type="submit"
+                                                    class="form-control btn-circle btn-sm border border-0 ">
+                                                    <span class="share-button ps-5">Verify OTP</span>
+                                                </button>
+                                                <span
+                                                    class="input-group-text share-btn border border-0 pe-5"><button
+                                                        type="submit"
+                                                        class="btn btn-circle btn-md"><i class="fa fa-window-maximize" aria-hidden="true"></i></button>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!--end button verify OTP -->
+                                
+                                <!--end button verify OTP -->
+
+                                <!-- start text-resend-OTP  -->
+                                <div class="row ">
+                                    <div class="col-sm-12 resend-otp-text   resend-otp-padd">
+                                        Resend OTP
+                                    </div>
+                                </div>    
+                                <!--end text-resend-OTP  -->
+                                <!-- </div> -->
+                                <!--end col-sm-12 -->
+                                <!-- </div> -->
+                                <!--end row   -->
+                            </div>
+                            <!--end col-sm-6-->
+                            <div class="col-sm-3 pb-5"></div>
+                        </div>
+                        <!--end row for otp-input-box, verify-otp-button and resend-otp text -->
+                    </div>
+                    <!--end forgot-password body -->
+                    <!-- start col-sm-2 column empty -->
+                    <div class="col-sm-2"></div> 
+                    <!--end col-sm-2 column empty -->     
+                </div>
+            </div>
+            <!--end col-sm-8  -->
+            <!-- start col-sm-2 column empty -->
+            <div class="col-sm-2"></div>
+            <!--end col-sm-2 column empty --> 
+        </div> 
+        <!--end row --> 
+    </div>
+    <!-- ==================== -->
+
+
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+
+
+    <script src="{% static 'js/otpjs.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+/* start body */
+body {
+    background-image: url("../images/background.png");
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/* end body */
+
+/* start navbar */
+
+.navbar1,
+.r1 .catname {
+    font-size: 16px;
+
+}
+
+.navbar1 a,
+.navbar1 a:hover {
+    color: var(--color-5);
+}
+
+
+.navbar1 .earnbutton,
+.navbar1 .earnbutton:hover {
+    
+    background-color: var(--color-1);
+    color: var(--color-9);
+    font-family: var(--font-1);
+
+}
+
+.searchbar .input-group-text,
+.searchbar .form-control {
+    border-radius: 6px;
+    box-shadow: 2px 2px 8px rgba(207, 193, 193, 0.53);
+    background-color: var(--color-19);
+}
+
+.navbar1 .search-container {
+    float: right;
+  }
+
+
+
+
+
+/* end navbar */
+
+/* 3lines sidenav */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--color-2);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--color-9);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav p {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--color-9);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: var(--color-20);
+}
+
+.sidenav .sidenav-border {
+
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    height: auto;
+    width: 240px;
+
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/* 3lines sidenav end */
+
+/* profile dropdown  button css  start*/
+
+.profileDropdown
+{
+position: relative;
+width: 400px;
+height: 314px;
+
+background: var(--color-2);
+box-shadow: 4px 4px 6px #B6A9A9;
+border-radius: 6px;
+color: var(--color-9);
+font-family: var(--font-1);
+font-weight: 600;
+font-size: 18px;
+}
+
+.profileDropdown .sidenav-border {
+
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    height: auto;
+    width: 340px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    
+}
+
+.profileDropdown a{
+    color: var(--color-9);
+    font-family: var(--font-1);
+}
+
+.profile-bt{
+    border-radius: 50%;
+    background-color: var(--color-19);
+    color: var(--color-5);
+}
+
+
+
+/* profile dropdown button css end */
+
+
+/* start categorycol */
+.categorycol {
+
+    box-shadow: 4px 4px 6px rgba(139, 125, 125, 0.26);
+    border-radius: 0px 6px 6px 0px;
+    background-color: var(--color-10);
+    height: auto;
+    /* 5770px */
+}
+
+.dropbtn {
+    color: var(--color-17);
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 1090px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;  
+    font-family: var(--font-1);   
+
+}
+
+.men{
+
+    background-image: url("../images/men_backgraound.png");
+
+}
+
+.women{
+    background-image: url("../images/women_background.png");
+}
+
+.bullet2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    letter-spacing: -0.011em;
+
+    color: var(--color-17);
+}
+
+.dropdown-content a {
+    color: #3F515C;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.categorycol .sidebar-heading
+{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;   
+    color: #304653;
+}
+
+
+/* end categorycol */
+
+/* start back-to-top button */
+
+body .back-to-top {
+    background-color: var(--color-12);
+    border: none;
+    color: var(--color-9);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+.back-to-top:hover {
+    color: var(--color-9);
+}
+
+/* end back-to-top button */
+
+/* start footer */
+
+.bullet-footer {
+    list-style-type: none;
+    font-family: var(--font-1);
+    font-size: 14px;
+    color: var(--color-5);
+    margin: 0;
+    padding: 0;
+}
+
+.footer h6 {
+    font-family: var(--font-1);
+    color: var(--color-5);
+    font-size: 18px;
+
+}
+
+.footer p {
+    font-family: Montserrat;
+    color: var(--color-5);
+    font-size: 14px;
+
+}
+/* end footer */

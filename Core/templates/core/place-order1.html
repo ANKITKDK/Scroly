@@ -1,0 +1,1047 @@
+{% extends "core/base1.html" %}{% load static %}
+{% block content %}
+{% block own_css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/place-order.css' %}" type="text/css">
+{% endblock own_css%}
+<!-- start col-sm-12 for content of page -->
+
+<!-- start row for col-sm-10 section -->
+<div class="row plceordr-top-padding">
+   <!-- start col-md-8 for select delivery address section-->
+   <div class="col-sm-9 col-md-9 pe-sm-4 select-delivery-address-section">
+      {% if multipleaddressplaceorder %}
+      {% for i in multipleaddressplaceorder%}
+      {% if i.AddressStatus %}
+      <!-- start delivery addres and add new address button -->
+      <div class="row pb-sm-2">
+         <!-- start select delivery address row -->
+         <div class="col-sm-9 col-md-9">
+            <!-- start select delivery adrress -->
+            <div class="row  ">
+               <div class=" col-sm-12 col-md-12 delivery-address">
+                  <i class="fa fa-angle-left no-desktop " aria-hidden="true"></i>   Select Delivery Address
+               </div>
+            </div>
+            <!-- end select delivery address -->
+         </div>
+         <!-- end select delivery address row -->
+         <!-- start add new address button  -->
+         <div class="col-sm-3 col-md-3 pt-3   no-button-mobile">
+            <button type="button" class="btn  btn-block placeorder-add-new-address-button-text placeorder-add-new-address-button" data-bs-toggle="modal" data-bs-target="#myModal2">Add
+            New Address</button>
+         </div>
+         <!-- end add new address button -->
+      </div>
+      <!-- start delivery addres and add new address button -->
+      <!-- start default address -->
+      <div class="row place-order-default-address ">
+         <div class="col-md-12">
+            Default Address
+         </div>
+      </div>
+      <!-- end default address -->
+      <!-- start tanuja nitin section -->
+      <div class="row tanuja">
+         <!-- start col-md-8 for address -->
+         <div class="col-sm-8 col-md-12 ">
+            <!-- start radio button with text -->
+            <div class="form-check">
+               <input type="radio" class="form-check-input tanuja-radio" id="radio1" name="optradio"
+                  value="option1" checked> <strong>{{i.FullName}}</strong>
+               <br> {{i.Address_line1}} {{i.Address_line2}} <br>Landmark : {{i.Landmark}} <br> {{i.City}}
+               {{i.state}} {{i.PinCode}}<br>Phone Number : {{i.MobileNo}}
+               <label class="form-check-label" for="radio1"></label>
+            </div>
+            <!-- end radio button with text -->
+         </div>
+         <!-- end col-md-8 for address -->
+         <!-- start blank section -->
+         <!-- <div class="col-md-4">
+         </div> -->
+         <!-- end blank section -->
+      </div>
+      <!-- end tanuja nitin section -->
+      <!-- start edit remove button row-->
+      <div class="row ">
+         <!-- start col-md-8 for buttons -->
+         <div class="col-md-12">
+            <!-- start row of buttons -->
+            <div class="row">
+               <!-- start edit button -->
+               <div class="col-0 col-sm-6 col-md-2">
+                  <!-- <div class="row pt-2">
+                     <div class="col-md-12 text-center button-padding d-grid">
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#myModalforEdit"
+                           class="btn btn-outline edit-button-text btn-block edit-button">Edit</button>
+                     </div>
+                     </div> -->
+                  <div class="row  no-button-mobile">
+                     <div class="input-group">
+                        <button type="button" class="form-control btn-circle-border btn-sm-border " data-bs-toggle="modal" data-bs-target="#editModal" onclick="Edit_address('{{i.id}}','{{i.FullName}}','{{i.Address_line1}}','{{i.Address_line2}}',
+                           '{{i.Landmark}}','{{i.City}}','{{i.state}}','{{i.PinCode}}','{{i.MobileNo}}','{{i.AddressType}}')">
+                        <span class="share-button-border">Edit</span>
+                        </button>
+                        <span class="input-group-text share-btn-border">
+                        <button type="button" class="btn btn-circle-border btn-md-border">
+                        <i class="fa fa-pencil share-icon-main-border" aria-hidden="true"></i>
+                        </button>
+                        </span>
+                     </div>
+                  </div>
+                  <!-- add-new-address for mobile view -->
+                  <div class="row  ">
+                     <div class="col-6 col-sm-9 display-button">
+                        <button type="button"
+                           class="btn btn-outline "
+                           data-bs-toggle="modal" data-bs-target="#myModal2">Add
+                        New Address</button>
+                     </div>
+                     <div class="col-6 col-sm-3 display-edit-moobile">
+                        <button type="button" class="btn oran-text-col" data-bs-toggle="modal" data-bs-target="#editModal" onclick="Edit_address('{{i.id}}','{{i.FullName}}','{{i.Address_line1}}','{{i.Address_line2}}',
+                           '{{i.Landmark}}','{{i.City}}','{{i.state}}','{{i.PinCode}}','{{i.MobileNo}}','{{i.AddressType}}')">Edit <span><i class="fa fa-pencil pe-2"
+                           aria-hidden="true"></i></span></button>
+                     </div>
+                  </div>
+                  <!-- add-new-address for mobile view -->
+               </div>
+               <!-- end edit button -->
+               <!-- start Cash on delivery section -->
+               <div class="row">
+                  <div class="col-md-12 border-bottom cashon-delivery ">
+                     <i class="fa fa-circle pe-2 pe-sm-3" aria-hidden="true"></i>Cash on delivery available
+                  </div>
+               </div>
+               <!-- end Cash on delivery section -->
+               <!-- start order confirmation row -->
+               <div class="row border-bottom placeorder-order-confirm ">
+                  <div class="col-md-12">
+                     Order Confirmation email will be sent to <strong class="fw-bolder">{{user.email}}</strong>
+                  </div>
+               </div>
+               <!-- end order confirmation row -->
+               <!-- start blank section -->
+               <div class="col-sm-0 col-md-2">
+               </div>
+               <!-- end blank section -->
+               <!-- start blank section -->
+               <div class="col-sm-0 col-md-2">
+               </div>
+               <!-- end blank section -->
+               <!-- start blank section -->
+               <div class="col-sm-0 col-md-2">
+               </div>
+               <!-- end blank section -->
+               <!-- start blank section -->
+               <div class="col-sm-0 col-md-2">
+               </div>
+               <!-- end blank section -->
+            </div>
+            <!-- end row of buttons -->
+         </div>
+         <!-- end col-md-8 for buttons -->
+         <!-- start blank section -->
+         <!-- <div class="col-md-4">
+            </div> -->
+         <!-- end blank section -->
+      </div>
+      {% else %}
+      {% endif %}
+      {% endfor %}
+      {% else %}
+      <!-- end edit remove button row-->
+      <!-- start delivery addres and add new address button -->
+      <!-- start delivery addres and add new address button -->
+      <div class="row pb-sm-2 pt-3">
+         <!-- start select delivery address row -->
+         <div class="col-md-9">
+            <!-- start select delivery adrress -->
+            <div class="row select-delivery-address pb-sm-2">
+               <div class="col-md-12">
+                  Add Your Addresses
+               </div>
+            </div>
+            <!-- end select delivery address -->
+         </div>
+         <!-- end select delivery address row -->
+         <!-- start add new address button -->
+         <div class="col-md-3 d-grid add-new-address-mobile-view ">
+            <button type="button"
+               class="btn btn-outline btn-block add-new-address-button-text add-new-address-button"
+               data-bs-toggle="modal" data-bs-target="#myModal2"> Add
+            New Address</button>
+         </div>
+         <!-- end add new address button -->
+      </div>
+      <!-- start delivery addres and add new address button -->
+      <!-- start delivery addres and add new address button -->
+      <!-- start cash on delivery row -->
+      <div class="row border-bottom cash-on-delivery pb-sm-4 pt-5">
+         <div class="col-md-12">
+            <i class="fa fa-circle pe-sm-2" aria-hidden="true"></i> Cash on delivery available
+         </div>
+      </div>
+      <!-- end cash on delivery row -->
+      <!-- start order confirmation row -->
+      <div class="row border-bottom order-confirm pt-sm-5 pb-sm-5">
+         <div class="col-md-12">
+            Order Confirmation email will be sent to <strong class="fw-bold">{{user.email}}</strong>
+         </div>
+      </div>
+      <!-- end order confirmation row -->
+      {% endif %}
+      <!-- start Your Other Address card 1 row -->
+      {% if multipleaddressplaceorder %}
+      <div class="row placeorder-your-other-address  other-address-mobile-view">
+         <div class="col-md-12">
+           <strong>Your Other Address</strong> 
+         </div>
+      </div> 
+      {% else %}
+      {% endif %}
+      {% for i in multipleaddressplaceorder%}
+      {% if i.AddressStatus %}
+      {% else %}
+      <!-- end Your Other Address card 1 row -->
+      <!-- start Your Other Address card 2 row -->
+      <div class="row your-other-address-card-2">
+         <!-- start col-md-12 for card 1 -->
+         <div class="col-md-12">
+            <!-- start card 1 -->
+            <div class="card">
+               <!-- start card-body -->
+               <div class="card-body p-0 ">
+                  <!-- start radio button with text -->
+                  <div class="row ">
+                     <!-- start your-other-address -->
+                     <div class="col-8 col-md-10 placeorder-other-address-card-padding ">
+                        <div class="form-check placeorder-other-address-card-text">
+                           <input class="form-check-input tanuja-radio" type="radio" name="flexRadioDefault"
+                              id="flexRadioDefault1" onclick="defaultaddressplaceorder('{{i.id}}')" value="{{i.id}}">
+                           <label class="form-check-label placeorder-text" for="flexRadioDefault1">
+                           <strong>{{i.FullName}}</strong> <br>
+                           {{i.Address_line1}} {{i.Address_line2}} <br> Landmark : {{i.Landmark}} <br> {{i.City}}
+                           {{i.state}} {{i.PinCode}}<br>Phone Number : {{i.MobileNo}}
+                           </label>
+                        </div>
+                     </div>
+                     <!-- end your-other-address -->
+                     <!-- start buttons -->
+                     <div class="col-4 col-md-2 placeorder-edit-remove-button">
+                        <!-- start edit button -->
+                        <div class="row  ">
+                           <div class="col-md-12 text-center d-grid ">
+                              <span class="edit-remove-btn-color"> <i class="fa fa-pencil" aria-hidden="true"></i><button type="button"
+                                 class="btn btn-block edit-remove-btn-color" data-bs-toggle="modal" data-bs-target="#editModal" onclick="Edit_address('{{i.id}}','{{i.FullName}}','{{i.Address_line1}}','{{i.Address_line2}}',
+                                 '{{i.Landmark}}','{{i.City}}','{{i.state}}','{{i.PinCode}}','{{i.MobileNo}}','{{i.AddressType}}')">Edit</button></span>
+                           </div>
+                        </div>
+                        <!-- end edit button -->
+                        <!-- start remove button -->
+                        <div class="row">
+                           <div class="col-md-12 text-center placeorder-rmvebutton-padding d-grid">
+                              <form action="{% url 'remove_row_placeOrder' i.id %}">
+                                 <button onclick="return confirm('Are you sure you want to delete this item.')" type="submit" class="btn placeorder-rmv-text-col"><span><i class="fa fa-trash pe-3"
+                                    aria-hidden="true"></i></span class="edit-remove-btn-color">Remove</button>
+                              </form>
+                           </div>
+                        </div>
+                        <!-- end remove button -->
+                     </div>
+                     <!-- end buttons -->
+                     <!--start edit & remove button for moblie view -->
+                     <div class="row your-other-address-edit-padding">
+                        <div class="col-4  button-padding d-grid">
+                           <span class=""> <i class="fa fa-pencil" aria-hidden="true"></i><button type="button"
+                              class="btn btn-block edit-remove-btn-color" data-bs-toggle="modal" data-bs-target="#editModal" onclick="Edit_address('{{i.id}}','{{i.FullName}}','{{i.Address_line1}}','{{i.Address_line2}}',
+                              '{{i.Landmark}}','{{i.City}}','{{i.state}}','{{i.PinCode}}','{{i.MobileNo}}','{{i.AddressType}}')">Edit</button></span>
+                        </div>
+                        <div class="col-6">
+                              <form action="{% url 'remove_row_placeOrder' i.id %}">
+                                 <button onclick="return confirm('Are you sure you want to delete this item.')" type="submit" class="btn oran-text-col"><span><i class="fa fa-trash pe-3"
+                                    aria-hidden="true"></i></span>Remove</button>
+                              </form>
+                           </div>
+                     </div>
+                     <!--end edit & remove button for moblie view -->
+                  </div>
+                  <!-- end radio button with text -->
+               </div>
+               <!-- end card-body -->
+            </div>
+            <!-- end card 1 -->
+         </div>
+         <!-- end col-md-12 for card 1 -->
+      </div>&nbsp; 
+      <!-- end Your Other Address card 2 row -->
+      {% endif %}
+      {% endfor %}
+   </div>
+   <!-- end col-md-8 for select delivery address section-->
+   <!-- -------------------------------------------- -->
+   <!-- -------------------------------------------- -->
+   <!-- -------------------------------------------- -->
+   <!-- -------------------------------------------- -->
+   <!-- -------------------------------------------- -->
+   <!-- start col-md-4 price detail section-->
+   <div class="col-sm-3 col-md-3 price-details-section">
+      <!-- start heading price details -->
+      <div class="row price-details">
+         <div class="col-sm-12 col-md-12">
+            <strong>Price Details</strong>
+         </div>
+      </div>
+      <!-- end heading price details -->
+      <!-- start price (3 items) row -->
+      <div class="row price-3items pt-sm-3">
+         <div class="col-8 col-sm-8 col-md-8">
+            Price (3 Items)
+         </div>
+         <div class="col-4 col-sm-4 col-md-4">
+            <i class="fa fa-inr" aria-hidden="true"></i> {{productprice}}
+         </div>
+      </div>
+      <!-- end price (3 items) row -->
+      <!-- start discount row -->
+      <div class="row discount pt-sm-3">
+         <div class="col-8 col-sm-4 col-md-8">
+            Discount
+         </div>
+         <div class="col-4 col-sm-4 col-md-4">
+            <i class="fa fa-inr" aria-hidden="true"></i><span class="price-color"> {{product_discount}}</span>
+         </div>
+      </div>
+      <!-- end discount row -->
+      <!-- start delivery charges row -->
+      <div class="row border-bottom delivery-charges pt-sm-3 pb-sm-3">
+         <div class="col-8 col-sm-8 col-md-8">
+            Delivery Charges
+         </div>
+         <div class="col-4 col-sm-4 col-md-4">
+            <del><i class="fa fa-inr " aria-hidden="true"></i> 80</del> <span>Free</span>
+         </div>
+      </div>
+      <!-- end delivery charges row -->
+      <!-- start total amount row -->
+      <div class="row border-bottom total-amount pt-sm-3 pb-sm-3">
+         <div class="col-8 col-sm-8 col-md-8">
+            Total Amount
+         </div>
+         <div class="col-4 col-sm-4 col-md-4">
+            <i class="fa fa-inr" aria-hidden="true"></i> <span class="price-color"> {{cart_Total}}</span>
+         </div>
+      </div>
+      <!-- end total amount row -->
+      <!-- start your total savings row -->
+      <div class="row border-bottom your-total-savings pt-sm-3 pb-sm-3">
+         <div class="col-sm-12 col-md-12">
+            Your total savings on this order <i class="fa fa-inr " aria-hidden="true"></i> 3000
+         </div>
+      </div>
+      <!-- end your total savingsrow -->
+      <!-- start continue button row -->
+      {% if multipleaddressplaceorder %}
+      {% if id %}
+      <div class="row pt-sm-3 pb-sm-3">
+         <div class="col-sm-12 col-md-12">
+            <a href="{% url 'PaymenMethod' id %}" class="text-decoration-none">
+               <div class="row">
+                  <div class="input-group ">
+                     <button type="button" class="form-control btn-circle btn-sm border border-0">
+                     <span class="share-button">Continue</span>
+                     </button>
+                     <span class="input-group-text share-btn border border-0"><button type="button" class="btn btn-circle btn-md"><i class="fa fa-window-maximize hare-icon-main" aria-hidden="true"></i></button>
+                     </span>
+                  </div>
+               </div>
+            </a>
+         </div>
+      </div>
+      {% else %}
+      <div class="row pt-sm-3 pt-3 pb-sm-3 pb-3">
+         <div class="col-md-12">
+            <a href="{% url 'PaymenMethod' %}" class="text-decoration-none">
+               <div class="row">
+                  <div class="input-group ">
+                     <button type="button" class="form-control btn-circle btn-sm border border-0">
+                     <span class="share-button">Continue</span>
+                     </button>
+                     <span class="input-group-text share-btn border border-0"><button type="button" class="btn btn-circle btn-md"><i class="fa fa-window-maximize hare-icon-main" aria-hidden="true"></i></button>
+                     </span>
+                  </div>
+               </div>
+            </a>
+         </div>
+      </div>
+      {% endif %}
+      {% else %}
+      <div class="row pt-sm-3 pb-sm-3">
+         <div class="col-md-12">
+            <div class="row">
+               <div class="input-group ">
+                  <button disabled type="button" class="form-control btn-circle btn-sm border border-0">
+                  <span class="share-button">Continue</span>
+                  </button>
+                  <span class="input-group-text share-btn border border-0"><button type="button" class="btn btn-circle btn-md"><i class="fa fa-window-maximize hare-icon-main" aria-hidden="true"></i></button>
+                  </span>
+               </div>
+            </div>
+         </div>
+      </div>
+      {% endif %}
+      <!-- </div> -->
+      <!-- end continue button row -->
+   </div>
+   <!-- end col-md-4 for price detail section-->
+</div>
+<!-- end row for col-sm-10 section -->
+
+<!-- end col-sm-12 for content of page -->
+<!--------Modal Add a new address or pick up Start------>
+<div class="modal" id="myModalforEdit">
+   <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" width="700" height="200">
+         <!---row for header-->
+         <div class="row addnewpop">
+            <div class="col-md-2"></div>
+            <!---column for modal header-->
+            <div class="col-md-10">
+               <div class="modal-header border-bottom-0">
+                  <h4 class="modal-title edit-details">Edit Details</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+               </div>
+            </div>
+         </div>
+         <!-- Modal Header -->
+         <!-- <div class="modal-header">
+            <h4 class="modal-title">Add New Address</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div> -->
+         <!--------Model Body-->
+         <!---row for model body-->
+         <div class="row">
+            <div class="col-md-1"></div>
+            <!----modal content in body-->
+            <div class="col-md-10">
+               <div class="modal-body input-text-popup">
+                  <!---------Form start for Add New Address------>
+                  <form>
+                     <!--div for name-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-end border-bottom"><i
+                                 class="fa fa-user-o icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control" placeholder="Tanuja Nitin Sethi"><i class="fa fa-pencil border-bottom" aria-hidden="true"></i>
+                           </div>
+                        </div>
+                     </div>
+                     <!--div for phone no.-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-end border-bottom"><i
+                                 class="fa fa-phone icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control" placeholder="1213141516"><i class="fa fa-pencil border-bottom" aria-hidden="true"></i>
+                           </div>
+                        </div>
+                     </div>
+                     <!--div for pincode-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-end border-bottom"><i
+                                 class="fa fa-bullseye icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control" placeholder="201002"><i class="fa fa-pencil border-bottom" aria-hidden="true"></i>
+                           </div>
+                        </div>
+                     </div>
+                     <!---div for Flat house-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-end border-bottom"><i
+                                 class="fa fa-building-o icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control"
+                                 placeholder="Sai Villa"><i class="fa fa-pencil border-bottom" aria-hidden="true"></i>
+                           </div>
+                        </div>
+                     </div>
+                     <!----div for address-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-end border-bottom"><i
+                                 class="fa fa-road icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control"
+                                 placeholder="Forest Office"><i class="fa fa-pencil border-bottom" aria-hidden="true"></i>
+                           </div>
+                        </div>
+                     </div>
+                     <!---div for main road-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-end border-bottom"><i
+                                 class="fa fa-street-view icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control" placeholder="Nagpur"><i class="fa fa-pencil border-bottom" aria-hidden="true"></i>
+                           </div>
+                        </div>
+                     </div>
+                     <!-----div for city-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-end border-bottom"><i
+                                 class="fa fa-building icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control" placeholder="Nagpur"><i class="fa fa-pencil border-bottom" aria-hidden="true"></i>
+                           </div>
+                        </div>
+                     </div>
+                     <!----div for state-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-end border-bottom"><i
+                                 class="fa fa-globe icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control" placeholder="Maharashtra"><i class="fa fa-pencil border-bottom" aria-hidden="true"></i>
+                           </div>
+                        </div>
+                     </div>
+                     <!------make my default Address checkbox-------->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="form-check">
+                              <input class="form-check-input checbox-color" type="checkbox" value=""
+                                 id="flexCheckDefault">
+                              <label class="form-check-label default-address" for="flexCheckDefault">
+                              Make this my default Address
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     <div>
+                        <!--------Add Delivery Instruction------>
+                        <div class="delivery-instrction1"> <strong> Add Delivery Instruction</strong></div>
+                        <div class="text-delivery">Preferences are use to plan your delivery.
+                           However,
+                           shipments can sometimes arrive early or later than planned
+                        </div>
+                        <div class="delivery-instrction2">Address Type</div>
+                        <!-----dropdown for Select a Address Type-------->
+                        <div class="dropdown d-grid">
+                           <button class="btn select-address-type-btn btn-block dropdown-toggle py-3 "
+                              type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                           Select a Address Type
+                           </button>
+                           <!---dropdown content-->
+                           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="#">Home (7 am-9 pm
+                                 delivery)</a>
+                              </li>
+                              <li><a class="dropdown-item" href="#">Office/Commercial(10
+                                 am-6
+                                 pm delivery)</a>
+                              </li>
+                           </ul>
+                        </div>
+                        <!---------dropdown end---------->
+                        <!--div row for add address button start-->
+                        <div class="row py-4">
+                           <div class="col-md-5">
+                              <div class=" border-top-0 d-grid">
+                                 <!--button for address save-->
+                                 <button type="button" class="btn btn-add rounded-pill btn-block"
+                                    data-bs-dismiss="modal"><a href="Address-save.html"
+                                    class="footercolor1">Save</a>
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="col-md-7">
+                           </div>
+                        </div>
+                        <!-- div row for add address button end -->
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div class="col-md-1"></div>
+         </div>
+         <!-------Model Body End----->
+      </div>
+   </div>
+</div>
+<!--------Modal Add a new address or pick up End------>
+<!-- start modal for add new address -->
+<div class="modal" id="myModal2">
+   <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+         <!---row for header-->
+         <div class="row ">
+            <!---column for modal header-->
+            <div class="col-md-12">
+               <div class="modal-header border-bottom-0">
+                  <h4 class="modal-title  placeorder-addnewpop"><strong>Add New Address</strong> </h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+               </div>
+            </div>
+         </div>
+         <!-- Modal Header -->
+         <!-- <div class="modal-header">
+            <h4 class="modal-title">Add New Address</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div> -->
+         <!--------Model Body-->
+         <!---row for model body-->
+         <div class="row">
+            <div class="col-md-1"></div>
+            <!----modal content in body-->
+            <div class="col-md-10">
+               <div class="modal-body input-text-popup">
+                  <!---------Form start for Add New Address------>
+                  <form action="{% url 'PlaceOrderNew' %}" method="POST">
+                     {% csrf_token %}
+                     <!-- start use current location for mobile view -->
+                     <!-- <div class="row location-mobile-view">
+                        <div class="col-md-12 d-grid">
+                           <button type="button" class="btn btn-block"><i class="fa fa-map-marker orange-logo" aria-hidden="true"></i> Use current location</button>
+                        </div>
+                     </div> -->
+                     <!-- <div class="row shilpa-text">
+                        <div class="col-md-12 ">
+
+                        </div>
+                        </div> -->
+                     <!-- <div class="row pt-2 desktop-none">
+                        <div class="col-md-12 mobile">
+                           <div class="color">
+                              <h1 class="or-mobile-view">OR</h1>
+                           </div> -->
+                           <!-- <div id="wrapper">
+                              <div class="line"></div>
+                              <div class="textbox">
+                                 <div class="text">This is my Title</div>
+                              </div>
+                              </div> -->
+                        <!-- </div>
+                     </div> -->
+                     <!-- start use current location for mobile view -->
+                     <!--div for name-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                 class="fa fa-user-o icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0" placeholder="Full Name" name="fname">
+                           </div>
+                        </div>
+                     </div>
+                     <!--div for phone no.-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                 class="fa fa-phone icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0" placeholder="Mobile Number"
+                                 name="mnumber">
+                           </div>
+                        </div>
+                     </div>
+                     <!--div for pincode-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                 class="fa fa-bullseye icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0" placeholder="Pincode" name="pincode">
+                           </div>
+                        </div>
+                     </div>
+                     <!---div for Flat house-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                 class="fa fa-building-o icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0"
+                                 placeholder="Flat, House no., Building, Company, Apartment" name="addressline1">
+                           </div>
+                        </div>
+                     </div>
+                     <!----div for address-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                 class="fa fa-road icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0"
+                                 placeholder="Area, Street, Sector, Village" name="addressline2">
+                           </div>
+                        </div>
+                     </div>
+                     <!---div for main road-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                 class="fa fa-street-view icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0" placeholder="Landmark" name="landmark">
+                           </div>
+                        </div>
+                     </div>
+                     <!-----div for city-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                 class="fa fa-building icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0" placeholder="Town/City" name="city">
+                           </div>
+                        </div>
+                     </div>
+                     <!----div for state-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                 class="fa fa-globe icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0" placeholder="State" name="state">
+                           </div>
+                        </div>
+                     </div>
+                     <!------make my default Address checkbox-------->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="form-check">
+                              <input class="form-check-input checbox-color" type="checkbox" id="flexCheckDefault"
+                                 name="defaultaddress">
+                              <label class="form-check-label place-order-default-address-popup" for="flexCheckDefault">
+                              Make this my default Address
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     <div>
+                        <!--------Add Delivery Instruction------>
+                        <div class="placeorder-delivery-instrction">Add Delivery Instruction</div>
+                        <div class="placeorder-text-delivery">Preferences are use to plan your delivery.
+                           However,
+                           shipments can sometimes arrive early or later than planned
+                        </div>
+                        <div class="placeorder-delivery-instrction">Address Type</div>
+                        <!-----dropdown for Select a Address Type-------->
+                        <div class="row">
+                           <div class="col-md-12 d-grid">
+                              <div class="dropdown">
+                                 <select required class="form-select form-select-lg mb-3 drop-btn block plcordr-drop-color"
+                                    aria-label=".form-select-lg example" name="selectaddresstype">
+                                    <option selected >Select a Address Type </option>
+                                    <option value="1">Home (7 am-9 pm
+                                       delivery)
+                                    </option>
+                                    <option value="2">Office/Commercial(10
+                                       am-6
+                                       pm delivery)
+                                    </option>
+                                 </select>
+                                 
+                                 <!-- <button class="btn btn-secondary drop-btn block dropdown-toggle-0 pt-2 "
+                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                    aria-expanded="false" name="selectaddresstype">
+                                    Select a Address Type
+                                    </button>
+
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Home (7 am-9 pm
+                                          delivery)</a></li>
+                                    <li><a class="dropdown-item" href="#">Office/Commercial(10
+                                          am-6
+                                          pm delivery)</a></li>
+                                    </ul> -->
+                              </div>
+                           </div>
+                        </div>
+                        <!---------dropdown end---------->
+                        <!--div row for add address button start-->
+                        <div class="row py-4">
+                           <div class="col-md-12">
+                              <div class=" border-top-0">
+                                 <!--button for address save-->
+                                 <button type="submit" class="btn  btn-add rounded-pill me-auto footercolor1">
+                                 Add Address
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- div row for add address button end -->
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div class="col-md-1"></div>
+         </div>
+         <!-------Model Body End----->
+      </div>
+   </div>
+</div>
+<!-- end modal for add new address -->
+<!---------Modal Edit Start------------>
+<div class="modal" id="editModal">
+   <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+         <!---row for header-->
+         <div class="row ">
+            <!---column for modal header-->
+            <div class="col-md-12">
+               <div class="modal-header border-bottom-0">
+                  <h4 class="modal-title ps-5 addnewpop ">Edit New Address</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+               </div>
+            </div>
+         </div>
+         <!-- Modal Header -->
+         <!-- <div class="modal-header">
+            <h4 class="modal-title">Add New Address</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div> -->
+         <!--------Model Body-->
+         <!---row for model body-->
+         <div class="row">
+            <div class="col-md-1"></div>
+            <!----modal content in body-->
+            <div class="col-md-10">
+               <div class="modal-body input-text-popup">
+                  <!---------Form start for Add New Address------>
+                  <form action="" method="POST" id="addressedit">
+                     {% csrf_token %}
+                     <!-- start use current location for mobile view -->
+                     <!-- <div class="row location-mobile-view">
+                        <div class="col-md-12 d-grid">
+                           <button type="button" class="btn btn-block"><i class="fa fa-map-marker orange-logo" aria-hidden="true"></i> Use current location</button>
+                        </div>
+                     </div> -->
+                     <div class="row pt-2 desktop-none">
+                        <div class="col-md-12 mobile">
+                           <div class="color">
+                              <h1 class="or-mobile-view">OR</h1>
+                           </div>
+                           <!-- <div id="wrapper">
+                              <div class="line"></div>
+                              <div class="textbox">
+                                 <div class="text">This is my Title</div>
+                              </div>
+                              </div> -->
+                        </div>
+                     </div>
+                     <!-- start use current location for mobile view -->
+                     <!-- start use current location for mobile view -->
+                     <!--div for name-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                 class="fa fa-user-o icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0" placeholder="Full Name" name="fname"
+                                 id="demo1">
+                           </div>
+                        </div>
+                     </div>
+                     <!--div for phone no.-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                 class="fa fa-phone icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0" placeholder="Mobile Number"
+                                 name="mnumber" id="demo2">
+                           </div>
+                        </div>
+                     </div>
+                     <!--div for pincode-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                 class="fa fa-bullseye icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0" placeholder="Pincode" name="pincode"
+                                 id="demo3">
+                           </div>
+                        </div>
+                     </div>
+                     <!---div for Flat house-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                 class="fa fa-building-o icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0"
+                                 placeholder="Flat, House no., Building, Company, Apartment" name="addressline1"
+                                 id="demo4">
+                           </div>
+                        </div>
+                     </div>
+                     <!----div for address-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                 class="fa fa-road icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0"
+                                 placeholder="Area, Street, Sector, Village" name="addressline2" id="demo5">
+                           </div>
+                        </div>
+                     </div>
+                     <!---div for main road-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                 class="fa fa-street-view icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0" placeholder="Landmark" name="landmark"
+                                 id="demo6">
+                           </div>
+                        </div>
+                     </div>
+                     <!-----div for city-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                 class="fa fa-building icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0" placeholder="Town/City" name="city"
+                                 id="demo7">
+                           </div>
+                        </div>
+                     </div>
+                     <!----div for state-->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="input-group mb-3">
+                              <span class="input-group-text border-start-0 border-top-0 bg-transparent border-end border-bottom rounded-0"><i
+                                 class="fa fa-globe icon" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control rounded-0" placeholder="State" name="state"
+                                 id="demo8">
+                           </div>
+                        </div>
+                     </div>
+                     <!------make my default Address checkbox-------->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="form-check">
+                              <input class="form-check-input checbox-color" type="checkbox"
+                                 id="flexCheckDefault" name="defaultaddress">
+                              <label class="form-check-label default-addr" for="flexCheckDefault">
+                              Make this my default Address
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     <div>
+                        <!--------Add Delivery Instruction------>
+                        <div class="delivery-instrction1">Add Delivery Instruction</div>
+                        <div class="text-delivery">Preferences are use to plan your delivery.
+                           However,
+                           shipments can sometimes arrive early or later than planned
+                        </div>
+                        <div class="delivery-instrction1" id="demo9">Address Type - </div>
+                        <div class="delivery-instrction1" id="demo9"> </div>
+                        <!-----dropdown for Select a Address Type-------->
+                        <div class="row">
+                           <div class="col-md-12 d-grid">
+                              <div class="dropdown">
+                                 <select required class="form-select form-select-lg mb-3 drop-btn block"
+                                    aria-label=".form-select-lg example" name="selectaddresstype">
+                                    <option value="1">Home (7 am-9 pm
+                                       delivery)
+                                    </option>
+                                    <option value="2">Office/Commercial(10
+                                       am-6
+                                       pm delivery)
+                                    </option>
+                                 </select>
+                                 <!-- <button class="btn btn-secondary drop-btn block dropdown-toggle-0 pt-2 "
+                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                    aria-expanded="false" name="selectaddresstype">
+                                    Select a Address Type
+                                    </button>
+
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Home (7 am-9 pm
+                                          delivery)</a></li>
+                                    <li><a class="dropdown-item" href="#">Office/Commercial(10
+                                          am-6
+                                          pm delivery)</a></li>
+                                    </ul> -->
+                              </div>
+                           </div>
+                        </div>
+                        <!---------dropdown end---------->
+                        <!--div row for add address button start-->
+                        <div class="row py-4">
+                           <div class="col-md-12">
+                              <div class=" border-top-0">
+                                 <!--button for address save-->
+                                 <button type="submit" class="btn  btn-add rounded-pill me-auto footercolor1">
+                                 Update Address
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- div row for add address button end -->
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div class="col-md-1"></div>
+         </div>
+         <!-------Model Body End----->
+      </div>
+   </div>
+</div>
+<!------- Modal Edit End-------->
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<!-- -------------------------bootstrap script link end------------------------------------ -->
+<script>
+   function defaultaddressplaceorder(id) {
+      window.location.assign("/SetDefaultAddressPlaceorder/" + id);
+   }
+</script>
+<!-- Start Edit Address The script -->
+<script>
+   function Edit_address(id, FullName, Address_line1, Address_line2, Landmark, City, state, PinCode, MobileNo, AddressType) {
+      console.log(FullName, Address_line1, Address_line2, Landmark, City, state, PinCode, MobileNo)
+      document.getElementById("addressedit").action = "/EditAdressPlaceOrder/" + id
+      document.getElementById("demo1").value = FullName;
+      document.getElementById("demo2").value = MobileNo;
+      document.getElementById("demo3").value = PinCode;
+      document.getElementById("demo4").value = Address_line1;
+      document.getElementById("demo5").value = Address_line2;
+      document.getElementById("demo6").value = Landmark;
+      document.getElementById("demo7").value = City;
+      document.getElementById("demo8").value = state;
+      if (AddressType) {
+
+         document.getElementById("demo9").innerHTML = 'Home (7 am-9 pm delivery)';
+
+      }
+      else {
+
+         document.getElementById("demo9").innerHTML = 'Office/Commercial(10am-6pm delivery)';
+      }
+
+   }
+</script>
+<!-- End Edit Address The script -->
+{% endblock %}
+<!-- for 3lines dropdown script start -->
+<script>
+   function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+   }
+
+   function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+   }
+</script>
+<!-- 3lines dropdown script end -->

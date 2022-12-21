@@ -1,0 +1,304 @@
+
+/*-image on background-*/
+body {
+    background-image: url("../images/background.png"); 
+    font-family:var(--font-1);
+ }
+
+/* Account */
+.account{
+font-family:var(--font-1);
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 39px;
+color:var(--color-5);
+padding-left:30px;
+}
+
+/* User Name Here */
+.user-name{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color:var(--color-17);
+    padding-left:30px;
+}
+
+.padding-text{
+    padding-top:30px ;
+    padding-left:30px;
+    padding-right:30px ;
+}
+.padding-top{
+    padding-top:30px;
+}
+/* image */
+.image-chair{
+    
+    /* shadow */
+    filter: drop-shadow(2px 2px 6px #D2B3B3);
+
+}
+/* foldable woodden laptop text  */
+.foldable{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color:var(--color-17);
+    
+}
+.size{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color:var(--color-17);
+    
+   
+}
+
+.delivered{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color:var(--color-5);
+    
+}
+/* card shadow */
+.card-style{
+   background-color:var(--color-9); 
+   /* shadow */
+   box-shadow: 2px 2px 6px var(--color-22);
+    border-radius: 6px;
+
+}
+
+/* card2 */
+.card2-detail{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color:var(--color-17);   
+}
+/* delivery address */
+.deliveryadd{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color:var(--color-17);   
+}
+
+.tanuja1{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color:var(--color-17);     
+}
+.address1{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+    color:var(--color-17);     
+}
+
+.payment{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 20px;
+    line-height: 24px;
+    color:var(--color-17);  
+}
+
+.mrp{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 20px;
+    color:var(--color-17);  
+}
+
+.cost{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color:var(--color-17);  
+}
+.colororange{
+    color:var(--color-1);
+}
+
+.cash-on-del{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 16px;
+    line-height: 20px;
+    color:var(--color-17);  
+   
+}
+
+.backcolor4{
+    background-color:var(--color-10);   
+}
+/* download recepit button */
+.dwnload-recpt{
+    font-family:var(--font-1);
+    color:var(--color-9);
+    font-size: 14px;
+    font-weight: 500;
+    background-color:var(--color-1);
+    border-radius: 26px;
+    text-align: center;
+    
+}
+
+.download{
+    text-decoration: none;
+    color:var(--color-9);
+    font-family:var(--font-1);
+    
+}
+a.download{
+    color:var(--color-9);
+    text-decoration: None;
+}
+
+/* for vertical line */
+.vl {
+    padding-top: 0px;
+    border-left: 1px solid rgba(63, 81, 92, 0.12);
+    margin-top: 0px;
+  }
+
+/* for hover color remove  */
+.order{
+    text-decoration: none;
+    color:var(--color-5);
+    font-family:var(--font-1);
+    
+}
+/* for hover */
+a.order{
+    color:var(--color-5);
+    text-decoration: None;
+}
+
+
+.font-20{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color:var(--color-5);
+    padding-left:30px ;
+}
+
+.font-16{
+    font-family:var(--font-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color:var(--color-5);
+    padding-left: 30px;
+}
+
+.order-detail{
+    text-decoration: none;
+    color:var(--color-5);
+    font-family:var(--font-1);
+    
+}
+a.order-detail{
+    color:var(--color-1);
+    text-decoration: None;
+}
+
+
+.style2{
+    
+    margin-bottom:0px;
+    
+    
+} 
+
+
+/* --------Button CSS------------- */
+
+.share-btn{
+    height: 50px;
+    width: 50px;
+    left: 100.875rem;
+    top: 355px;
+    border-radius:50%;
+    border:none;
+    background-color: var(--color-1);
+    vertical-align:none;
+    }
+
+
+
+.btn-circle.btn-sm{
+    width: 30px;
+    height: 50px;
+    padding: 6px 0px;
+    border-radius:30px;
+    font-size: 8px;
+    text-align: center;
+    background-color:var(--color-1);
+    
+    
+}
+
+.btn-circle.btn-md{
+    width:50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 20px;
+    text-align: center;
+    background:var(--color-16);
+
+}
+
+.share-button{
+font-family:var(--font-1);
+font-size: 16px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+color:var(--color-9);
+}
+
+.share-icon-main{
+color:var(--color-33);
+height: 17px;
+width: 15px;
+left: 295px;
+top: 18px;
+border-radius: 0px;
+}
+
+
+
+    

@@ -1,0 +1,168 @@
+{% extends "core/base2.html" %}{% load static %}
+{% block content %}
+
+
+{% block own_css %}
+
+<link rel="stylesheet" href="{% static 'css/trending-movies-attire.css' %}" type="text/css">
+{% endblock own_css %}
+
+
+
+
+
+
+   <!-- start container-fluid for whole-page -->
+   <div class="container-fluid pading-mobile-all-side">
+      <!-- start filter and deals of the day section -->
+      
+         <!-- start bollywood image section -->
+         <div class="row pt-5 padding-bollywood">
+            <div class="col-6 col-sm-6 col-md-6 bollywood img-bollywood">
+               <img src="{{BollyWoodCategoryobj.MainImage.url}}" alt="" class="img-fluid">
+               <div class="top-right"></div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 ps-0 ">
+               <div class="row theme-collection ps-0">
+                  <div class="col-md-12">
+                     {{BollyWoodCategoryobj.TagLine}}
+                  </div>
+               </div>
+
+               <div class="row dress-like-star">
+                  <div class="col-md-12">
+                     {% if BollyWoodCategoryobj.SubTagLine is None %}
+                     {% else %}
+                     {{BollyWoodCategoryobj.SubTagLine}}
+                     {% endif %}
+                  </div>
+               </div>
+               <!-- <div class="row dress-like-star-movie ps-0">
+                  <div class="col-md-12">
+                     movie
+                  </div>
+               </div> -->
+
+               <!-- <div class="row movie-name ps-0">
+                  <div class="col-md-12">
+                     Movie Name : RRR
+                  </div>
+               </div>
+               <div class="row pattern-name ps-0">
+                  <div class="col-md-12">
+                     Pattern Name
+                  </div>
+               </div> -->
+
+            </div>
+         </div>
+         <!-- end bollywood image section -->
+         <!-- start cards 1 section  -->
+         <div class="row pad-top-card">
+
+
+            {% for i in BollyWoodSubCategoryobj %}
+            <!--  start col-md-1 -->
+           
+            <div class="col-6 col-sm-2 col-md-2 pad-cad-bottom  pt-5">
+               <a href="" class="text-decoration-none">
+               <!--  start card -->
+               <div class=" card-shadow">
+                  <!-- card-img start -->
+                  <div class="img-text">
+                     <img class="card-img-top img-fluid" src="{{i.ProductDetails.ProductMainImage.url}}"
+                        alt="Card image cap">
+                     <div class="bottom-left rating"> <span class="rating-clr">{{i.ProductDetails.Star}}</span> <span class="star-icon"><i
+                              class="fa fa-star" aria-hidden="true"></i></span> <span class="dash">|</span> <span
+                           class="rating-clr">{{i.ProductDetails.TotalReviewCount}}</span> </div>
+                  </div>
+                  <!-- card-img end -->
+                  <!-- card-body start -->
+                  <div class="card-body">
+                     <!-- start foldable-table -->
+                     <div class="row foldable-table">
+                        <div class="col-md-12">
+                           {{i.ProductDetails.ProductName}}
+
+                        </div>
+                     </div>
+                     <!-- end foldable-table -->
+                     <!-- start ruppe section -->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <span class="icon"><i class="fa fa-inr" aria-hidden="true"></i></span>
+                           <span class="rupee">{{i.ProductDetails.discount}}</span>
+                           <span  class=" text-decoration-line-through delet3000ed-rupee">{{i.ProductDetails.Price}}</span>
+                           <span class="offer"> ( {{i.ProductDetails.DiscountPercent}} % Off )</span>
+                        </div>
+                     </div>
+                     <!-- end ruppe section -->
+                     <!-- start free-delivery section -->
+                     <div class="row free-delivery">
+                        <div class="col-md-12">
+                           Free Delivery
+                        </div>
+                     </div>
+                     <!-- end free-delivery section -->
+                  </div>
+                  <!-- card body end -->
+               </div>
+
+               <!--  end card -->
+            </a>
+
+            </div>
+         
+       
+            <!--  end col-md-1 -->
+            {% endfor %}
+         </div>
+         </div>
+         <!-- end cards 1 section  -->
+
+
+
+
+         
+      <!-- end deals of the day section -->
+   </div>
+   <!-- end filter and deals of the day section -->
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- -------------------------bootstrap script link start------------------------------------ -->
+   <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+   <!-- -------------------------bootstrap script link end------------------------------------ -->
+
+   <!-- for 3lines dropdown script start -->
+   <script>
+      function openNav() {
+         document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+         document.getElementById("mySidenav").style.width = "0";
+      }
+   </script>
+
+   <!-- 3lines dropdown script end -->
+
+   {% endblock %}

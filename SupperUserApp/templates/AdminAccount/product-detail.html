@@ -1,0 +1,941 @@
+{% extends 'SupperUserApp/superuser-base.html' %}{% load static %}
+{% block content %}
+
+
+<style>
+	/* Chrome, Safari, Edge, Opera */
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+	  -webkit-appearance: none;
+	  margin: 0;
+	}
+	
+	/* Firefox */
+	input[type=number] {
+	  -moz-appearance: textfield;
+	}
+
+	 .block{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 6px;
+    background-color: #f9f9f9;
+  }
+	
+</style>
+
+					<div class="breadcrumb-wrapper d-flex align-items-center justify-content-between">
+						<div>
+							<h1>Product Detail</h1>
+							<p class="breadcrumbs"><span><a href="index.html">Home</a></span>
+								<span><i class="mdi mdi-chevron-right"></i></span>Product
+							</p>
+						</div>
+						<div>
+							<a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EditProductList"> Edit
+							</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="card card-default">
+								<div class="card-header card-header-border-bottom">
+									<h2>Brand name: {{productobj.ProductBrandName}}</h2>
+								</div>
+
+								<div class="card-body product-detail">
+									<div class="row">
+										
+										<div class="col-xl-7 col-lg-12">
+											<div class="row product-overview">
+												<div class="col-12">
+													
+													<h5 class="product-title">Product Name: {{productobj.ProductName}}</h5>
+													<p class="product-rate">
+														<i class="mdi mdi-star is-rated"></i>
+														<i class="mdi mdi-star is-rated"></i>
+														<i class="mdi mdi-star is-rated"></i>
+														<i class="mdi mdi-star is-rated"></i>
+														<i class="mdi mdi-star"></i>
+													</p>
+													<p class="product-desc">{{productobj.ProductDescription}}</p>
+												
+													
+													<!-- <p class="product-price">Price: $120</p>
+													<p class="product-sku">SKU#: WH12</p> -->
+													<!-- <ul class="product-size">
+														<li class="size"><span>S</span></li>
+														<li class="size"><span>M</span></li>
+														<li class="size"><span>L</span></li>
+														<li class="size"><span>XL</span></li>
+													</ul> -->
+													<!-- <ul class="product-color">
+														<li class="color"><span
+																style="background-color:#90cdf7;"></span></li>
+														<li class="color"><span
+																style="background-color:#ff3b66;"></span></li>
+														<li class="color"><span
+																style="background-color:#ffc476;"></span></li>
+														<li class="color"><span
+																style="background-color:#1af0ba;"></span></li>
+														<li class="color"><span
+																style="background-color:#f887d6;"></span></li>
+													</ul> -->
+
+													<!-- <div class="product-stock">
+														<div class="stock">
+															<p class="title">Available</p>
+															<p class="text">180</p>
+														</div>
+														<div class="stock">
+															<p class="title">Pending</p>
+															<p class="text">50</p>
+														</div>
+														<div class="stock">
+															<p class="title">InOrder</p>
+															<p class="text">20</p>
+														</div>
+													</div> -->
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-5 col-lg-12">
+											<div class="">
+												<div class="">
+													
+													<div class="">
+														
+														<div class="  ec-vendor-uploads">
+															<div class="">
+																<div class="ec-vendor-img-upload">
+																	<div class="ec-vendor-main-img">
+																		<form action="{% url 'UpdateProductImage' productobj.ProductSlug  %}" method="POST" enctype="multipart/form-data">
+																			{% csrf_token %}
+																			<div class="avatar-upload">
+																				<div class="avatar-edit">
+																					<input type='file' id="imageUpload" class="ec-image-upload" name="mainimage" value="" accept="image/*" />
+
+																					<label for="imageUpload">
+																						<img src="{% static  'supperuserstatic/img/icons/edit.svg' %}" class="svg_img header_svg" alt="edit" />
+																					</label>
+
+																						&nbsp;
+																						<!-- <input  class="ec-image-upload ">
+																						
+																						<label for="imageUpload" ><img
+																							src="{% static  'supperuserstatic/img/icons/delete.svg' %}"
+																							class="svg_img header_svg " alt="delete" /> 
+																						</label> -->
+																				</div>
+																				<div class="avatar-preview ec-preview">
+																					<div class="imagePreview ec-div-preview">
+																						<img class="ec-image-preview" 
+																							src="{{productobj.ProductMainImage.url}}"
+																							alt="edit" />
+																					</div>
+																				</div>
+																			</div>
+																			<!-- end main image -->
+
+																			<div class="thumb-upload-set colo-md-12">
+																				<div class="thumb-upload">
+																					<div class="thumb-edit">
+																						<input type='file' id="thumbUpload01"
+																							class="ec-image-upload" name="file1" accept="image/*"
+																							/>
+																						<label for="imageUpload"><img
+																								src="{% static  'supperuserstatic/img/icons/edit.svg' %}"
+																								class="svg_img header_svg" alt="edit" /></label>
+																					</div>
+																					<div class="thumb-preview ec-preview">
+																						<div class="image-thumb-preview">
+																							{% if productobj.file1 %}
+																							<img class="image-thumb-preview ec-image-preview"
+																								src="{{productobj.file1.url}}"
+																								alt="edit" />
+																							{% else %}
+																							{% endif %}
+																						</div>
+																					</div>
+																				</div>
+																				<div class="thumb-upload">
+																					<div class="thumb-edit">
+																						<input type='file' id="thumbUpload02"
+																							class="ec-image-upload" name="file2" accept="image/*"
+																							/>
+																						<label for="imageUpload"><img
+																								src="{% static  'supperuserstatic/img/icons/edit.svg' %}"
+																								class="svg_img header_svg" alt="edit" /></label>
+																					</div>
+																					<div class="thumb-preview ec-preview">
+																						<div class="image-thumb-preview">
+																							{% if productobj.file2 %}
+																							<img class="image-thumb-preview ec-image-preview"
+																								src="{{productobj.file2.url}}"
+																								alt="edit" />
+																							{% else %}
+																							{% endif %}
+																						</div>
+																					</div>
+																				</div>
+																				<div class="thumb-upload">
+																					<div class="thumb-edit">
+																						<input type='file' id="thumbUpload03"
+																							class="ec-image-upload" accept="image/*"
+																							name="file3" />
+																						<label for="imageUpload"><img
+																								src="{% static  'supperuserstatic/img/icons/edit.svg' %}"
+																								class="svg_img header_svg" alt="edit" /></label>
+																					</div>
+																					<div class="thumb-preview ec-preview">
+																						<div class="image-thumb-preview">
+																							{% if productobj.file3 %}
+																							<img class="image-thumb-preview ec-image-preview"
+																								src="{{productobj.file3.url}}"
+																								alt="edit" />
+																							{% else %}
+																							{% endif %}
+																						</div>
+																					</div>
+																				</div>
+																				<div class="thumb-upload">
+																					<div class="thumb-edit">
+																						<input type='file' id="thumbUpload04"
+																							class="ec-image-upload" accept="image/*"
+																							name="file4"/>
+																						<label for="imageUpload"><img
+																								src="{% static  'supperuserstatic/img/icons/edit.svg' %}"
+																								class="svg_img header_svg" alt="edit" /></label>
+																					</div>
+																					<div class="thumb-preview ec-preview">
+																						<div class="image-thumb-preview">
+																							{% if productobj.file4 %}
+																							<img class="image-thumb-preview ec-image-preview"
+																								src="{{productobj.file4.url}}"
+																								alt="edit" />
+																							{% else %}
+																							{% endif %}
+																						</div>
+																					</div>
+																				</div>
+																				<div class="thumb-upload">
+																					<div class="thumb-edit">
+																						<input type='file' id="thumbUpload05"
+																							class="ec-image-upload" accept="image/*"
+																							name="file5" />
+																						<label for="imageUpload"><img
+																								src="{% static  'supperuserstatic/img/icons/edit.svg' %}"
+																								class="svg_img header_svg" alt="edit" /></label>
+																					</div>
+																					<div class="thumb-preview ec-preview">
+																						<div class="image-thumb-preview">
+																							{% if productobj.file5 %}
+																							<img class="image-thumb-preview ec-image-preview"
+																								src="{{productobj.file5.url}}"
+																								alt="edit" />
+																							{% else %}
+																							{% endif %}
+																						</div>
+																					</div>
+																				</div>
+																				<div class="thumb-upload">
+																					<div class="thumb-edit">
+																						<input type='file' id="thumbUpload06"
+																							class="ec-image-upload" accept="image/*"
+																							name="file6" />
+																						<label for="imageUpload"><img
+																								src="{% static  'supperuserstatic/img/icons/edit.svg' %}"
+																								class="svg_img header_svg" alt="edit" /></label>
+																					</div>
+																					<div class="thumb-preview ec-preview">
+																						<div class="image-thumb-preview">
+																							{% if productobj.file6 %}
+																							<img class="image-thumb-preview ec-image-preview"
+																								src="{{productobj.file6.url}}"
+																								alt="edit" />
+																							{% else %}
+																							{% endif %}
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div>
+																				
+																			</div>
+																			<div class="text-center"><button type="submit" class="btn btn-primary btn-possition"> Update Image
+																			</button></div>
+																		</form><br>
+																	</div>
+																</div>
+															</div>
+															
+														</div>
+													
+													</div>
+												</div>
+											</div>
+										</div>
+					
+									</div>
+									<hr>
+									<div class="breadcrumb-wrapper d-flex pt-5 align-items-center justify-content-between">
+										<div>
+											<h1>Product</h1>
+											<p class="breadcrumbs"><span><a href="{% url 'Index' %}"></a></span>
+												</p>
+										</div>
+
+
+										<div>
+											<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+											data-bs-target="#addcolorsize"> Add Porduct Size And Colour
+											</button>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xl-12">
+											<div class="card card-default">
+												<div class="card-body">
+													<div class="table-responsive">
+														<table id="responsive-data-table" class="table"
+															style="width:100%">
+															<thead>
+																<tr>
+																	<!-- <th>Product</th> -->
+																	<!-- <th>Name</th>
+																	<th>BrandName</th> -->
+																	<th>Colour</th>
+																	<th>Image</th>
+																	<th>Size</th>
+																	<th>Price</th>
+																	<th>Disccount</th>
+																	<th>Offerd Amount</th>
+																	<th>Stock</th>
+																	<th>Action</th>
+																</tr>
+															</thead>
+				
+															<tbody>
+																{% for i in allproduct %}
+																<tr>
+																	<td>{{i.ProductColour.ProductColorName}}</td>
+																	<td><img class="tbl-thumb" src="{{i.ProductImage.url}}" height="50px" alt="Product Image" /></td>
+																	<td>{{i.ProductSize.size}}</td>
+																	<td>{{i.Price}}</td>
+																	<td>{{i.DiscountPercent}}%</td>
+																	<td>{{i.discount}}</td>
+																	<td>{{i.Stock}}</td>
+																	<!-- <td>{{i.Product.ProductName}}</td>
+																	<td>{{i.Product.ProductBrandName}}</td> -->
+																	
+																	
+																	
+																	
+																		
+																	<td>
+																		<div class="btn-group mb-1">
+																			<button type="button"
+																				class="btn btn-outline-success" onclick="editproductdetails('{{i.id}}','{{i.Price}}','{{i.DiscountPercent}}','{{i.Stock}}','{{i.ProductColour.ProductColorName}}','{{i.ProductSize.size}}')" data-bs-toggle="modal" data-bs-target="#Editbtn"><a href=""></a> Edit</button>
+
+																			<a href="{% url 'DeleteProductDetails' i.id %}" type="button"
+																				class="btn btn-outline-success" onclick="return confirm('Are you sure you want to delete this item.')"> Delete</a>
+																		</div>
+																	</td>
+																</tr>
+																{% endfor %}
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+
+									<hr>
+									<div class="breadcrumb-wrapper d-flex pt-5 align-items-center justify-content-between">
+										<div>
+											<h1>Question & Answer</h1>
+											<p class="breadcrumbs"><span><a href="{% url 'Index' %}"></a></span>
+												</p>
+										</div>
+
+
+										<div>
+											<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+											data-bs-target="#addquestionanswer"> Add Question And Answer
+											</button>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xl-12">
+											<div class="card card-default">
+												<div class="card-body">
+													<div class="table-responsive">
+														<table id="responsive-data-table" class="table"
+															style="width:100%">
+															<thead>
+																<tr>
+																	<!-- <th>Product</th> -->
+																	<!-- <th>Name</th>
+																	<th>BrandName</th> -->
+																	<th>Question</th>
+																	<th>Answer</th>
+																	<th>Addedby</th>
+																	<th>Date</th>
+																	<th>Likecount</th>
+																	<th>Dislikecount</th>
+																	<th>Action</th>
+																</tr>
+															</thead>
+				
+															<tbody>
+																{% for i in allquestionandanswer %}
+																<tr>
+																	<!-- <td><img class="tbl-thumb" src="{{i.Product.ProductMainImage.url}}" alt="Product Image" /></td> -->
+																	<!-- <td>{{i.Product.ProductName}}</td>
+																	<td>{{i.Product.ProductBrandName}}</td> -->
+																	<td>{{i.Question}}</td>
+																	<td>{{i.Answer}}</td>
+																	<td>{{i.Addedby}}</td>
+																	<td>{{i.Date}}</td>
+																	<td>{{i.Likecount}}</td>
+																	<td>{{i.Dislikecount}}</td>
+																		
+																	<td>
+																		<div class="btn-group mb-1">
+																			<button type="button"
+																				class="btn btn-outline-success"  onclick="editquestionanswer('{{i.id}}','{{i.Question}}','{{i.Answer}}')" data-bs-toggle="modal" data-bs-target="#Editbtn1"><a href=""></a> Edit</button>
+
+																			<a href="{% url 'DeleteQuestionAndAnswer' i.id %}" type="button"
+																				class="btn btn-outline-success" onclick="return confirm('Are you sure you want to delete this item.')"> Delete</a>
+
+																			
+																		</div>
+																	</td>
+																</tr>
+																{% endfor %}
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+
+
+									 <div class="row review-rating mt-4"> 
+										<div class="col-12">
+											<ul class="nav nav-tabs" id="myRatingTab" role="tablist">
+												<li class="nav-item">
+													<a class="nav-link active"
+														id="product-detail-tab" data-bs-toggle="tab"
+														data-bs-target="#productdetail" href="#productdetail" role="tab"
+														aria-selected="true">
+														<i class="mdi mdi-library-books mr-1"></i> Detail</a>
+												</li>
+
+												<li class="nav-item">
+													<a class="nav-link"
+														id="product-information-tab" data-bs-toggle="tab"
+														data-bs-target="#productinformation" href="#productinformation"
+														role="tab" aria-selected="false">
+														<i class="mdi mdi-information mr-1"></i>Info</a>
+												</li>
+
+												<li class="nav-item">
+													<a class="nav-link"
+														id="product-reviews-tab" data-bs-toggle="tab"
+														data-bs-target="#productreviews" href="#productreviews"
+														role="tab" aria-selected="false">
+														<i class="mdi mdi-star-half mr-1"></i> Reviews</a>
+												</li>
+											</ul>
+											<div class="tab-content" id="myTabContent2">
+												<div class="tab-pane pt-3 fade show active" id="productdetail"
+													role="tabpanel">
+													<form action="{% url 'Product_Details' productobj.id %}" method="POST">
+														{% csrf_token %}
+														<textarea name="editor1"> {{productobj.Product_Specification | safe}}  </textarea><br>
+														<div class="col-md-1"><button type="submit" class="btn btn-primary btn-block">Save</button></div>
+														</button>
+													</form>
+													<script src="https://cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
+													<script>
+															CKEDITOR.replace( 'editor1' );
+													</script>
+													
+												</div>
+
+												<div class="tab-pane pt-3 fade" id="productinformation" role="tabpanel">
+													<ul>
+														<li><span>Weight</span> 1000 g</li>
+														<li><span>Dimensions</span> 35 × 30 × 7 cm</li>
+														<li><span>Color</span> Black, Pink, Red, White</li>
+													</ul>
+												</div>
+
+												<div class="tab-pane pt-3 fade" id="productreviews" role="tabpanel">
+													<div class="ec-t-review-wrapper">
+														<div class="ec-t-review-item">
+															<div class="ec-t-review-avtar">
+																<img src="{% static 'supperuserstatic/img/review-image/1.jpg' %}" alt="">
+															</div>
+															<div class="ec-t-review-content">
+																<div class="ec-t-review-top">
+																	<p class="ec-t-review-name">Jeny Doe</p>
+																	<div class="ec-t-rate">
+																		<i class="mdi mdi-star is-rated"></i>
+																		<i class="mdi mdi-star is-rated"></i>
+																		<i class="mdi mdi-star is-rated"></i>
+																		<i class="mdi mdi-star is-rated"></i>
+																		<i class="mdi mdi-star"></i>
+																	</div>
+																</div>
+																<div class="ec-t-review-bottom">
+																	<p>Lorem Ipsum is simply dummy text of the printing
+																		and
+																		typesetting industry.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="ec-t-review-item">
+															<div class="ec-t-review-avtar">
+																<img src="{% static 'supperuserstatic/img/review-image/2.jpg' %}" alt="">
+															</div>
+															<div class="ec-t-review-content">
+																<div class="ec-t-review-top">
+																	<p class="ec-t-review-name">Linda Morgus</p>
+																	<div class="ec-t-rate">
+																		<i class="mdi mdi-star is-rated"></i>
+																		<i class="mdi mdi-star is-rated"></i>
+																		<i class="mdi mdi-star is-rated"></i>
+																		<i class="mdi mdi-star is-rated"></i>
+																		<i class="mdi mdi-star"></i>
+																	</div>
+																</div>
+																<div class="ec-t-review-bottom">
+																	<p>Lorem Ipsum is simply dummy text of the printing
+																		and
+																		typesetting industry.
+																	</p>
+																</div>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- start model for add color & size -->
+					<div class="modal fade modal-add-contact" id="addcolorsize" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+							<div class="modal-content">
+								<form  action="#" method="post" enctype="multipart/form-data">
+									{% csrf_token %}
+									<div class="modal-header px-4">
+										<h5 class="modal-title" id="exampleModalCenterTitle">Add New Colors</h5>
+									</div>
+									
+									<div class="modal-body px-4">
+										<div class="row mb-2">
+											
+											<div class="form-group">
+
+												<p>Selected Colour: <span id="Colour"></span></p>
+											
+												<label for="text" class="col-12 col-form-label">Change Colour: </label> 
+												
+													<select name="selectcolour" id="Categories" required class="form-select">
+														
+														
+														{% for i in ProductColorobj %}
+															<option value="{{i.id}}">{{i}}</option>
+														{% endfor %}
+													</select>
+												
+											
+										</div>
+									
+
+									
+										<div class="form-group">
+											
+												<p>Selected Size: <span id="Size"></span></p>
+											
+												<label for="text" class="col-12 col-form-label">Change Size:</label> 
+												
+													<select name="entersize" id="Categories" required class="form-select">
+														
+															
+														{% for i in ProductSizeobj %}
+															<option value="{{i.id}}">{{i.size}}</option>
+														{% endfor %}
+													</select>
+												
+											
+										
+									</div>
+
+											
+											<div class="col-lg-6">
+												<div class="form-group">
+													
+													
+																<label class="form-label">Select Image </span></label>
+																<input type="file" accept="image/*" required class="form-control" name="image" required id="price1">
+															
+												</div>
+											</div>
+											 <div class="col-md-6">
+												<div class="form-group">
+													<label class="form-label">Price </span></label>
+													<input type="number" required class="form-control" name="prize" id="price1">
+											    </div>
+											</div>
+
+											<div class="col-md-6">
+												<div class="form-group">
+													<label class="form-label">Discount In Percent </span></label>
+													<input type="number" required class="form-control" name="Discount" id="price1">
+											    </div>
+											</div> 
+
+											<div class="col-lg-6">
+												<div class="form-group">
+													<label for="firstName">Enter Stock</label>
+													<input type="number" required class="form-control" id="firstName" value="" name="enterstock">
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="modal-footer px-4">
+										<button type="button" class="btn btn-secondary btn-pill" data-bs-dismiss="modal">Cancel</button>
+										<button type="submit" class="btn btn-primary btn-pill">Save</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!-- end model for add color & size -->
+
+					<!-- start Edit Modal for product color & size  -->
+					<div class="modal fade modal-add-contact" id="Editbtn" tabindex="-1" role="dialog"
+					aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+						<div class="modal-content">
+							<form action="" method="POST" id="productdetailsedit" enctype="multipart/form-data">
+								{% csrf_token %}
+								<div class="modal-header px-4">
+									<h5 class="modal-title" id="exampleModalCenterTitle">Edit Product Details</h5>
+								</div>
+
+								<div class="modal-body px-4">
+									<div class="row mb-2">
+										<div class="col-md-12">
+											
+
+											
+
+
+												<div class="form-group">
+
+														<p>Selected Colour: <span id="Colour"></span></p>
+													
+														<label for="text" class="col-12 col-form-label">Change Colour: </label> 
+														
+															<select name="selectcolour" id="Categories" required class="form-select">
+																
+																
+																{% for i in ProductColorobj %}
+																	<option value="{{i.id}}">{{i.ProductColorName}}</option>
+																{% endfor %}
+															</select>
+														
+													
+												</div>
+											
+
+											
+												<div class="form-group">
+													
+														<p>Selected Size: <span id="Size"></span></p>
+													
+														<label for="text" class="col-12 col-form-label">Change Size:</label> 
+														
+															<select name="entersize" id="Categories" required class="form-select">
+																
+																	
+																{% for i in ProductSizeobj %}
+																	<option value="{{i.id}}">{{i.size}}</option>
+																{% endfor %}
+															</select>
+														
+													
+												
+											</div>
+										
+										</div>
+
+										<div class="col-md-12">
+											<div class="form-group">
+												<label class="form-label">Price </span></label>
+												<input type="number" class="form-control" name="prize" id="price" >
+											</div>
+										</div>
+
+										<div class="col-md-12">
+											<div class="form-group">
+												<label class="form-label">Discount In Percent </span></label>
+												<input type="number" class="form-control" name="Discount" id="pricediscount">
+											</div>
+										</div> 
+
+										<div class="col-lg-12">
+											<div class="form-group">
+												<label for="firstName">Enter Stock</label>
+												<input type="number" class="form-control" id="stock" value="" name="enterstock">
+											</div>
+										</div>
+
+										<div class="col-md-12">
+											<div class="form-group">
+												<label class="form-label">Change Image </span></label>
+												<input type="file" class="form-control" accept="image/*" name="image"  id="price" >
+											</div>
+										</div> 
+
+										<!-- <div class="col-lg-6">
+											<div class="form-group">
+												<label for="firstName">Color Name</label>
+												<input type="text" class="form-control" id="color" value="" name="colorname">
+											</div>
+										</div> -->
+
+										<!-- <div class="form-group row mb-6">
+											<label for="coverImage" class="col-sm-4 col-lg-2 col-form-label" >Add Main Photo
+												</label>
+				
+											<div class="col-sm-8 col-lg-10">
+												<div class="custom-file mb-1">
+													<input type="file" class="custom-file-input" id="Addphoto" name="addphoto">
+														
+													<label class="custom-file-label" for="coverImage">Choose
+														file...</label>
+													<div class="invalid-feedback">Example invalid custom file feedback
+													</div>
+												</div>
+											</div>
+										</div> -->
+
+
+										<!-- <div class="col-lg-6">
+											<div class="form-group">
+												<label for="firstName">Enter Size</label>
+												<input type="text" class="form-control" id="size" value="" name="entersize">
+											</div>
+										</div> -->
+										
+									</div>
+								</div>
+
+								<div class="modal-footer px-4">
+									<button type="button" class="btn btn-secondary btn-pill"
+										data-bs-dismiss="modal">Cancel</button>
+									<button type="submit" class="btn btn-primary btn-pill">Save </button>
+								</div>
+							</form>
+						</div>
+					</div>
+					</div>
+					<!--end Edit Modal for product color & size-->
+
+
+
+            <!-- start script for edit product details -->
+			<script>
+				function editproductdetails(id,val1,val2,val3,val4,val5){    //'editproductdetails' onclick function on edit button
+					console.log(id)
+					console.log(val1)
+					console.log(val2)
+					console.log(val3)
+					console.log(val4)
+					console.log(val5)
+
+
+
+
+				   document.getElementById('productdetailsedit').action ='/UpdateProductDetails/'+id;    //pass url in script action & in bracket pass id from form
+				   document.getElementById("price").value = val1;                                //pass id from form  
+				   document.getElementById("pricediscount").value = val2;
+				   document.getElementById("stock").value = val3;
+
+				   document.getElementById("Colour").innerHTML = val4;
+				   document.getElementById("Size").innerHTML = val5;
+
+
+
+
+
+				}
+			 </script>
+		   <!-- end script for edit product details -->
+
+
+					<!-- start model for add question and answer -->
+					<div class="modal fade modal-add-contact" id="addquestionanswer" tabindex="-1" role="dialog" aria-labelledby="addquestionanswer" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+							<div class="modal-content">
+								<form  action="{% url 'questionandanswer' productobj.ProductSlug %}" method="post">
+									{% csrf_token %}
+									<div class="modal-header px-4">
+										<h5 class="modal-title" id="addquestionanswer">Add Question And Answer</h5>
+									</div>
+									
+									<div class="modal-body px-4">
+										<div class="row mb-2">
+											<div class="col-lg-12">
+												<div class="form-group">
+													<label for="firstName">Add Question</label>
+													<!-- <input type="color" class="form-control" id="firstName" value="" name="choosecolor"> -->
+													<textarea class="form-control" id="firstName" name="addquestions" ></textarea>
+												</div>
+											</div>
+											<div class="col-lg-12">
+												<div class="form-group">
+													<label for="firstName">Add Answer</label>
+													<!-- <input type="color" class="form-control" id="firstName" value="" name="choosecolor"> -->
+													<textarea class="form-control" id="firstName" name="addanswers" ></textarea>
+												</div>
+											</div>
+											
+
+									
+										</div>
+									</div>
+									
+									<div class="modal-footer px-4">
+										<button type="button" class="btn btn-secondary btn-pill" data-bs-dismiss="modal">Cancel</button>
+										<button type="submit" class="btn btn-primary btn-pill">Save</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!-- end model for add question and answer -->
+
+<!-- start Edit Modal for add question and answer  -->
+<div class="modal fade modal-add-contact" id="Editbtn1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<form action="" method="POST" id="questionandansweredit" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="modal-header px-4">
+					<h5 class="modal-title" id="exampleModalCenterTitle">Edit Question And Answer </h5>
+				</div>
+
+				<div class="modal-body px-4">
+					
+					<div class="row mb-2">
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="Question"> Question</label>
+								<input type="text" class="form-control" id="question" value="" name="question">
+							</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="Answer">Answer</label>
+								<input type="text" class="form-control" id="answer" value="" name="answer">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer px-4">
+					<button type="button" class="btn btn-secondary btn-pill"
+						data-bs-dismiss="modal">Cancel</button>
+					<button type="submit" class="btn btn-primary btn-pill">Save</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!--end Edit Modal for add question and answer -->
+
+<!-- start script for edit question & answer -->
+<script>
+	function editquestionanswer(id,val1,val2){    //'editcategory' onclick function on edit button
+		console.log(id)
+		console.log(val1)
+		console.log(val2)
+
+	   document.getElementById('questionandansweredit').action ='/UpdateQuestionAndAnswer/'+id;    //pass url in script action & in bracket pass id from form
+	   document.getElementById("question").value = val1;
+	   document.getElementById("answer").value = val2;
+	}
+ </script>
+<!-- end script for edit question & answer -->
+
+
+<!-- start Edit Modal for product details  -->
+<div class="modal fade modal-add-contact" id="EditProductList" tabindex="-1" role="dialog"
+aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+	<div class="modal-content">
+		
+		<form action="{% url 'UpdateProductList' productobj.ProductSlug %}" method="POST">
+			{% csrf_token %}
+			<div class="modal-header px-4">
+				<h5 class="modal-title" id="exampleModalCenterTitle">Edit Product List</h5>
+			</div>
+
+			<div class="modal-body px-4">
+
+				<div class="row mb-2">
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="firstName"> Name</label>
+							
+							<input type="text" class="form-control" id="firstName" value="{{productobj.ProductName}}" name="name">
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="firstName">BrandName</label>
+							<input type="text" class="form-control" id="brandname" value="{{productobj.ProductBrandName}}" name="brandname">
+						</div>
+					</div>
+
+					<div class="col-lg-12">
+						<div class="form-group">
+							<label for="firstName">Description</label>
+							<textarea  type="text" class="form-control" id="description" placeholder="" name="description">{{productobj.ProductDescription}}</textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal-footer px-4">
+				<button type="button" class="btn btn-secondary btn-pill"
+					data-bs-dismiss="modal">Cancel</button>
+				<button type="submit" class="btn btn-primary btn-pill">Save Contact</button>
+			</div>
+		</form>
+	</div>
+</div>
+</div>
+<!--end Edit Modal for product details  -->	
+					{% endblock %}

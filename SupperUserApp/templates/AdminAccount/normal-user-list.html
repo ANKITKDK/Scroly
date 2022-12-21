@@ -1,0 +1,297 @@
+{% extends 'SupperUserApp/superuser-base.html' %}{% load static %}
+{% block content %}
+
+					<div class="breadcrumb-wrapper breadcrumb-contacts">
+						<div>
+							<h1>Normal User List</h1>
+							<p class="breadcrumbs"><span><a href="index.html">Home</a></span>
+								<span><i class="mdi mdi-chevron-right"></i></span>User
+							</p>
+						</div>
+						<div>
+							<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+								data-bs-target="#addUser"> Add User
+							</button> -->
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="ec-vendor-list card card-default">
+								<div class="card-body">
+									<div class="table-responsive">
+										<table id="responsive-data-table" class="table">
+											<thead>
+												<tr>
+													<!-- <th>Profile</th> -->
+													<th>Name</th>
+													<th>Username</th>
+													<th>Email</th>
+													<th>Phone</th>
+													<th>Block/Unblock</th>
+													<th>Action</th>
+												</tr>
+											</thead>
+
+											
+											<tbody>
+												{% for i in NormalUserListobj %}
+												{% if i.LoginType.is_staff %}
+												{% else %}
+												<tr>
+													<!-- <td><img class="vendor-thumb" src="#" alt="user profile" /></td> -->
+													<td>{{i.LoginType.first_name}} {{i.LoginType.last_name}}</td>
+													<td>{{i.LoginType.username}}</td>
+													<td>{{i.LoginType.email}}</td>
+													<td>{{i.LoginType.mobile_number}}</td>
+													
+													<td>
+														{% if i.LoginType.is_active %}
+														<a href="{% url 'Block_NormalUser' i.LoginType.id %}">
+                                                            <button type="button" class="btn btn-danger" >Block User</button>
+                                                        </a> 
+                                                        
+                                                    	{% else %}
+                                                        <a href="{% url 'Unblock_NormalUser' i.LoginType.id %}">
+                                                            <button class="btn btn-success"  >Un Block User</button>
+                                                        </a>
+														{% endif %}
+                 									</td>
+				 									<td>
+
+												
+														<div class="btn-group mb-1">
+															
+															<a href="{% url 'NormalUserProfile' i.id  %}"><button type="button"
+																class="btn btn-outline-success">Profile Info
+																</button></a>
+
+															<!-- <button type="button"
+																class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+																data-bs-toggle="dropdown" aria-haspopup="true"
+																aria-expanded="false" data-display="static">
+																<span class="sr-only">Info</span>
+															</button> -->
+
+															<!-- <div class="dropdown-menu">
+																<a class="dropdown-item" href="#" onclick="editadminlist()" data-bs-toggle="modal" data-bs-target="#Editbtn">Edit</a>
+																<a class="dropdown-item" href="#">Delete</a>
+															</div> -->
+														</div>
+													
+													</td>
+												</tr>
+												{% endif %}
+												{% endfor %}
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+<!-- start Add User Modal  -->
+<!-- <div class="modal fade modal-add-contact" id="addUser" tabindex="-1" role="dialog"
+						aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+							<div class="modal-content">
+								<form action="{% url 'AdminList' %}" method="POST" enctype="multipart/form-data">
+									{% csrf_token %}
+									<div class="modal-header px-4">
+										<h5 class="modal-title" id="exampleModalCenterTitle">Add New User</h5>
+									</div>
+
+									<div class="modal-body px-4">
+										<div class="form-group row mb-6">
+											<label for="coverImage" class="col-sm-4 col-lg-2 col-form-label" >User
+												Image</label>
+
+											<div class="col-sm-8 col-lg-10">
+												<div class="custom-file mb-1">
+													<input type="file" class="custom-file-input" id="coverImage" name="coverImage"
+														required>
+													<label class="custom-file-label" for="coverImage">Choose
+														file...</label>
+													<div class="invalid-feedback">Example invalid custom file feedback
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="row mb-2">
+											<div class="col-lg-6">
+												<div class="form-group">
+													<label for="firstName">First name</label>
+													<input type="text" class="form-control" id="firstName" value="" name="firstname">
+												</div>
+											</div>
+
+											<div class="col-lg-6">
+												<div class="form-group">
+													<label for="lastName">Last name</label>
+													<input type="text" class="form-control" id="lastName" value="" name="lastname">
+												</div>
+											</div>
+
+											<div class="col-lg-6">
+												<div class="form-group mb-4">
+													<label for="userName">User name</label>
+													<input type="text" class="form-control" id="username"
+														value="" name="username">
+												</div>
+											</div>
+
+											<div class="col-lg-6">
+												<div class="form-group mb-4">
+													<label for="password">Password</label>
+													<input type="password" class="form-control" id="password"
+														value="" name="password">
+												</div>
+											</div>
+
+											<div class="col-lg-6">
+												<div class="form-group mb-4">
+													<label for="email">Email</label>
+													<input type="email" class="form-control" id="email"
+														value="" name="email">
+												</div>
+											</div>
+
+											<div class="col-lg-6">
+												<div class="form-group mb-4">
+													<label for="Birthday">Birthday</label>
+													<input type="date" class="form-control" id="Birthday"
+														value="" name="birthday">
+												</div>
+											</div>
+
+											<div class="col-lg-6">
+												<div class="form-group mb-4">
+													<label for="event">Phone Number</label>
+													<input type="number" class="form-control" id="event"
+														value="" name="phonenumber">
+												</div>
+											</div>
+
+											<div class="col-lg-6">
+												<div class="form-group mb-4">
+													<label for="event">Address</label>
+													<input type="text" class="form-control" id="event"
+														value="" name="address">
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="modal-footer px-4">
+										<button type="button" class="btn btn-secondary btn-pill"
+											data-bs-dismiss="modal">Cancel</button>
+										<button type="submit" class="btn btn-primary btn-pill">Save Contact</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div> -->
+<!--end Add User Modal  -->
+
+
+<!-- start Edit Modal  -->
+<!-- <div class="modal fade modal-add-contact" id="Editbtn" tabindex="-1" role="dialog"
+aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+	<div class="modal-content">
+		<form action="" method="POST" id="category1edit" enctype="multipart/form-data">
+			{% csrf_token %}
+			<div class="modal-header px-4">
+				<h5 class="modal-title" id="exampleModalCenterTitle">Edit Category-1</h5>
+			</div>
+
+			<div class="modal-body px-4">
+				<div class="form-group row mb-6">
+					<label for="coverImage" class="col-sm-4 col-lg-2 col-form-label" >Add Photo
+						</label>
+
+					<div class="col-sm-8 col-lg-10">
+						<div class="custom-file mb-1">
+							<input type="file" class="custom-file-input" id="coverImage" name="addphoto"
+								required>
+							<label class="custom-file-label" for="coverImage">Choose
+								file...</label>
+							<div class="invalid-feedback">Example invalid custom file feedback
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row mb-2">
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="firstName"> Name</label>
+							<input type="text" class="form-control" id="Name" value="" name="name">
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="UserName">UserName</label>
+							<input type="text" class="form-control" id="UserName" value="" name="UserName">
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="Email">Email</label>
+							<input type="email" class="form-control" id="Email" value="" name="Email">
+						</div>
+					</div>
+					
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="Email">Date Of Birth</label>
+							<input type="date" class="form-control" id="dateofbirth" value="" name="dateofbirth">
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="Address">Address</label>
+							<input type="text" class="form-control" id="Address" value="" name="Address">
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="phonenumber">Phone No</label>
+							<input type="number" class="form-control" id="phonenumber" value="" name="phonenumber">
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="modal-footer px-4">
+				<button type="button" class="btn btn-secondary btn-pill"
+					data-bs-dismiss="modal">Cancel</button>
+				<button type="submit" class="btn btn-primary btn-pill">Save Contact</button>
+			</div>
+		</form>
+	</div>
+</div>
+</div> -->
+<!--end Edit Modal  -->
+
+<!-- start script for edit category1 -->
+	<!-- <script>
+		function editadminlist(id,val1,val2,val3){    //'editcategory' onclick function on edit button
+			console.log(id)
+			console.log(val1)
+			console.log(val2)
+			console.log(val3)
+
+		   document.getElementById('category1edit').action ='/UpdateCategory1/'+id;    //pass url in script action & in bracket pass id from form
+		   document.getElementById("firstName").value = val1;
+		   document.getElementById("fulldescription1").value = val2;
+		}
+	 </script> -->
+<!-- end script for edit category1 -->
+{% endblock %}
